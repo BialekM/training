@@ -48,7 +48,7 @@ namespace HornetsTraining.Training1.HomeWork.MichałMuzyczka
 
 
         /// <summary>
-        /// 
+        /// If not found, return -1
         /// </summary>
         /// <param name="candidate"></param>
         /// <param name="needle"></param>
@@ -84,7 +84,7 @@ namespace HornetsTraining.Training1.HomeWork.MichałMuzyczka
 
 
         /// <summary>
-        /// 
+        /// Method ignores case size 
         /// </summary>
         /// <param name="candidate"></param>
         /// <param name="needle"></param>
@@ -92,10 +92,9 @@ namespace HornetsTraining.Training1.HomeWork.MichałMuzyczka
         /// <returns></returns>
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            bool antiLoop = false;
-            if (PositionInString(replaceWith, needle) != -1)
-                antiLoop = true;
-            // Let candidate string be "higAShi"
+            bool antiLoop = (PositionInString(replaceWith, needle) != -1);
+ 
+            // For example, let candidate string be "higAShi"
             var candidateLength = candidate.Length;
             // needle let be "AS"
             var needleLength = needle.Length;

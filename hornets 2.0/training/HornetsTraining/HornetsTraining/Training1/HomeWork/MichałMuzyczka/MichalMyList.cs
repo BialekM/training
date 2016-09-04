@@ -8,14 +8,29 @@ namespace HornetsTraining.Training1.HomeWork.MichałMuzyczka
 {
     public class MichalMyList<T>
     {
+        /// <summary>
+        /// 
+        /// </summary>
         protected T[] ListOfItems;
+
+        /// <summary>
+        /// 
+        /// </summary>
         private int _index = 0;
+
+        /// <summary>
+        /// 
+        /// </summary>
         private int _lastIndex = 0;
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item">Item you want to add to list</param>
         public virtual void Add(T item)
         {
             var copyList = ListOfItems;
-
             try
             {
                 if (ListOfItems == null)
