@@ -43,11 +43,11 @@
   <ItemGroup>
     <Compile Include="AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
-    <Compile Include="RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
   </ItemGroup>
