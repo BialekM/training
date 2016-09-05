@@ -44,5 +44,10 @@ namespace SeeSharpBasics.BartekZapart
         {
             throw new NotImplementedException();
         }
+
+        public void AdrianPankiewicz(string test)
+        {
+            
+        }
     }
 }
