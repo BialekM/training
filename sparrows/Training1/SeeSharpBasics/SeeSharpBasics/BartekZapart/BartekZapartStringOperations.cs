@@ -45,19 +45,18 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    }
-=======
-<<<<<<< .merge_file_a11968
-<<<<<<< HEAD
-=======
+
+        public void AdrianPankiewicz(string test)
+        {
+        }
+
+
         public void RafalKawalerski(string test)
         {
             
         }
 
->>>>>>> 8c84ab8065ffac8b3095de915f6d9aac0095ab54
+
         public void KrzysztofPater(string name)
         {
             
@@ -70,9 +69,8 @@ namespace SeeSharpBasics.BartekZapart
 
         public void DominikRzepnicki(string test)
         {
-
+            //change
         }
-
     }
 }
->>>>>>> 663c6198ac6706a0959f13913a733815b22b453d
+
