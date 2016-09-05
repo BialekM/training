@@ -54,6 +54,7 @@
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
