@@ -45,9 +45,17 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public void KrzysztofPater(string name)
         {
             
         }
+=======
+        public void DominikRzepnicki(string test)
+        {
+
+        }
+
+>>>>>>> 44756956456e4e3e5508eadc540d7227547b624e
     }
 }
