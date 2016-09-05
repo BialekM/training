@@ -47,13 +47,18 @@ namespace SeeSharpBasics.BartekZapart
 
         public void AdrianPankiewicz(string test)
         {
-            
         }
 
-    public void BartekZapart(string test)
+        public void KrzysztofPater(string name)
         {
             
         }
+
+        public void BartekZapart(string test)
+        {
+            
+        }
+
 
         public void DominikRzepnicki(string test)
         {
