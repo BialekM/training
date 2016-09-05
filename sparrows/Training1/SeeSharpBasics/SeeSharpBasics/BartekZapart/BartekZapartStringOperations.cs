@@ -47,7 +47,7 @@ namespace SeeSharpBasics.BartekZapart
 
         public void AdrianPankiewicz(string test)
         {
-            
+            //change
         }
     }
 }
