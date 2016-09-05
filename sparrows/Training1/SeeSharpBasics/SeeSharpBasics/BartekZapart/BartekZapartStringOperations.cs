@@ -50,6 +50,11 @@ namespace SeeSharpBasics.BartekZapart
             
         }
 
+        public void KrzysztofPater(string name)
+        {
+            
+        }
+
         public void BartekZapart(string test)
         {
             
