@@ -48,7 +48,12 @@ namespace SeeSharpBasics.BartekZapart
 
         public void MarcinGala(string test)
         {
-            
+
+        }
+
+        public void AdrianPankiewicz(string test)
+        {
+
         }
 
         public void RafalKawalerski(string test)
@@ -71,8 +76,7 @@ namespace SeeSharpBasics.BartekZapart
 
         public void DominikRzepnicki(string test)
         {
-
+            //change
         }
-
     }
 }
