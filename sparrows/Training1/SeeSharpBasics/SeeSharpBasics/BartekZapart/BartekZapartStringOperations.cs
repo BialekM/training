@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeeSharpBasics.BartekZapart {
-    public class BartekZapartStringOperations : StringOperations {
+namespace SeeSharpBasics.BartekZapart
+{
+    public class BartekZapartStringOperations : StringOperations
+    {
         public override string Substring(string candidate, int start, int length) {
             //return base.Substring(candidate, start, length);
             // wasze cialo metody
@@ -36,14 +38,26 @@ namespace SeeSharpBasics.BartekZapart {
             throw new NotImplementedException();
         }
 
-        public void AdrianPankiewicz(string test) {
-        }
-
-        public void RafalKawalerski(string test) {
+        public void MarcinGala(string test)
+        {
 
         }
 
-        public void KrzysztofPater(string name) {
+        public void AdrianPankiewicz(string test)
+        {
+
+        }
+
+        public void RafalKawalerski(string test)
+
+        {
+            
+        }
+
+
+        public void KrzysztofPater(string name)
+        {
+
 
         }
 
@@ -51,7 +65,8 @@ namespace SeeSharpBasics.BartekZapart {
 
         }
 
-        public void DominikRzepnicki(string test) {
+        public void DominikRzepnicki(string test)
+        {
             //change
         }
 
