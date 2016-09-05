@@ -46,11 +46,8 @@
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Slawek\SlawekStringOperations.cs" />
-=======
     <Compile Include="RafalKawalerski\RafalKawalerskiStringOperations.cs" />
->>>>>>> 43169fa4c037147a4b94c8b81f03eecd351868cf
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
   </ItemGroup>
