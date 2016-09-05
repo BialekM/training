@@ -49,5 +49,16 @@ namespace SeeSharpBasics.BartekZapart
         {
             
         }
+
+        public void BartekZapart(string test)
+        {
+            
+        }
+
+        public void DominikRzepnicki(string test)
+        {
+
+        }
+
     }
 }
