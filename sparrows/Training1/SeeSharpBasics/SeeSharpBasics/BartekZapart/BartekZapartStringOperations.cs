@@ -45,22 +45,4 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
-<<<<<<< HEAD
-        public void KonradKozlowski(string test)
-        {
-            
-        }
-=======
-        public void BartekZapart(string test)
-        {
-            
-        }
-
-        public void DominikRzepnicki(string test)
-        {
-
-        }
-
->>>>>>> b434796511076384c1d147db0bf5c30e3811ebab
     }
-}
