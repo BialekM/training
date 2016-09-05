@@ -45,9 +45,21 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
+
         public void MarcinGala(string test)
         {
             
         }
+
+        public void BartekZapart(string test)
+        {
+            
+        }
+
+        public void DominikRzepnicki(string test)
+        {
+
+        }
+
     }
 }
