@@ -45,12 +45,20 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
+<<<<<<< .merge_file_a11968
 <<<<<<< HEAD
         public void KrzysztofPater(string name)
         {
             
         }
 =======
+=======
+        public void BartekZapart(string test)
+        {
+            
+        }
+
+>>>>>>> .merge_file_a11324
         public void DominikRzepnicki(string test)
         {
 
