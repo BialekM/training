@@ -38,13 +38,10 @@ namespace SeeSharpBasics.BartekZapart
             throw new NotImplementedException();
         }
 
-<<<<<<< HEAD
-=======
         public void MarcinGala(string test)
         {
 
         }
->>>>>>> e572ecd608a5be3a6391bbe2c2568d4e4408367f
 
         public void AdrianPankiewicz(string test)
         {
