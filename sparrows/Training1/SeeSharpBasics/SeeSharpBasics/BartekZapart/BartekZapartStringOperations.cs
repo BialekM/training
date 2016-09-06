@@ -88,6 +88,11 @@ namespace SeeSharpBasics.BartekZapart
             //test
 
         }
+
+        public void PiotrMlynczak(string test)
+        {
+
+        }
     }
 }
 
