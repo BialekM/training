@@ -88,6 +88,12 @@ namespace SeeSharpBasics.BartekZapart
             //test
 
         }
+
+        public void AdrianKoszyk(string test)
+        {
+
+        }
+
     }
 }
 
