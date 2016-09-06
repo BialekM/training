@@ -1,15 +1,26 @@
-﻿namespace SeeSharpBasics.AdrianPankiewicz
+﻿
+using System.CodeDom;
+using System.Management.Instrumentation;
+
+namespace SeeSharpBasics.AdrianPankiewicz
 {
     public class AdrianPankiewiczStringOperations : StringOperations
     {
-        public override string Substring(string candidate, int start, int length)
-        {
-            throw new System.NotImplementedException();
-        }
+        public const string AdrianPankiewiczString = "Adrian Pankiewicz";
 
         public override string GetName()
         {
-            throw new System.NotImplementedException();
+            return AdrianPankiewiczString;
+        }
+
+        public override string Substring(string candidate, int start, int length)
+        {
+            string substring = "";
+
+            for (int i = start; i < start + length; i++)
+                substring += candidate[i];
+
+            return substring;
         }
 
         public override string GlueBeginingEnd(string candidate)
@@ -19,22 +30,47 @@
 
         public override int CountOccurences(string candidate, char needle)
         {
-            throw new System.NotImplementedException();
+            int occurences = 0;
+
+            for (int i = 0; i < candidate.Length; i++)
+                if (candidate[i] == needle)
+                    occurences++;
+
+            return occurences;
         }
 
         public override int LetterPositionInString(string candidate, char needle)
         {
-            throw new System.NotImplementedException();
+            for (int i = 0; i < candidate.Length; i++)
+                if (candidate[i] == needle)
+                    return i;
+
+            throw new InstanceNotFoundException();
         }
 
         public override string LetterReplace(string candidate, char needle, char replace)
         {
-            throw new System.NotImplementedException();
+            //while(CountOccurences(candidate, ))
+            string lettersReplace = "";
+
+            foreach (char t in candidate)
+                if (t == needle)
+                    lettersReplace += replace;
+                else
+                    lettersReplace += t;
+
+            return lettersReplace;
         }
+
 
         public override string StringReplace(string candidate, string needle, string replace)
         {
-            throw new System.NotImplementedException();
+            string stringReplace = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                
+            }
         }
     }
 }
