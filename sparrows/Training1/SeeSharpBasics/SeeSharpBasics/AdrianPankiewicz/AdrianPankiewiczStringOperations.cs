@@ -1,9 +1,11 @@
 ﻿
 using System.CodeDom;
 using System.Management.Instrumentation;
+using System.Net.Configuration;
 
 namespace SeeSharpBasics.AdrianPankiewicz
 {
+
     public class AdrianPankiewiczStringOperations : StringOperations
     {
         public const string AdrianPankiewiczString = "Adrian Pankiewicz";
@@ -23,17 +25,30 @@ namespace SeeSharpBasics.AdrianPankiewicz
             return substring;
         }
 
-        public override string GlueBeginingEnd(string candidate)
+        //Zrobiłeś błąd, powinno być Beginning (nie Begining) :)
+        public override string GlueBeginingEnd(string candidate) 
         {
-            throw new System.NotImplementedException();
+            string glueBeginningEnd = "";
+            int leftIndex = 0;
+            int rightIndex = candidate.Length;
+
+            while (leftIndex < rightIndex)
+            {
+                glueBeginningEnd += candidate[leftIndex];
+                glueBeginningEnd += candidate[rightIndex-1];
+                leftIndex++;
+                rightIndex--;
+            }
+
+            return glueBeginningEnd;
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
             int occurences = 0;
 
-            for (int i = 0; i < candidate.Length; i++)
-                if (candidate[i] == needle)
+            foreach (char t in candidate)
+                if (t == needle)
                     occurences++;
 
             return occurences;
@@ -50,7 +65,6 @@ namespace SeeSharpBasics.AdrianPankiewicz
 
         public override string LetterReplace(string candidate, char needle, char replace)
         {
-            //while(CountOccurences(candidate, ))
             string lettersReplace = "";
 
             foreach (char t in candidate)
@@ -67,10 +81,78 @@ namespace SeeSharpBasics.AdrianPankiewicz
         {
             string stringReplace = "";
 
-            for (int i = 0; i < candidate.Length; i++)
+            int substringPosition = SubstringPosition(candidate, needle);
+            while (substringPosition > 0)
             {
-                
+                stringReplace = Erase(candidate, substringPosition, needle.Length);
+                stringReplace = Insert(stringReplace, replace, substringPosition);
+                substringPosition = SubstringPosition(stringReplace, needle);
             }
+
+            return stringReplace;
+        }
+
+        private int SubstringPosition(string candidate, string needle)
+        {
+            for (int i = 0; i < candidate.Length; i++)
+                if (SubstringStartsOnIndex(candidate, needle, i))
+                    return i;
+
+            return -1;
+        }
+
+        private bool SubstringStartsOnIndex(string candidate, string needle, int index)
+        {
+            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length; 
+                candidateIndex++, needleIndex++)
+                if (!(EqualLetterInRange(candidate, needle, candidateIndex, needleIndex)))
+                    return false;
+
+            return true;
+        }
+
+        private bool EqualLetterInRange(string candidate, string needle, int candidateIndex, int needleIndex)
+        {
+            return (InRange(candidate, candidateIndex) && InRange(needle, needleIndex)
+                &&  EqualLetter(candidate, needle, candidateIndex, needleIndex));
+        }
+
+        private bool InRange(string candidate, int index)
+        {
+            return index >= 0 && index < candidate.Length;
+        }
+
+        private bool EqualLetter(string candidate, string needle, int candidateIndex, int needleIndex)
+        {
+            return candidate[candidateIndex] == needle[needleIndex];
+        }
+
+        private string Erase(string toErase, int from, int length)
+        {
+            string erased = "";
+
+            for (int i = 0; i < toErase.Length; i++)
+                if (i < from || i >= from + length)
+                    erased += toErase[i];
+
+            return erased;
+        }
+
+        private string Insert(string toInsert, string needle, int startIndex)
+        {
+            string inserted = "";
+            string debug = toInsert;
+
+            for (int i = 0; i < startIndex; i++)
+                inserted += toInsert[i];
+
+            for (int i = 0; i < needle.Length; i++)
+                inserted += needle[i];
+
+            for (int i = startIndex; i < toInsert.Length; i++)
+                inserted += toInsert[i];
+
+            return inserted;
         }
     }
 }
