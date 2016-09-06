@@ -97,7 +97,6 @@ namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
             {
                 return ("Podany ciąg nie istnieje!");
             }
-
         }
     }
 }
