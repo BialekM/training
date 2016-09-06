@@ -53,11 +53,14 @@
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
