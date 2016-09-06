@@ -88,6 +88,11 @@ namespace SeeSharpBasics.BartekZapart
             //test
 
         }
+
+        public void OlekSzycik(string test)
+        {
+            //dodano 2016-09-06 19:56
+        }
     }
 }
 
