@@ -1,14 +1,13 @@
-﻿
+﻿using HornetsTraining.Training1.HomeWork;
+using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SeeSharpBasics;
-using SeeSharpBasics.AdrianPankiewicz;
 
-namespace SeeSharpBasicsTest.AdrianPankiewiczTest
+namespace HornetsTesting.Training1.HomeWork.AdrianPankiewicz
 {
     [TestClass]
     public class AdrianPankiewiczStringOperationsTest
     {
-        private readonly StringOperations _adrPanStrOpr = new AdrianPankiewiczStringOperations();
+        private readonly AdrianPankiewiczStringOperations _adrPanStrOpr = new AdrianPankiewiczStringOperations();
 
         [TestMethod]
         public void GetNameTest()
@@ -58,6 +57,12 @@ namespace SeeSharpBasicsTest.AdrianPankiewiczTest
         public void StringReplaceTest()
         {
             Assert.AreEqual(_adrPanStrOpr.StringReplace("bartlomiej", "art", "beatka"), "bbeatkalomiej");
+        }
+
+        [TestMethod]
+        public void PositionInStringTest()
+        {
+            Assert.AreEqual(_adrPanStrOpr.PositionInString("bartlomiej", "art"), 1);
         }
     }
 }

@@ -1,9 +1,8 @@
 ﻿
-using System.CodeDom;
+using System;
 using System.Management.Instrumentation;
-using System.Net.Configuration;
 
-namespace SeeSharpBasics.AdrianPankiewicz
+namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 {
 
     public class AdrianPankiewiczStringOperations : StringOperations
@@ -25,8 +24,17 @@ namespace SeeSharpBasics.AdrianPankiewicz
             return substring;
         }
 
+        public override int PositionInString(string candidate, string needle)
+        {
+            for (int i = 0; i < candidate.Length; i++)
+                if (SubstringStartsOnIndex(candidate, needle, i))
+                    return i;
+
+            return -1;
+        }
+
         //Zrobiłeś błąd, powinno być Beginning (nie Begining) :)
-        public override string GlueBeginingEnd(string candidate) 
+        public string GlueBeginingEnd(string candidate)
         {
             string glueBeginningEnd = "";
             int leftIndex = 0;
@@ -35,7 +43,7 @@ namespace SeeSharpBasics.AdrianPankiewicz
             while (leftIndex < rightIndex)
             {
                 glueBeginningEnd += candidate[leftIndex];
-                glueBeginningEnd += candidate[rightIndex-1];
+                glueBeginningEnd += candidate[rightIndex - 1];
                 leftIndex++;
                 rightIndex--;
             }
@@ -43,7 +51,7 @@ namespace SeeSharpBasics.AdrianPankiewicz
             return glueBeginningEnd;
         }
 
-        public override int CountOccurences(string candidate, char needle)
+        public int CountOccurences(string candidate, char needle)
         {
             int occurences = 0;
 
@@ -54,7 +62,7 @@ namespace SeeSharpBasics.AdrianPankiewicz
             return occurences;
         }
 
-        public override int LetterPositionInString(string candidate, char needle)
+        public int LetterPositionInString(string candidate, char needle)
         {
             for (int i = 0; i < candidate.Length; i++)
                 if (candidate[i] == needle)
@@ -63,7 +71,7 @@ namespace SeeSharpBasics.AdrianPankiewicz
             throw new InstanceNotFoundException();
         }
 
-        public override string LetterReplace(string candidate, char needle, char replace)
+        public string LetterReplace(string candidate, char needle, char replace)
         {
             string lettersReplace = "";
 
@@ -81,29 +89,20 @@ namespace SeeSharpBasics.AdrianPankiewicz
         {
             string stringReplace = "";
 
-            int substringPosition = SubstringPosition(candidate, needle);
+            int substringPosition = PositionInString(candidate, needle);
             while (substringPosition > 0)
             {
                 stringReplace = Erase(candidate, substringPosition, needle.Length);
                 stringReplace = Insert(stringReplace, replace, substringPosition);
-                substringPosition = SubstringPosition(stringReplace, needle);
+                substringPosition = PositionInString(stringReplace, needle);
             }
 
             return stringReplace;
         }
 
-        private int SubstringPosition(string candidate, string needle)
-        {
-            for (int i = 0; i < candidate.Length; i++)
-                if (SubstringStartsOnIndex(candidate, needle, i))
-                    return i;
-
-            return -1;
-        }
-
         private bool SubstringStartsOnIndex(string candidate, string needle, int index)
         {
-            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length; 
+            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length;
                 candidateIndex++, needleIndex++)
                 if (!(EqualLetterInRange(candidate, needle, candidateIndex, needleIndex)))
                     return false;
@@ -114,7 +113,7 @@ namespace SeeSharpBasics.AdrianPankiewicz
         private bool EqualLetterInRange(string candidate, string needle, int candidateIndex, int needleIndex)
         {
             return (InRange(candidate, candidateIndex) && InRange(needle, needleIndex)
-                &&  EqualLetter(candidate, needle, candidateIndex, needleIndex));
+                && EqualLetter(candidate, needle, candidateIndex, needleIndex));
         }
 
         private bool InRange(string candidate, int index)
