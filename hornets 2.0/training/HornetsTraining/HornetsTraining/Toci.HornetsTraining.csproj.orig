@@ -54,9 +54,12 @@
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
+<<<<<<< HEAD
     <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
+=======
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
+>>>>>>> 91a9007a7efbf3ee84e053d72a91da720b065091
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
