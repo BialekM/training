@@ -91,8 +91,7 @@ namespace SeeSharpBasics.BartekZapart
 
         public void OlekSzycik(string test)
         {
-            //dodano 2016-09-06 19:56
-            //dodano.........
+
         }
     }
 }
