@@ -55,6 +55,7 @@
     <Compile Include="Training1\Generics\GenericsTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
   </ItemGroup>
   <ItemGroup />

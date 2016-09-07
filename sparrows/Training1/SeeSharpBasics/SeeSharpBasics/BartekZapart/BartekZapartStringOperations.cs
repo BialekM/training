@@ -89,10 +89,25 @@ namespace SeeSharpBasics.BartekZapart
 
         }
 
+<<<<<<< HEAD
         public void PiotrMlynczak(string test)
+=======
+        public void OlekSzycik(string test)
+        {
+
+        }
+
+        public void MarcinDworak(string test)
+        {
+
+        }
+        public void MarcinDworak(string test)
+>>>>>>> 029dd5e36b0cdcbb06e114e3f2c762618ab3c530
         {
 
         }
     }
+
 }
+
 

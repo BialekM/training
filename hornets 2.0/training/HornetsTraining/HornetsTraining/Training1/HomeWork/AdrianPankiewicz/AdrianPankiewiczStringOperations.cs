@@ -38,12 +38,12 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
         {
             string glueBeginningEnd = "";
             int leftIndex = 0;
-            int rightIndex = candidate.Length;
+            int rightIndex = candidate.Length -1;
 
             while (leftIndex < rightIndex)
             {
                 glueBeginningEnd += candidate[leftIndex];
-                glueBeginningEnd += candidate[rightIndex - 1];
+                glueBeginningEnd += candidate[rightIndex];
                 leftIndex++;
                 rightIndex--;
             }
@@ -88,14 +88,25 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
         public override string StringReplace(string candidate, string needle, string replace)
         {
             string stringReplace = "";
-
             int substringPosition = PositionInString(candidate, needle);
-            while (substringPosition > 0)
+            bool subStringExists = substringPosition > 0;
+
+            while (subStringExists)
             {
-                stringReplace = Erase(candidate, substringPosition, needle.Length);
-                stringReplace = Insert(stringReplace, replace, substringPosition);
+                stringReplace = ReplaceOneOccurence(candidate, needle, replace, substringPosition);
                 substringPosition = PositionInString(stringReplace, needle);
+                subStringExists = substringPosition > 0;
             }
+
+            return stringReplace;
+        }
+
+        private string ReplaceOneOccurence(string candidate, string needle, string replace, int substringPosition)
+        {
+            string stringReplace = "";
+
+            stringReplace = Erase(candidate, substringPosition, needle.Length);
+            stringReplace = Insert(stringReplace, replace, substringPosition);
 
             return stringReplace;
         }
@@ -131,27 +142,35 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
             string erased = "";
 
             for (int i = 0; i < toErase.Length; i++)
-                if (i < from || i >= from + length)
+                if (!(isValueBetween(i, from, from + length - 1)))
                     erased += toErase[i];
 
             return erased;
         }
 
+        private bool isValueBetween(int value, int firstBound, int secondBound)
+        {
+            if(firstBound > secondBound)
+                GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
+
+            return value >= firstBound && value <= secondBound;
+        }
+
         private string Insert(string toInsert, string needle, int startIndex)
         {
             string inserted = "";
-            string debug = toInsert;
 
-            for (int i = 0; i < startIndex; i++)
-                inserted += toInsert[i];
-
-            for (int i = 0; i < needle.Length; i++)
-                inserted += needle[i];
-
-            for (int i = startIndex; i < toInsert.Length; i++)
-                inserted += toInsert[i];
+            inserted = addAtEnd(inserted, Substring(toInsert, 0, startIndex));
+            inserted = addAtEnd(inserted, needle);
+            inserted = addAtEnd(inserted, Substring(toInsert, startIndex, toInsert.Length - startIndex));
 
             return inserted;
+        }
+
+        private string addAtEnd(string toModify, string needle)
+        {
+            toModify += needle;
+            return toModify;
         }
     }
 }

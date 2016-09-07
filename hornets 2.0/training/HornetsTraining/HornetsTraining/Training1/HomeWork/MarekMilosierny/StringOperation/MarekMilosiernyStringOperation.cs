@@ -1,6 +1,6 @@
 ﻿namespace HornetsTraining.Training1.HomeWork.MarekMilosierny
 {
-    class MarekMilosiernyStringOperation : StringOperations
+    public class MarekMilosiernyStringOperation : StringOperations
     {
         public override string GetName()
         {
@@ -51,6 +51,7 @@
 
             string firstPart = Substring(candidate, 0, replaceStart);
             string lastPart = Substring(candidate, replaceStart + needle.Length, candidate.Length - firstPart.Length - needle.Length);
+
             string result = firstPart + replaceWith + lastPart;
 
             return result;
