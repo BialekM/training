@@ -100,20 +100,21 @@ namespace SeeSharpBasics.BartekZapart
 
         }
 
-<<<<<<< HEAD
+
         public void PawelHanus(string test)
         {
-            
-=======
+		
+		}
         public void MarcinDworak(string test)
         {
 
         }
         public void MarcinDworak(string test)
->>>>>>> 029dd5e36b0cdcbb06e114e3f2c762618ab3c530
+		{
+        }
+        public void BartoszJasiewicz(string test)
         {
-
->>>>>>> e5587a20c4b873a78bf11f7d722381383a5ac8b1
+            
         }
     }
 
