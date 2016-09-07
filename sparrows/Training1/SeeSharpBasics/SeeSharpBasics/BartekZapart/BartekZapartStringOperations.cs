@@ -114,6 +114,11 @@ namespace SeeSharpBasics.BartekZapart
         {
             
         }
+
+        public void PawelMarciniak(string test)
+        {
+ 
+        }
     }
 
 }
