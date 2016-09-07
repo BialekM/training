@@ -93,6 +93,17 @@ namespace SeeSharpBasics.BartekZapart
         {
 
         }
+
+        public void MarcinDworak(string test)
+        {
+
+        }
+        public void MarcinDworak(string test)
+        {
+
+        }
     }
+
 }
+
 
