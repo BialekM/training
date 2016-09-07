@@ -1,15 +1,25 @@
-﻿ namespace SeeSharpBasics.Test
+﻿using System;
+using System.Runtime.Remoting.Messaging;
+
+namespace SeeSharpBasics.PawelHanus
 {
-    public class TestStringOperations : StringOperations
+    public class PawelHanusStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
-            throw new System.NotImplementedException();
+            string result = "";
+
+            for (int i = 0; i < candidate.Length - 1 || start + i < candidate.Length || i <= length; i++)
+            {
+                Console.WriteLine(candidate[i]);
+            }
+
+            return result;
         }
 
         public override string GetName()
         {
-            throw new System.NotImplementedException();
+            return "PawelHanus";
         }
 
         public override string GlueBeginingEnd(string candidate)
