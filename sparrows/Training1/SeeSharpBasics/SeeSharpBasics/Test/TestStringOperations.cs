@@ -1,4 +1,4 @@
-﻿namespace SeeSharpBasics.Test
+﻿ namespace SeeSharpBasics.Test
 {
     public class TestStringOperations : StringOperations
     {
