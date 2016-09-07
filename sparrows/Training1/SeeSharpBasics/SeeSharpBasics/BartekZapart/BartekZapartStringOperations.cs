@@ -93,6 +93,11 @@ namespace SeeSharpBasics.BartekZapart
         {
 
         }
+
+        public void PawelHanus(string test)
+        {
+            
+        }
     }
 }
 
