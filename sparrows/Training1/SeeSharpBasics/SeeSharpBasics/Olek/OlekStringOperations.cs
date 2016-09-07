@@ -11,6 +11,7 @@
         public override string GetName()
         {
             throw new System.NotImplementedException();
+            //pobierz.......?
         }
 
         public override string GlueBeginingEnd(string candidate)
