@@ -104,10 +104,10 @@ namespace SeeSharpBasics.BartekZapart
         {
 
         }
-        public void MarcinDworak(string test)
->>>>>>> 029dd5e36b0cdcbb06e114e3f2c762618ab3c530
-        {
 
+        public void BartoszJasiewicz(string test)
+        {
+            
         }
     }
 
