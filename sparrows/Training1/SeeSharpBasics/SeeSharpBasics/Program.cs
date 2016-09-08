@@ -47,6 +47,9 @@ namespace SeeSharpBasics
 
             //string strOlek = new strOlek("");
             OlekStringOperations strOlek = new OlekStringOperations();
+            //strOlek.Substring();
+
+
 
             string result = strOp.Substring("beatka", 1, 3);
             if (result == "eat")
