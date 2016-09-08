@@ -99,6 +99,7 @@ namespace SeeSharpBasics.PawelHanus
         public override string StringReplace(string candidate, string needle, string replace)
         {
             string result = "";
+
             for (int i = 0; i < candidate.Length; i++)
             {
                 string substring = Substring(candidate, i, needle.Length);
