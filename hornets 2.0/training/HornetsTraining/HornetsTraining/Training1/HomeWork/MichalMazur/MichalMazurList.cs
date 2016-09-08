@@ -56,10 +56,9 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
                     }
 
                 }
-                else
-                {
-                    throw new Exception("item " + item.ToString() + " not found on list");
-                }
+                
+                
+                 
             }
         }
 
