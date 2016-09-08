@@ -64,6 +64,8 @@
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszSmierzchalaStringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
   </ItemGroup>
