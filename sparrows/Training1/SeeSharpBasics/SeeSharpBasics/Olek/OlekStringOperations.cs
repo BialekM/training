@@ -18,23 +18,18 @@ namespace SeeSharpBasics.Olek
 
         public override string Substring(string candidate, int start, int length)
         {
-            //throw new System.NotImplementedException();
-            /*
-            for (int i = 0; i < candidate.Length; i++)
-            {
-                if (candidate[i] == a)
-                {
-                    Console.WriteLine(candidate[1]+candidate[2]+candidate[3]);
-                }
-                return +=;
-            }
-            */
             string result = "";
-            for (int i = start; i < candidate.Length && i = candidate.Length ; i++)
-            {
-                return 
-            }
 
+            //Substring("beatka", 1, 3); eat
+            //Substring("bartek", 2, 4); rtek
+
+            //for (int i = start; i < ((candidate.Length - length)+1); i++)
+            for (int i = start; i < (candidate.Length - (candidate.Length-length))+1; i++)
+            {
+                result = candidate[i].ToString();
+                Console.Write(result);
+            }
+            return result;
 
 
         }
