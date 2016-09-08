@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
+using SeeSharpBasics.Olek;
 
 namespace SeeSharpBasics
 {
@@ -43,6 +44,9 @@ namespace SeeSharpBasics
             listaImion[10] = "bartlomiej";
 
             BartekZapartStringOperations strOp = new BartekZapartStringOperations();
+
+            //string strOlek = new strOlek("");
+            OlekStringOperations strOlek = new OlekStringOperations();
 
             string result = strOp.Substring("beatka", 1, 3);
             if (result == "eat")
