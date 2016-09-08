@@ -56,13 +56,10 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
-<<<<<<< HEAD
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
-=======
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
->>>>>>> d61c47e75b62508543cb24228f10253794bc7013
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
