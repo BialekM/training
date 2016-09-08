@@ -56,16 +56,9 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
-<<<<<<< HEAD
-    <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
-    <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
-    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
-=======
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
-    <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
->>>>>>> 55da18711bd587a007471e639cf4ac668728f556
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
