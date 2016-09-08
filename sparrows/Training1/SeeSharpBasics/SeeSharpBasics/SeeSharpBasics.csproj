@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />

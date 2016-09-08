@@ -100,32 +100,16 @@ namespace SeeSharpBasics.BartekZapart
 
         }
 
-<<<<<<< HEAD
 
         public void PawelHanus(string test)
         {
 		
 		}
-=======
-        public void PawelHanus(string test)
-        {
 
-        }
-
->>>>>>> f332ab9f3e1cae51b312f454bebc7aa65940b80e
-        public void MarcinDworak(string test)
-        {
-
-        }
-<<<<<<< HEAD
         public void MarcinDworak(string test)
 		{
         }
-        public void BartoszJasiewicz(string test)
-        {
-            
-=======
-        
+
         public void BartoszJasiewicz(string test)
         {
             
@@ -133,8 +117,6 @@ namespace SeeSharpBasics.BartekZapart
 
         public void PawelMarciniak(string test)
         {
- 
->>>>>>> f332ab9f3e1cae51b312f454bebc7aa65940b80e
         }
     }
 
