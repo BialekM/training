@@ -2,7 +2,7 @@
 
 namespace HornetsTraining.Training1.HomeWork.LukaszCichon
 {
-    class LukaszCichonStringOperations : StringOperations
+    public class LukaszCichonStringOperations : StringOperations
     {
         public override string GetName()
         {

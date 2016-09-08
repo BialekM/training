@@ -14,6 +14,7 @@ namespace HornetsTesting.Training1.HomeWork.RafalKawalerski
             Assert.AreEqual(_rkStringOperations.GetName(), "Rafal Kawalerski");
         }
 
+
         [TestMethod]
         public void SubstringTest()
         {
