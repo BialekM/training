@@ -3,7 +3,7 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
 {
     public class MichalMazurStringOperations : StringOperations
     {
-        struct NeedlePosition
+        public struct NeedlePosition
         {
             public bool findStringInString;
             public int count;
