@@ -61,6 +61,8 @@
     <Compile Include="Training1\HomeWork\MarekMilosierny\Generics\MarekList.cs" />
     <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurList.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
