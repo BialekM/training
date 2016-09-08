@@ -123,6 +123,10 @@ namespace SeeSharpBasics.BartekZapart
         {
         }
 
+        public void KrzysztofOrzel(string test)
+        {
+
+        }
     }
 
 }
