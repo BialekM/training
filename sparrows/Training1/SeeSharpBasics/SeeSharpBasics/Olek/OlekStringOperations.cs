@@ -20,8 +20,8 @@ namespace SeeSharpBasics.Olek
         {
             string result = "";
 
-            //Substring("beatka", 1, 3); eat
-            //Substring("bartek", 2, 4); rtek
+            //Substring("beatka", 1, 3); //eat
+            //Substring("bartek", 2, 4); //rtek
 
             //for (int i = start; i < ((candidate.Length - length)+1); i++)
             for (int i = start; i < (candidate.Length - (candidate.Length-length))+1; i++)
