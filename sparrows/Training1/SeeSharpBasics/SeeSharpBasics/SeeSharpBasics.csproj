@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
+    <Compile Include="Edwin\EdwinStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
     <Compile Include="Program.cs" />

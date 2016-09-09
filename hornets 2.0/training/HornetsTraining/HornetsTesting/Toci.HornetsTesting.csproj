@@ -45,7 +45,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -58,11 +60,15 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyListTest.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszListTests.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
   </ItemGroup>
   <ItemGroup />

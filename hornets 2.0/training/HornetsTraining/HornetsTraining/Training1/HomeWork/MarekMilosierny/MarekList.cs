@@ -1,6 +1,6 @@
 ﻿using HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.MarekMilosierny.Generics
+namespace HornetsTraining.Training1.HomeWork.MarekMilosierny
 {
     public class MarekList<TItemList> : MyList<TItemList>
     {
