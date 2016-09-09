@@ -4,7 +4,7 @@
     {
         public override string GetName()
         {
-            return "Patryk Drapik";
+            return "Patryk Drapik"; 
         }
 
         public override string Substring(string candidate, int start, int length)
