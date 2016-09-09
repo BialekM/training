@@ -60,6 +60,7 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyListTest.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
