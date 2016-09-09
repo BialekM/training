@@ -2,12 +2,12 @@
 {
     public class MateuszPoradaStringOperations : StringOperations
     {
-        public override string Substring(string candidate, int start, int length)
+        public override string GetName()
         {
-            throw new System.NotImplementedException();
+            return "Mateusz Porada";
         }
 
-        public override string GetName()
+        public override string Substring(string candidate, int start, int length)
         {
             throw new System.NotImplementedException();
         }
