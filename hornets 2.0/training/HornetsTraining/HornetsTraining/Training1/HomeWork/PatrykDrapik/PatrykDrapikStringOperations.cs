@@ -4,7 +4,7 @@
     {
         public override string GetName()
         {
-            throw new System.NotImplementedException();
+            return "Patryk Drapik";
         }
 
         public override string Substring(string candidate, int start, int length)
