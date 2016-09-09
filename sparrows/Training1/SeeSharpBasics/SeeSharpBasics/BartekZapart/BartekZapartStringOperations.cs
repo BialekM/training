@@ -48,7 +48,6 @@ namespace SeeSharpBasics.BartekZapart
 
         }
 
-
         public void RafalKawalerski(string test)
 
         {
@@ -74,52 +73,5 @@ namespace SeeSharpBasics.BartekZapart
         public void Huski(string test) {
             //popsulem formatowanie
         }
-        public void SlawekNowinski(string test)
-        {
-        }
-
-        public void Patryk(string test)
-        {
-
-        }
-
-        public void MateuszPorada(string test)
-        {
-            //test
-
-        }
-
-
-        public void PiotrMlynczak(string test)
-        {
-
-        }
-
-        public void OlekSzycik(string test)
-        {
-
-        }
-
-
-        public void PawelHanus(string test)
-        {
-		
-		}
-
-        public void MarcinDworak(string test)
-		{
-        }
-
-        public void BartoszJasiewicz(string test)
-        {
-            
-        }
-
-        public void PawelMarciniak(string test)
-        {
-        }
     }
-
 }
-
-

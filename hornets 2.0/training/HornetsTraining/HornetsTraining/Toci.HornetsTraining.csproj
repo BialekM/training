@@ -49,16 +49,10 @@
     <Compile Include="Training1\Generics\Factory\StringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\GenericsExample.cs" />
     <Compile Include="Training1\Generics\MyList.cs" />
-    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczList.cs" />
-    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\Generics\MarekList.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\Generics\MateuszPoradaList.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperations.cs" />
