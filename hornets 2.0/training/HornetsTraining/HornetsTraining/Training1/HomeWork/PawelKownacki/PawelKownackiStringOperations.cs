@@ -28,7 +28,7 @@
 
                 if (needle == substring) return i;
             }
-            
+
             //return candidate.IndexOf(needle);
         }
 
@@ -36,9 +36,9 @@
         {
             int i = 0;
             string replaced = candidate;
-            for (int start = PositionInString(candidate,needle)  ; start < needle.Length; start++)
+            for (int start = PositionInString(candidate, needle); start < needle.Length; start++)
             {
-                
+
                 replaced[start] = needle[i];
                 i++;
 
@@ -50,3 +50,4 @@
 
         }
     }
+}
