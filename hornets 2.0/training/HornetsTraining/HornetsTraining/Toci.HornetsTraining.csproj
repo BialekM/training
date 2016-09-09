@@ -56,6 +56,7 @@
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
+    <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
   </ItemGroup>
