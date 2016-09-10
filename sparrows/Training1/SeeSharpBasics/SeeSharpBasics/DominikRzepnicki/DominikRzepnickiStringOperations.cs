@@ -71,6 +71,7 @@ namespace SeeSharpBasics.DominikRzepnicki
                 else
                 {
                     result += candidate[i]; //ignoruje i dalej wypisuje ten wyraz (ale musi go tez dodawac)
+
                 }
             }
 
