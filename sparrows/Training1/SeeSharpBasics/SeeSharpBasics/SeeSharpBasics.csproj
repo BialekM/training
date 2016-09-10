@@ -42,13 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
     <Compile Include="Edwin\EdwinStringOperations.cs" />
+
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
+
+    <Compile Include="MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
+    <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
+    <Compile Include="Test\TestStringOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
