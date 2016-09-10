@@ -40,17 +40,17 @@
 
         public override int CountOccurences(string candidate, char needle)
         {
-            int ile = 0;
+            int result = 0;
 
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (needle == candidate[i])
                 {
-                    ile++;
+                    result++;
                 }
             }
 
-            return ile;
+            return result;
         }
 
         public override int LetterPositionInString(string candidate, char needle)

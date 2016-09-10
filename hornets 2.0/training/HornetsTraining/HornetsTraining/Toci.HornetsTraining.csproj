@@ -60,6 +60,7 @@
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
+
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
