@@ -45,11 +45,13 @@
     <Compile Include="Training1\Animals\Rotweiler.cs" />
     <Compile Include="Training1\Chess\Figure.cs" />
     <Compile Include="Training1\Chess\Rook.cs" />
+    <Compile Include="Training1\Generics\Factory\DelegateFactoryBase.cs" />
+    <Compile Include="Training1\Generics\Factory\DelegateStringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\Factory\FactoryBase.cs" />
     <Compile Include="Training1\Generics\Factory\StringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\GenericsExample.cs" />
     <Compile Include="Training1\Generics\MyList.cs" />
-    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczList.cs" />
+   <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczList.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
@@ -57,15 +59,57 @@
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\Generics\MarekList.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
+    <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonList.cs" />
+    <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MarekMilosierny\MarekList.cs" />
+    <Compile Include="Training1\HomeWork\MarekMilosierny\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurList.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
+    <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
+    <Compile Include="Training1\HomeWork\IStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
+
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
+    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikMyList.cs" />
+    <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\StringOperations.cs" />
+    <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
+    <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
+    <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszSmierzchalaList.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszSmierzchalaStringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
+    <Compile Include="Training2\Delegates\DelegateExample.cs" />
+    <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
+    <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\Transfer.cs" />
+    <Compile Include="Training2\HomeWork\TransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\TransferResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Training1\HomeWork\LukaszCichon\" />
+    <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
+    <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
+    <Folder Include="Training1\HomeWork\MichalMazur\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
