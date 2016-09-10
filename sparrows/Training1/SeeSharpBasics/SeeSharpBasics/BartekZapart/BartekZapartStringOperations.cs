@@ -127,6 +127,11 @@ namespace SeeSharpBasics.BartekZapart
         {
 
         }
+
+        public void AndrzejIwanski(string test)
+        {
+            
+        }
     }
 
 }
