@@ -8,8 +8,8 @@ namespace HornetsTraining.Training1.Generics.Factory
     {
         public StringOperationsFactory()
         {
-            ListOfInstances.Add("bartek", new BartekZapartStringOperations());
-            ListOfInstances.Add("adrian", new AdrianStringOperations());
+            //ListOfInstances.Add("bartek", new BartekZapartStringOperations());
+            //ListOfInstances.Add("adrian", new AdrianStringOperations());
         }
     }
 }
