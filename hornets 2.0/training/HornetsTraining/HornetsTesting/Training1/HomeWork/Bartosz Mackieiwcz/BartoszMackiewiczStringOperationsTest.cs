@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HornetsTraining.Training1.HomeWork.BartekZapart;
-using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
+//using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.HomeWork.Bartosz_Mackieiwcz
@@ -13,7 +13,7 @@ namespace HornetsTesting.Training1.HomeWork.Bartosz_Mackieiwcz
     [TestClass]
     public class BartoszMackiewiczStringOperationsTest
     {
-        private  BartoszMackiewiczStringOperations Bartosz = new BartoszMackiewiczStringOperations();
+        /*private  BartoszMackiewiczStringOperations Bartosz = new BartoszMackiewiczStringOperations();
 
         [TestMethod]
         public void SubstringTest()
@@ -26,7 +26,7 @@ namespace HornetsTesting.Training1.HomeWork.Bartosz_Mackieiwcz
         {
             Assert.AreEqual(Bartosz.StringReplace("Warszklawoa", "klawo", "wa"),"Warszawa");
         }
-
+        */
     }
 
 }
