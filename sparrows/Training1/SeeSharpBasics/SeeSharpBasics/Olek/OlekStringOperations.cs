@@ -13,10 +13,6 @@ namespace SeeSharpBasics.Olek
             //Substring("beatka", 1, 3); eat
             //Substring("bartek", 2, 4); rtek
             //Substring("aleksander", 5, 2);  an
-            //for (int i = start; i < ((candidate.Length - length)+1); i++)
-            //for (int i = start; i < (candidate.Length - (candidate.Length-length))+1; i++)
-            //for (int i = start; i < length+1; i++)
-
             for (int i = start; i < start + length; i++)
             {
                 result = candidate[i].ToString();
