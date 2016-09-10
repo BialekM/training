@@ -73,5 +73,10 @@ namespace SeeSharpBasics.BartekZapart
         public void Huski(string test) {
             //popsulem formatowanie
         }
+
+        public void PawelKownacki(string test)
+        {
+            
+        }
     }
 }
