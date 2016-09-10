@@ -16,7 +16,6 @@ namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
 
         public override string Substring(string candidate, int start, int length)
         {
-            //return (candidate.Substring(start, length));
 
             if ((start + length) <= candidate.Length)
             {
@@ -36,7 +35,6 @@ namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
 
         public override int PositionInString(string candidate, string needle)
         {
-            //return (candidate.IndexOf(needle));
 
             string checkSubstring = "";
 

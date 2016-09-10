@@ -17,7 +17,7 @@ namespace HornetsTraining.Training1.HomeWork.RafalKawalerski
                 return "Za duza wartosc length";
             for (int i = start; i < start + length; i++)
                 text += candidate[i];
-            
+
             return text;
         }
 
@@ -40,7 +40,7 @@ namespace HornetsTraining.Training1.HomeWork.RafalKawalerski
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            var endOfFirstPart = PositionInString(candidate,needle);
+            var endOfFirstPart = PositionInString(candidate, needle);
             var firstPart = Substring(candidate, 0, endOfFirstPart);
             var textReplace = firstPart + replaceWith;
             var endOfEnd = endOfFirstPart + needle.Length;

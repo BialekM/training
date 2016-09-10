@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeeSharpBasics.Edwin
+﻿namespace SeeSharpBasics.PatrykDrapik
 {
-    class EdwinStringOperations : StringOperations
+    public class PatrykDrapikStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
             string result = "";
 
-            for (int i = 0; i < length; i++)
+            for (int i = start; i < length + start && i < candidate.Length; i++)
             {
-
-                result += candidate[start];
-                start++;
+                result += candidate[i];
             }
 
             return result;
@@ -24,54 +16,54 @@ namespace SeeSharpBasics.Edwin
 
         public override string GetName()
         {
-            return "Edwin";
+            return "Patryk Drapik";
         }
 
         public override string GlueBeginingEnd(string candidate)
         {
             string result = "";
-            int j = candidate.Length - 1;
-            for (int i = 0; i < candidate.Length / 2; i++)
+
+            for (int i = 0, y = candidate.Length - 1; i <= y; i++, y--)
             {
-                result = result + candidate[i] + candidate[j];
-                j--;
+                if (candidate[i] == candidate[y])
+                {
+                    result += candidate[i];
+                }
+                else
+                {
+                    result = result + candidate[i] + candidate[y];
+                }
             }
-            if (candidate.Length % 2 == 0)
-            {
-                return result;
-            }
-            else
-            {
-                result = result + candidate[(candidate.Length / 2)];
-                return result;
-            }
+
+            return result;
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
             int result = 0;
+
             for (int i = 0; i < candidate.Length; i++)
             {
-                if (candidate[i] == needle)
+                if (needle == candidate[i])
                 {
                     result++;
                 }
             }
+
             return result;
         }
 
         public override int LetterPositionInString(string candidate, char needle)
         {
-            int result = -1;
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
                 {
-                    result = i;
-                    break;
+                    return i;
                 }
             }
-            return result;
+
+            return -1;
         }
 
         public override string LetterReplace(string candidate, char needle, char replace)
@@ -99,12 +91,18 @@ namespace SeeSharpBasics.Edwin
 
             for (int i = 0; i < candidate.Length; i++)
             {
-
-                result += candidate[i];
-
+                if (Substring(candidate, i, needle.Length) == needle)
+                {
+                    result += replace;
+                    i += needle.Length - 1;
+                }
+                else
+                {
+                    result += candidate[i];
+                }
             }
 
-            return result + "   A tu mam problem";
+            return result;
         }
     }
 }

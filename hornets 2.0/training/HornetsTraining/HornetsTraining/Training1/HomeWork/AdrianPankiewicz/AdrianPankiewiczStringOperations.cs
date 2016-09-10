@@ -19,16 +19,26 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
             string substring = "";
 
             for (int i = start; i < start + length; i++)
+            {
                 substring += candidate[i];
+            }
 
             return substring;
         }
 
         public override int PositionInString(string candidate, string needle)
         {
+           // for (int i = 0; i < candidate.Length; i++)
+           //     if (SubstringStartsOnIndex(candidate, needle, i))
+//                    return i;
+
             for (int i = 0; i < candidate.Length; i++)
-                if (SubstringStartsOnIndex(candidate, needle, i))
+            {
+                if (needle == Substring(candidate, i, needle.Length))
+                {
                     return i;
+                }
+            }
 
             return -1;
         }
@@ -38,7 +48,7 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
         {
             string glueBeginningEnd = "";
             int leftIndex = 0;
-            int rightIndex = candidate.Length -1;
+            int rightIndex = candidate.Length - 1;
 
             while (leftIndex < rightIndex)
             {
@@ -113,10 +123,11 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         private bool SubstringStartsOnIndex(string candidate, string needle, int index)
         {
-            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length;
-                candidateIndex++, needleIndex++)
+            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length; candidateIndex++, needleIndex++)
+            {
                 if (!(EqualLetterInRange(candidate, needle, candidateIndex, needleIndex)))
                     return false;
+            }
 
             return true;
         }
@@ -150,8 +161,8 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         private bool isValueBetween(int value, int firstBound, int secondBound)
         {
-            if(firstBound > secondBound)
-                GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
+            //if (firstBound > secondBound)
+            //    GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
 
             return value >= firstBound && value <= secondBound;
         }
