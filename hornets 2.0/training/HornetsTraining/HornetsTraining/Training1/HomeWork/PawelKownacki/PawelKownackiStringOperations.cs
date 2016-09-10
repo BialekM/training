@@ -28,8 +28,9 @@
 
                 if (needle == substring) return i;
             }
-
+            
             //return candidate.IndexOf(needle);
+            return 0;
         }
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
