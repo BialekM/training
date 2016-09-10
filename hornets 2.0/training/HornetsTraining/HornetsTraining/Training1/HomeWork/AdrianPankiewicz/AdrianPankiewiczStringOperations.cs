@@ -161,8 +161,8 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         private bool isValueBetween(int value, int firstBound, int secondBound)
         {
-            if (firstBound > secondBound)
-                GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
+            //if (firstBound > secondBound)
+            //    GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
 
             return value >= firstBound && value <= secondBound;
         }
