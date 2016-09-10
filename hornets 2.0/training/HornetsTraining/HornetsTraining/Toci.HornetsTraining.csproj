@@ -49,18 +49,22 @@
     <Compile Include="Training1\Generics\Factory\StringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\GenericsExample.cs" />
     <Compile Include="Training1\Generics\MyList.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\GeneticMetodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
+    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikMyList.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
-    <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
+    <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
   </ItemGroup>
