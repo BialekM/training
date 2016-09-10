@@ -16,6 +16,7 @@ namespace SeeSharpBasics.MarcinGala
                 }
             }
             //MessageBox.Show(result);
+
             return result;
         }
 
