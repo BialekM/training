@@ -59,13 +59,7 @@
     <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
-<<<<<<< HEAD
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
-    <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\Generics\MarekList.cs" />
-    <Compile Include="Training1\HomeWork\MarekMilosierny\StringOperation\MarekMilosiernyStringOperation.cs" />
-=======
->>>>>>> 542c3131bac56e0c35c0cf06e5082dbd771b2642
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
