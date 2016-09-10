@@ -21,10 +21,16 @@ namespace HornetsTraining.Training1.HomeWork.Haski {
         /// <param name="candidate"></param>
         /// <param name="needle"></param>
         /// <returns></returns>
-        public override int PositionInString(string candidate, string needle) {
-            for (int i = 0, correctCounter = 0; i < candidate.Length; i++) {
-                if (candidate[i] != needle[correctCounter]) correctCounter = 0;
-                else {
+        public override int PositionInString(string candidate, string needle) 
+        {
+            for (int i = 0, correctCounter = 0; i < candidate.Length; i++) 
+            {
+                if (candidate[i] != needle[correctCounter])
+                {
+                    correctCounter = 0;
+                }
+                else
+                {
                     correctCounter++;
                     if (correctCounter == needle.Length) return i - needle.Length + 1;
                 }
