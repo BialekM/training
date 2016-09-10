@@ -9,8 +9,7 @@ namespace Toci.SeeSharpBasics.Test.TablesOperations
         [TestMethod]
         public void GetElementsFromTableTest()
         {
-            TableOperations operations = new TableOperations();
-
+            TableOperations operations = new BartekTableOperations();
             var result = operations.GetElementsFromTable(new[] {1, 4, 5, 7, 9, 13, 15, 16, 2, 8, 3}, 7);
 
             Assert.AreEqual(result[0], 9);

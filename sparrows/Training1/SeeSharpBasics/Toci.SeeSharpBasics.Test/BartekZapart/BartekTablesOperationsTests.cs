@@ -10,7 +10,7 @@ namespace Toci.SeeSharpBasics.Test.BartekZapart
         [TestMethod]
         public override void TestReversing()
         {
-            var tableOperations = new TableOperations();
+            var tableOperations = new BartekTableOperations();
 
             var parameter = new[] {1, 2, 3, 4, 5};
             var result = tableOperations.ReverseTable(parameter); // 5 , 4, 3 ,2 ,1
