@@ -50,9 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BartekZapart\BartekTablesOperationsTests.cs" />
     <Compile Include="Common\AssemblyLoader.cs" />
+    <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
+    <Compile Include="TablesOperations\TablesOperationsTests.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

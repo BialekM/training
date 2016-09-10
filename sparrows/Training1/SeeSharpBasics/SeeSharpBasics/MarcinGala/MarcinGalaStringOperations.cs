@@ -16,6 +16,7 @@ namespace SeeSharpBasics.MarcinGala
                 }
             }
             //MessageBox.Show(result);
+            //Console.WriteLine(result);
 
             return result;
         }
@@ -27,7 +28,7 @@ namespace SeeSharpBasics.MarcinGala
             return Name;
         }
 
-        public override string GlueBeginingEnd(string candidate)
+        public override string GlueBeginingEnd(string candidate) // bartek bkaert
         {
             char[] charCandidate = candidate.ToCharArray();
             Array.Reverse(charCandidate);

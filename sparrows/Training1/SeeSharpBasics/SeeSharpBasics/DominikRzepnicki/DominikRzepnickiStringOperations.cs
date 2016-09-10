@@ -35,7 +35,7 @@ namespace SeeSharpBasics.DominikRzepnicki
 
         public override string GlueBeginingEnd(string candidate)
         {
-            for (int i = 0, j = candidate.Length - 1; i < j; i++, j--)
+            for (int i = 0, j = candidate.Length - 1; i < j; i++, j--) //beata => baeta
             {
                 result += candidate[i];
                 result += candidate[j];
@@ -54,7 +54,7 @@ namespace SeeSharpBasics.DominikRzepnicki
                     return i;
             }
 
-            return 1;
+            return -1;
         }
 
         public override string LetterReplace(string candidate, char needle, char replace) //beatka, e, s => bsatka; beatka, a, b => bebtkb (podmienia a na b)
@@ -62,7 +62,7 @@ namespace SeeSharpBasics.DominikRzepnicki
             Console.WriteLine(candidate);
             result = "";
 
-            for (int i = 0; i < candidate.Length; i++)
+            for (int i = 0; i < candidate.Length; i++) // b e s, e e s
             {
                 if (candidate[i] == needle)  // needle = a, zadeklarowano to w programie; == jest to sprawdzenie czy cos sie rowna
                 {
