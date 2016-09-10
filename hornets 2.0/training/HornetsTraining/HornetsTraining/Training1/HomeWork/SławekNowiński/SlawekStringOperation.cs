@@ -11,7 +11,9 @@
         {
             string solution = "";
             for (int i = start; i < lenght + start; i++)
+            {
                 solution += candidate[i];
+            }
             return solution;
         }
 
