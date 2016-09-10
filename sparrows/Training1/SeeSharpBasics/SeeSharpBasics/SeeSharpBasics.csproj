@@ -44,9 +44,7 @@
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
     <Compile Include="Edwin\EdwinStringOperations.cs" />
-
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
-
     <Compile Include="MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
@@ -56,6 +54,7 @@
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
