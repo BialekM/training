@@ -10,8 +10,10 @@
         public override string Substring(string candidate, int start, int lenght)
         {
             string solution = "";
-            for (int i = start; i <= lenght; i++)
+            for (int i = start; i < lenght + start; i++)
+            {
                 solution += candidate[i];
+            }
             return solution;
         }
 
@@ -20,9 +22,8 @@
             int solution = 0;
             while (solution <= candidate.Length)
             {
-                if (candidate[solution] == needle[solution])
-                    if (Substring(candidate, solution, needle.Length) == needle)
-                        return solution;
+                if (Substring(candidate, solution, needle.Length) == needle)
+                    return solution;
                 solution++;
             }
             return solution;
@@ -35,7 +36,7 @@
             for (int i = 0; i <= candidate.Length + replaceWith.Length - needle.Length; i++)
             {
                 if (Substring(candidate, i, needle.Length) != needle)
-                    solution += candidate;
+                    solution += candidate[i];
                 else
                 {
                     solution += replaceWith;
