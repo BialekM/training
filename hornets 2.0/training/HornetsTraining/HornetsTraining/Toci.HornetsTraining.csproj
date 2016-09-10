@@ -49,6 +49,8 @@
     <Compile Include="Training1\Generics\Factory\StringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\GenericsExample.cs" />
     <Compile Include="Training1\Generics\MyList.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\GeneticMetodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
