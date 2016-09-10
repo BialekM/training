@@ -1,6 +1,6 @@
 ﻿namespace SeeSharpBasics.BartekZapart
 {
-    public class TableOperations
+    public abstract class TableOperations
     {
         public int[] GetElementsFromTable(int[] table, int greaterThan) // table = 1,2,3,4,5,6,7,8,9 greatherThan = 5 => 6,7,8,9
         {
@@ -30,5 +30,7 @@
 
             return reversed;
         }
+
+        public abstract int[] BubbleSort(int[] tableToSort); //posortowac tablice
     }
 }
