@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeeSharpBasics.Edwin
 {
-    class EdwinStringOperations : StringOperations
+    public class EdwinStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
@@ -67,8 +67,7 @@ namespace SeeSharpBasics.Edwin
             {
                 if (candidate[i] == needle)
                 {
-                    result = i;
-                    break;
+                    return i;
                 }
             }
             return result;
@@ -100,7 +99,7 @@ namespace SeeSharpBasics.Edwin
             for (int i = 0; i < candidate.Length; i++)
             {
 
-                result += candidate[i];
+                
 
             }
 

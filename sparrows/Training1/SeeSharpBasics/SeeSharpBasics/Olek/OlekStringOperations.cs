@@ -15,7 +15,7 @@ namespace SeeSharpBasics.Olek
             //Substring("aleksander", 5, 2);  an
             for (int i = start; i < start + length; i++)
             {
-                result = candidate[i].ToString();
+                result += candidate[i].ToString();
                 Console.Write(result);
             }
             return result;
