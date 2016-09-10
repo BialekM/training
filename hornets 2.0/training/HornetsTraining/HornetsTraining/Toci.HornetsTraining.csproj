@@ -60,7 +60,6 @@
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
-
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
@@ -79,6 +78,7 @@
     <Compile Include="Training1\statics\StaticExample.cs" />
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
+    <Compile Include="Training2\HomeWork\BPHTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
