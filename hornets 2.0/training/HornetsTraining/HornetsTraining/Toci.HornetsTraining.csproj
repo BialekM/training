@@ -54,6 +54,7 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
