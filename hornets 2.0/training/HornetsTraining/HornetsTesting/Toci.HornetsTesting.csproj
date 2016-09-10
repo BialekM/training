@@ -61,7 +61,9 @@
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Training1\Homework\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HornetsTraining\Toci.HornetsTraining.csproj">
       <Project>{78236dbe-77fa-44af-a976-26ade3f8066b}</Project>

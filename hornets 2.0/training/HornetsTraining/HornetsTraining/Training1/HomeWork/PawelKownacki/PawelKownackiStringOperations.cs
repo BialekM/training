@@ -28,8 +28,9 @@
 
                 if (needle == substring) return i;
             }
-
+            
             //return candidate.IndexOf(needle);
+            return 0;
         }
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
@@ -39,7 +40,7 @@
             for (int start = PositionInString(candidate, needle); start < needle.Length; start++)
             {
 
-                replaced[start] = needle[i];
+                //replaced[start] = needle[i];
                 i++;
 
 
