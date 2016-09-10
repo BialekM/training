@@ -5,7 +5,7 @@ namespace SeeSharpBasics.Olek
     public class OlekStringOperations : StringOperations
 
     {
-        public static string Substring(string candidate, int start, int length)
+        public override string Substring(string candidate, int start, int length)
         {
             //throw new System.NotImplementedException();
             string result = "";
@@ -23,8 +23,6 @@ namespace SeeSharpBasics.Olek
                 Console.Write(result);
             }
             return result;
-        }
-
         }
 
         public override string GetName()

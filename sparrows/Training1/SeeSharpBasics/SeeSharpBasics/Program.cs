@@ -57,7 +57,7 @@ namespace SeeSharpBasics
                 Console.WriteLine("dziala");
             }
 
-            string result = strOpOlek.Substring("bartek", 2, 4);
+            result = strOpOlek.Substring("bartek", 2, 4);
             if (result == "rtek")
             {
                 Console.WriteLine("dziala");
@@ -65,7 +65,7 @@ namespace SeeSharpBasics
             //*************************************
 
 
-            string result = strOp.Substring("beatka", 1, 3);
+            result = strOp.Substring("beatka", 1, 3);
             if (result == "eat")
             {
                 Console.WriteLine("dziala");
