@@ -66,6 +66,7 @@
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
@@ -86,7 +87,6 @@
     <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
     <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
     <Folder Include="Training1\HomeWork\MichalMazur\" />
-    <Folder Include="Training1\HomeWork\RafalKawalerski\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
