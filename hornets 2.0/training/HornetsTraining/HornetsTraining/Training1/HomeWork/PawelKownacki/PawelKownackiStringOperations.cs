@@ -40,7 +40,7 @@
             for (int start = PositionInString(candidate, needle); start < needle.Length; start++)
             {
 
-                replaced[start] = needle[i];
+                //replaced[start] = needle[i];
                 i++;
 
 
