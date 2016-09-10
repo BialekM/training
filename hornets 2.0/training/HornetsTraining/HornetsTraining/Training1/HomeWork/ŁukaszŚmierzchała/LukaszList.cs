@@ -2,7 +2,7 @@
 
 namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
 {
-    public class LukaszMocarskiList<TListItem> : MyList<TListItem>
+    public class LukaszSmiechalaiList<TListItem> : MyList<TListItem>
     {
         public TListItem this[int index]
         {
