@@ -54,6 +54,8 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\Bartosz Mackiewicz\BartoszMackiewiczList.cs" />
+    <Compile Include="Training1\HomeWork\Bartosz Mackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
@@ -72,9 +74,7 @@
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Training1\HomeWork\Bartosz Mackiewicz\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
