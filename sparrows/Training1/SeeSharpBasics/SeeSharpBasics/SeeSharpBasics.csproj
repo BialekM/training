@@ -50,10 +50,7 @@
     <Compile Include="MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
->>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
