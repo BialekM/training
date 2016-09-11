@@ -1,28 +1,33 @@
-﻿namespace SeeSharpBasics.Edwin
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SeeSharpBasics.Edwin
 {
     public class EdwinStringOperations : StringOperations
     {
-        public override string Substring(string candidate, int start, int length) // wycina tekst od okreslonego miejsca
+        public override string Substring(string candidate, int start, int length)
         {
             string result = "";
-       
+
             for (int i = 0; i < length; i++)
             {
 
-                    result += candidate[start];
-                    start++;
+                result += candidate[start];
+                start++;
             }
 
             return result;
-        
         }
 
-        public override string GetName() // zwraca imię
+        public override string GetName()
         {
             return "Edwin";
         }
 
-        public override string GlueBeginingEnd(string candidate) // skleja skrajne litery od konca do poczatku
+        public override string GlueBeginingEnd(string candidate)
         {
             string result = "";
             int j = candidate.Length - 1;
@@ -42,7 +47,7 @@
             }
         }
 
-        public override int CountOccurences(string candidate, char needle) // zlicza wystapienia danej litery
+        public override int CountOccurences(string candidate, char needle)
         {
             int result = 0;
             for (int i = 0; i < candidate.Length; i++)
@@ -55,21 +60,20 @@
             return result;
         }
 
-        public override int LetterPositionInString(string candidate, char needle) // zwraca 1 pozycje wystąpienia danej litery
+        public override int LetterPositionInString(string candidate, char needle)
         {
             int result = -1;
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
                 {
-                    result = i;
-                    break;
+                    return i;
                 }
             }
             return result;
         }
 
-        public override string LetterReplace(string candidate, char needle, char replace) // zamiana litery na wybrana litere
+        public override string LetterReplace(string candidate, char needle, char replace)
         {
             string result = "";
 
@@ -95,7 +99,7 @@
             for (int i = 0; i < candidate.Length; i++)
             {
 
-                result += candidate[i];
+                
 
             }
 

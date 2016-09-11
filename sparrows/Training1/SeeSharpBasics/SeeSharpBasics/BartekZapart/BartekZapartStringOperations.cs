@@ -99,7 +99,7 @@ namespace SeeSharpBasics.BartekZapart
         public void PiotrMlynczak(string test)
         {
 
-        }
+	    }
 
         public void OlekSzycik(string test)
         {
@@ -123,6 +123,15 @@ namespace SeeSharpBasics.BartekZapart
         {
         }
 
+        public void KrzysztofOrzel(string test)
+        {
+
+        }
+
+        public void AndrzejIwanski(string test)
+        {
+            
+        }
     }
 
 }

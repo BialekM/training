@@ -9,20 +9,16 @@ namespace HornetsTesting.Training1.HomeWork.MichalMazur
     {
         MichalMazurList<int> listTest = new MichalMazurList<int>();
             [TestMethod]
-        public void TestAdd()
+        public void TestAddAndRemove()
         {
             for(int i=0 ; i <10 ; i++)
                 listTest.Add(i);
+            listTest.Remove(4);    
+
+
         }
 
-            [TestMethod]
-            public void TestRemove()
-            {
-               
-                    listTest.Remove(5);
-                    listTest.Remove(8);
-
-            }
+         
          
     }
 }

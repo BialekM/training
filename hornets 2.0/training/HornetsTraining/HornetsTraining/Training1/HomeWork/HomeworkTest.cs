@@ -9,8 +9,8 @@ namespace HornetsTraining.Training1.HomeWork
         {
             IStringOperations[] strOp = new StringOperations[40];
 
-            strOp[0] = new AdrianStringOperations();
-            strOp[1] = new BartekZapartStringOperations();
+           // strOp[0] = new AdrianStringOperations();
+            //strOp[1] = new BartekZapartStringOperations();
 
             foreach (var strOperation in strOp)
             {

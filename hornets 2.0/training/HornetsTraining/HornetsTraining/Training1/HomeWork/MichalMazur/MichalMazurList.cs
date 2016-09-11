@@ -40,9 +40,13 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
 
         public void Remove(TListItem item)
         {
-            for (int count = 0; count < listOfItems.Length; count++)
+            int count = 0;
+            bool foundItem = false;
+
+            foreach (var i in listOfItems)
             {
-                if (listOfItems[count].Equals(item))
+
+                if (i.Equals(item))
                 {
                     listWithRemovedItem = new TListItem[listOfItems.Length - 1];
 
@@ -54,12 +58,18 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
                     {
                         listWithRemovedItem[count2] = listOfItems[count2 + 1];
                     }
+                    foundItem = true;
+                    break;
 
                 }
-                
-                
-                 
+
+                count++;
+
             }
+            if (foundItem == true)
+                listOfItems = listWithRemovedItem;
+            else
+                throw new Exception("item " + item.ToString() + " not found on list");
         }
 
     }
