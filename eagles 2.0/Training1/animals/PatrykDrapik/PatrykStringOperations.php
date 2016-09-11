@@ -93,6 +93,7 @@
 	
 	$test = new PatrykStringOperations();
 	
+	
 	echo $test->Strlen("beatka")." - ".strlen("beatka")."\n";
 	echo $test->Substring("beatka", 1, 4)."\n";
 	echo $test->StrPos("beatka", "a")."\n";
