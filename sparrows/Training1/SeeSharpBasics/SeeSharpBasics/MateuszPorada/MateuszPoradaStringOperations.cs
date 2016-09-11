@@ -1,24 +1,10 @@
-﻿using System;
-
-namespace SeeSharpBasics.Olek
+﻿namespace SeeSharpBasics.MateuszPorada
 {
-    public class OlekStringOperations : StringOperations
-
+    public class MateuszPoradaStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
-            //throw new System.NotImplementedException();
-            string result = "";
-
-            //Substring("beatka", 1, 3); eat
-            //Substring("bartek", 2, 4); rtek
-            //Substring("aleksander", 5, 2);  an
-            for (int i = start; i < start + length; i++)
-            {
-                result += candidate[i].ToString();
-                Console.Write(result);
-            }
-            return result;
+            throw new System.NotImplementedException();
         }
 
         public override string GetName()

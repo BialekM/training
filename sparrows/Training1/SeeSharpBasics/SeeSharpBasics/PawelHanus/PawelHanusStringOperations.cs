@@ -1,79 +1,86 @@
-﻿namespace SeeSharpBasics.PatrykDrapik
+﻿using System;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Policy;
+
+namespace SeeSharpBasics.PawelHanus
 {
-    public class PatrykDrapikStringOperations : StringOperations
+    public class PawelHanusStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
             string result = "";
 
-            for (int i = start; i < length + start && i < candidate.Length; i++)
+            for (int i = start; i < candidate.Length && i < start+length; i++)
             {
                 result += candidate[i];
             }
-
             return result;
         }
 
         public override string GetName()
         {
-            return "Patryk Drapik";
+            return "PawelHanus";
         }
 
         public override string GlueBeginingEnd(string candidate)
         {
-            string result = "";
+            int i = 0;
+            int j = candidate.Length - 1;
+            bool beginning = true;
+            string glued = "";
 
-            for (int i = 0, y = candidate.Length - 1; i <= y; i++, y--)
+            foreach (char c in candidate)
             {
-<<<<<<< HEAD
-                if (candidate[i] == candidate[y])
-=======
-                if (i == y)
->>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
+                if (beginning)
                 {
-                    result += candidate[i];
+                    glued += candidate[i];
+                    i++;
+                    beginning = false;
                 }
                 else
                 {
-                    result = result + candidate[i] + candidate[y];
-                }
+                    glued += candidate[j];
+                    j--;
+                    beginning = true;
+                }               
             }
 
-            return result;
+            return glued;
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
-            int result = 0;
+            int count = 0;
 
-            for (int i = 0; i < candidate.Length; i++)
+            foreach (char c  in candidate)
             {
-                if (needle == candidate[i])
+                if (c == needle)
                 {
-                    result++;
+                    count++;
                 }
             }
 
-            return result;
+            return count;
         }
 
         public override int LetterPositionInString(string candidate, char needle)
         {
+            int position = -1;
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
                 {
-                    return i;
+                    position = i;
+                    break;
                 }
             }
-
-            return -1;
+            return position;
         }
+
 
         public override string LetterReplace(string candidate, char needle, char replace)
         {
             string result = "";
-
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
@@ -84,8 +91,8 @@
                 {
                     result += candidate[i];
                 }
+             
             }
-
             return result;
         }
 
@@ -95,20 +102,18 @@
 
             for (int i = 0; i < candidate.Length; i++)
             {
-<<<<<<< HEAD
-                if (Substring(candidate, i, needle.Length) == needle)
-=======
-                if (Substring(candidate, i, needle.Length) == needle) // beatka ea eat => 
->>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
+                string substring = Substring(candidate, i, needle.Length);
+                if (needle == substring && needle.Length != 0)
                 {
                     result += replace;
-                    i += needle.Length - 1;
+                    i += needle.Length-1;
                 }
                 else
                 {
                     result += candidate[i];
                 }
             }
+
 
             return result;
         }

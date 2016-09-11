@@ -1,14 +1,22 @@
-﻿namespace SeeSharpBasics.PatrykDrapik
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SeeSharpBasics.Edwin
 {
-    public class PatrykDrapikStringOperations : StringOperations
+    public class EdwinStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
             string result = "";
 
-            for (int i = start; i < length + start && i < candidate.Length; i++)
+            for (int i = 0; i < length; i++)
             {
-                result += candidate[i];
+
+                result += candidate[start];
+                start++;
             }
 
             return result;
@@ -16,49 +24,45 @@
 
         public override string GetName()
         {
-            return "Patryk Drapik";
+            return "Edwin";
         }
 
         public override string GlueBeginingEnd(string candidate)
         {
             string result = "";
-
-            for (int i = 0, y = candidate.Length - 1; i <= y; i++, y--)
+            int j = candidate.Length - 1;
+            for (int i = 0; i < candidate.Length / 2; i++)
             {
-<<<<<<< HEAD
-                if (candidate[i] == candidate[y])
-=======
-                if (i == y)
->>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
-                {
-                    result += candidate[i];
-                }
-                else
-                {
-                    result = result + candidate[i] + candidate[y];
-                }
+                result = result + candidate[i] + candidate[j];
+                j--;
             }
-
-            return result;
+            if (candidate.Length % 2 == 0)
+            {
+                return result;
+            }
+            else
+            {
+                result = result + candidate[(candidate.Length / 2)];
+                return result;
+            }
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
             int result = 0;
-
             for (int i = 0; i < candidate.Length; i++)
             {
-                if (needle == candidate[i])
+                if (candidate[i] == needle)
                 {
                     result++;
                 }
             }
-
             return result;
         }
 
         public override int LetterPositionInString(string candidate, char needle)
         {
+            int result = -1;
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
@@ -66,8 +70,7 @@
                     return i;
                 }
             }
-
-            return -1;
+            return result;
         }
 
         public override string LetterReplace(string candidate, char needle, char replace)
@@ -95,22 +98,12 @@
 
             for (int i = 0; i < candidate.Length; i++)
             {
-<<<<<<< HEAD
-                if (Substring(candidate, i, needle.Length) == needle)
-=======
-                if (Substring(candidate, i, needle.Length) == needle) // beatka ea eat => 
->>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
-                {
-                    result += replace;
-                    i += needle.Length - 1;
-                }
-                else
-                {
-                    result += candidate[i];
-                }
+
+                
+
             }
 
-            return result;
+            return result + "   A tu mam problem";
         }
     }
 }

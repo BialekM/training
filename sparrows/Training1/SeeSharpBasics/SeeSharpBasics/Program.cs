@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
+using SeeSharpBasics.Olek;
 
 namespace SeeSharpBasics
 {
@@ -44,7 +45,27 @@ namespace SeeSharpBasics
 
             BartekZapartStringOperations strOp = new BartekZapartStringOperations();
 
-            string result = strOp.Substring("beatka", 1, 3);
+            //*************************************
+            //string strOlek = new strOlek("");
+            //OlekStringOperations strOlek = new OlekStringOperations();
+            //strOlek.Substring();
+            OlekStringOperations strOpOlek = new OlekStringOperations();
+
+            string result = strOpOlek.Substring("beatka", 1, 3);
+            if (result == "eat")
+            {
+                Console.WriteLine("dziala");
+            }
+
+            result = strOpOlek.Substring("bartek", 2, 4);
+            if (result == "rtek")
+            {
+                Console.WriteLine("dziala");
+            }
+            //*************************************
+
+
+            result = strOp.Substring("beatka", 1, 3);
             if (result == "eat")
             {
                 Console.WriteLine("dziala");
