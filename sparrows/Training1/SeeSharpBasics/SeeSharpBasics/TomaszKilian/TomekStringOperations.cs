@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeeSharpBasics.TomaszKilian
 {
-    class TomaszKilianStringOperations
+    public class TomekStringOperations : StringOperations;
     {
     }
 }
