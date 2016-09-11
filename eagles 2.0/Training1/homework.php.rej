@@ -1,0 +1,11 @@
+diff a/eagles 2.0/Training1/homework.php b/eagles 2.0/Training1/homework.php	(rejected hunks)
+@@ -15,4 +15,8 @@
+ 		public function CountAllCharacters($text); //beatka => array('b' => 1, 'e' => 1, 'a' => 2 ....);
+ 		
+ 		public function StrReplace($text, $needle, $replace); // bartek, arte, beatka => bbeatkak
++		
++		public function function_test($param) {
++		    
++		}
+ 	}
+\ No newline at end of file

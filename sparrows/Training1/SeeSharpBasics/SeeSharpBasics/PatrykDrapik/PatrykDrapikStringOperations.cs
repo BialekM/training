@@ -25,7 +25,11 @@
 
             for (int i = 0, y = candidate.Length - 1; i <= y; i++, y--)
             {
+<<<<<<< HEAD
+                if (candidate[i] == candidate[y])
+=======
                 if (i == y)
+>>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
                 {
                     result += candidate[i];
                 }
@@ -91,7 +95,11 @@
 
             for (int i = 0; i < candidate.Length; i++)
             {
+<<<<<<< HEAD
+                if (Substring(candidate, i, needle.Length) == needle)
+=======
                 if (Substring(candidate, i, needle.Length) == needle) // beatka ea eat => 
+>>>>>>> 3f79430f72206b582d6ba61ea53a1cf6db269b11
                 {
                     result += replace;
                     i += needle.Length - 1;
