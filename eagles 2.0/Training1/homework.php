@@ -15,8 +15,4 @@
 		public function CountAllCharacters($text); //beatka => array('b' => 1, 'e' => 1, 'a' => 2 ....);
 		
 		public function StrReplace($text, $needle, $replace); // bartek, arte, beatka => bbeatkak
-		
-		public function function_test($param) {
-		    
-		}
 	}

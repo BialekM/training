@@ -16,13 +16,13 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
             if (start < 0 ||
                 start >= candidate.Length)
             {
-                throw new ArgumentOutOfRangeException(nameof(start));
+               // throw new ArgumentOutOfRangeException(nameof(start));
             }
             
             if (length <= 0 ||
                 length + start > candidate.Length)
             {
-                throw new ArgumentOutOfRangeException(nameof(length));
+                //throw new ArgumentOutOfRangeException(nameof(length));
             }
             
             for (int i = start; i < start + length; i++)
@@ -36,7 +36,7 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
 
         public override int PositionInString(string candidate, string needle)
         {
-            string substring;
+            string substring = "";
 
             for (int i = 0; i < candidate.Length; i++)
             {
@@ -46,7 +46,7 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    throw new ArgumentException("substring was not found", nameof(needle));
+                    //throw new ArgumentException("substring was not found", nameof(needle));
                 }
 
                 if (needle == substring)
@@ -55,7 +55,8 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
                 }
             }
 
-            throw new ArgumentException("substring was not found", nameof(needle));
+            return -1;
+            // throw new ArgumentException("substring was not found", nameof(needle));
         }
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
@@ -73,7 +74,7 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
                 throw;
             }
 
-            result = this.Substring(candidate, 0, startPosition);
+            result = this.Substring(candidate, 0, startPosition);  // blablabla , bla, ble => bleblabla
             result += replaceWith;
             for (int i = startPosition + needle.Length; i < candidate.Length; i++)
             {
