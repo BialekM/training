@@ -1,6 +1,6 @@
 <?php
 	
-	require_once '/../homework.php';
+	require_once '/../../homework.php';
 	
 	class PatrykStringOperations implements IStringOperations
 	{
