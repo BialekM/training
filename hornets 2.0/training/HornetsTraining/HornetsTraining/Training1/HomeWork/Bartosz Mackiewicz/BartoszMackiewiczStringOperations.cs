@@ -13,25 +13,19 @@ namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 
         public override string Substring(string candidate, int start, int length)
         {
+            string result = "";
 
-            char[] charArray;
-            charArray = candidate.ToCharArray(start, length);
-            string result = new string(charArray);
+            for (int i = start; i < start + length; i++)
+            {
+                result += candidate[i];
+            }
             return result;
-
         }
 
         public override int PositionInString(string candidate, string needle)
         {
 
-            if (candidate.Contains(needle))
-            {
-                int index = candidate.IndexOf(needle);
-                return index;
-
-            }
-            else
-                return -1;
+            
 
     }
 

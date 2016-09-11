@@ -1,13 +1,13 @@
-﻿namespace SeeSharpBasics.MateuszPorada
+﻿ namespace SeeSharpBasics.Test
 {
-    public class MateuszPoradaStringOperations : StringOperations
+    public class TestStringOperations : StringOperations
     {
-        public override string GetName()
+        public override string Substring(string candidate, int start, int length)
         {
-            return "Mateusz Porada";
+            throw new System.NotImplementedException();
         }
 
-        public override string Substring(string candidate, int start, int length)
+        public override string GetName()
         {
             throw new System.NotImplementedException();
         }
