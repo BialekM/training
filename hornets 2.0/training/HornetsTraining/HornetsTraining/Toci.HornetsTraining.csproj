@@ -89,6 +89,7 @@
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PlusBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\PlusBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
