@@ -58,7 +58,6 @@
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\GrzegorzKwiesielewicz\KlasaTestowa.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
@@ -73,9 +72,6 @@
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
     <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
-    <Compile Include="Training1\HomeWork\IStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
