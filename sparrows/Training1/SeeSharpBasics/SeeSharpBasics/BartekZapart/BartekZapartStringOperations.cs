@@ -88,6 +88,52 @@ namespace SeeSharpBasics.BartekZapart
             //test
 
         }
+
+
+        public void AdrianKoszyk(string test)
+        {
+
+        }
+
+
+        public void PiotrMlynczak(string test)
+        {
+
+	    }
+
+        public void OlekSzycik(string test)
+        {
+
+        }
+        public void PawelHanus(string test)
+        {
+		
+		}
+
+        public void MarcinDworak(string test)
+		{
+        }
+
+        public void BartoszJasiewicz(string test)
+        {
+            
+        }
+
+        public void PawelMarciniak(string test)
+        {
+        }
+
+        public void KrzysztofOrzel(string test)
+        {
+
+        }
+
+        public void AndrzejIwanski(string test)
+        {
+            
+        }
     }
+
 }
+
 
