@@ -11,17 +11,7 @@ function drk ($x)
     echo '<pre>';print_r($x);echo '</pre>';
 }
 
-/*
-     * Myslę, że ta lekcja ma nas NAPROWADZIć by się nauczyć:
- * 1. ochrony zmiennych (atrybutów) i funkcji klas (metod) //nie implementuję ochrony dostępu do funkcji z klasy bazowej, co chyab wypadałoby zrobic
- * 2. to bieganie po stringach może byc przydatne przy tworzeniu własnych MVC, aby ładować klasy i interfejsy
- * 3. korzystania z funkcjonalności jakie wcześniej napisaliśmy gdzie świetnie to widac na metodzie StrPos
- * 4. optymalizacji interejsów. Usuwając z interfejsu przesyłanie za każdym razem atrybutu (zmiennej) $text, zawsze jest kilka linijek mniej
- * 5. wydaje mi się, ze mimo wszystko osiągnąłem efekt programowania proceduralnego w obiektowości => zastępowanie wartości jednej zmiennej przez modyfikację jej z innej metody.
- *    Wydaje mi się, że tak nie powinno być, bo trzeba wtedy "dobrze" znać budowę klasy. Możliwe, że działa to szybciej, angażuje mniej pamięci, ale teraz pytanie:
- *    spowoduje to wychwycenie większej ilości błędów i w efekcie lepszy kod (komplikując go), czy jest to błędna droga... ..choć metody działają niezaleznie od siebie i podstawową
- *    kwestią wtedy jest prawidłowe zainicjowanie atrybutów przed wykonaniem metody
- */
+
 
 //normalnie przydałoby się pewnie zdefiniować PATH globalną projektu (str startową), PATH zasobów
 require_once '../IStringOperations.interface.php';
@@ -40,7 +30,7 @@ require_once '../IStringOperations.interface.php';
 
             public function GetName()
             {
-                echo $this->myName;
+                return $this->myName;
             }
 
             public function Strlen($text) //$text => 'dupa'
@@ -52,7 +42,7 @@ require_once '../IStringOperations.interface.php';
                //$this->theText = (array)$text; //element 0 => tresc przekazanej zmiennej , typ array,  size 1, lenght 4
                 $this->theText =$text; //pod typ zm array theText => wciska string i zamienia typ na string, i żeby uniknąc wywalenie NOTICE trzeba zamałpic zmienną w pętli
               //  var_dump($this->theText);
-                while (@$this->theText[$i] != '') {
+                while (isset($this->theText[$i]) != '') {
                     $i++;
                 }
                 return $this->stringLenght=$i;
@@ -137,8 +127,7 @@ require_once '../IStringOperations.interface.php';
                 echo 'Substring: ';
                 echo $this->Substring(6,7);
 
-                //metoda nie działa dla stringów krótszych niż 3 znaki i słowach po spacji, co prawda nie było to celem zadania by działało w takich warunkach po słowach,
-                // ale i tak musiałem sprawdzić "co by gdyby"
+                //metoda nie działa dla stringów krótszych niż 3 znaki i słowach po spacji
                 $this->Strpos('atk');
 
             }
