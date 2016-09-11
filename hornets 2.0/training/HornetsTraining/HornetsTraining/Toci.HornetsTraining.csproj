@@ -51,12 +51,13 @@
     <Compile Include="Training1\Generics\Factory\StringOperationsFactory.cs" />
     <Compile Include="Training1\Generics\GenericsExample.cs" />
     <Compile Include="Training1\Generics\MyList.cs" />
-   <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczList.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczList.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\GrzegorzKwiesielewicz\KlasaTestowa.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
@@ -81,7 +82,6 @@
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
-
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
@@ -106,10 +106,8 @@
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Training1\HomeWork\LukaszCichon\" />
     <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
     <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
-    <Folder Include="Training1\HomeWork\MichalMazur\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
