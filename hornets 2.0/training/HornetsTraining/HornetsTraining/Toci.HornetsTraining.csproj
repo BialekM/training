@@ -91,6 +91,8 @@
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
