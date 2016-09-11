@@ -37,7 +37,7 @@ function GetName()
 function Strlen($text)
 	{
 		$i=0;
-		while(@($text[$i]))
+		while(isset($text[$i]))
 		{
 			$i++;
 		}
@@ -50,7 +50,7 @@ function Substring($text,$start,$lenght)
 		$i=0;
 		$j=0;
 	
-		while(@($text[$i]))
+		while(isset($text[$i]))
 		{
 			if(($i>=$start)&&($i<=$start+$lenght))
 			{
