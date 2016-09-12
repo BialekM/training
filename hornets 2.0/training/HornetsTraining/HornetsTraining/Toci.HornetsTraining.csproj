@@ -79,8 +79,6 @@
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
     <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
-    <Compile Include="Training1\HomeWork\IStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
@@ -101,12 +99,9 @@
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
-
     <Compile Include="Training2\HomeWork\PlusBankSQLiteClient.cs" />
-
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
-
     <Compile Include="Training2\HomeWork\PlusBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PlusBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
