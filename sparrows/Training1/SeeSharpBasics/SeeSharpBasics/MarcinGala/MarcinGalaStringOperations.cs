@@ -8,77 +8,64 @@ namespace SeeSharpBasics.MarcinGala
         public override string Substring(string candidate, int start, int length)
         {
             string result = "";
-            for (int i = 0; i < candidate.Length; i++)
+            int j = start - 1;
+
+            for (int i = 0; i < candidate.Length ; i++)
             {
-                if (i >= start && i <= length)
+                if ( i >= j  && i < j + length )
                 {
                     result = result + candidate[i];
                 }
             }
-            //MessageBox.Show(result);
-            //Console.WriteLine(result);
-
             return result;
         }
 
         public override string GetName()
         {
-            string Name = "Marcin Gała";
-            //MessageBox.Show(Name);
-            return Name;
+
+            return "Marcin Gała";
         }
 
-        public override string GlueBeginingEnd(string candidate) // bartek bkaert
+        public override string GlueBeginingEnd(string candidate) 
         {
-            char[] charCandidate = candidate.ToCharArray();
-            Array.Reverse(charCandidate);
-            string output = new string(charCandidate);
-            //MessageBox.Show(output + " Wiem że nie do końca o to chodziło ;-)");
-            return output + "Wiem że nie do końca o to chodziło ;-)";
+            string result = "";
+            int j = candidate.Length - 1;
 
-            // próby
-            /*string result = "";
-                   if (charCandidate.Length % 2 == 0)
-                   {
-                       for (int i = 0; i < charCandidate.Length / 2 ; i++)
-                       {
-                           result = result + charCandidate[i];
-                           for (int j = charCandidate.Length; j > charCandidate.Length / 2; j--)
-                           {
-                               result = result + charCandidate[i];
-                           }
-                       }
-                   }
-                   else
-                   {
-                       
-                   }
-       
-                   return result; */
+            for (int i = 0; i < candidate.Length / 2; i++)
+            {
+                result = result + candidate[i] + candidate[j];
+                j--;
+            }
+            if (candidate.Length % 2 == 0)
+            {
+                return result;
+            }
+            else
+            {
+                result = result + candidate[candidate.Length / 2];
+            }
+
+            return result;
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
-            int howMuch = 0;
+            int result = 0;
+
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
                 {
-                    howMuch += 1;
+                    result += 1;
                 }
             }
-            //MessageBox.Show(howMuch.ToString());
-            return howMuch;
+            return result;
         }
 
         public override int LetterPositionInString(string candidate, char needle)
         {
-            //string str = candidate;
-            //char toFind = needle;
-            //int index = str.IndexOf(toFind);
-            // MessageBox.Show(index.ToString());
-            // return index;
             int pos = 0;
+
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
@@ -87,28 +74,44 @@ namespace SeeSharpBasics.MarcinGala
                     break;
                 }
             }
-            //MessageBox.Show(pos.ToString());
             return pos;
         }
 
         public override string LetterReplace(string candidate, char needle, char replace)
         {
-            char a = needle;
-            char b = replace;
-            string newText = candidate;
-            newText = newText.Replace(a, b);
-            //MessageBox.Show(newText);
-            return newText;
+            string result = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (candidate[i] == needle)
+                {
+                    result += replace;
+                }
+                else
+                {
+                    result += candidate[i];
+                }
+            }
+            return result;
         }
 
         public override string StringReplace(string candidate, string needle, string replace)
         {
-            string a = needle;
-            string b = replace;
-            string newText = candidate;
-            newText = newText.Replace(a, b);
-            //MessageBox.Show(newText);
-            return newText;
+            string result = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (Substring(candidate, i, candidate.Length) == needle)
+                {
+                    result += replace;
+                    i += needle.Length;
+                }
+                else
+                {
+                    result += candidate[i];
+                }
+            }
+            return result;
         }
     }
 }

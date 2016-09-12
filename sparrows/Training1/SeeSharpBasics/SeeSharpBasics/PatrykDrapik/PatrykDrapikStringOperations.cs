@@ -99,7 +99,7 @@
                 if (Substring(candidate, i, needle.Length) == needle)
 
                 if (Substring(candidate, i, needle.Length) == needle) // beatka ea eat => 
-
+                {
                     result += replace;
                     i += needle.Length - 1;
                 }
