@@ -1,9 +1,23 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ICE
- * Date: 2016-09-11
- * Time: 09:30
- */
 
-class PostgreSqlDBhandle extends DbHandle
+	abstract class DbHandle implements IDbHandle
+	{
+		protected $connectionString;
+		
+		protected $user;
+		
+		protected $db;
+		
+		protected $password;
+		
+		protected $host;
+		
+		protected function __construct($user, $db, $password, $host)
+		{
+			//uzupelniamy te pola
+			$this->user = $user;
+			$this->db = $db;
+			$this->password = $password;
+			$this->host = $host;
+		}
+	}

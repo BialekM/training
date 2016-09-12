@@ -53,7 +53,7 @@ class patrycjamecinastringoperations implements IStringOperations
 	public function CountChars($text, $character) // beatka, a => 2; beatka, t => 1
 	{
 		$j=0;
-		
+		//$table = array();
 		
 		for($i=0; $i<strlen($text); $i++)
 		{
