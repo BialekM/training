@@ -134,11 +134,7 @@ namespace SeeSharpBasics.BartekZapart
             
         }
 
-        public void GrzegorzKwiesielewicz(string test)
-        {
-            //test
-            // kolejna linia :)
-        }
+       
     }
 
 }
