@@ -29,27 +29,78 @@ namespace SeeSharpBasics.TomaszKilian
 
        public override string GlueBeginingEnd(string candidate)
        {
-           throw new NotImplementedException();
+           string wynikowa = "";
+           for (int i = 0, j = candidate.Length - 1; i < j; i++ ,j--)
+           {
+               wynikowa += candidate[i];
+               wynikowa += candidate[j];
+
+
+
+           }
+           return wynikowa;
        }
 
        public override int CountOccurences(string candidate, char needle)
        {
-           throw new NotImplementedException();
+           int ileliter = 0;
+           int start = 0;
+           for (int i = 0; i < candidate.Length; i++)
+           {
+               if (candidate[i] == needle)
+               {
+                   start++;
+                   
+               }
+            
+              
+           }
+           return start;
+
+
        }
 
        public override int LetterPositionInString(string candidate, char needle)
        {
-           throw new NotImplementedException();
+           int start = 0;
+           for (int i = 0; i < candidate.Length; i++)
+           {
+               if (candidate[i] == needle)
+               {
+                   start = i;
+               }
+           
+           }
+           return start;
+
+
+
        }
 
        public override string LetterReplace(string candidate, char needle, char replace)
        {
-           throw new NotImplementedException();
+           string pomocniczy = "";
+           
+
+           for (int i = 0; i < candidate.Length; i++)
+           {
+               if (candidate[i] != needle)
+               {
+                   pomocniczy += candidate[i];
+               }
+               else 
+               {
+                   pomocniczy = pomocniczy + replace;
+               }
+           }
+           return pomocniczy;
+
+
        }
 
        public override string StringReplace(string candidate, string needle, string replace)
        {
-           throw new NotImplementedException();
+           
        }
     }
 }
