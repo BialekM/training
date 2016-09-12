@@ -25,7 +25,11 @@
 
             for (int i = 0, y = candidate.Length - 1; i <= y; i++, y--)
             {
+
+                if (candidate[i] == candidate[y])
+
                 if (i == y)
+
                 {
                     result += candidate[i];
                 }
@@ -91,8 +95,11 @@
 
             for (int i = 0; i < candidate.Length; i++)
             {
+
+                if (Substring(candidate, i, needle.Length) == needle)
+
                 if (Substring(candidate, i, needle.Length) == needle) // beatka ea eat => 
-                {
+
                     result += replace;
                     i += needle.Length - 1;
                 }
