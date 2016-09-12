@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SeeSharpBasics.TomaszKilian
 {
-   public class TomaszKilianStringOperations : StringOperations
+    public class TomaszKilianStringOperations : StringOperations
     {
-       public override string Substring(string candidate, int start, int length)
-       {
-           throw new NotImplementedException();
-       }
+        public override string Substring(string candidate, int start, int length)
+        {
+            string wynikowa = "";
+            for (int i = start; i <= length ; i++)
+            {
+                wynikowa += candidate[i];
+            }
+            return wynikowa;
 
-       public override string GetName()
+
+
+        }
+
+    public override string GetName()
        {
            throw new NotImplementedException();
        }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
 using SeeSharpBasics.Olek;
+using SeeSharpBasics.TomaszKilian;
 
 namespace SeeSharpBasics
 {
@@ -49,6 +50,20 @@ namespace SeeSharpBasics
             //string strOlek = new strOlek("");
             //OlekStringOperations strOlek = new OlekStringOperations();
             //strOlek.Substring();
+            TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
+            string wynik = stro.Substring("beatka", 1, 3);
+            if (wynik == "eat")
+            {
+                Console.WriteLine("dziala");
+
+            }
+            else
+            {
+                Console.WriteLine("dupa");
+            }
+
+
+
             OlekStringOperations strOpOlek = new OlekStringOperations();
 
             string result = strOpOlek.Substring("beatka", 1, 3);
@@ -137,6 +152,11 @@ namespace SeeSharpBasics
 
             return -1;
         }
+      
+
+
+
+        
 
         public static string ReverseString(string candidate)
         {
