@@ -91,13 +91,13 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
         {
             string stringReplace = "";
             int substringPosition = PositionInString(candidate, needle);
-            bool subStringExists = substringPosition > 0;
+            bool subStringExists = substringPosition >= 0;
 
             while (subStringExists)
             {
                 stringReplace = ReplaceOneOccurence(candidate, needle, replace, substringPosition);
                 substringPosition = PositionInString(stringReplace, needle);
-                subStringExists = substringPosition > 0;
+                subStringExists = substringPosition >= 0;
             }
 
             return stringReplace;

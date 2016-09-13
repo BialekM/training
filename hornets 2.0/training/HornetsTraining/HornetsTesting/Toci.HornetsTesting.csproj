@@ -84,6 +84,7 @@
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
     <Compile Include="Training2\Delegates\PositionInStringTestLambdas.cs" />
     <Compile Include="Training2\ExtensionMetods\StringExtensionsTest.cs" />
+    <Compile Include="Training2\HomeWork\MBankTransferTest.cs" />
     <Compile Include="Training2\HomeWork\PlusBankTransferTest.cs" />
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
   </ItemGroup>
