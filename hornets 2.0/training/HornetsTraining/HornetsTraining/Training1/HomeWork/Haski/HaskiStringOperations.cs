@@ -8,7 +8,7 @@ namespace HornetsTraining.Training1.HomeWork.Haski {
 
         public override string Substring(string candidate, int start, int length) {
             string resoult = "";
-            for (int i = start; i < length; i++) {
+            for (int i = start; i < candidate.Length; i++) {
                 resoult += candidate[i];
             }
             return resoult;
