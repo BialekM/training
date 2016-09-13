@@ -16,43 +16,21 @@ namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
 
         public override string Substring(string candidate, int start, int length)
         {
-
-            if ((start + length) <= candidate.Length)
+            string substring = "";
+            for (int i = start; i < start + length && i < candidate.Length; i++)
             {
-                string substring = "";
-                for (int i = start; i < (start + length); i++)
-                {
-                    substring += candidate[i];
-                }
-                return (substring);
+                substring += candidate[i];
             }
-            else
-            {
-                return ("Wartości start i length są za duże dla podanego ciągu znaków!");
-            }
-
+            return substring;
         }
 
         public override int PositionInString(string candidate, string needle)
         {
-
-            string checkSubstring = "";
-
-            int j = 0;
-            for (int i = 0; i < (candidate.Length - needle.Length); i++)
+            for (int i = 0; i < candidate.Length; i++)
             {
-                for (j = i; j < (needle.Length + i); j++)
+                if (Substring(candidate, i, needle.Length) == needle)
                 {
-                    checkSubstring += candidate[j];
-                }
-
-                if (checkSubstring == needle)
-                {
-                    return (j - needle.Length);
-                }
-                else
-                {
-                    checkSubstring = "";
+                    return i;
                 }
             }
 
@@ -61,50 +39,21 @@ namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            int position = PositionInString(candidate, needle); ;
-            string checkString = candidate;
-            int l = checkString.Length;
-            string beforeString = getBeforeString(candidate, position);
             string resultString = "";
-
-            while (l > 0)
+            for (int i = 0; i < candidate.Length; i++)
             {
-                position = PositionInString(checkString, needle);
-                Console.WriteLine("1." + checkString);
-                if (position >= 0)
+                if (Substring(candidate, i, needle.Length) == needle)
                 {
-                    checkString = trimCandidate(checkString, needle, position);
-                    Console.WriteLine("2." + checkString);
-                    l = checkString.Length;
-                    resultString += replaceWith + checkString;//TODO: problem
-                    Console.WriteLine("3." + resultString);
+                    resultString += replaceWith;
+                    i += needle.Length - 1;
                 }
                 else
                 {
-                    l = 0;
+                    resultString += candidate[i];
                 }
             }
-            return beforeString + resultString;
+            return resultString;
         }
 
-        private string getBeforeString(string candidate, int position)
-        {
-            string beforeString = "";
-            for (int i = 0; i < position; i++)
-            {
-                beforeString += candidate[i];
-            }
-            return beforeString;
-        }
-
-        private string trimCandidate(string checkString, string needle, int position)
-        {
-            string trimString = "";
-            for (int i = position + needle.Length; i < checkString.Length; i++)
-            {
-                trimString += checkString[i];
-            }
-            return trimString;
-        }
     }
 }
