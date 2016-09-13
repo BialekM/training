@@ -58,6 +58,7 @@
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomekTableOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

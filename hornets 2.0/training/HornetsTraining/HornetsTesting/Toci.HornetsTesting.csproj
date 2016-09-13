@@ -64,6 +64,7 @@
     <Compile Include="Training1\Generics\GenericsTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
+    <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszListTests.cs" />
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
@@ -114,13 +116,6 @@
   </Choose>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
