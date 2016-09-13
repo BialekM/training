@@ -73,6 +73,7 @@
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszListTests.cs" />
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
