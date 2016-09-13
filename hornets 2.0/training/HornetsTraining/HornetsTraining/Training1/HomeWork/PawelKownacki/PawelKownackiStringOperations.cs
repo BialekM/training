@@ -12,7 +12,7 @@
         {
             //return candidate.Substring(start, length);
             string substring = null;
-            for (int i = start; i < start + length; i++)
+            for (int i = start; i < length + start && i < candidate.Length; i++)
             {
                 substring += candidate[i];
             }
@@ -28,23 +28,27 @@
 
                 if (needle == substring) return i;
             }
-            
+
             //return candidate.IndexOf(needle);
             return 0;
         }
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            int i = 0;
-            string replaced = candidate;
-            for (int start = PositionInString(candidate, needle); start < needle.Length; start++)
+            string replaced = null;
+            for (int i = 0; i < candidate.Length; i++)
             {
-
-                //replaced[start] = needle[i];
-                i++;
-
-
+                if (Substring(candidate, i, needle.Length) == needle)
+                {
+                    replaced += replaceWith;
+                    i += needle.Length - 1;
+                }
+                else
+                {
+                    replaced += candidate[i];
+                }
             }
+
             return replaced;
 
             //return candidate.Replace(needle, replaceWith);

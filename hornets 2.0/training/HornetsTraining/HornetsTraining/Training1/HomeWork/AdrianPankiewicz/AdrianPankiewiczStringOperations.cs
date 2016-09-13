@@ -19,7 +19,9 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
             string substring = "";
 
             for (int i = start; i < start + length; i++)
+            {
                 substring += candidate[i];
+            }
 
             return substring;
         }
@@ -113,10 +115,11 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         private bool SubstringStartsOnIndex(string candidate, string needle, int index)
         {
-            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length;
-                candidateIndex++, needleIndex++)
+            for (int candidateIndex = index, needleIndex = 0; candidateIndex < index + needle.Length; candidateIndex++, needleIndex++)
+            {
                 if (!(EqualLetterInRange(candidate, needle, candidateIndex, needleIndex)))
                     return false;
+            }
 
             return true;
         }

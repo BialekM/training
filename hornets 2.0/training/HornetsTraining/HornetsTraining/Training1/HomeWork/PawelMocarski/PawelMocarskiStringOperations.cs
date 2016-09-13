@@ -4,9 +4,10 @@ namespace HornetsTraining.Training1.HomeWork.PawelMocarski
 {
     public class PawelMocarskiStringOperations : StringOperations
     {
-        public override string GetName() => "Pawel Mocarski";
-
-
+        public override string GetName()
+        {
+            return "Pawel Mocarski";
+        }
 
         public override string Substring(string candidate, int start, int length)
         {

@@ -17,8 +17,8 @@ namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
               TListItems[] newlistOfItems = new TListItems[listOfItems.Length+1];
               newlistOfItems = listOfItems;
             }
-            else
-                (base.Add());
+            //else
+            //    (base.Add());
 
         }
     }
