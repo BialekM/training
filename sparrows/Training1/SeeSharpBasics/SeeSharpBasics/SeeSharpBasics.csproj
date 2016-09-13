@@ -47,6 +47,7 @@
     <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
     <Compile Include="Edwin\EdwinStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
+    <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
