@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Cryptography.X509Certificates;
 
 namespace HornetsTraining.Training2.HomeWork.Mbank
 {
@@ -20,7 +18,6 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             {
                 AppendNewRecord(transfer.DestinationBankAccount, transfer.Money);
             }
-
 
             return true;
         }
@@ -43,7 +40,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
 
         private int GetAccountMoneyLine(string bankAccountNumber)
         {
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
+            using (StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
             {
                 string line = file.ReadLine();
                 int currentLineNumber = 1;
@@ -64,10 +61,10 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
 
         private void AppendNewRecord(string bankAccountNumber, double money)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(AccountCollectionInfoFilePath, true))
+            using (StreamWriter file = new StreamWriter(AccountCollectionInfoFilePath, true))
             {
-                file.WriteLine(bankAccountNumber);
-                file.WriteLine(money);
+                file.Write(bankAccountNumber + '\n');
+                file.Write(Convert.ToString(money) + '\n');
                 file.Close();
             }
         }
@@ -87,9 +84,9 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
         private string[] GetFileLines()
         {
             string[] lines;
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
+            using (StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
             {
-                lines = file.ReadToEnd().Split('\n', '\r');
+                lines = file.ReadToEnd().Split('\n');
 
                 file.Close();
             }
@@ -99,13 +96,13 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
         private void ModifySpecifiedLine(int lineNumber, string newValue)
         {
             string[] lines = GetFileLines();
-            lines[lineNumber] = '\n' + newValue + '\n';
+            lines[lineNumber] = newValue;
 
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(AccountCollectionInfoFilePath))
+            using (StreamWriter file = new StreamWriter(AccountCollectionInfoFilePath))
             {
-                foreach (string line in lines)
-                {
-                    file.Write(line);
+                for(int i=0; i < lines.Length -1; i++)
+                { 
+                    file.Write(lines[i] + '\n');
                 }
                 file.Close();
             }

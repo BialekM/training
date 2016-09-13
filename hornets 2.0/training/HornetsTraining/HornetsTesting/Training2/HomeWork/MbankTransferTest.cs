@@ -13,13 +13,9 @@ namespace HornetsTesting.Training2.HomeWork
         {
             Transfer transfer = new Transfer { DestinationBankAccount = "101140436763276523475234", SourceBankAccount = "10144050437285943", Money = 250 };
 
-            //TransferResolver transferResolver = new MBankTranferResolver();
+            TransferResolver transferResolver = new MBankTranferResolver();
 
-            //transferResolver.DoTransfer(transfer);
-
-            TransferHandler transferHandler = new MBankTansferHandler();
-
-            //transferHandler.DoInTransfer(transfer);
+            transferResolver.DoTransfer(transfer);
         }
 
         [TestMethod]
@@ -29,11 +25,11 @@ namespace HornetsTesting.Training2.HomeWork
 
             TransferHandler transferHandler = new MBankTansferHandler();
 
+           /* transferHandler.DoInTransfer(transfer);
             transferHandler.DoInTransfer(transfer);
-            transferHandler.DoInTransfer(transfer);
-            transfer = new Transfer { DestinationBankAccount = "101140436763233456775234", SourceBankAccount = "101440504373245635943", Money = 250 };
-            transferHandler.DoInTransfer(transfer);
-            //transferHandler.DoOutTransfer(transfer);
+            transfer = new Transfer { DestinationBankAccount = "101440504373245635943", SourceBankAccount = "101140436763233456775234", Money = 100 };
+            transferHandler.DoOutTransfer(transfer);
+            transferHandler.DoOutTransfer(transfer);*/
 
 
         }

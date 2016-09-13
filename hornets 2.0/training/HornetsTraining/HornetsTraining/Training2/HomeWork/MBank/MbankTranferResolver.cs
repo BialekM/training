@@ -12,7 +12,6 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             getTransferHandler(transfer.DestinationBankAccount).DoInTransfer(transfer);
         }
 
-
         private TransferHandler getTransferHandler(string bankAccountNumber)
         {
             string bankId = bankAccountNumber.Substring(2, 4);
