@@ -18,7 +18,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             }
             else
             {
-                appendNewRecord(transfer.DestinationBankAccount, transfer.Money);
+                AppendNewRecord(transfer.DestinationBankAccount, transfer.Money);
             }
 
 
@@ -51,7 +51,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
                 while (line != null)
                 {
                     if (line == bankAccountNumber)
-                        return currentLineNumber+1;
+                        return currentLineNumber;
 
                     line = file.ReadLine();
                     currentLineNumber++;
@@ -62,7 +62,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             return -1;
         }
 
-        private void appendNewRecord(string bankAccountNumber, double money)
+        private void AppendNewRecord(string bankAccountNumber, double money)
         {
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(AccountCollectionInfoFilePath, true))
             {
@@ -74,34 +74,43 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
 
         private void IncrementMoneyAmmount(int lineNumber, double value)
         {
-            double previousMoneyAmmount = Convert.ToDouble(getSpecifiedLine(lineNumber));
-            modifySpecifiedLine(lineNumber, Convert.ToString(previousMoneyAmmount + value));
+            string moneyLine = GetSpecifiedLine(lineNumber);
+            double previousMoneyAmmount = Convert.ToDouble(moneyLine);
+            ModifySpecifiedLine(lineNumber, Convert.ToString(previousMoneyAmmount + value));
         }
 
-        private string getSpecifiedLine(int lineNumber)
+        private string GetSpecifiedLine(int lineNumber)
         {
-            string ret;
+            return GetFileLines()[lineNumber];
+        }
+
+        private string[] GetFileLines()
+        {
+            string[] lines;
             using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
             {
-                for (int i = 0; i < lineNumber; i++)
-                    file.ReadLine();
+                lines = file.ReadToEnd().Split('\n', '\r');
 
-                 ret = file.ReadLine();
                 file.Close();
             }
-            return ret;
+            return lines;
         }
 
-        private void modifySpecifiedLine(int lineNumber, string newValue)
+        private void ModifySpecifiedLine(int lineNumber, string newValue)
         {
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
-            {
-                for (int i = 0; i < lineNumber; i++)
-                    file.ReadLine();
+            string[] lines = GetFileLines();
+            lines[lineNumber] = '\n' + newValue + '\n';
 
-                //delete line and add newValue
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(AccountCollectionInfoFilePath))
+            {
+                foreach (string line in lines)
+                {
+                    file.Write(line);
+                }
                 file.Close();
             }
         }
+
+
     }
 }
