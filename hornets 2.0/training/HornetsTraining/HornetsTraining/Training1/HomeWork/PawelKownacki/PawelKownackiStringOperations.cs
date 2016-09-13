@@ -12,7 +12,7 @@
         {
             //return candidate.Substring(start, length);
             string substring = null;
-            for (int i = start; i < start + length; i++)
+            for (int i = start; i < length + start && i < candidate.Length; i++)
             {
                 substring += candidate[i];
             }
@@ -28,7 +28,7 @@
 
                 if (needle == substring) return i;
             }
-            
+
             //return candidate.IndexOf(needle);
             return 0;
         }

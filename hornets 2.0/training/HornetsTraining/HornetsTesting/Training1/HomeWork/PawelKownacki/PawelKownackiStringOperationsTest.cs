@@ -23,6 +23,7 @@ namespace HornetsTesting.Training1.Homework.PawelKownacki
 
                 TestSubstring(instance);
                 TestPositionInString(instance);
+                //TestStringReplace(instance);
             }
         }
 
@@ -80,6 +81,30 @@ namespace HornetsTesting.Training1.Homework.PawelKownacki
 
             }
         }
+
+        /*protected virtual void TestStringReplace(StringOperations instance)
+        {
+            List<StringReplaceTest> listOfCandidates = new List<StringReplaceTest>
+            {
+                new StringReplaceTest(){Candidate = "wujek" , Needle = "wuj",ReplaceWith = "ko",Expected = "kotek"}
+            };
+
+            foreach (var candidate in listOfCandidates)
+            {
+                var stringreplacetest =
+                    instance.StringReplace(candidate.Candidate, candidate.Needle, candidate.ReplaceWith) ==
+                    candidate.Expected;
+
+                if(stringreplacetest)
+                {
+                    Debug.WriteLine(string.Format("StringReplace dla {0} dziala dobrze",candidate.Candidate));
+                }
+                else
+                {
+                    Debug.WriteLine(string.Format("StringReplace dla {0} dziala zle", candidate.Candidate));
+                }
+            }
+        }*/
     }
 
     class SubstringTest
@@ -100,5 +125,16 @@ namespace HornetsTesting.Training1.Homework.PawelKownacki
         public string Needle { get; set; }
 
         public int Expected { get; set; }
+    }
+
+    class StringReplaceTest
+    {
+        public string Candidate { get; set; }
+
+        public string Needle { get; set; }
+
+        public string ReplaceWith { get; set; }
+
+        public string Expected { get; set; }
     }
 }
