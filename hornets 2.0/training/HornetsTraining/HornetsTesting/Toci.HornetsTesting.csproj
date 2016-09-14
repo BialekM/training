@@ -82,7 +82,6 @@
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\Bartosz Mackieiwcz\BartoszMackiewiczStringOperationsTest.cs" />
-    <Compile Include="Training1\Homework\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
     <Compile Include="Training2\Delegates\PositionInStringTestLambdas.cs" />

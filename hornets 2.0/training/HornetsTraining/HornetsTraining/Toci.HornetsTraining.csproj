@@ -86,13 +86,10 @@
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
-    <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikMyList.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
