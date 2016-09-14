@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HornetsTraining.Training1.HomeWork.LukaszPopiolek;
-
+﻿using HornetsTraining.Training1.HomeWork.LukaszPopiolek;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.HomeWork.LukaszPopiolek

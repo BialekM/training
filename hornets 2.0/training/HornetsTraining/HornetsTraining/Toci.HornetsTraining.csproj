@@ -11,6 +11,8 @@
     <AssemblyName>HornetsTraining</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +34,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,9 +64,9 @@
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\GrzegorzKwiesielewicz\KlasaTestowa.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
-    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonList.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekList.cs" />
@@ -69,9 +75,11 @@
     <Compile Include="Training1\HomeWork\MarekMilosierny\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurList.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiMyList.cs" />
     <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
     <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\Generics\MateuszPoradaList.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperations.cs" />
@@ -96,8 +104,13 @@
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
-    <Compile Include="Training2\HomeWork\PlusBankTransferHandler.cs" />
-    <Compile Include="Training2\HomeWork\PlusBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\MBank\MBankTansferHandler.cs" />
+    <Compile Include="Training2\HomeWork\MBank\MBankTranferResolver.cs" />
+    <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
@@ -106,7 +119,9 @@
     <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
     <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

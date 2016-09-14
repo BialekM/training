@@ -12,11 +12,11 @@ namespace SeeSharpBasics.Edwin
         {
             string result = "";
 
-            for (int i = 0; i < length; i++)
+            for (int i = start; i < length + start && i < candidate.Length; i++)
             {
 
-                result += candidate[start];
-                start++;
+                result += candidate[i];
+
             }
 
             return result;
@@ -98,12 +98,20 @@ namespace SeeSharpBasics.Edwin
 
             for (int i = 0; i < candidate.Length; i++)
             {
+                if (Substring(candidate, i, needle.Length) == needle)
+                {
+                    result += replace;
+                    i = i + needle.Length - 1;
+                }
+                else
+                {
+                    result += candidate[i];
+                }
 
-                
 
             }
 
-            return result + "   A tu mam problem";
+            return result;
         }
     }
 }

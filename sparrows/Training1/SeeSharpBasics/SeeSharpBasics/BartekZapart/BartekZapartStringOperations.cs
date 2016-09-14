@@ -133,6 +133,12 @@ namespace SeeSharpBasics.BartekZapart
         {
             
         }
+
+        public void ArnoldNowak(string test)
+        {
+            //komentarz
+        }
+       
     }
 
 }
