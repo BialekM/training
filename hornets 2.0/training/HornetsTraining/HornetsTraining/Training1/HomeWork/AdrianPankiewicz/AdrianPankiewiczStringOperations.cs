@@ -28,17 +28,9 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         public override int PositionInString(string candidate, string needle)
         {
-           // for (int i = 0; i < candidate.Length; i++)
-           //     if (SubstringStartsOnIndex(candidate, needle, i))
-//                    return i;
-
             for (int i = 0; i < candidate.Length; i++)
-            {
-                if (needle == Substring(candidate, i, needle.Length))
-                {
+                if (SubstringStartsOnIndex(candidate, needle, i))
                     return i;
-                }
-            }
 
             return -1;
         }
@@ -99,13 +91,13 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
         {
             string stringReplace = "";
             int substringPosition = PositionInString(candidate, needle);
-            bool subStringExists = substringPosition > 0;
+            bool subStringExists = substringPosition >= 0;
 
             while (subStringExists)
             {
                 stringReplace = ReplaceOneOccurence(candidate, needle, replace, substringPosition);
                 substringPosition = PositionInString(stringReplace, needle);
-                subStringExists = substringPosition > 0;
+                subStringExists = substringPosition >= 0;
             }
 
             return stringReplace;
@@ -161,8 +153,8 @@ namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 
         private bool isValueBetween(int value, int firstBound, int secondBound)
         {
-            //if (firstBound > secondBound)
-            //    GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
+            if (firstBound > secondBound)
+                GenericMethodsCollection<int>.Swap(ref firstBound, ref secondBound);
 
             return value >= firstBound && value <= secondBound;
         }
