@@ -1,31 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HornetsTraining.Training1.HomeWork.TomaszWilkosz
 {
-    class TomaszWilkoszStringOperations // : StringOperations
+    public class TomaszWilkoszStringOperations  : StringOperations
     {
-        public  string GetName()
+        public override string GetName()
         {
-            throw new NotImplementedException();
+            return "Tomasz Wilkosz";
         }
 
-        public  int PositionInString(string candidate, string needle)
+        public override int PositionInString(string candidate, string needle)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (Substring(candidate, i, needle.Length) == needle)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
-        public  string StringReplace(string candidate, string needle, string replaceWith)
+
+        public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            throw new NotImplementedException();
+            string output = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (i <= candidate.Length - needle.Length && Substring(candidate, i, needle.Length) == needle)
+                {
+                    output += replaceWith;
+                    i += needle.Length - 1;
+                }
+                else
+                {
+                    output += candidate[i];
+                }
+            }
+
+            return output;
         }
 
-        public  string Substring(string candidate, int start, int length)
+
+        public override string Substring(string candidate, int start, int length)
         {
-            throw new NotImplementedException();
+            string output = "";
+
+            for (int i = start; i < start + length; i++)
+            {
+                output += candidate[i];
+            }
+            return output;
         }
     }
 }
