@@ -12,7 +12,7 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
         public delegate int PositionInStringDelegate(string candidate, string needle);
         public delegate string StringReplaceDelegate(string candidate, string needle, string replaceWith);
 
-        public static List<StringOperations> LoadFromAssembly()
+        public  List<StringOperations> LoadFromAssembly()
         {
             AssemblyLoader al = new AssemblyLoader();
 
@@ -22,7 +22,7 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
         }
 
 
-        public static SubstringDelegate AppendSubstringMethod(List<StringOperations> list)
+        private SubstringDelegate AppendSubstring(List<StringOperations> list)
         {
              SubstringDelegate del=null;
             foreach (var item in list)
@@ -33,15 +33,34 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
             return del;
         }
 
-        //public Dictionary<string, string> TestAll(List<StringOperations> list,Func<string, int, int, string> testDelegate)
-        //{
-        //    Dictionary<string, string> dict = new Dictionary<string, string>();
-        //    foreach (var item in list)
-        //    {
-                
-        //    }
-            
-       // }
+        private PositionInStringDelegate AppendPositionInString(List<StringOperations> list)
+        {
+            PositionInStringDelegate del = null;
+            foreach (var item in list)
+            {
+                del += item.PositionInString;
+            }
 
+            return del;
+        }
+
+        private StringReplaceDelegate AppendStringReplace(List<StringOperations> list)
+        {
+            StringReplaceDelegate del = null;
+            foreach (var item in list)
+            {
+                del += item.StringReplace;
+            }
+
+            return del;
+        }
+
+        public void AllDelgates(List<StringOperations> list,ref SubstringDelegate subDel,ref PositionInStringDelegate posInStrDel, ref StringReplaceDelegate repDel )
+        {
+            subDel = AppendSubstring(list);
+            posInStrDel=AppendPositionInString(list);
+            repDel = AppendStringReplace(list);
+
+        }
     }
 }
