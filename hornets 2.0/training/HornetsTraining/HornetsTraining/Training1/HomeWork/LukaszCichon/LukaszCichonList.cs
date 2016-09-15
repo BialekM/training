@@ -6,33 +6,31 @@ namespace HornetsTraining.Training1.HomeWork.LukaszCichon
    
     public class LukaszCichonList<TItemList> : MyList<TItemList>
     {
-        private TItemList[] _itemList;
-        private int _index = 0;
-
+     
         public override void Add(TItemList item)
         {
             TItemList[] temporary;
 
-            if (_itemList == null)
+            if (listOfItems == null)
             {
-                _index++;
-                _itemList = new TItemList[_index];
-                _itemList[_index - 1] = item;
+                Index++;
+                listOfItems = new TItemList[Index];
+                listOfItems[Index - 1] = item;
             }
             else
             {
-                _index++;
-                temporary = new TItemList[_index];
-                for (int i = 0; i < _index - 1; i++)
+                Index++;
+                temporary = new TItemList[Index];
+                for (int i = 0; i < Index - 1; i++)
                 {
-                    temporary[i] = _itemList[i];
+                    temporary[i] = listOfItems[i];
                 }
-                _itemList = new TItemList[_index];
-                for (int i = 0; i < _index - 1; i++)
+                listOfItems = new TItemList[Index];
+                for (int i = 0; i < Index - 1; i++)
                 {
-                    _itemList[i] = temporary[i];
+                    listOfItems[i] = temporary[i];
                 }
-                _itemList[_index - 1] = item;
+                listOfItems[Index - 1] = item;
             }
         }
 
@@ -41,49 +39,45 @@ namespace HornetsTraining.Training1.HomeWork.LukaszCichon
         {
             TItemList[] temporary;
             int check = 0;
-            try
+
+            if (listOfItems == null)
             {
-                if (_itemList == null)
+                throw new SystemException("Nie ma Listy");
+            }
+            else
+            {
+                temporary = new TItemList[Index];
+                for (int i = 0; i < listOfItems.Length; i++)
                 {
-                    throw new SystemException("Nie ma Listy");
+                    temporary[i] = listOfItems[i];
+                }
+                for (int i = 0; i < temporary.Length; i++)
+                {
+                    if (temporary[i].Equals(item))
+                    {
+                        check++;
+                        for (int j = i; j < temporary.Length - 1; j++)
+                        {
+                            temporary[j] = listOfItems[j + 1];
+                        }
+                    }
+                }
+                if (check != 0)
+                {
+                    Index = Index - check;
+                    listOfItems = new TItemList[Index];
+                    for (int i = 0; i < listOfItems.Length; i++)
+                    {
+                        listOfItems[i] = temporary[i];
+                    }
                 }
                 else
                 {
-                    temporary = new TItemList[_index];
-                    for (int i = 0; i < _itemList.Length; i++)
-                    {
-                        temporary[i] = _itemList[i];
-                    }
-                    for (int i = 0; i < temporary.Length; i++)
-                    {
-                        if (temporary[i].Equals(item))
-                        {
-                            check++;
-                            for (int j = i; j < temporary.Length - 1; j++)
-                            {
-                                temporary[j] = _itemList[j + 1];
-                            }
-                        }
-                    }
-                    if (check != 0)
-                    {
-                        _index = _index - check;
-                        _itemList = new TItemList[_index];
-                        for (int i = 0; i < _itemList.Length; i++)
-                        {
-                            _itemList[i] = temporary[i];
-                        }
-                    }
-                    else
-                    {
-                        throw new SystemException("Nie ma takiego elementu na liscie");
-                    }
+                    throw new SystemException("Nie ma takiego elementu na liscie");
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+
+
 
         }
     }
