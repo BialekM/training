@@ -92,6 +92,7 @@
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakStringOperations.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikMyList.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
