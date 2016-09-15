@@ -5,12 +5,12 @@ using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
 using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
 using HornetsTraining.Training1.HomeWork.Haski;
 using HornetsTraining.Training1.HomeWork.KrzysztofPater;
+using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 using HornetsTraining.Training1.HomeWork.MichałMuzyczka;
 using HornetsTraining.Training1.HomeWork.PatrykDrapik;
 using HornetsTraining.Training1.HomeWork.PawelKownacki;
 using HornetsTraining.Training1.HomeWork.PawelMocarski;
 using HornetsTraining.Training1.HomeWork.SławekNowiński;
-using HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała;
 
 namespace HornetsTraining.Training2.Delegates
 {
