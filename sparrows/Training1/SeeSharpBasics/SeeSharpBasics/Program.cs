@@ -52,8 +52,7 @@ namespace SeeSharpBasics
             //strOlek.Substring();
             TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
             TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
-            int wynik22 = stras.BubbleSort(
-            ;
+           
         
         
 
