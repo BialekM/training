@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Cryptography.X509Certificates;
 
 namespace HornetsTraining.Training2.HomeWork.Mbank
 {
@@ -18,9 +16,8 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             }
             else
             {
-                appendNewRecord(transfer.DestinationBankAccount, transfer.Money);
+                AppendNewRecord(transfer.DestinationBankAccount, transfer.Money);
             }
-
 
             return true;
         }
@@ -43,7 +40,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
 
         private int GetAccountMoneyLine(string bankAccountNumber)
         {
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
+            using (StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
             {
                 string line = file.ReadLine();
                 int currentLineNumber = 1;
@@ -51,7 +48,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
                 while (line != null)
                 {
                     if (line == bankAccountNumber)
-                        return currentLineNumber+1;
+                        return currentLineNumber;
 
                     line = file.ReadLine();
                     currentLineNumber++;
@@ -62,46 +59,55 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             return -1;
         }
 
-        private void appendNewRecord(string bankAccountNumber, double money)
+        private void AppendNewRecord(string bankAccountNumber, double money)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(AccountCollectionInfoFilePath, true))
+            using (StreamWriter file = new StreamWriter(AccountCollectionInfoFilePath, true))
             {
-                file.WriteLine(bankAccountNumber);
-                file.WriteLine(money);
+                file.Write(bankAccountNumber + '\n');
+                file.Write(Convert.ToString(money) + '\n');
                 file.Close();
             }
         }
 
         private void IncrementMoneyAmmount(int lineNumber, double value)
         {
-            double previousMoneyAmmount = Convert.ToDouble(getSpecifiedLine(lineNumber));
-            modifySpecifiedLine(lineNumber, Convert.ToString(previousMoneyAmmount + value));
+            string moneyLine = GetSpecifiedLine(lineNumber);
+            double previousMoneyAmmount = Convert.ToDouble(moneyLine);
+            ModifySpecifiedLine(lineNumber, Convert.ToString(previousMoneyAmmount + value));
         }
 
-        private string getSpecifiedLine(int lineNumber)
+        private string GetSpecifiedLine(int lineNumber)
         {
-            string ret;
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
-            {
-                for (int i = 0; i < lineNumber; i++)
-                    file.ReadLine();
+            return GetFileLines()[lineNumber];
+        }
 
-                 ret = file.ReadLine();
+        private string[] GetFileLines()
+        {
+            string[] lines;
+            using (StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
+            {
+                lines = file.ReadToEnd().Split('\n');
+
                 file.Close();
             }
-            return ret;
+            return lines;
         }
 
-        private void modifySpecifiedLine(int lineNumber, string newValue)
+        private void ModifySpecifiedLine(int lineNumber, string newValue)
         {
-            using (System.IO.StreamReader file = new StreamReader(AccountCollectionInfoFilePath))
-            {
-                for (int i = 0; i < lineNumber; i++)
-                    file.ReadLine();
+            string[] lines = GetFileLines();
+            lines[lineNumber] = newValue;
 
-                //delete line and add newValue
+            using (StreamWriter file = new StreamWriter(AccountCollectionInfoFilePath))
+            {
+                for(int i=0; i < lines.Length -1; i++)
+                { 
+                    file.Write(lines[i] + '\n');
+                }
                 file.Close();
             }
         }
+
+
     }
 }

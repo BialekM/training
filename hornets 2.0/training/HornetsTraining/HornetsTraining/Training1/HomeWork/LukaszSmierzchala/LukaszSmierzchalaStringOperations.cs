@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
+namespace HornetsTraining.Training1.HomeWork.LukaszSmierzchala
 {
     public class LukaszSmierzchalaStringOperations : StringOperations
     {
@@ -16,15 +20,15 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
             if (start < 0 ||
                 start >= candidate.Length)
             {
-               // throw new ArgumentOutOfRangeException(nameof(start));
+                throw new ArgumentOutOfRangeException("start");
             }
-            
+
             if (length <= 0 ||
                 length + start > candidate.Length)
             {
-                //throw new ArgumentOutOfRangeException(nameof(length));
+                throw new ArgumentOutOfRangeException("length");
             }
-            
+
             for (int i = start; i < start + length; i++)
             {
                 substring += candidate[i];
@@ -36,7 +40,7 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
 
         public override int PositionInString(string candidate, string needle)
         {
-            string substring = "";
+            string substring = String.Empty;
 
             for (int i = 0; i < candidate.Length; i++)
             {
@@ -47,6 +51,7 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
                 catch (ArgumentOutOfRangeException)
                 {
                     //throw new ArgumentException("substring was not found", nameof(needle));
+                    return -1;
                 }
 
                 if (needle == substring)
@@ -64,14 +69,21 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
             int startPosition;
             string result;
 
-            try
+            //try
+            //{
+            //    startPosition = this.PositionInString(candidate, needle);
+            //}
+            //catch (ArgumentException x)
+            //{
+            //    Console.WriteLine(x.Message);
+            //    throw;
+            //}
+
+            startPosition = this.PositionInString(candidate, needle);
+
+            if (startPosition == -1)
             {
-                startPosition = this.PositionInString(candidate, needle);
-            }
-            catch (ArgumentException x)
-            {
-                Console.WriteLine(x.Message);
-                throw;
+                return candidate;
             }
 
             result = this.Substring(candidate, 0, startPosition);  // blablabla , bla, ble => bleblabla
@@ -84,6 +96,5 @@ namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
             return result;
 
         }
-
     }
 }

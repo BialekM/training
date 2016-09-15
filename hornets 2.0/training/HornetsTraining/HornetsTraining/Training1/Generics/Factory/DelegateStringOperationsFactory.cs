@@ -4,6 +4,7 @@ using HornetsTraining.Training1.HomeWork;
 using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
 using HornetsTraining.Training1.HomeWork.Haski;
 using HornetsTraining.Training1.HomeWork.KrzysztofPater;
+using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 using HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała;
 
 namespace HornetsTraining.Training1.Generics.Factory
