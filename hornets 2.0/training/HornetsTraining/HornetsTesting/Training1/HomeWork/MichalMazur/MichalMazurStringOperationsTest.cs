@@ -36,9 +36,8 @@ namespace HornetsTesting.Training1.HomeWork.MichalMazur
         [TestMethod]
         public void TestStringReplace()
         {
-            Assert.AreEqual(_michalMazurStringOperations.StringReplace("programowanie", "gram", "kilogram"), "prokilogramowanie");
-
-        }
+            Assert.AreEqual(_michalMazurStringOperations.StringReplace("tolamakotatolamakota", "tola", "olka"), "tolamakotatolamakota");
+         }
 
     }
 }

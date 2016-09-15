@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net45\System.Data.SQLite.dll</HintPath>
       <Private>True</Private>
@@ -66,6 +67,17 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\FunctionsTestVariables.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\TestPositionInString.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\TestStringReplace.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\TestSubstring.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\FunctionsTests\BaseFunctionTest.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\FunctionsTests\StringOperationsFunctionsTest.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\FunctionsTests\StringOperationsFunctionsTests.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\LukaszSmierzchalaHomeworkTests.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\Assembly\AssemblyLoader.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyListTest.cs" />
@@ -75,13 +87,15 @@
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
-    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszListTests.cs" />
-    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
+    <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperationsTest.cs" />
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\Bartosz Mackieiwcz\BartoszMackiewiczStringOperationsTest.cs" />
-    <Compile Include="Training1\Homework\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\ForInitializing\TransferTestValues.cs" />
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBankTest.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\LoadAllHomework.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training2\Delegates\PositionInStringTestLambdas.cs" />
     <Compile Include="Training2\ExtensionMetods\StringExtensionsTest.cs" />
     <Compile Include="Training2\HomeWork\MBankTransferTest.cs" />
@@ -97,6 +111,7 @@
       <Name>Toci.HornetsTraining</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
