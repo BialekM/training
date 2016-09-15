@@ -37,6 +37,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -84,10 +88,20 @@
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
+
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperationsTest.cs" />
+
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMuzyczkaTests.cs" />
+    <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMyTest.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszListTests.cs" />
+    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\StringOperationsTests.cs" />
+
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\Bartosz Mackieiwcz\BartoszMackiewiczStringOperationsTest.cs" />
+    <Compile Include="Training1\Homework\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ForInitializing\TransferTestValues.cs" />
@@ -96,8 +110,14 @@
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training2\Delegates\PositionInStringTestLambdas.cs" />
     <Compile Include="Training2\ExtensionMetods\StringExtensionsTest.cs" />
+
     <Compile Include="Training2\HomeWork\MBankTransferTest.cs" />
     <Compile Include="Training2\HomeWork\Michal Mazur\IngTransferTest.cs" />
+
+    <Compile Include="Training2\HomeWork\MichalMuzyczka\AESTests.cs" />
+    <Compile Include="Training2\HomeWork\MichalMuzyczka\NBPTransferHandlerTests.cs" />
+    <Compile Include="Training2\HomeWork\MichalMuzyczka\NBPTransferResolverTests.cs" />
+
     <Compile Include="Training2\HomeWork\PlusBankTransferTest.cs" />
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
   </ItemGroup>
@@ -110,7 +130,9 @@
       <Name>Toci.HornetsTraining</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
@@ -131,6 +153,13 @@
   </Choose>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.102.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
