@@ -54,6 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
+    <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
