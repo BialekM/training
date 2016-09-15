@@ -116,6 +116,8 @@
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTansferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTranferResolver.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\Ing\IngTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\Ing\IngTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
