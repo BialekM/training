@@ -51,8 +51,12 @@ namespace SeeSharpBasics
             //OlekStringOperations strOlek = new OlekStringOperations();
             //strOlek.Substring();
             TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
-            
-            
+            TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
+            int wynik22 = stras.BubbleSort(
+            ;
+        
+        
+
             string wynik = stro.Substring("beatka", 1, 3);
             int wynik4 = stro.CountOccurences("beatka", 'a');
             Console.WriteLine("TUTAJ JEST WYNIKKK{0}", wynik4);

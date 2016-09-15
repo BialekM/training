@@ -57,6 +57,7 @@
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomaszKilianTableOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
   </ItemGroup>
   <ItemGroup>
