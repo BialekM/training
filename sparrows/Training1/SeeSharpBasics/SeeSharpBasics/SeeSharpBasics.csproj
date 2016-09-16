@@ -60,7 +60,7 @@
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
-    <Compile Include="SławekKowal\SlawekKStringOperations.cs" />
+    <Compile Include="SlawekKowal\SlawekKStringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
