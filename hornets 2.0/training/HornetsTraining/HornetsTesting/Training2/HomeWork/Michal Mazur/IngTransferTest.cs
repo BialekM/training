@@ -3,7 +3,6 @@ using HornetsTesting.Training2.HomeWork;
 using HornetsTraining.Training2.HomeWork;
 using HornetsTraining.Training2.HomeWork.Ing;
 using HornetsTraining.Training2.HomeWork.MichalMazur;
-using HornetsTraining.Training2.HomeWork.MichalMazur;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork.MichalMazur
