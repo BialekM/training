@@ -96,6 +96,9 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
 
             }
 
+             /*pytanie: czy zamiast deklaracji w parametrach funkcji trzech osobnych func'ków, każdy dla innej 
+              * metody(no bo metody mają inne sygnaturki), czy da sie zrobic tak, aby w parametrach podać jeden 
+              * func, ale wywowałć tą funkcję RunTests 3 razy, za każdym razem podając w parametrze inna meotde ? */
 
         private void RunTests(PositionIsStringTest test, SubstringTest test2, RepleaceTest test3, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, bool> delPos,
             Func<StringOperations, SubstringTest, bool> delSub, Func<StringOperations, RepleaceTest, bool> delRep)
