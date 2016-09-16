@@ -1,8 +1,8 @@
 ﻿using HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.ŁukaszŚmierzchała
+namespace HornetsTraining.Training1.HomeWork.LukaszSmierzchala
 {
-    public class LukaszSmiechalaiList<TListItem> : MyList<TListItem>
+    public class LukaszSmiechrzalList<TListItem> : MyList<TListItem>
     {
         public TListItem this[int index]
         {
