@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,10 +31,20 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Training1\Animals\Animal.cs" />
     <Compile Include="Training1\Animals\Dog.cs" />
     <Compile Include="Training1\Animals\Rotweiler.cs" />
@@ -70,18 +86,23 @@
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekList.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\LukaszSmierzchalaStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MarekMilosierny\MarekList.cs" />
     <Compile Include="Training1\HomeWork\MarekMilosierny\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurList.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiMyList.cs" />
-    <Compile Include="Training1\HomeWork\ŁukaszŚmierzchała\LukaszList.cs" />
+    <Compile Include="Training1\HomeWork\LukaszSmierzchala\LukaszSmierzchalaList.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczList.cs" />
     <Compile Include="Training1\HomeWork\Haski\HaskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterMyList.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofPater\KrzysztofPaterStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\Generics\MateuszPoradaList.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalMyList.cs" />
     <Compile Include="Training1\HomeWork\MichałMuzyczka\MichalStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikMyList.cs" />
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
@@ -97,7 +118,40 @@
     <Compile Include="Training1\statics\StaticExample.cs" />
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BankFactoryGenerics.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BZWBKTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BZWBKTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\BPHTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BankList.cs" />
+    <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Const\AppConst.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Container.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Factory.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Secure\AESCrypt.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Secure\ICrypt.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Secure\SecurityOptions.cs" />
+    <Compile Include="Training2\HomeWork\Common_Michal\Serializer\Serializer.cs" />
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankAccounts.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\Factory\TransferHandlerFactory.cs" />
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferResolver.cs" />
+
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\MBank\MBankTansferHandler.cs" />
+    <Compile Include="Training2\HomeWork\MBank\MBankTranferResolver.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\Ing\IngTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\Ing\IngTransferHandlerFactory.cs" />
+    <Compile Include="Training2\HomeWork\Michal Mazur\Ing\IngTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\NBP\NBPTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\NBP\NBPTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\NBP\TransferReport.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
@@ -112,7 +166,25 @@
     <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BankAccounts.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.dbml.layout">
+      <DependentUpon>BankAccounts.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

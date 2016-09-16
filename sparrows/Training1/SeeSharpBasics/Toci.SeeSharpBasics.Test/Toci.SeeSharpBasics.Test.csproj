@@ -54,6 +54,7 @@
     <Compile Include="Common\AssemblyLoader.cs" />
     <Compile Include="DominikRzepnicki\DominikTablesOperationsTests.cs" />
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
+    <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />
@@ -61,6 +62,8 @@
     <Compile Include="SlawekKowal\SlawekStringOperationTest.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
+    <Compile Include="TomaszKil\TestStrings.cs" />
+    <Compile Include="TomaszKil\TomaszKilianStringTests.cs" />
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
   </ItemGroup>
   <ItemGroup />

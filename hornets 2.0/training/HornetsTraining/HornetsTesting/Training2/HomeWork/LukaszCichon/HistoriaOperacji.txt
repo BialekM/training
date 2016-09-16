@@ -1,0 +1,14 @@
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-16 22:52:25
+Numer konta docelowego: 10249075647583950673647222
+Numer konta zrodlowego: 10249075647583959673647583
+Pieniadze: 764
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-16 22:52:25
+Numer konta docelowego: 1024905647583950673647222
+Numer konta zrodlowego: 10216075647583959673647583
+Pieniadze: 654
+

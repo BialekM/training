@@ -65,7 +65,24 @@ namespace SeeSharpBasics.MagdaSkalik
             return 0;
         }// bartek, k => 5
 
-        public override string LetterReplace(string candidate, char needle, char replace); // beatka, e, s => bsatka ; beatka , a , b => bebtkb
+        public override string LetterReplace(string candidate, char needle, char replace)
+        {
+            string result = "";
+            for (int i = 0; i < candidate.Length;i++)
+            {
+                if(candidate[i] == needle)
+                {
+                    result += replace;
+                    i++;
+                }
+                else
+                {
+                    result += candidate[i];
+                }
+
+            }
+            return "result";
+        }// beatka, e, s => bsatka ; beatka , a , b => bebtkb
 
         public override string StringReplace(string candidate, string needle, string replace)
         {
@@ -91,30 +108,31 @@ namespace SeeSharpBasics.MagdaSkalik
             }
             return result;
              }// bartlomiej, art, beatka => bbeatkalomiej
-        
-       
-        public static string ReplaceInText(string candidate, string find, string replace)
-        {
-            string text = "";
-            string result = "";
 
-            for (int i = 0; i < candidate.Length; i++)
-            {
 
-                text = Substring(candidate, i, find.Length);
+        //public static string ReplaceInText(string candidate, string find, string replace)
+        //{
+        //    string text = "";
+        //    string result = "";
 
-                if (text == find)
-                {
+        //    for (int i = 0; i < candidate.Length; i++)
+        //    {
 
-                        result += replace;
-                        i = i + find.Length - 1;
+        //        text = Substring(candidate, i, find.Length);
 
-                }
-                else
-                {
-                    result += candidate[i];
-                }
-            }
-            return result;
+        //        if (text == find)
+        //        {
+
+        //            result += replace;
+        //            i = i + find.Length - 1;
+
+        //        }
+        //        else
+        //        {
+        //            result += candidate[i];
+        //        }
+        //    }
+        //    return result;
+        //}
     }
 }
