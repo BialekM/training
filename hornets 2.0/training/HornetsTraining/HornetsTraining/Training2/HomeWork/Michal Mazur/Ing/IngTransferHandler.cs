@@ -7,11 +7,14 @@ namespace HornetsTraining.Training2.HomeWork.MichalMazur
         
         public override bool DoInTransfer(Transfer transfer)
         {
+            //zapis do pliku txt
             return true;
         }
 
         public override bool DoOutTransfer(Transfer transfer)
         {
+
+            //zapis do pliku txt
             return true;
          }
     }
