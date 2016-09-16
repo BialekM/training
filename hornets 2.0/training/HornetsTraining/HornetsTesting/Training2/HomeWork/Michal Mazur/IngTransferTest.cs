@@ -19,8 +19,6 @@ namespace HornetsTesting.Training2.HomeWork.MichalMazur
                   List<Transfer> transfers = CreateTransfers();
                   SendTranfers(transfers,tr);
             
-
-
         }
 
         private List<Transfer> CreateTransfers()
