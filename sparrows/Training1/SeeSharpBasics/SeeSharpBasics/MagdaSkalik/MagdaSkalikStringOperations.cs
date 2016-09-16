@@ -40,7 +40,18 @@ namespace SeeSharpBasics.MagdaSkalik
 
         }
 
-        public override int CountOccurences(string candidate, char needle); // bartek, a => 1 beatka, a => 2, aaaaba, a => 5
+        public override int CountOccurences(string candidate, char needle)
+        {
+            int account = 0;
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (candidate[i] == needle)
+                {
+                    account++;
+                }
+            }
+            return account;
+        }// bartek, a => 1 beatka, a => 2, aaaaba, a => 5
 
         public override int LetterPositionInString(string candidate, char needle)
         {
@@ -56,7 +67,30 @@ namespace SeeSharpBasics.MagdaSkalik
 
         public override string LetterReplace(string candidate, char needle, char replace); // beatka, e, s => bsatka ; beatka , a , b => bebtkb
 
-        public override string StringReplace(string candidate, string needle, string replace); // bartlomiej, art, beatka => bbeatkalomiej
+        public override string StringReplace(string candidate, string needle, string replace)
+        {
+            string text = "";
+            string result = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+
+                text = Substring(candidate, i, needle.Length);
+
+                if (text == needle)
+                {
+
+                        result += replace;
+                        i = i + needle.Length - 1;
+
+                }
+                else
+                {
+                    result += candidate[i];
+                }
+            }
+            return result;
+             }// bartlomiej, art, beatka => bbeatkalomiej
         
        
         public static string ReplaceInText(string candidate, string find, string replace)
