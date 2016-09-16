@@ -71,6 +71,10 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\MateuszPoradaPositionInStringTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\PositionInStringTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\StringReplace\MateuszPoradaStringReplaceTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\StringReplace\StringReplaceTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\FunctionsTestVariables.cs" />
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\TestPositionInString.cs" />
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\ClassesForInitializing\TestStringReplace.cs" />
@@ -80,6 +84,7 @@
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\FunctionsTests\StringOperationsFunctionsTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\LukaszSmierzchalaHomeworkTests.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringTest.cs" />
     <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
@@ -90,7 +95,6 @@
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperationsTest.cs" />
-    <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMuzyczkaTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMyTest.cs" />
     <Compile Include="Training1\Homework\HomeworkTest.cs" />
@@ -100,7 +104,6 @@
     <Compile Include="Training2\HomeWork\LukaszCichon\TestAliorBank.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ForInitializing\TransferTestValues.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBankTest.cs" />
-    <Compile Include="Training1\HomeWork\MichalMazur\LoadAllHomework.cs" />
     <Compile Include="Training2\Delegates\PositionInStringTestLambdas.cs" />
     <Compile Include="Training2\ExtensionMetods\StringExtensionsTest.cs" />
     <Compile Include="Training2\HomeWork\MBankTransferTest.cs" />

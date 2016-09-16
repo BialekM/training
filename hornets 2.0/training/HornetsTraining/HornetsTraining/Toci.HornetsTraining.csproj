@@ -126,6 +126,9 @@
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BankFactoryGenerics.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BZWBKTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BZWBK\BZWBKTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -143,6 +146,8 @@
     <Compile Include="Training2\HomeWork\NBP\NBPTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NBP\NBPTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\NBP\TransferReport.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
