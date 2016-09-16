@@ -1,43 +1,77 @@
-﻿using System;
-using HornetsTraining.Training1.HomeWork.MichalMazur;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using HornetsTesting.Common;
+using HornetsTraining.Training1.HomeWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HornetsTesting.Training1.HomeWork.MichalMazur
+namespace HornetsTesting.Training2.Delegates.MichalMazur
 {
     [TestClass]
     public class MichalMazurStringOperationsTest
     {
-        private readonly MichalMazurStringOperations _michalMazurStringOperations = new MichalMazurStringOperations();
+        public LoadAllHomework ah = new LoadAllHomework();
+        public LoadAllHomework.SubstringDelegate substringDelegate = null;
+        public LoadAllHomework.PositionInStringDelegate positionInStringDelegate = null;
+        public LoadAllHomework.StringReplaceDelegate stringReplaceDelegate = null;
+       
+        List<string> resultOfSubstring = new List<string>();
+        List<int> resultOfPositionInString = new List<int>();
+        List<string> resultOfReplaceString = new List<string>();
+        private List<StringOperations> homework;
 
         [TestMethod]
-        public void TestGetName()
-        {
-            Assert.AreEqual(_michalMazurStringOperations.GetName(), "Michal Mazur");
-        }    
-        
-        [TestMethod]
-        public void TestSubstring()
-        {
-             Assert.AreEqual(_michalMazurStringOperations.Substring("programowanie",4,5), "ramow");
-             Assert.AreEqual(_michalMazurStringOperations.Substring("zaawansowane", 1, 3), "aaw");
-             Assert.AreEqual(_michalMazurStringOperations.Substring("test", 1, 100), "est");
 
-   
-        }
-        [TestMethod]
-        public void TestPosistionInString()
-        {
-           Assert.AreEqual(_michalMazurStringOperations.PositionInString("jezykC", "yk"), 3);
-           Assert.AreEqual(_michalMazurStringOperations.PositionInString("programowanie", "gra"), 3);
-
-           Assert.AreEqual(_michalMazurStringOperations.PositionInString("test", "te"), 0);
+        public void TestHomework()
+        {      
+            homework = ah.LoadFromAssembly();        
+            ah.AllDelgates(homework, ref substringDelegate,ref positionInStringDelegate, ref stringReplaceDelegate);
+            PrintResult();
+           
 
         }
-        [TestMethod]
-        public void TestStringReplace()
-        {
-            Assert.AreEqual(_michalMazurStringOperations.StringReplace("tolamakotatolamakota", "tola", "olka"), "tolamakotatolamakota");
-         }
 
+        private void PrintResult()
+        {
+            try
+            {
+                Testing("komputer", 2, 3, "mpu", "gto");
+            }
+            catch
+            {
+
+            }
+            Debug.WriteLine("resultOfSubstring\t resultOfPositionInString\t resultOfReplaceString");
+            try
+            {
+                for (int i = 0; i < homework.Count; i++)
+                {
+                    Debug.WriteLine(resultOfSubstring[i] + "\t {0} " + resultOfReplaceString[i],
+                        resultOfPositionInString[i]);
+                }
+            }
+            catch
+            {
+
+            }
+        }
+        private void Testing(string cadidate, int start, int lenght, string needle, string replace)
+        {
+             foreach (LoadAllHomework.SubstringDelegate item in substringDelegate.GetInvocationList())
+            {
+                resultOfSubstring.Add(item(cadidate, start, lenght));
+            }
+             foreach (LoadAllHomework.PositionInStringDelegate item in positionInStringDelegate.GetInvocationList())
+             {
+                 resultOfPositionInString.Add(item(cadidate, needle));
+             }
+             foreach (LoadAllHomework.StringReplaceDelegate item in stringReplaceDelegate.GetInvocationList())
+            {
+                resultOfReplaceString.Add(item(cadidate, needle, replace));
+            }        
+
+        }
+           
     }
 }

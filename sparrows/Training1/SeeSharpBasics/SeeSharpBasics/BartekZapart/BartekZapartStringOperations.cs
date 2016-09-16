@@ -138,6 +138,10 @@ namespace SeeSharpBasics.BartekZapart
         {
             //komentarz
         }
+        public void MagdaSkalik(string test)
+        {
+
+        }
        
     }
 

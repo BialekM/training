@@ -100,7 +100,7 @@ namespace SeeSharpBasics.TomaszKilian
 
        public override string StringReplace(string candidate, string needle, string replace)
        {
-           
+           throw new NotImplementedException();
        }
     }
 }

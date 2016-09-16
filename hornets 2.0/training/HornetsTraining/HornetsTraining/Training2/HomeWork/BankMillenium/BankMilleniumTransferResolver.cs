@@ -1,6 +1,6 @@
 ﻿namespace HornetsTraining.Training2.HomeWork.BankMillenium
 {
-    public class BankMilleniumTransferResolver
+    public class BankMilleniumTransferResolver : TransferResolver
     {
          
     }
