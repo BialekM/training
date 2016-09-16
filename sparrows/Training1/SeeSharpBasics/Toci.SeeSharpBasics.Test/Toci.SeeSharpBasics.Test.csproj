@@ -52,12 +52,14 @@
   <ItemGroup>
     <Compile Include="BartekZapart\BartekTablesOperationsTests.cs" />
     <Compile Include="Common\AssemblyLoader.cs" />
+    <Compile Include="DominikRzepnicki\DominikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
+    <Compile Include="TomaszKil\TomaszKilianTests.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
