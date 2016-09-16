@@ -25,13 +25,17 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
                     {
 
                         RunTests("position test",item, instances, (operations, position, substring, repleacing) => 
-                            position.Position == operations.PositionInString(position.Candidate, position.Needle));
+                            position.Position == operations.PositionInString(position.Candidate, position.Needle) ? 
+                            (position.Candidate  + " : " +position.Needle +" = "+ position.Position + "  test passed" ): "failed");
                       
                         RunTests("substring test", item, instances, (operations, position, substring, repleacing) =>                           
-                            substring.Result == operations.Substring(substring.Candidate, substring.Start, substring.Lenght));
+                           substring.Result == operations.Substring(substring.Candidate, substring.Start, substring.Lenght) ?
+                           (substring.Candidate + " : " + substring.Start+ " -> " +substring.Lenght + " = " + substring.Result + "  test passed" ): "failed");
 
                         RunTests("repleacing test", item, instances,(operations, position, substring, repleacing) =>
-                            repleacing.Result ==operations.StringReplace(repleacing.Candidate, repleacing.Needle, repleacing.Repleace));
+                            repleacing.Result ==operations.StringReplace(repleacing.Candidate, repleacing.Needle, repleacing.Repleace)?
+                            (repleacing.Candidate  + " : " +repleacing.Needle + " -> " + repleacing.Repleace+" = "+ repleacing.Result + "  test passed" ): "failed");
+ 
 
                     }
                     catch
@@ -101,12 +105,12 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
 
             }
 
-              private void RunTests(string testName, AllTestClass test, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, SubstringTest, RepleaceTest, bool> del)
+              private void RunTests(string testName, AllTestClass test, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, SubstringTest, RepleaceTest, string> del)
              {
                  
                  foreach (var instance in instances)
                  {
-                     Debug.WriteLine(testName+" for " +instance.GetName() +" result " + del(instance, test.positionIsStringTest, test.substringTest, test.repleaceTest));
+                     Debug.WriteLine(testName+" for " +instance.GetName()+" | " + del(instance, test.positionIsStringTest, test.substringTest, test.repleaceTest));
 
                  }
              }
