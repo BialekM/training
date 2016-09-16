@@ -20,7 +20,7 @@
         public override string GlueBeginingEnd(string candidate)
         {
             string result="";
-            for (int i = 0, j = candidate.Length - 1; i > j; i++, j--)
+            for (int i = 0, j = candidate.Length - 1; i <= j; i++, j--)
             {
                 result += candidate[i] + candidate[j];
                 if (i == j)
@@ -76,7 +76,7 @@
                 if (Substring(candidate, i, replace.Length) == replace)
                 {
                     result += replace;
-                    i += replace.Length;
+                    i += replace.Length-1;
                 }
                 else
                 {
