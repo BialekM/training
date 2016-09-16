@@ -11,8 +11,8 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal
         {
             
             SlawekKStringOperations myTest = new SlawekKStringOperations();
-            var test = myTest.GetName();
-            Assert.AreEqual(test,"Sławek Kowal");
+            var test = myTest.GlueBeginingEnd("kafar");
+            Assert.AreEqual(test,"kraaf");
 
         }
     }

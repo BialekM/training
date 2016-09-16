@@ -5,14 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
 using SeeSharpBasics.Olek;
+using SeeSharpBasics.SlawekKowal;
 using SeeSharpBasics.TomaszKilian;
 
 namespace SeeSharpBasics
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
+           
             /*
              * komentarz blokowy
             */
@@ -52,7 +55,7 @@ namespace SeeSharpBasics
             //strOlek.Substring();
             TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
             TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
-           
+            
         
         
 
@@ -171,10 +174,7 @@ namespace SeeSharpBasics
 
             return -1;
         }
-      
-
-
-
+        
         
 
         public static string ReverseString(string candidate)
