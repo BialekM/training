@@ -60,6 +60,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
+    <Compile Include="TomaszKil\TestStrings.cs" />
+    <Compile Include="TomaszKil\TomaszKilianStringTests.cs" />
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
   </ItemGroup>
   <ItemGroup />

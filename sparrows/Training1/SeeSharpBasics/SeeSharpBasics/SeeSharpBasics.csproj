@@ -49,8 +49,8 @@
     <Compile Include="Edwin\EdwinStringOperations.cs" />
     <Compile Include="Edwin\EdwinTablesOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
-    <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
+    <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
@@ -59,9 +59,13 @@
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
+    <Compile Include="SławekKowal\SlawekKStringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
+    <Compile Include="TomaszKilian\TomekStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomekTableOperations.cs" />
+    <Compile Include="TomaszKilian\TomekTablesOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
