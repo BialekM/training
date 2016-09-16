@@ -51,8 +51,11 @@ namespace SeeSharpBasics
             //OlekStringOperations strOlek = new OlekStringOperations();
             //strOlek.Substring();
             TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
-            
-            
+            TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
+           
+        
+        
+
             string wynik = stro.Substring("beatka", 1, 3);
             int wynik4 = stro.CountOccurences("beatka", 'a');
             Console.WriteLine("TUTAJ JEST WYNIKKK{0}", wynik4);
@@ -63,8 +66,8 @@ namespace SeeSharpBasics
             string wynik6 = stro.LetterReplace("aaaaaabbbbbccccc", 'a', 's');
             
             Console.WriteLine(wynik6);
-           // string wynik7 = stro.StringReplace("aaaabbbbcccc", "aaaa", "zzzz");
-            //Console.WriteLine(wynik7);
+           //string wynik7 = stro.StringReplace("bbaabbaaaacccc", "aaaa", "zzzz");
+          //  Console.WriteLine("wynik stringreplace@@@@@@@@@@@ {0}",wynik7);
 
 
             if (wynik == "eat")
