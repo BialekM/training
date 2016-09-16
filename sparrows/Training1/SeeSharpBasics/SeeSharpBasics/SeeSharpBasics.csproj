@@ -41,20 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BartekZapart\BartekTableOperations.cs" />
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
+    <Compile Include="BartekZapart\TablesOperations.cs" />
+    <Compile Include="DominikRzepnicki\DominikRzepnickiStringOperations.cs" />
+    <Compile Include="DominikRzepnicki\DominikRzepnickiTablesOperations.cs" />
     <Compile Include="Edwin\EdwinStringOperations.cs" />
+    <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
+    <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slawek\SlawekStringOperations.cs" />
+    <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
+    <Compile Include="Test\TestStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MarcinGala\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

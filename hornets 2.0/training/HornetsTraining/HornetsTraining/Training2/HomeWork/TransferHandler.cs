@@ -6,6 +6,5 @@
 
         public abstract bool DoOutTransfer(Transfer transfer);
 
-
     }
 }

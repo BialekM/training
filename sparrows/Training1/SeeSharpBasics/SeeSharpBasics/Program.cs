@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
+using SeeSharpBasics.Olek;
+using SeeSharpBasics.TomaszKilian;
 
 namespace SeeSharpBasics
 {
@@ -20,7 +22,7 @@ namespace SeeSharpBasics
             char literka = 'a';
 
             int position = LetterPosition("beatka", 'k');
-
+            
             ReverseString("beatka");
 
             liczbaCalkowita = 8 + 7;
@@ -44,7 +46,60 @@ namespace SeeSharpBasics
 
             BartekZapartStringOperations strOp = new BartekZapartStringOperations();
 
-            string result = strOp.Substring("beatka", 1, 3);
+            //*************************************
+            //string strOlek = new strOlek("");
+            //OlekStringOperations strOlek = new OlekStringOperations();
+            //strOlek.Substring();
+            TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
+            TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
+           
+        
+        
+
+            string wynik = stro.Substring("beatka", 1, 3);
+            int wynik4 = stro.CountOccurences("beatka", 'a');
+            Console.WriteLine("TUTAJ JEST WYNIKKK{0}", wynik4);
+            int wynik5 = stro.LetterPositionInString("bartek", 'k');
+            Console.WriteLine("wynik5");
+
+
+            string wynik6 = stro.LetterReplace("aaaaaabbbbbccccc", 'a', 's');
+            
+            Console.WriteLine(wynik6);
+           // string wynik7 = stro.StringReplace("aaaabbbbcccc", "aaaa", "zzzz");
+            //Console.WriteLine(wynik7);
+
+
+            if (wynik == "eat")
+            {
+                Console.WriteLine("dziala");
+
+            }
+            else
+            {
+                Console.WriteLine("dupa");
+            }
+
+            string wynik2 = stro.GlueBeginingEnd("beatka");
+                Console.WriteLine("TUTTAJJJJ JEST TEN WYNIK!!!{0}",wynik2);
+
+            OlekStringOperations strOpOlek = new OlekStringOperations();
+
+            string result = strOpOlek.Substring("beatka", 1, 3);
+            if (result == "eat")
+            {
+                Console.WriteLine("dziala");
+            }
+
+            result = strOpOlek.Substring("bartek", 2, 4);
+            if (result == "rtek")
+            {
+                Console.WriteLine("dziala");
+            }
+            //*************************************
+
+
+            result = strOp.Substring("beatka", 1, 3);
             if (result == "eat")
             {
                 Console.WriteLine("dziala");
@@ -116,6 +171,11 @@ namespace SeeSharpBasics
 
             return -1;
         }
+      
+
+
+
+        
 
         public static string ReverseString(string candidate)
         {
