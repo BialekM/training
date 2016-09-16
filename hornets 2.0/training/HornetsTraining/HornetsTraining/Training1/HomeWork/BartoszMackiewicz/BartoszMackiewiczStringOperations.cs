@@ -37,8 +37,8 @@ namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            
 
+            return ""; //TODO
 
         }
     }

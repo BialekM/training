@@ -113,9 +113,6 @@
     <Compile Include="Training1\statics\StaticExample.cs" />
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
-
-    <Compile Include="Training2\HomeWork\BPHTransferHandler.cs" />
-
     <Compile Include="Training2\HomeWork\BankList.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferResolver.cs" />
@@ -137,7 +134,6 @@
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\Factory\TransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferResolver.cs" />
-
     <Compile Include="Training2\HomeWork\MbankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTansferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTranferResolver.cs" />

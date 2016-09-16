@@ -23,7 +23,7 @@ namespace HornetsTraining.Training2.HomeWork.Ing
                 {"1050", () => new IngTransferHandler()  },
                 {"1010", () => new NBPTransferHandler()},
                 {"1020", () => new PkobpTransferHandler()},
-                {"1060", () => new BPHTransferHandler()},
+                //{"1060", () => new BPHTransferHandler()}, //zostało usuniete
                 {"1160", () => new BankMilleniumTransferHandler()},
                 
 
