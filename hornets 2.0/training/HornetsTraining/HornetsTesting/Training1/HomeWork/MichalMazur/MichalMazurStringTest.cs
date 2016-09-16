@@ -23,11 +23,16 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
                 {
                     try
                     {
-                        RunTests(item.positionIsStringTest, item.substringTest, item.repleaceTest, instances,
-                            (operations, position) => position.Position == operations.PositionInString(position.Candidate, position.Needle),
-                            (operations, substring) => substring.Result == operations.Substring(substring.Candidate, substring.Start, substring.Lenght),
-                            (operations, repleacing) => repleacing.Result == operations.StringReplace(repleacing.Candidate, repleacing.Needle, repleacing.Repleace)
-                            );
+
+                        RunTests("position test",item, instances, (operations, position, substring, repleacing) => 
+                            position.Position == operations.PositionInString(position.Candidate, position.Needle));
+                      
+                        RunTests("substring test", item, instances, (operations, position, substring, repleacing) =>                           
+                            substring.Result == operations.Substring(substring.Candidate, substring.Start, substring.Lenght));
+
+                        RunTests("repleacing test", item, instances,(operations, position, substring, repleacing) =>
+                            repleacing.Result ==operations.StringReplace(repleacing.Candidate, repleacing.Needle, repleacing.Repleace));
+
                     }
                     catch
                     {
@@ -96,28 +101,15 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
 
             }
 
-             /*pytanie: czy zamiast deklaracji w parametrach funkcji trzech osobnych func'ków, każdy dla innej 
-              * metody(no bo metody mają inne sygnaturki), czy da sie zrobic tak, aby w parametrach podać jeden 
-              * func, ale wywowałć tą funkcję RunTests 3 razy, za każdym razem podając w parametrze inna meotde ? */
+              private void RunTests(string testName, AllTestClass test, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, SubstringTest, RepleaceTest, bool> del)
+             {
+                 
+                 foreach (var instance in instances)
+                 {
+                     Debug.WriteLine(testName+" for " +instance.GetName() +" result " + del(instance, test.positionIsStringTest, test.substringTest, test.repleaceTest));
 
-        private void RunTests(PositionIsStringTest test, SubstringTest test2, RepleaceTest test3, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, bool> delPos,
-            Func<StringOperations, SubstringTest, bool> delSub, Func<StringOperations, RepleaceTest, bool> delRep)
-        {
-            foreach (var instance in instances)
-            {
-                Debug.WriteLine(instance.GetName());
-                Debug.WriteLine(test.Candidate + " : " + test.Needle + " -> " + test.Position + " result " + delPos(instance, test));
-                Debug.WriteLine(test2.Candidate + " : " + test2.Start + " -> " + test2.Lenght + "  =  " + test2.Result + " result " + delSub(instance, test2));
-                Debug.WriteLine(test3.Candidate + " : " + test3.Needle + " -> " + test3.Repleace + "  =  " + test3.Result + " result " + delRep(instance, test3));
-           }
-
-        }
-
-
-
-      
-
-
+                 }
+             }
          
     }
 
