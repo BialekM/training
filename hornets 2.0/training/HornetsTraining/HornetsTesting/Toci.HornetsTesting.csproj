@@ -66,6 +66,10 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\MateuszPoradaPositionInStringTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\PositionInStringTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\StringReplace\MateuszPoradaStringReplaceTest.cs" />
+    <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\StringReplace\StringReplaceTest.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
