@@ -4,7 +4,7 @@ using Toci.SeeSharpBasics.Test.TablesOperations;
 
 namespace Toci.SeeSharpBasics.Test.TomaszKil
 {
-    public class TomaszKilianTests:TablesOperationsTests
+    public class TomaszKilianTests:TomaszKilianStringOperations
     {
         public override void TestReversing()
         {
