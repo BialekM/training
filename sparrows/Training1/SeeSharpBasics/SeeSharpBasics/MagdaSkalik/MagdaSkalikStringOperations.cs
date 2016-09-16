@@ -6,7 +6,10 @@ namespace SeeSharpBasics.MagdaSkalik
     {
         public override string Substring(string candidate, int start, int length); // beatka, 1, 3 => eat ; bartek, 2, 4 => rtek
 
-        public override string GetName(); // zwrocic swoje imie i nazwisko
+        public override string GetName()
+        {
+            return "Magda Skalik";
+        }// zwrocic swoje imie i nazwisko
 
         public override string GlueBeginingEnd(string candidate); // bartlomiej  bjaeritmlo
 
