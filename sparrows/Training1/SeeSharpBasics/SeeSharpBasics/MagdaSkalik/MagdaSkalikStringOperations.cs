@@ -17,5 +17,39 @@ namespace SeeSharpBasics.MagdaSkalik
         public override string LetterReplace(string candidate, char needle, char replace); // beatka, e, s => bsatka ; beatka , a , b => bebtkb
 
         public override string StringReplace(string candidate, string needle, string replace); // bartlomiej, art, beatka => bbeatkalomiej
+        
+                public static string Substring(string candidate, int start, int length)
+        {
+            string fragment = "";
+            for(int i = start; i< (start+length) && i< candidate.Length;i++)
+
+            {
+                fragment+=candidate[i];
+            }
+            return fragment;
+        }
+        public static string ReplaceInText(string candidate, string find, string replace)
+        {
+            string text = "";
+            string result = "";
+
+            for (int i = 0; i < candidate.Length; i++)
+            {
+
+                text = Substring(candidate, i, find.Length);
+
+                if (text == find)
+                {
+
+                        result += replace;
+                        i = i + find.Length - 1;
+
+                }
+                else
+                {
+                    result += candidate[i];
+                }
+            }
+            return result;
     }
 }
