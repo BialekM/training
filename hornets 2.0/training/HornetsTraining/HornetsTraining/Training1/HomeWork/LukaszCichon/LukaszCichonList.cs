@@ -6,11 +6,11 @@ namespace HornetsTraining.Training1.HomeWork.LukaszCichon
    
     public class LukaszCichonList<TItemList> : MyList<TItemList>
     {
-     
+        TItemList[] temporary;
+
         public override void Add(TItemList item)
         {
-            TItemList[] temporary;
-
+            
             if (listOfItems == null)
             {
                 Index++;
@@ -37,7 +37,6 @@ namespace HornetsTraining.Training1.HomeWork.LukaszCichon
 
         public void Remove(TItemList item)
         {
-            TItemList[] temporary;
             int check = 0;
 
             if (listOfItems == null)

@@ -143,7 +143,7 @@ namespace HornetsTesting.Training1.HomeWork.LukaszCichon
             {
                 new StringReplaceTest {Candidate = "Beata", Expected = "Beatka", Needle = "at", ReplaceWit ="atk"},
                 new StringReplaceTest {Candidate = "Hubert", Expected = "Hubercik", Needle = "t", ReplaceWit ="cik"},
-                new StringReplaceTest {Candidate = "watert", Expected = "af", Needle = "Hub", ReplaceWit ="wat"},
+                new StringReplaceTest {Candidate = "Hubert", Expected = "watert", Needle = "Hub", ReplaceWit ="wat"},
                 new StringReplaceTest {Candidate = "Beata", Expected = "Kacper", Needle = "Beata", ReplaceWit ="Kacper"},
                 new StringReplaceTest {Candidate = "Beata", Expected = "Beata", Needle = "", ReplaceWit =""},
                 new StringReplaceTest {Candidate = "misisipi", Expected = "mipipipi", Needle = "si", ReplaceWit ="pi"},
