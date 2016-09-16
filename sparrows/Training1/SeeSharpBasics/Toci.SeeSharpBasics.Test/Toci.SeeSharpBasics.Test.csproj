@@ -54,6 +54,7 @@
     <Compile Include="Common\AssemblyLoader.cs" />
     <Compile Include="DominikRzepnicki\DominikTablesOperationsTests.cs" />
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
+    <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />
