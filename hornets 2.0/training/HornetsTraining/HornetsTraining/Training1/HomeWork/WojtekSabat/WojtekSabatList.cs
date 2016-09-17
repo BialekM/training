@@ -8,8 +8,13 @@ namespace HornetsTraining.Training1.HomeWork.WojtekSabat
 
         public override void Add(TListItem item)
         {
-            TListItem [] tmpArray = new TListItem[++Index];
-            tmpArray[Index-1] = item;
+            TListItem [] tmpArray = new TListItem[Index+1];
+            if (listOfItems != null)
+            {
+                for (int i = 0; i < Index; i++)
+                    tmpArray[i] = listOfItems[i];
+            }
+            tmpArray[Index++] = item;
             listOfItems = tmpArray;
         }
     }
