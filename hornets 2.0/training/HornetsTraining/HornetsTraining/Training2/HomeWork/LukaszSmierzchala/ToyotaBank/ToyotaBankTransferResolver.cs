@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HornetsTraining.Training1.Generics.Factory;
 using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.Factory;
 
@@ -10,11 +11,11 @@ namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
 {
     public class ToyotaBankTransferResolver : TransferResolver
     {
-        private readonly TransferHandlerFactory _banks;
+        private readonly DelegateFactoryBase<TransferHandler> _banks;
 
-        public ToyotaBankTransferResolver()
+        public ToyotaBankTransferResolver(DelegateFactoryBase<TransferHandler> factory)
         {
-            _banks = new TransferHandlerFactory();
+            _banks = factory;
         }
 
         public override void DoTransfer(Transfer transfer)
