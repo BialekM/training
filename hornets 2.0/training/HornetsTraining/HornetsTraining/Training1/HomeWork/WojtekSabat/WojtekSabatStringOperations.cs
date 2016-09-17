@@ -1,6 +1,4 @@
-﻿using System.CodeDom;
-
-namespace HornetsTraining.Training1.HomeWork.WojtekSabat
+﻿namespace HornetsTraining.Training1.HomeWork.WojtekSabat
 {
     public class WojtekSabatStringOperations : StringOperations
     {
@@ -9,17 +7,15 @@ namespace HornetsTraining.Training1.HomeWork.WojtekSabat
             return "Wojtek Sabat";
         }
 
-        public override string Substring(string candidate, int start, int length) // zwraca wycinek stringu od start do dlugosci length: beatka, 1, 3 => eat
+        public override string Substring(string candidate, int start, int length)
         {
             string substring="";
             for (int i = 0; i < length; i++)
-            {
                 substring += candidate[start++];
-            }
             return substring;
         }
 
-        public override int PositionInString(string candidate, string needle) // pozycja stringu w stringu
+        public override int PositionInString(string candidate, string needle)
         {
             for (int position = 0; position < candidate.Length; position++)
             {
@@ -31,13 +27,13 @@ namespace HornetsTraining.Training1.HomeWork.WojtekSabat
             return -1;
         }
 
-        public override string StringReplace(string candidate, string needle, string replaceWith) // podmieinc string w stringu beata, at, atk => beatka
+        public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            var startNeedlePosition = PositionInString(candidate, needle);
-            var endStringPosition = startNeedlePosition + needle.Length;
-            var startString = Substring(candidate, 0, startNeedlePosition);
+            var needlePosition = PositionInString(candidate, needle);
+            var endStringPosition = needlePosition + needle.Length;
+            var startString = Substring(candidate, 0, needlePosition);
             var endString = Substring(candidate,endStringPosition, candidate.Length - endStringPosition);
-            return startString+replaceWith+endString;
+            return startString + replaceWith + endString;
         }
     }
 }
