@@ -19,7 +19,7 @@
 
         public override string Substring(string candidate, int start, int lenght)
         {
-            string result = "";
+            string result = string.Empty;
             int position;
             if ((start + lenght) <= candidate.Length)
             {
@@ -65,7 +65,7 @@
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            string result = "";
+            string result = string.Empty;
             int position, index = 0;
             do
             {
@@ -87,7 +87,7 @@
 
         private string UniversalGetName()
         {
-            string result = "";
+            string result = string.Empty;
             int auxiliaryIndex = 0;
             var className = this.GetType().Name;
             className = Substring(className, 0, PositionInString(className, "StringOperations"));

@@ -119,6 +119,7 @@
     <Compile Include="Training2\HomeWork\BankList.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\BartoszMackiewicz\BPHTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Const\AppConst.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Container.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Factory.cs" />
@@ -149,11 +150,12 @@
     <Compile Include="Training2\HomeWork\NBP\NBPTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\NBP\NBPTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\NBP\TransferReport.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\BankFactory.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferHandler.cs" />
-    <Compile Include="Training2\HomeWork\NordeaBank\NordeaTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
