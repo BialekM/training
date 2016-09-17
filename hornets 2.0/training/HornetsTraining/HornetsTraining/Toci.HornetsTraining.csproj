@@ -112,6 +112,7 @@
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
     <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\WojtekSabat\WojtekSabatStringOperations.cs" />
     <Compile Include="Training1\Overdloading\OverloadingExaplme.cs" />
     <Compile Include="Training1\statics\StaticExample.cs" />
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
