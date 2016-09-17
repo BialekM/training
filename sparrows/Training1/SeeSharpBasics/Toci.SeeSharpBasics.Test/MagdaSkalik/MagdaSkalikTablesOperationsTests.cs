@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Toci.SeeSharpBasics.Test.TablesOperations;
 
 namespace Toci.SeeSharpBasics.Test.MagdaSkalik
 {
@@ -10,6 +11,11 @@ namespace Toci.SeeSharpBasics.Test.MagdaSkalik
         public void BubbleSort()
         {
 
+        }
+
+        public override void TestReversing()
+        {
+            throw new NotImplementedException();
         }
     }
 }
