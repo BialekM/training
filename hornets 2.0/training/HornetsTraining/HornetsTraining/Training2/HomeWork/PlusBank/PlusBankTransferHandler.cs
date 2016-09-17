@@ -4,18 +4,22 @@
     {
         private PlusBankSQLiteClient dbClient = new PlusBankSQLiteClient();
 
+        public PlusBankTransferHandler()
+        {
+            CreateTables();
+        }
+
         public override bool DoInTransfer(Transfer transfer)// dowolna
         {
-            //  throw new System.NotImplementedException();
-         //   CreateTables();
-            dbClient.Query("INSERT INTO in_transfers(source, destination, money, date) VALUES('" + transfer.SourceBankAccount + "', '" + transfer.DestinationBankAccount + "', '" + transfer.Money + "', datetime());");
+            dbClient.Query("INSERT INTO transfers(source, type, destination, money, date) VALUES('" + transfer.SourceBankAccount + "', '1', '" + transfer.DestinationBankAccount + "', '" + transfer.Money + "', datetime());"); 
             return true;
         }
 
         private void CreateTables()
         {
-            dbClient.Query(@"CREATE TABLE transfers (
+            dbClient.Query(@"CREATE TABLE IF NOT EXISTS transfers (
                             id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            type INTEGER,
                             source TEXT,
                             destination TEXT,
                             money INTEGER,
@@ -25,9 +29,9 @@
 
         public override bool DoOutTransfer(Transfer transfer) // dowolna
         {
-            //  throw new System.NotImplementedException();
+            dbClient.Query("INSERT INTO transfers(source, type, destination, money, date) VALUES('" + transfer.SourceBankAccount + "', '2', '" + transfer.DestinationBankAccount + "', '" + transfer.Money + "', datetime());");
 
-            return false;
+            return true;
         }
     }
 }

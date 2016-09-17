@@ -14,6 +14,8 @@ namespace HornetsTraining.Training2.HomeWork
         {
             bankIds.Add("1140", () => new MbankTransferHandler());
             bankIds.Add("1680", () => new PlusBankTransferHandler());
+            bankIds.Add("1010", () => new NBP.NBPTransferHandler());
+          
         }
        
         public override void DoTransfer(Transfer transfer)

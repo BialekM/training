@@ -16,9 +16,9 @@ namespace HornetsTraining.Training2.HomeWork
 
         public PlusBankSQLiteClient(string dbName = "plusbank.sqlite")
         {
-          //  SQLiteConnection.CreateFile(dbName);
+            //  SQLiteConnection.CreateFile(dbName);
             conn = new SQLiteConnection("Data Source='" + dbName + "'");
-         
+            
         }
 
         public void Connect()
