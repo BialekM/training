@@ -7,6 +7,7 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal
     public class SlawekStringOperationTest
     {
         SlawekKStringOperations str = new SlawekKStringOperations();
+        
         [TestMethod]
         public void ReplaceTest()
         {
