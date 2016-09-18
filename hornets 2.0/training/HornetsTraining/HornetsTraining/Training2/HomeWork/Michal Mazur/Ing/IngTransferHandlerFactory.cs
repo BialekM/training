@@ -17,7 +17,7 @@ namespace HornetsTraining.Training2.HomeWork.Ing
             ListOfInstances = new Dictionary<string, Func<TransferHandler>>()
             {
                 {"1440", () => new NordeaBankTransferHandler()},
-                {"1140", () => new MBankTansferHandler()},
+                {"1140", () => new MBankTransferHandler()},
                 {"2160", () => new ToyotaBankTransferHandler()},
                 {"1680", () =>  new PlusBankTransferHandler()},
                 {"1050", () => new IngTransferHandler()  },

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using HornetsTraining.Training2.HomeWork.Mbank;
 using HornetsTraining.Training2.HomeWork.NBP;
 
 namespace HornetsTraining.Training2.HomeWork
@@ -15,7 +16,7 @@ namespace HornetsTraining.Training2.HomeWork
             var result = new Dictionary<string, Func<TransferHandler>>();
             result.Add("1010", () => new NBPTransferHandler()); 
             result.Add("1440", () => new NordeaBankTransferHandler());
-            result.Add("1140", () => new MbankTransferHandler());
+            result.Add("1140", () => new MBankTransferHandler());
             result.Add("1680", () => new PlusBankTransferHandler());
 
             return result;

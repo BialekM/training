@@ -17,21 +17,5 @@ namespace HornetsTesting.Training2.HomeWork
 
             transferResolver.DoTransfer(transfer);
         }
-
-        [TestMethod]
-        public void TransferTest2()
-        {
-            Transfer transfer = new Transfer { DestinationBankAccount = "1011404367632326523475234", SourceBankAccount = "1014405043732385943", Money = 250 };
-
-            TransferHandler transferHandler = new MBankTansferHandler();
-
-           /* transferHandler.DoInTransfer(transfer);
-            transferHandler.DoInTransfer(transfer);
-            transfer = new Transfer { DestinationBankAccount = "101440504373245635943", SourceBankAccount = "101140436763233456775234", Money = 100 };
-            transferHandler.DoOutTransfer(transfer);
-            transferHandler.DoOutTransfer(transfer);*/
-
-
-        }
     }
 }

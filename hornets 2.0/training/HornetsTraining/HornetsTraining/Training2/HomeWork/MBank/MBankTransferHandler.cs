@@ -3,7 +3,7 @@ using System.IO;
 
 namespace HornetsTraining.Training2.HomeWork.Mbank
 {
-    public class MBankTansferHandler : TransferHandler
+    public class MBankTransferHandler : TransferHandler
     {
         public const string AccountCollectionInfoFilePath = "../../../HornetsTraining/Training2/HomeWork/MBank/MBankAccountInfo.txt";
         public override bool DoInTransfer(Transfer transfer)

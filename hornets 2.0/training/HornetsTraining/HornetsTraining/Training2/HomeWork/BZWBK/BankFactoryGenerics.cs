@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
+using HornetsTraining.Training2.HomeWork.Mbank;
 
 namespace HornetsTraining.Training2.HomeWork.BZWBK
 {
@@ -12,7 +13,7 @@ namespace HornetsTraining.Training2.HomeWork.BZWBK
         private static readonly Dictionary<string, Func<TransferHandler>> BankList = new Dictionary<string, Func<TransferHandler>>
         {
             {"1090", () => new BZWBKTransferHandler()},
-            {"1140", () => new MbankTransferHandler()},
+            {"1140", () => new MBankTransferHandler()},
         };
 
         public static TransferHandler CreateTransferHandler(string nrb)
