@@ -142,7 +142,11 @@ namespace SeeSharpBasics.BartekZapart
         {
 
         }
-       
+
+        public void KarolZareba(string test)
+        {
+            
+        }
     }
 
 }
