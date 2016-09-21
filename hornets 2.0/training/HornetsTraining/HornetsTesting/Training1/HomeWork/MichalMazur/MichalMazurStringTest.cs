@@ -12,42 +12,42 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
     [TestClass]
     public class MichalMazurStringTest
     {
-       
-         [TestMethod]
+
+        [TestMethod]
         public void Test()
         {
             AssemblyLoader al = new AssemblyLoader();
             var instances = al.GetTypesInstancesList<StringOperations>().ToList();
-            List<AllTestClass> allTestClass=InitializeLists();
-                foreach (var item in allTestClass)
+            List<AllTestClass> allTestClass = InitializeLists();
+            foreach (var item in allTestClass)
+            {
+                try
                 {
-                    try
-                    {
 
-                        RunTests("position test",item, instances, (operations, position, substring, repleacing) => 
-                            position.Position == operations.PositionInString(position.Candidate, position.Needle) ? 
-                            (position.Candidate  + " : " +position.Needle +" = "+ position.Position + "  test passed" ): "failed");
-                      
-                        RunTests("substring test", item, instances, (operations, position, substring, repleacing) =>                           
-                           substring.Result == operations.Substring(substring.Candidate, substring.Start, substring.Lenght) ?
-                           (substring.Candidate + " : " + substring.Start+ " -> " +substring.Lenght + " = " + substring.Result + "  test passed" ): "failed");
+                    RunTests("position test", item, instances, (operations, test) =>
+                       test.positionIsStringTest.Position == operations.PositionInString(test.positionIsStringTest.Candidate, test.positionIsStringTest.Needle) ?
+                        (test.positionIsStringTest.Candidate + " : " + test.positionIsStringTest.Needle + " = " + test.positionIsStringTest.Position + "  test passed") : "failed");
 
-                        RunTests("repleacing test", item, instances,(operations, position, substring, repleacing) =>
-                            repleacing.Result ==operations.StringReplace(repleacing.Candidate, repleacing.Needle, repleacing.Repleace)?
-                            (repleacing.Candidate  + " : " +repleacing.Needle + " -> " + repleacing.Repleace+" = "+ repleacing.Result + "  test passed" ): "failed");
- 
+                    RunTests("substring test", item, instances, (operations, test) =>
+                       test.substringTest.Result == operations.Substring(test.substringTest.Candidate, test.substringTest.Start, test.substringTest.Lenght) ?
+                       (test.substringTest.Candidate + " : " + test.substringTest.Start + " -> " + test.substringTest.Lenght + " = " + test.substringTest.Result + "  test passed") : "failed");
 
-                    }
-                    catch
-                    {
-                    }
+                    RunTests("repleacing test", item, instances, (operations, test) =>
+                        test.repleaceTest.Result == operations.StringReplace(test.repleaceTest.Candidate, test.repleaceTest.Needle, test.repleaceTest.Repleace) ?
+                        (test.repleaceTest.Candidate + " : " + test.repleaceTest.Needle + " -> " + test.repleaceTest.Repleace + " = " + test.repleaceTest.Result + "  test passed") : "failed");
+
+
                 }
+                catch
+                {
+                }
+            }
         }
 
-             private List<AllTestClass> InitializeLists()
-            {
+        private List<AllTestClass> InitializeLists()
+        {
 
-                List<AllTestClass> allTestClass = new List<AllTestClass>()
+            List<AllTestClass> allTestClass = new List<AllTestClass>()
                 {
                     new AllTestClass()
                     {
@@ -101,20 +101,20 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
                     }
                 };
 
-                    return allTestClass;
+            return allTestClass;
+
+        }
+
+        private void RunTests(string testName, AllTestClass test, List<StringOperations> instances, Func<StringOperations, AllTestClass, string> del)
+        {
+
+            foreach (var instance in instances)
+            {
+                Debug.WriteLine(testName + " for " + instance.GetName() + " | " + del(instance, test));
 
             }
+        }
 
-              private void RunTests(string testName, AllTestClass test, List<StringOperations> instances, Func<StringOperations, PositionIsStringTest, SubstringTest, RepleaceTest, string> del)
-             {
-                 
-                 foreach (var instance in instances)
-                 {
-                     Debug.WriteLine(testName+" for " +instance.GetName()+" | " + del(instance, test.positionIsStringTest, test.substringTest, test.repleaceTest));
-
-                 }
-             }
-         
     }
 
     public class AllTestClass
@@ -132,7 +132,7 @@ namespace HornetsTesting.Training2.Delegates.MichalMazur
 
         public string Needle { get; set; }
 
-        
+
     }
     public class SubstringTest
     {
