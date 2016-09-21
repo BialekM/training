@@ -2,6 +2,7 @@
 {
     public class BankMilleniumTransferResolver : TransferResolver
     {
+
          
     }
 }
