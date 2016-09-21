@@ -165,10 +165,7 @@
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Training1\HomeWork\MarekMilosierny\Generics\" />
-    <Folder Include="Training1\HomeWork\MarekMilosierny\StringOperation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
