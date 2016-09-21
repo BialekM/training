@@ -1,27 +1,51 @@
-﻿namespace SeeSharpBasics.KarolZareba
+﻿using System.Globalization;
+using System.Runtime.Remoting.Messaging;
+
+namespace SeeSharpBasics.KarolZareba
 {
     public class KarolZarebaStringOperations : StringOperations
     {
         public override string Substring(string candidate, int start, int length)
         {
-            throw new System.NotImplementedException();
+            string result = "";
+            for (int i = start; i <= length; i++)
+            {
+                result += candidate[i];
+            }
+            return result;
+
         }
 
         public override string GetName()
         {
-            throw new System.NotImplementedException();
+            return "KarolZareba";
+
         }
 
         public override string GlueBeginingEnd(string candidate)
         {
-            throw new System.NotImplementedException();
+            string result = "";
+            for (int i = 0, j = candidate.Length - 1; i < j; i++, j--)
+            {
+                result += candidate[i];
+                result += candidate[j];
+            }
+            return result;
         }
 
         public override int CountOccurences(string candidate, char needle)
         {
-            throw new System.NotImplementedException();
-        }
-
+            int result = 0;
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (candidate[i] = needle);
+                {
+                    result++;
+                }
+            }
+            return result;
+        }   
+; 
         public override int LetterPositionInString(string candidate, char needle)
         {
             throw new System.NotImplementedException();
