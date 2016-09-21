@@ -7,19 +7,25 @@ namespace HornetsTraining.Training1.HomeWork.LukaszPopiolek
         public LukaszPopiolekList()
         {
             listOfItems = new TItem[Index];
+            Index = -1;
         }
 
         public override void Add(TItem item)
         {
             var lenght = this.listOfItems.Length;
-            TItem[] temp = new TItem[++lenght];
-            for (int i = 0; i < listOfItems.Length; i++)
+            TItem[] newArray = new TItem[++lenght];
+            for (int i = 0; i < lenght - 1; i++)
             {
-                temp[i] = listOfItems[i];
+                newArray[i] = listOfItems[i];
             }
-            listOfItems = temp;
+            listOfItems = newArray;
             listOfItems[lenght - 1] = item;
+            Index++;
+        }
 
+        public TItem GetElement(int index)
+        {
+            return index <= Index ? listOfItems[index] : default(TItem);
         }
     }
 }

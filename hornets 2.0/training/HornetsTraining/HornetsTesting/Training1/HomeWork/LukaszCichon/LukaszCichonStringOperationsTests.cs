@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
-using HornetsTesting.Common;
 using HornetsTesting.Training1.Homework;
+using HornetsTraining.Common;
 using HornetsTraining.Training1.HomeWork;
 using HornetsTraining.Training1.HomeWork.LukaszCichon;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

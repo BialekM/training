@@ -12,3 +12,31 @@ Numer konta docelowego: 1024905647583950673647222
 Numer konta zrodlowego: 10216075647583959673647583
 Pieniadze: 654
 
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-18 13:17:36
+Numer konta docelowego: 10249075647583950673647222
+Numer konta zrodlowego: 10249075647583959673647583
+Pieniadze: 764
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-18 13:17:36
+Numer konta docelowego: 1024905647583950673647222
+Numer konta zrodlowego: 10216075647583959673647583
+Pieniadze: 654
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-18 13:20:34
+Numer konta docelowego: 10249075647583950673647222
+Numer konta zrodlowego: 10249075647583959673647583
+Pieniadze: 764
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-18 13:20:34
+Numer konta docelowego: 1024905647583950673647222
+Numer konta zrodlowego: 10216075647583959673647583
+Pieniadze: 654
+

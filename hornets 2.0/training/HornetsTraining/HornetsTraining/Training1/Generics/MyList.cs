@@ -7,7 +7,7 @@
 
         public virtual void Add(TListItem item)
         {
-            //automatyczne rozszerzanie tablicy
+            
 
             listOfItems[Index] = item;
             Index++;
