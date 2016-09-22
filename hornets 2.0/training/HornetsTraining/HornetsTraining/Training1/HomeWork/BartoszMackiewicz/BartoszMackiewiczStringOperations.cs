@@ -23,12 +23,13 @@ namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 
         public override int PositionInString(string candidate, string needle)
         {
-            
+            if (candidate.Length < needle.Length) return -1;
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (Substring(candidate, i, needle.Length) == needle)
+               
                 {
-                   return i;
+                    return i;
                 }
             }
             return -1;
@@ -37,9 +38,26 @@ namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
+            string result = "";
+            string subCandidate = candidate;
+            int positionCounter = 0;
 
-            return ""; //TODO
+
+
+            while (PositionInString(subCandidate, needle) > -1)
+            {
+
+                positionCounter = PositionInString(subCandidate, needle);
+                result += Substring(subCandidate, 0, positionCounter);
+                result += replaceWith;
+                subCandidate = Substring(subCandidate, positionCounter + needle.Length,
+                    subCandidate.Length - (positionCounter+needle.Length));
+            }
+
+            result += subCandidate;
+            return result;
 
         }
+
     }
 }

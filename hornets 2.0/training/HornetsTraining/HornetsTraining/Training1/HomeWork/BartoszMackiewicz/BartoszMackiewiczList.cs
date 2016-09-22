@@ -7,18 +7,30 @@ using HornetsTraining.Training1.Generics;
 
 namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 {
-    class BartoszMackiewiczList<TListItems> :  MyList<TListItems>
+   public class BartoszMackiewiczList<TListItems> :  MyList<TListItems>
 
     {
+        
         public override void Add(TListItems item)
         {
+
+            if (listOfItems == null) listOfItems = new TListItems[0];
             if (Index >= listOfItems.Length)
             {
-              TListItems[] newlistOfItems = new TListItems[listOfItems.Length+1];
-              newlistOfItems = listOfItems;
+                TListItems[] newlistOfItems = new TListItems[listOfItems.Length + 1];
+
+                for (int i =0; i < listOfItems.Length;i++ )
+                {
+                    newlistOfItems[i] = listOfItems[i];
+                }
+                newlistOfItems[Index] = item;
+                listOfItems = newlistOfItems;
+                Index++;
             }
-            //else
-            //    (base.Add());
+            else
+            base.Add(item);
+              
+            
 
         }
     }
