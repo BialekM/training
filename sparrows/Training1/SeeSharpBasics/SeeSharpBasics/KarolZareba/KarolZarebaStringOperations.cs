@@ -45,7 +45,7 @@ namespace SeeSharpBasics.KarolZareba
             }
             return result;
         }   
-; 
+ 
         public override int LetterPositionInString(string candidate, char needle)
         {
             throw new System.NotImplementedException();
