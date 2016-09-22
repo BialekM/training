@@ -70,8 +70,10 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
+    <Compile Include="Training1\HomeWork\BartoszMackieiwcz\Bartosz MackiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekStringOperationsTests.cs" />
+    <Compile Include="Training1\HomeWork\MarekMilosierny\MarekMilosiernyStringOperationTests.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\MateuszPoradaPositionInStringTest.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\PositionInString\PositionInStringTest.cs" />
     <Compile Include="Training1\HomeWork\MateuszPorada\HomeworkTest\StringReplace\MateuszPoradaStringReplaceTest.cs" />

@@ -17,9 +17,9 @@ namespace HornetsTesting.Training1.Homework.BartoszMackieiwcz
         }
 
         [TestMethod]
-        public void subst()
+        public void StringReplaceTest()
         {
-            Assert.AreEqual(Bartosz.StringReplace("Warszklawoa", "klawo", "wa"), "Warszawa");
+            Assert.AreEqual(Bartosz.StringReplace("TemuTakJemuTakWamTak", "Tak", "Nie"), "TemuNieJemuNieWamNie");
         }
 
     }
