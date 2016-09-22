@@ -54,6 +54,7 @@
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
+    <Compile Include="Olek\OlekTableOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
     <Compile Include="Program.cs" />
