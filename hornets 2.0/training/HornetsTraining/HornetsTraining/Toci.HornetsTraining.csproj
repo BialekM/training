@@ -117,6 +117,8 @@
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKMyList.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKStringOperation.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
@@ -180,6 +182,9 @@
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\SlawekKBankFactory.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
