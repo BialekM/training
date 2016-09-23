@@ -89,6 +89,7 @@
     <Compile Include="Training1\HomeWork\MateuszPorada\MateuszPoradaStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurListTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurStringTest.cs" />
+    <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakListTest.cs" />
     <Compile Include="Training1\HomeWork\PawelMarciniak\PawelMarciniakStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\RafalKawalerski\RafalKawalerskiStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\StringOperationsTest.cs" />
