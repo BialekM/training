@@ -167,6 +167,9 @@
     <Compile Include="Training2\HomeWork\NordeaBank\NordeaBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferHandlerFactory.cs" />
+    <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
