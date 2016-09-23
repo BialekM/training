@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using HornetsTraining.Training2.HomeWork.Mbank;
 using HornetsTraining.Training2.HomeWork.NBP;
+using HornetsTraining.Training2.HomeWork.MarcinJaniak;
 
 namespace HornetsTraining.Training2.HomeWork
 {
@@ -18,7 +19,7 @@ namespace HornetsTraining.Training2.HomeWork
             result.Add("1440", () => new NordeaBankTransferHandler());
             result.Add("1140", () => new MBankTransferHandler());
             result.Add("1680", () => new PlusBankTransferHandler());
-
+            result.Add("2000", () => new RabobankPolskaTransferHandler());
             return result;
         }
     }

@@ -90,6 +90,8 @@
     <Compile Include="Training1\HomeWork\LukaszSmierzchala\LukaszSmierzchalaStringOperations.cs" />
     <Compile Include="Training1\HomeWork\LukaszSykutera\LukaszSykuteraMyList.cs" />
     <Compile Include="Training1\HomeWork\LukaszSykutera\LukaszSykuteraStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\MarcinJaniak\MarcinJaniakList.cs" />
+    <Compile Include="Training1\HomeWork\MarcinJaniak\MarcinJaniakStringOperations.cs" />
     <Compile Include="Training1\HomeWork\MarekMilosierny\MarekList.cs" />
     <Compile Include="Training1\HomeWork\MarekMilosierny\MarekMilosiernyStringOperation.cs" />
     <Compile Include="Training1\HomeWork\MichalMazur\MichalMazurList.cs" />
@@ -146,6 +148,8 @@
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\Factory\TransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBank\ToyotaBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\MarcinJaniak\RabobankPolskaTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\MarcinJaniak\RabobankPolskaTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\MBank\MBankTranferResolver.cs" />
     <Compile Include="Training2\HomeWork\MBank\TransferHandlerFactory.cs" />
