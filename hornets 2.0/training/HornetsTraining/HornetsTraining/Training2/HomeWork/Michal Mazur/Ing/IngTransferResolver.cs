@@ -47,7 +47,7 @@ namespace HornetsTraining.Training2.HomeWork.MichalMazur
             if (Destination==Source)
             {
    
-                //handler.DoInTransfer(t);
+                handler.DoInTransfer(t);
       
                 
             }
