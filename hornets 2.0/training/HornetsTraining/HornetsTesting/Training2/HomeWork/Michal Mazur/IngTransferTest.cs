@@ -27,7 +27,11 @@ namespace HornetsTesting.Training2.HomeWork.MichalMazur
                    
                  new Transfer()
                {
-                   DestinationBankAccount = "10105075647583950673647222", SourceBankAccount = "10114075647583959673647583", Money = 764
+                   DestinationBankAccount = "10249075647583950673647222", SourceBankAccount = "10105075647583959673647583", Money = 764
+               }, 
+               new Transfer()
+               {
+                   DestinationBankAccount = "10105075647583950673647333", SourceBankAccount = "10105075647583959673647583", Money = 764
                },
                 new Transfer()
                {
