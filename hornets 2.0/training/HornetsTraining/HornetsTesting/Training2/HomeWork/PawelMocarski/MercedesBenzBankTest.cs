@@ -11,7 +11,7 @@ namespace HornetsTesting.Training2.HomeWork.PawelMocarski
         [TestMethod]
         public void TestMethod()
         {
-            var transfer = new Transfer { DestinationBankAccount = "101090436763276523475234", SourceBankAccount = "10158050437285943", Money = 1800 };
+            var transfer = new Transfer { DestinationBankAccount = "101580436763276523475234", SourceBankAccount = "10101050437285943", Money = 1800 };
 
             TransferResolver transferResolver = new MercedesBenzBankTransferResolver();
 

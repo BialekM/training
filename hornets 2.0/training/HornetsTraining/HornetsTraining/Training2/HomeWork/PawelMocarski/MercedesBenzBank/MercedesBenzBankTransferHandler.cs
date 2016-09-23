@@ -25,12 +25,24 @@ namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
 
         private bool DoTransfer(string fileName, Transfer transfer)
         {
-            var transferJson = File.ReadAllText(fileName);
-            var transfers = JsonConvert.DeserializeObject<List<Transfer>>(transferJson);
+            List<Transfer> transfers;
+            string transferJson;
+
+
+            if (File.Exists(fileName))
+            {
+                transferJson = File.ReadAllText(fileName);
+                transfers = JsonConvert.DeserializeObject<List<Transfer>>(transferJson);
+
+            }
+            else
+            {
+                transfers = new List<Transfer>();
+            }
 
             transfers.Add(transfer);
             transferJson = JsonConvert.SerializeObject(transfers);
-            File.WriteAllText("", fileName);
+            File.WriteAllText(fileName, transferJson);
 
             return true; //TODO
         }
