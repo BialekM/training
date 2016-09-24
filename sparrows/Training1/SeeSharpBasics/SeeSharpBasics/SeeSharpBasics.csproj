@@ -76,6 +76,7 @@
     <Compile Include="Training3\Homework\BankResolver.cs" />
     <Compile Include="Training3\Homework\BartekZapartMoneyValue.cs" />
     <Compile Include="Training3\Homework\CodeGenerator.cs" />
+    <Compile Include="Training3\Homework\MineSweeper.cs" />
     <Compile Include="Training3\Homework\MoneyValue.cs" />
     <Compile Include="Training3\Homework\PeselValidator.cs" />
   </ItemGroup>
