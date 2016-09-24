@@ -31,6 +31,6 @@
             return reversed;
         }
 
-        public abstract int[] BubbleSort(int[] tableToSort); //posortowac tablice
+        public abstract int[] BubbleSort(int tableToSort); //posortowac tablice
     }
 }

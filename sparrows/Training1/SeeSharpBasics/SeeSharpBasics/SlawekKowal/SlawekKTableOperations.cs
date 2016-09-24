@@ -4,7 +4,7 @@ namespace SeeSharpBasics.SlawekKowal
 {
     public class SlawekKTableOperations: TableOperations
     {
-        public override int[] BubbleSort(int[] tableToSort)
+        public override int[] BubbleSort(int tableToSort)
         {
             for (int i = 0; i < tableToSort.Length; i++)
             {

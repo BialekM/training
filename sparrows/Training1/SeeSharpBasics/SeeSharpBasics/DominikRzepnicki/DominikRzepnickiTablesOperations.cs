@@ -9,7 +9,7 @@ namespace SeeSharpBasics.DominikRzepnicki
 {
     public class DominikRzepnickiTablesOperations : TableOperations
     {
-        public override int[] BubbleSort(int[] tableToSort) //posortowanie tablicy
+        public override int[] BubbleSort(int tableToSort) //posortowanie tablicy
         {
             //napisac swoja implementacje
             throw new NotImplementedException();
