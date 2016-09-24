@@ -100,6 +100,8 @@
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKListTest.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKStringTest.cs" />
     <Compile Include="Training1\HomeWork\TomaszWilkosz\TomaszWilkoszStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMuzyczkaTests.cs" />
     <Compile Include="Training1\HomeWork\MichalMuzyczka\MichalMyTest.cs" />
@@ -121,8 +123,10 @@
     <Compile Include="Training2\HomeWork\MichalMuzyczka\NBPTransferHandlerTests.cs" />
     <Compile Include="Training2\HomeWork\MichalMuzyczka\NBPTransferResolverTests.cs" />
     <Compile Include="Training2\HomeWork\NordeaBankTests.cs" />
+    <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBankTest.cs" />
     <Compile Include="Training2\HomeWork\PlusBankTransferTest.cs" />
     <Compile Include="Training2\HomeWork\SantanderConsumerBankTests.cs" />
+    <Compile Include="Training2\HomeWork\SlawekKowal\VolkswagenBankTest.cs" />
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
   </ItemGroup>
   <ItemGroup>

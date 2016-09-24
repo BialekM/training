@@ -35,6 +35,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
@@ -113,6 +117,8 @@
     <Compile Include="Training1\HomeWork\PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelKownacki\PawelKownackiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\PawelMocarski\PawelMocarskiStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKMyList.cs" />
+    <Compile Include="Training1\HomeWork\SlawekKowal\SlawekKStringOperation.cs" />
     <Compile Include="Training1\HomeWork\StringOperations.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekList.cs" />
     <Compile Include="Training1\HomeWork\SławekNowiński\SlawekStringOperation.cs" />
@@ -162,6 +168,9 @@
     <Compile Include="Training2\HomeWork\NBP\NBPTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\NBP\TransferReport.cs" />
     <Compile Include="Training2\HomeWork\NordeaBank\BankFactory.cs" />
+    <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankFactory.cs" />
+    <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
@@ -174,6 +183,9 @@
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />
     <Compile Include="Training2\HomeWork\TransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\SlawekKBankFactory.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
