@@ -1,0 +1,10 @@
+diff a/sparrows/Training1/SeeSharpBasics/Toci.SeeSharpBasics.Test/MagdaSkalik/MagdaSkalikTablesOperationsTests.cs b/sparrows/Training1/SeeSharpBasics/Toci.SeeSharpBasics.Test/MagdaSkalik/MagdaSkalikTablesOperationsTests.cs	(rejected hunks)
+@@ -1,5 +0,6 @@
+-﻿using System;
+-using Microsoft.VisualStudio.TestTools.UnitTesting;
++﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
++using SeeSharpBasics.MagdaSkalik;
++using Toci.SeeSharpBasics.Test.TablesOperations;
+ 
+ namespace Toci.SeeSharpBasics.Test.MagdaSkalik
+ {

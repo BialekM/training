@@ -10,6 +10,11 @@ namespace Toci.SeeSharpBasics.Test.Olek
         public override void TestReversing()
         {
            // var tableOperations = new TableOperations();
+            // TablesOperations.ReverseTable()
+
+            //Assert.AreEqual();
+            //Assert.AreEqual();
+            //Assert.AreEqual();
 
         }
 

@@ -5,10 +5,11 @@
         public override string Substring(string candidate, int start, int length)
         {
             string sub = "";
-            for (int i = 0; i < length; i++)
+            for (int i = start; i < length + start && i < candidate.Length; i++)
             {
-                sub += candidate[i + start];
+                sub += candidate[i];
             }
+
             return sub;
         }
 
@@ -19,14 +20,15 @@
 
         public override string GlueBeginingEnd(string candidate)
         {
-            string result="";
+            string result = "";
             for (int i = 0, j = candidate.Length - 1; i <= j; i++, j--)
             {
-                result += candidate[i] + candidate[j];
                 if (i == j)
                 {
-                    result += candidate[i];
+                    result += candidate[i].ToString();
+                    return result;
                 }
+                result += candidate[i].ToString() + candidate[j].ToString();
             }
             return result;
         }
@@ -71,12 +73,12 @@
         public override string StringReplace(string candidate, string needle, string replace)
         {
             string result = "";
-            for (int i = 0; i < candidate.Length - replace.Length; i++)
+            for (int i = 0; i < candidate.Length; i++)
             {
-                if (Substring(candidate, i, replace.Length) == replace)
+                if (Substring(candidate, i, needle.Length) == needle)
                 {
                     result += replace;
-                    i += replace.Length-1;
+                    i += needle.Length - 1;
                 }
                 else
                 {

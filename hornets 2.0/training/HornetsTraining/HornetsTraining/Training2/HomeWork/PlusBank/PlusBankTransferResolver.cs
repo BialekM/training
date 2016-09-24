@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HornetsTraining.Training2.HomeWork.Mbank;
 
 namespace HornetsTraining.Training2.HomeWork
 {
@@ -12,7 +13,7 @@ namespace HornetsTraining.Training2.HomeWork
 
         public PlusBankTransferResolver()
         {
-            bankIds.Add("1140", () => new MbankTransferHandler());
+            bankIds.Add("1140", () => new MBankTransferHandler());
             bankIds.Add("1680", () => new PlusBankTransferHandler());
             bankIds.Add("1010", () => new NBP.NBPTransferHandler());
           
