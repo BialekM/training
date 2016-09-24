@@ -5,16 +5,16 @@ namespace SeeSharpBasics.Olek
 {
     public class OlekTableOperations : TableOperations
     {
-        public override int[] BubbleSort(int tableToSort)
+        public override int[] BubbleSort(int[] tableToSort)
         {
             //  tutaj moja implementacja
 
-            int[] a = new int[tableToSort];
-            var b = tableToSort.lenght;
+            int[] a = new int[tableToSort.Length];
+            var b = tableToSort.Length;
 
             for (int i = 0; i <= b; i++)
             {
-                if (tableToSort[] <= b)
+                if (tableToSort[i] <= b)
                 {
                     
                 }

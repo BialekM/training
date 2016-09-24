@@ -38,7 +38,7 @@ namespace SeeSharpBasics.KarolZareba
             int result = 0;
             for (int i = 0; i < candidate.Length; i++)
             {
-                if (candidate[i] = needle);
+                if (candidate[i] == needle);
                 {
                     result++;
                 }
