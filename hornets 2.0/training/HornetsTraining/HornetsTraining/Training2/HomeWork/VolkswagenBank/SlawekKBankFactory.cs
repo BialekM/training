@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using HornetsTraining.Training2.HomeWork.BankMillenium;
+using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
 using HornetsTraining.Training2.HomeWork.BZWBK;
 using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
@@ -24,7 +25,7 @@ namespace HornetsTraining.Training2.HomeWork.VolkswagenBank
                 {"1050", () => new IngTransferHandler()},
                 {"1140", () => new MBankTransferHandler()},
                 {"2490", () => new AliorBankTransferHandler()},
-                {"1060", () => new BPHTransferHandler()},
+                {"1060", () => new BphTransferHandler()},
                 {"1160", () => new BankMilleniumTransferHandler()},
                 {"1680", () => new PlusBankTransferHandler()},
                 {"1090", () => new BZWBKTransferHandler()},

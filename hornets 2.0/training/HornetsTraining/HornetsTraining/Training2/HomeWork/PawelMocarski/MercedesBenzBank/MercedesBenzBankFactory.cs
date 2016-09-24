@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HornetsTraining.Training1.Generics.Factory;
 using HornetsTraining.Training2.HomeWork.BankMillenium;
+using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
 using HornetsTraining.Training2.HomeWork.BZWBK;
 using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
@@ -24,7 +25,7 @@ namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
             ListOfInstances = new Dictionary<string, Func<TransferHandler>>()
             {
                 {"1160", () => new BankMilleniumTransferHandler()},
-                {"1060", () => new BPHTransferHandler() },
+                {"1060", () => new BphTransferHandler() },
                 {"1090", () => new BZWBKTransferHandler() },
                 {"2490", () => new AliorBankTransferHandler() },
                 {"2160", () => new ToyotaBankTransferHandler() },
