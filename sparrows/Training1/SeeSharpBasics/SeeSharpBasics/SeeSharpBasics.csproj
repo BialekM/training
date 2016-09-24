@@ -71,6 +71,13 @@
     <Compile Include="TomaszKilian\TomekStringOperations.cs" />
     <Compile Include="TomaszKilian\TomekTableOperations.cs" />
     <Compile Include="TomaszKilian\TomekTablesOperations.cs" />
+    <Compile Include="Training3\Hashmaps\HashmapExample.cs" />
+    <Compile Include="Training3\Hashmaps\MultiDimensionalTables.cs" />
+    <Compile Include="Training3\Homework\BankResolver.cs" />
+    <Compile Include="Training3\Homework\BartekZapartMoneyValue.cs" />
+    <Compile Include="Training3\Homework\CodeGenerator.cs" />
+    <Compile Include="Training3\Homework\MoneyValue.cs" />
+    <Compile Include="Training3\Homework\PeselValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

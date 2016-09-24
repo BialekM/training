@@ -12,9 +12,10 @@ namespace SeeSharpBasics.Olek
             int[] a = new int[tableToSort.Length];
             var b = tableToSort.Length;
 
+
             for (int i = 0; i <= b; i++)
             {
-                if (tableToSort[i] <= b)
+                if (tableToSort[i] < tableToSort[i + 1])
                 {
                     
                 }
