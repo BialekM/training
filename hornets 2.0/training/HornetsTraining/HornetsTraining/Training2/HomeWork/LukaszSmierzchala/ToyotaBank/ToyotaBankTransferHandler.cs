@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
+//using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
 
 namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
 {

@@ -28,7 +28,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             bool accountExists = accoutMoneyLine > 0;
             if (accountExists)
             {
-                IncrementMoneyAmmount(accoutMoneyLine, -(transfer.Money));
+                DecrementMoneyAmmount(accoutMoneyLine, transfer.Money);
             }
             else
             {
@@ -74,6 +74,11 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             string moneyLine = GetSpecifiedLine(lineNumber);
             double previousMoneyAmmount = Convert.ToDouble(moneyLine);
             ModifySpecifiedLine(lineNumber, Convert.ToString(previousMoneyAmmount + value));
+        }
+
+        private void DecrementMoneyAmmount(int lineNumber, double value)
+        {
+            IncrementMoneyAmmount(lineNumber, -value);
         }
 
         private string GetSpecifiedLine(int lineNumber)

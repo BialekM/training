@@ -1,4 +1,5 @@
-﻿using HornetsTraining.Training1.Generics;
+﻿using System.Linq;
+using HornetsTraining.Training1.Generics;
 using System;
 namespace HornetsTraining.Training1.HomeWork.MichalMazur
 {
@@ -21,7 +22,7 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
                 int count = 0;
                 foreach (var i in listOfItems)
                 {
-                     listWithAddItem[count] = listOfItems[count];
+                    listWithAddItem[count] = listOfItems[count];
                     count++;
                 }
                 listOfItems = listWithAddItem;
@@ -40,36 +41,37 @@ namespace HornetsTraining.Training1.HomeWork.MichalMazur
 
         public void Remove(TListItem item)
         {
-            int count = 0;
-            bool foundItem = false;
+            listWithRemovedItem = new TListItem[listOfItems.Length - 1];
+            int indexOfFindingItem = ReturnPositionOfFindingElement(item);
+            Copy(indexOfFindingItem);
+            listOfItems = listWithRemovedItem;
 
-            foreach (var i in listOfItems)
+        }
+
+        private int ReturnPositionOfFindingElement(TListItem item)
+        {
+            for (int i = 0; i < listOfItems.Length; i++)
             {
-
-                if (i.Equals(item))
-                {
-                    listWithRemovedItem = new TListItem[listOfItems.Length - 1];
-
-                    for (int count2 = 0; count2 < count; count2++)
-                    {
-                        listWithRemovedItem[count2] = listOfItems[count2];
-                    }
-                    for (int count2 = count; count2 < listOfItems.Length - 1; count2++)
-                    {
-                        listWithRemovedItem[count2] = listOfItems[count2 + 1];
-                    }
-                    foundItem = true;
-                    break;
-
-                }
-
-                count++;
-
+                if (listOfItems[i].Equals(item))
+                    return i;
             }
-            if (foundItem == true)
-                listOfItems = listWithRemovedItem;
-            else
-                throw new Exception("item " + item.ToString() + " not found on list");
+            return -1;
+        }
+
+ 
+
+        private void Copy(int position)
+        {
+            for (int j=0,i=0; i < listOfItems.Length;j++, i++)
+            {
+                if (i == position)
+                {
+                    j -= 1;
+                    continue;
+                }
+                listWithRemovedItem[j] = listOfItems[i];
+                
+            }
         }
 
     }

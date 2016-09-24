@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass
+namespace Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -36,7 +36,7 @@ namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass
     #endregion
 		
 		public BankAccountsDataContext() : 
-				base(global::HornetsTraining.Properties.Settings.Default.TestDatabaseConnectionString, mappingSource)
+				base(global::Toci.HornetsTraining.Properties.Settings.Default.TestDatabaseConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
