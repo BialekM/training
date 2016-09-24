@@ -4,7 +4,7 @@ namespace HornetsTraining.Training1.HomeWork.WojtekSabat
 {
     public class WojtekSabatList<TListItem> : MyList<TListItem>
     {
-        public int Length => Index;
+        public int Length;// = Index;
 
         public override void Add(TListItem item)
         {

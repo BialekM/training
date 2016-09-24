@@ -7,8 +7,8 @@
     <ProjectGuid>{78236DBE-77FA-44AF-A976-26ADE3F8066B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HornetsTraining</RootNamespace>
-    <AssemblyName>HornetsTraining</AssemblyName>
+    <RootNamespace>Toci.HornetsTraining</RootNamespace>
+    <AssemblyName>Toci.HornetsTraining</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -142,6 +142,7 @@
     <Compile Include="Training2\HomeWork\Common_Michal\Secure\ICrypt.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Secure\SecurityOptions.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Serializer\Serializer.cs" />
+    <Compile Include="Training2\HomeWork\DelegateBankList.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferResolver.cs" />
@@ -186,8 +187,17 @@
     <Compile Include="Training2\HomeWork\VolkswagenBank\SlawekKBankFactory.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
+    <Compile Include="Training3\Homework\GenericClass.cs" />
+    <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
+    <Compile Include="Training3\Linq\WhereExample.cs" />
+    <Compile Include="Training3\Reflection\Entity.cs" />
+    <Compile Include="Training3\Reflection\ReflectionExample.cs" />
+    <Compile Include="Training3\Tpl\Paralelism.cs" />
+    <Compile Include="Training3\Tpl\Randomizer.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Training3\Tpl\txt\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />

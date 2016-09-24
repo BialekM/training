@@ -128,6 +128,9 @@
     <Compile Include="Training2\HomeWork\SantanderConsumerBankTests.cs" />
     <Compile Include="Training2\HomeWork\SlawekKowal\VolkswagenBankTest.cs" />
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
+    <Compile Include="Training3\Linq\LinqTest.cs" />
+    <Compile Include="Training3\Reflection\ReflectionTests.cs" />
+    <Compile Include="Training3\Tpl\TplTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -28,6 +28,9 @@ namespace HornetsTraining.Training2.HomeWork
             result.Add("1060", () => new BphTransferHandler());
             result.Add("2490", () => new AliorBankTransferHandler());
             result.Add("2160", () => new ToyotaBankTransferHandler());
+
+            //result["1010"] += () => new BphTransferHandler();
+
             return result;
         }
     }

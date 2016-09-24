@@ -6,6 +6,8 @@ namespace HornetsTraining.Training2.HomeWork.BartoszMackiewicz
 {
     public class BphTransferResolver : TransferResolver
     {
+        private const int BankIdLength = 4;
+
         public override void DoTransfer(Transfer transfer)
         {
             if (CheckAccountNumber(transfer))
@@ -23,7 +25,7 @@ namespace HornetsTraining.Training2.HomeWork.BartoszMackiewicz
 
         public string GetBankId (string accountNumber,int start,int length)
         {
-            return accountNumber.Substring(start, length);
+            return accountNumber.Substring(start, BankIdLength);
         }
 
         public bool CheckAccountNumber(Transfer transfer)
