@@ -1,6 +1,8 @@
-﻿namespace SeeSharpBasics.KarolZareba
+﻿using SeeSharpBasics.BartekZapart;
+
+namespace SeeSharpBasics.KarolZareba
 {
-    public class KarolZarebaTablesOperations
+    public class KarolZarebaTablesOperations : TableOperations
     {
         public int[] GetElemenInts(int[] table, int greaterThan) //table = 1,2,3,4,5,6,7,8,9 gratherThan = 5-> 6,7,8,9
         {
@@ -11,6 +13,13 @@
                     //dodajemy do wynikowej tablicy
                 }
             }
+
+            return null;
+        }
+
+        public override int[] BubbleSort(int[] tableToSort)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

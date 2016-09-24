@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SeeSharpBasics.BartekZapart;
+using SeeSharpBasics.KarolZareba;
 using Toci.SeeSharpBasics.Test.TablesOperations;
 
 namespace Toci.SeeSharpBasics.Test.KarolZareba
@@ -10,7 +12,7 @@ namespace Toci.SeeSharpBasics.Test.KarolZareba
         [TestMethod]
         public override void TestReversing()
         {
-            var tableOperations = new TablesOperations();
+            TableOperations tableOperations = new KarolZarebaTablesOperations();
         }
     }
 }
