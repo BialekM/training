@@ -3,6 +3,7 @@ using HornetsTraining.Training2.HomeWork.BZWBK;
 using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 using HornetsTraining.Training2.HomeWork.BankMillenium;
+using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
 using HornetsTraining.Training2.HomeWork.MichalMazur;
 using HornetsTraining.Training2.HomeWork.NBP;
 using HornetsTraining.Training2.HomeWork.PKOBP;
@@ -22,7 +23,7 @@ namespace HornetsTraining.Training2.HomeWork.Mbank
             ListOfInstances.Add("1140", () => new MBankTransferHandler());
             ListOfInstances.Add("1680", () => new PlusBankTransferHandler());
             ListOfInstances.Add("2490", () => new AliorBankTransferHandler());
-            ListOfInstances.Add("1060", () => new BPHTransferHandler());
+            ListOfInstances.Add("1060", () => new BphTransferHandler());
             ListOfInstances.Add("1090", () => new BZWBKTransferHandler());
             ListOfInstances.Add("2160", () => new ToyotaBankTransferHandler());
             ListOfInstances.Add("1160", () => new BankMilleniumTransferHandler());

@@ -126,7 +126,9 @@
     <Compile Include="Training2\HomeWork\BankList.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferResolver.cs" />
-    <Compile Include="Training2\HomeWork\BartoszMackiewicz\BPHTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BartoszMackiewicz\BphBankFactory.cs" />
+    <Compile Include="Training2\HomeWork\BartoszMackiewicz\BphTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\BartoszMackiewicz\BphTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Const\AppConst.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Container.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Infrastructure\Factory.cs" />
@@ -168,7 +170,6 @@
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferHandler.cs" />
-    <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\SantanderConsumerBank\SantanderConsumerBankTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\Transfer.cs" />
     <Compile Include="Training2\HomeWork\TransferHandler.cs" />

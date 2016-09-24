@@ -109,6 +109,7 @@
     <Compile Include="Training1\HomeWork\WojtekSabat\WojtekSabatStringOperationsTest.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
+    <Compile Include="Training2\HomeWork\Bartosz Mackiewicz\BphBankTest.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\TestAliorBank.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ForInitializing\TransferTestValues.cs" />
     <Compile Include="Training2\HomeWork\LukaszSmierzchala\ToyotaBankTest.cs" />
