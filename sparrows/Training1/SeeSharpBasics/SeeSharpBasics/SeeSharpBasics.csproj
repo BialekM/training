@@ -66,6 +66,7 @@
     <Compile Include="StringOperations.cs" />
     <Compile Include="SlawekKowal\SlawekKStringOperations.cs" />
     <Compile Include="Test\TestStringOperations.cs" />
+    <Compile Include="TomaszKilian\TomaszKilianCodeGenerator.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
     <Compile Include="TomaszKilian\TomekStringOperations.cs" />

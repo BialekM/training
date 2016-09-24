@@ -65,6 +65,7 @@
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
     <Compile Include="TomaszKil\TestStrings.cs" />
+    <Compile Include="TomaszKil\TomaszKilianCodeGeneratorTest.cs" />
     <Compile Include="TomaszKil\TomaszKilianStringTests.cs" />
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
     <Compile Include="Training3\Hashtables\HashtablesTest.cs" />
