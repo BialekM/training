@@ -4,13 +4,16 @@
 	{
 		protected $fieldName;
 		protected $fieldValue;
+		protected $isAutomatic; // add
+		protected $isWhere = array();
 		
-		public function __construct($fieldName)
+		public function __construct($fieldName, $isAutomatic = false) // add
 		{
 			$this->fieldName = $fieldName;
+			$this->isAutomatic = $isAutomatic; // add
 		}
 		
-		public function Set($fieldName, $fieldValue)
+		public function Set($fieldName, $fieldValue) // add
 		{
 			$this->fieldName = $fieldName;
 			$this->fieldValue = $fieldValue;
@@ -33,11 +36,25 @@
 		
 		public function HasValue()
 		{
-			return !is_null($this->fieldValue);
+			return (!is_null($this->fieldValue) && strlen($this->fieldValue) > 0);  // add strlen
 		}
 		
 		public function IsAutomatic()
 		{
-			return false;
+			return $this->isAutomatic; // add
+		}
+		
+		public function IsWhere($value, $operators = "=", $andOr = true)
+		{
+			$this->isWhere['value'] = $value;
+			$this->isWhere['operators'] = $operators;
+			$this->isWhere['andOr'] = $andOr;
+		
+			return $this;
+		}
+		
+		public function GetIsWhere()
+		{
+			return $this->isWhere;
 		}
 	}

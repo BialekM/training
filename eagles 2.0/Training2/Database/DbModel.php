@@ -25,4 +25,9 @@
 		{
 			return isset($this->fields[$fieldName]);
 		}
+		
+		public function GetFild($name)
+		{
+			return $this->fields[$name];
+		}
 	}
