@@ -4,14 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
+using SeeSharpBasics.KarolZareba;
 using SeeSharpBasics.Olek;
+using SeeSharpBasics.SlawekKowal;
+using SeeSharpBasics.TomaszKilian;
 
 namespace SeeSharpBasics
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
+           
             /*
              * komentarz blokowy
             */
@@ -21,7 +26,7 @@ namespace SeeSharpBasics
             char literka = 'a';
 
             int position = LetterPosition("beatka", 'k');
-
+            
             ReverseString("beatka");
 
             liczbaCalkowita = 8 + 7;
@@ -49,6 +54,51 @@ namespace SeeSharpBasics
             //string strOlek = new strOlek("");
             //OlekStringOperations strOlek = new OlekStringOperations();
             //strOlek.Substring();
+            TomaszKilianStringOperations stro = new TomaszKilianStringOperations();
+            TomaszKilianTableOperations stras = new TomaszKilianTableOperations();
+            KarolZarebaStringOperations gras = new KarolZarebaStringOperations();
+
+
+            
+            string wezimie = gras.GetName();
+            string jazda = gras.Substring("bartlomiej",0, 3);
+            string wynik = stro.Substring("beatka", 1, 3);
+           int wynik4 = stro.CountOccurences("beatka", 'a');
+            Console.WriteLine("TUTAJ JEST WYNIKKK{0}", wynik4);
+            int wynik5 = stro.LetterPositionInString("bartek", 'k');
+            Console.WriteLine("wynik5");
+
+
+           string wynik6 = stro.LetterReplace("aaaaaabbbbbccccc", 'a', 's');
+            
+            Console.WriteLine(wynik6);
+           //string wynik7 = stro.StringReplace("bbaabbaaaacccc", "aaaa", "zzzz");
+          //Console.WriteLine("wynik stringreplace@@@@@@@@@@@ {0}",wynik7);
+
+            string metoda = gras.GlueBeginingEnd("bartlomiej");
+            Console.WriteLine("Tu wynik kleju, {0}", metoda);
+
+            if (wezimie == "KarolZareba")
+            {
+                Console.WriteLine("działa z imieniem");
+            }
+            else
+            {
+                Console.WriteLine("nie działa z imieniem");
+            }
+            if (jazda == "bart")
+            {
+                Console.WriteLine("dziala");
+
+            }
+            else
+            {
+                Console.WriteLine("dupa");
+            }
+
+            string wynik2 = stro.GlueBeginingEnd("beatka");
+                Console.WriteLine("TUTTAJJJJ JEST TEN WYNIK!!!{0}",wynik2);
+
             OlekStringOperations strOpOlek = new OlekStringOperations();
 
             string result = strOpOlek.Substring("beatka", 1, 3);
@@ -137,6 +187,8 @@ namespace SeeSharpBasics
 
             return -1;
         }
+        
+        
 
         public static string ReverseString(string candidate)
         {

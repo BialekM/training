@@ -2,31 +2,30 @@
 
 using System;
 using System.Security.Cryptography;
+using HornetsTraining.Training1.Generics;
 
 namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 {
-    public class AdrianPankiewiczList<TListItem>
+    public class AdrianPankiewiczList<TListItem> : MyList<TListItem>
     {
-        protected TListItem[] listOfItems;
-        protected int numberOfElements = 0;
 
         public AdrianPankiewiczList()
         {
             listOfItems = new TListItem[1];
         }
 
-        public virtual void Add(TListItem item)
+        public override void Add(TListItem item)
         {
-            if (numberOfElements >= listOfItems.Length)
+            if (Index >= listOfItems.Length)
                 DobubleTabSize();
 
-            listOfItems[numberOfElements] = item;
-            numberOfElements++;
+            listOfItems[Index] = item;
+            Index++;
         }
 
         public bool Empty()
         {
-            return numberOfElements == 0;
+            return Index == 0;
         }
 
         private void DobubleTabSize()

@@ -1,24 +1,24 @@
 ﻿using HornetsTraining.Training1.HomeWork.MichalMazur;
-using HornetsTraining.Training1.HomeWork.MichałMuzyczka;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HornetsTesting.Training1.HomeWork.MichalMazur
+namespace HornetsTesting.Training2.Delegates.MichalMazur
 {
     [TestClass]
     public class MichalMazurListTest
     {
-        MichalMazurList<int> listTest = new MichalMazurList<int>();
-            [TestMethod]
-        public void TestAddAndRemove()
+        [TestMethod]
+        public void Test()
         {
-            for(int i=0 ; i <10 ; i++)
-                listTest.Add(i);
-            listTest.Remove(4);    
+            
+            MichalMazurList<int> myList = new MichalMazurList<int>();
+            myList.Add(6);
+            myList.Add(3);
+            myList.Add(2);
+            myList.Add(8);
 
+            myList.Remove(6);
+            myList.Remove(8);
 
         }
-
-         
-         
     }
 }

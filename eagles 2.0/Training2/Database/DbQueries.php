@@ -44,10 +44,44 @@
 			return $values;
 		}
 	}
+	
+	
 	abstract class DbWhere
 	{
-		public function GetWhereClause(IDbModel $model)
+		protected $surroundings = array(
+				'string' => "'",
+				'int' => '',
+				'integer' => '',
+		);
+		
+		public function GetWhereClause($model)
 		{
-			
+			$result = array();
+				
+			foreach ($this->GetValue($model) as $key => $value)
+			{
+				$result[] = $value["fildName"] . " " . $value['operators'] . " " . $value["value"];
+			}
+				
+			return (count($result) > 0) ? "WHERE " . implode(" AND ", $result) : null;
+		}
+		
+		protected  function GetValue($model)
+		{
+			$result = array();
+				
+			foreach ($model->GetFields() as $key => $value)
+			{
+				if(isset($value->GetIsWhere()['value']))
+				{
+					$isWhere = $value->GetIsWhere();
+					$surroundings = $this->surroundings[gettype($isWhere["value"])];
+					$isWhere["value"] = $surroundings . $isWhere["value"] . $surroundings;
+					$isWhere["fildName"] = $value->GetFieldName();
+					$result[] = $isWhere;
+				}
+			}
+				
+			return $result;
 		}
 	}

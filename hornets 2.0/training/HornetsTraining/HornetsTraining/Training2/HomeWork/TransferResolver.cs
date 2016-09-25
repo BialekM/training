@@ -1,4 +1,6 @@
-﻿namespace HornetsTraining.Training2.HomeWork
+﻿using HornetsTraining.Training2.HomeWork.Mbank;
+
+namespace HornetsTraining.Training2.HomeWork
 {
     public abstract  class TransferResolver
     {
@@ -9,7 +11,7 @@
             // 10 1050 342421 //mba
             // 10 1060 //ing
 
-            MbankTransferHandler handler = new MbankTransferHandler();
+            MBankTransferHandler handler = new MBankTransferHandler();
 
             //handler.DoInTransfer()
         }

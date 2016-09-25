@@ -26,5 +26,10 @@ namespace HornetsTraining.Training2.ExtensionMethods
         {
             return default(T);
         }
+
+        public static string GetBankId(this string text)
+        {
+            return text.Substring(2, 4);
+        }
     }
 }

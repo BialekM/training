@@ -20,6 +20,7 @@
 		public function HasValue();
 		
 		public function IsAutomatic();
+		
 	}
 	
 	interface IDbModel
@@ -34,6 +35,28 @@
 		public function Set($fieldName, $fieldValue);
 		
 		public function HasField($fieldName);
+		
+		
+		////////////////SELECT///////////////////////
+		public function IsLike($pattern);
+		
+		public function GetLike();
+		
+		public function IsLimit($limits = array());
+		
+		public function GetLimit();
+		
+		public function IsGroup($category);
+		
+		public function GetGroup();
+		
+		public function IsOrder($args = array());
+		
+		public function GetOrder();
+		
+		public function SetOperator($operator);
+		
+		public function GetOperator();
 	}
 	
 	interface ISqlInsert
