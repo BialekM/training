@@ -13,7 +13,7 @@
 			$this->isAutomatic = $isAutomatic; // add
 		}
 		
-		public function Set($fieldName, $fieldValue) // add
+		public function Set($fieldName, $fieldValue)
 		{
 			$this->fieldName = $fieldName;
 			$this->fieldValue = $fieldValue;
