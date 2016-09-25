@@ -187,6 +187,8 @@
     <Compile Include="Training2\HomeWork\VolkswagenBank\SlawekKBankFactory.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomework.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\GenericMethodsCollector.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
