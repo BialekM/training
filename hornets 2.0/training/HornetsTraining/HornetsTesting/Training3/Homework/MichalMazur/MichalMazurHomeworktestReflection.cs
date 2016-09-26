@@ -8,19 +8,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace HornetsTesting.Training3.Homework
 {
     [TestClass]
-    public class MichalMazurHomeworktestReflection
+    public class MichalMazurHomeworkTestReflection
     {
         [TestMethod]
-        public void TestStringType()
+        public void TestReflection()
         {
-            var test = new MichalMazurReflectionHomework();
+            MichalMazurReflectionHomework test = new MichalMazurReflectionHomework();
 
-            List<Dictionary<string,string>> ListOdDictionary = test.CreateExamples();
-            foreach (var item in ListOdDictionary)
-            {
-                test.RunGenericMethods(item);
+            List<Dictionary<string, string>> ListOdDictionary = test.CreateExamples();
 
-            }
+            test.RunGenericMethods(ListOdDictionary[0]);
+            test.RunGenericMethods(ListOdDictionary[1],
+                " HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes", "Toci.HornetsTraining");
+
         }
     }
 }

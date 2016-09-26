@@ -27,12 +27,24 @@ namespace HornetsTraining.Training3.Homework.MichalMazur.Reflection
             {
                 var method = myGenericClass.GetType().GetMethod(item.Key);
                 Type t = Type.GetType("System." + item.Value.First().ToString().ToUpper() + String.Join("", item.Value.Skip(1)));
-                method = method.MakeGenericMethod(t);
-                method.Invoke(myGenericClass, null);
-
+                 method.MakeGenericMethod(t).Invoke(myGenericClass, null);
+ 
             }
 
         }
+        public void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName, string nameSpace, string assembly)
+        {
+
+            foreach (var item in keyMethodNameValueTypeName)
+            {
+                var method = myGenericClass.GetType().GetMethod(item.Key);
+                Type t = Type.GetType(nameSpace + "." + item.Value + "," + assembly);
+                method.MakeGenericMethod(t).Invoke(myGenericClass, null);
+                
+            }
+
+        }
+
 
         public List<Dictionary<string, string>> CreateExamples()
         {
@@ -44,16 +56,12 @@ namespace HornetsTraining.Training3.Homework.MichalMazur.Reflection
             });
             listOfExamples.Add(new Dictionary<string, string>()
             {
-                {"GenericMethod","int32"},
-                {"AnotherGenericMethod","char"},
+               {"GenericMethod","TypeFirst"},
+                {"AnotherGenericMethod","TypeSecond"},
             });
-
 
             return listOfExamples;
 
         }
-
-
-
     }
 }
