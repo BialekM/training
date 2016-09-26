@@ -8,6 +8,7 @@ using HornetsTraining.Training2.HomeWork.Mbank;
 using HornetsTraining.Training2.HomeWork.MichalMazur;
 using HornetsTraining.Training2.HomeWork.NBP;
 using HornetsTraining.Training2.HomeWork.PKOBP;
+using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTraining.Training2.HomeWork.Ing
 {

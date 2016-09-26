@@ -130,6 +130,7 @@
     <Compile Include="Training2\Delegates\DelegateExample.cs" />
     <Compile Include="Training2\ExtensionMethods\StringExtensions.cs" />
     <Compile Include="Training2\HomeWork\BankList.cs" />
+    <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumFactory.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\BartoszMackiewicz\BphBankFactory.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomework.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\GenericMethodsCollector.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTrainingThreeHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
     <Compile Include="Training3\Reflection\Entity.cs" />
