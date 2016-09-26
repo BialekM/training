@@ -15,6 +15,7 @@ using HornetsTraining.Training2.HomeWork.MichalMazur;
 using HornetsTraining.Training2.HomeWork.NBP;
 using HornetsTraining.Training2.HomeWork.PKOBP;
 using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
+using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
 {

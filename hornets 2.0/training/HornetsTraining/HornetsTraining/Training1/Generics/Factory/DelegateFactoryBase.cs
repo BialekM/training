@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace HornetsTraining.Training1.Generics.Factory
+namespace Toci.HornetsTraining.Training1.Generics.Factory
 {
     public abstract class DelegateFactoryBase<T>
     {
