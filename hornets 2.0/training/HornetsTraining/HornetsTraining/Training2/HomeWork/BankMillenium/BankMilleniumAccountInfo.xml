@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Transfers>
+  <Date_Time>09/26/2016 12:12:49</Date_Time>
+  <SourceBankAccount>45101056457876543212345665</SourceBankAccount>
+  <DestinationBankAccount>34116078659874356786123765</DestinationBankAccount>
+  <Money>10000</Money>
+  <AccountBalnace>10000</AccountBalnace>
+</Transfers>
