@@ -192,7 +192,6 @@
     <Compile Include="Training3\Homework\GenericClass.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomework.cs" />
-    <Compile Include="Training3\Homework\GenericClass.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\MichalMazurReflectionHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
