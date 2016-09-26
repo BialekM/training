@@ -191,7 +191,13 @@
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomework.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\GenericMethodsCollector.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
+<<<<<<< HEAD
     <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTrainingThreeHomework.cs" />
+=======
+    <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
+    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomework.cs" />
+    <Compile Include="Training3\Homework\MichalMazur\Reflection\MichalMazurReflectionHomework.cs" />
+>>>>>>> e080dbf1746da0fa8234b7d0846bc3f075e1fab8
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
     <Compile Include="Training3\Reflection\Entity.cs" />
