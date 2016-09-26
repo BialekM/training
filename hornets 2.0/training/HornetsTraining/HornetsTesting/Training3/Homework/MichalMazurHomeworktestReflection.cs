@@ -14,8 +14,8 @@ namespace HornetsTesting.Training3.Homework
         public void TestStringType()
         {
             var test = new MichalMazurReflectionHomework();
-            test.CreateObject();
-
+            test.CreateObject("strin","int");
+ 
         } 
     }
 }
