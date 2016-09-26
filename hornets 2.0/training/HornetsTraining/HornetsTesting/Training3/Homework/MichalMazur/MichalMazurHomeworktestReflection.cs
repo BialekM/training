@@ -14,8 +14,13 @@ namespace HornetsTesting.Training3.Homework
         public void TestStringType()
         {
             var test = new MichalMazurReflectionHomework();
-            test.CreateObject("strin","int");
- 
-        } 
+
+            List<Dictionary<string,string>> ListOdDictionary = test.CreateExamples();
+            foreach (var item in ListOdDictionary)
+            {
+                test.RunGenericMethods(item);
+
+            }
+        }
     }
 }
