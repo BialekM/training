@@ -5,6 +5,7 @@ using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
 using HornetsTraining.Training1.HomeWork.Haski;
 using HornetsTraining.Training1.HomeWork.KrzysztofPater;
 using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
+using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTraining.Training1.Generics.Factory
 {

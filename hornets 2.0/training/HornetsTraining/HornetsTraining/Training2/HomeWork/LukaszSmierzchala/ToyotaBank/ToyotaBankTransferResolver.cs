@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HornetsTraining.Training1.Generics.Factory;
 using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.Factory;
+using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
 {

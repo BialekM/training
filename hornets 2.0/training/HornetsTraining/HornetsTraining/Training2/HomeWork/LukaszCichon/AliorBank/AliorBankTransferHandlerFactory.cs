@@ -6,6 +6,7 @@ using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 using HornetsTraining.Training2.HomeWork.Mbank;
 using HornetsTraining.Training2.HomeWork.MichalMazur;
 using HornetsTraining.Training2.HomeWork.NBP;
+using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank
 {
