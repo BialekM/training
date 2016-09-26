@@ -59,7 +59,7 @@ namespace SeeSharpBasics
             KarolZarebaStringOperations gras = new KarolZarebaStringOperations();
 
 
-            
+            int pozycja = gras.LetterPositionInString("bartlomiej", 'r');
             string wezimie = gras.GetName();
             string jazda = gras.Substring("bartlomiej",0, 3);
             string wynik = stro.Substring("beatka", 1, 3);
@@ -68,7 +68,7 @@ namespace SeeSharpBasics
             int wynik5 = stro.LetterPositionInString("bartek", 'k');
             Console.WriteLine("wynik5");
 
-
+            Console.WriteLine("pozycja");
            string wynik6 = stro.LetterReplace("aaaaaabbbbbccccc", 'a', 's');
             
             Console.WriteLine(wynik6);

@@ -48,12 +48,31 @@ namespace SeeSharpBasics.KarolZareba
  
         public override int LetterPositionInString(string candidate, char needle)
         {
-            throw new System.NotImplementedException();
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (candidate[i] == needle) ;
+                return  i;
+
+            }
+            return -1;
         }
 
         public override string LetterReplace(string candidate, char needle, char replace)
         {
-            throw new System.NotImplementedException();
+            string result = "";
+            foreach (char letter in candidate)
+            {
+                if (letter == needle)
+                {
+                    result += replace;
+
+                }
+                else
+                {
+                    result += letter;
+                }
+            }
+            return result;
         }
 
         public override string StringReplace(string candidate, string needle, string replace)
