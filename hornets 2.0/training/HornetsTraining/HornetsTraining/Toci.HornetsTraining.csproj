@@ -189,7 +189,9 @@
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomework.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczTplHomeWork.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\GenericMethodsCollector.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\RandomTransferGenerator.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeFirst.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeSecond.cs" />
