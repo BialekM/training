@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HornetsTraining.Training1.HomeWork.Haski {
+namespace Toci.HornetsTraining.Training1.HomeWork.Haski {
     public class HaskiStringOperations : StringOperations {
         public override string GetName() {
             return "Haski";

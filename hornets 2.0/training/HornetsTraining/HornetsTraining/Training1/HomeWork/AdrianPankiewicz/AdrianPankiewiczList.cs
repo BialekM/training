@@ -2,9 +2,9 @@
 
 using System;
 using System.Security.Cryptography;
-using HornetsTraining.Training1.Generics;
+using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
+namespace Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 {
     public class AdrianPankiewiczList<TListItem> : MyList<TListItem>
     {

@@ -4,11 +4,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using HornetsTraining.Training2.HomeWork.Common_Michal.Const;
-using HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
 using Ninject;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Const;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
 
-namespace HornetsTraining.Training2.HomeWork.Common_Michal
+namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal
 {
     public static class Serializer
     {

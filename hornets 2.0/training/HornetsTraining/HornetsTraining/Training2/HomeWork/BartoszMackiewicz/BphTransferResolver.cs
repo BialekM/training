@@ -2,7 +2,7 @@
 using System.Text;
 using Ninject.Activation.Strategies;
 
-namespace HornetsTraining.Training2.HomeWork.BartoszMackiewicz
+namespace Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz
 {
     public class BphTransferResolver : TransferResolver
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace HornetsTraining.Training2.HomeWork.VolkswagenBank
+namespace Toci.HornetsTraining.Training2.HomeWork.VolkswagenBank
 {
     public class VolkswagenBankTransferResolver: TransferResolver
     {

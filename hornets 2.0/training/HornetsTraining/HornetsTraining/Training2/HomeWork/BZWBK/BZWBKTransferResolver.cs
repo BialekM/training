@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training2.HomeWork.BZWBK
+﻿namespace Toci.HornetsTraining.Training2.HomeWork.BZWBK
 {
     public class BZWBKTransferResolver : TransferResolver
     {

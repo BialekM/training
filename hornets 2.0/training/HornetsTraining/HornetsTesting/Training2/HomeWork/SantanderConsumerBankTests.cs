@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork

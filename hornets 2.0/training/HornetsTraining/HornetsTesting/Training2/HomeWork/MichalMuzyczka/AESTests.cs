@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
-using HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure;
-using HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ninject;
 

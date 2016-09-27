@@ -1,15 +1,14 @@
-﻿using HornetsTraining.Training1.Generics.Factory;
-using HornetsTraining.Training2.HomeWork.BZWBK;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
-using HornetsTraining.Training2.HomeWork.BankMillenium;
-using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
-using HornetsTraining.Training2.HomeWork.MichalMazur;
-using HornetsTraining.Training2.HomeWork.NBP;
-using HornetsTraining.Training2.HomeWork.PKOBP;
-using Toci.HornetsTraining.Training1.Generics.Factory;
+﻿using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
+using Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training2.HomeWork.BZWBK;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
+using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training2.HomeWork.NBP;
+using Toci.HornetsTraining.Training2.HomeWork.PKOBP;
 
-namespace HornetsTraining.Training2.HomeWork.Mbank
+namespace Toci.HornetsTraining.Training2.HomeWork.Mbank
 {
     internal class TransferHandlerFactory : DelegateFactoryBase<TransferHandler>
     {

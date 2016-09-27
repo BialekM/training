@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Linq.Expressions;
 
-namespace HornetsTraining.Training1.HomeWork.AdrianKoszyk
+namespace Toci.HornetsTraining.Training1.HomeWork.AdrianKoszyk
 {
     public class AdrianKoszykStringOperations : StringOperations
     {

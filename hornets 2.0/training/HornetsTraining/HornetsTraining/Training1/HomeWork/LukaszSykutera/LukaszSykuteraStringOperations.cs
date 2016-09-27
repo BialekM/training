@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.HomeWork.LukaszSykutera
+﻿namespace Toci.HornetsTraining.Training1.HomeWork.LukaszSykutera
 {
     public class LukaszSykuteraStringOperations : StringOperations
     {

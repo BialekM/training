@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
+namespace Toci.HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
 {
     public class MercedesBenzBankTransferHandler : TransferHandler
     {

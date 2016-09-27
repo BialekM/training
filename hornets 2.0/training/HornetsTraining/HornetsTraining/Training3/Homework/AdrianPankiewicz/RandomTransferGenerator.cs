@@ -1,7 +1,7 @@
 ﻿using System;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 
-namespace HornetsTraining.Training3.Homework.AdrianPankiewicz
+namespace Toci.HornetsTraining.Training3.Homework.AdrianPankiewicz
 {
     public static class RandomTransferGenerator
     {

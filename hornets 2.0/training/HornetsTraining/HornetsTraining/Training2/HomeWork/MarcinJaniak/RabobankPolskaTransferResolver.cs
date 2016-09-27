@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 
-namespace HornetsTraining.Training2.HomeWork.MarcinJaniak
+namespace Toci.HornetsTraining.Training2.HomeWork.MarcinJaniak
 {
     public class RabobankPolskaTransferResolver : TransferResolver
     {

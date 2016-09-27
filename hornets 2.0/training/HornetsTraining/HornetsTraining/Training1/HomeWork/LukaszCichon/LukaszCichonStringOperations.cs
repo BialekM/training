@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HornetsTraining.Training1.HomeWork.LukaszCichon
+namespace Toci.HornetsTraining.Training1.HomeWork.LukaszCichon
 {
     public class LukaszCichonStringOperations : StringOperations
     {

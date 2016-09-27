@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HornetsTraining.Training3.Homework
+namespace Toci.HornetsTraining.Training3.Homework
 {
     public abstract class TrainingThreeHomework
     {

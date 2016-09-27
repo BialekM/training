@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using HornetsTraining.Training3.Homework;
-using HornetsTraining.Training3.Homework.MichalMazur.Reflection;
+using Toci.HornetsTraining.Training3.Homework;
+using Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Homework

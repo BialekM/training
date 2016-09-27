@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HornetsTraining.Training1.HomeWork.MichalMazur
+namespace Toci.HornetsTraining.Training1.HomeWork.MichalMazur
 {
     public class MichalMazurStringOperations : StringOperations
     {
