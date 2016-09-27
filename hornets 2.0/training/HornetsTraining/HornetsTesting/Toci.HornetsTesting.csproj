@@ -129,7 +129,7 @@
     <Compile Include="Training2\HomeWork\SantanderConsumerBankTests.cs" />
     <Compile Include="Training2\HomeWork\SlawekKowal\VolkswagenBankTest.cs" />
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
-    <Compile Include="Training3\Homework\AdrianPankiewiczHomeworkTest.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTest.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkTest.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworktestReflection.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworkTplTest.cs" />
