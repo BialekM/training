@@ -7,7 +7,7 @@ namespace Toci.SeeSharpBasics.Test.Olek
     public class OlekTablesOperationsTests : TablesOperationsTests
     {
         [TestMethod]
-        public override void TestReversing()
+        public override void TestReversing() // test
         {
            // var tableOperations = new TableOperations();
             // TablesOperations.ReverseTable()
