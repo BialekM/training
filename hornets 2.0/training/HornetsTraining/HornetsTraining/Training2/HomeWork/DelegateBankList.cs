@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using HornetsTraining.Training2.HomeWork.BZWBK;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork.BZWBK;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public class DelegateBankList
     {

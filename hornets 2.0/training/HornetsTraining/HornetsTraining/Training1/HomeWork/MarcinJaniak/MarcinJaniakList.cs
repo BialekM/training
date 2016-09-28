@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training1.Generics;
+using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.MarcinJaniak
+namespace Toci.HornetsTraining.Training1.HomeWork.MarcinJaniak
 {
     class MarcinJaniakList<TListItem> : MyList<TListItem>
     {

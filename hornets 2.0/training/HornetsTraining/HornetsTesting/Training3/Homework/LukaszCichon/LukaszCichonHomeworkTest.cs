@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using HornetsTraining.Training3.Homework.LukaszCichon;
+using Toci.HornetsTraining.Training3.Homework.LukaszCichon;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Homework.LukaszCichon

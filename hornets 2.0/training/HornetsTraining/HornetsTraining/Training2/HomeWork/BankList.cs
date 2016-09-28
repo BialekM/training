@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using HornetsTraining.Training2.HomeWork.BankMillenium;
-using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
-using HornetsTraining.Training2.HomeWork.Mbank;
-using HornetsTraining.Training2.HomeWork.NBP;
-using HornetsTraining.Training2.HomeWork.MarcinJaniak;
-using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
+using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
+using Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
+using Toci.HornetsTraining.Training2.HomeWork.MarcinJaniak;
+using Toci.HornetsTraining.Training2.HomeWork.Mbank;
+using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training2.HomeWork.NBP;
+using Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public static class BankList
     {
@@ -30,6 +31,7 @@ namespace HornetsTraining.Training2.HomeWork
             result.Add("2490", () => new AliorBankTransferHandler());
             result.Add("2160", () => new ToyotaBankTransferHandler());
             result.Add("1160", () => new BankMilleniumTransferHandler() );
+            result.Add("1050", () => new IngTransferHandler() );
             //result["1010"] += () => new BphTransferHandler();
 
             return result;

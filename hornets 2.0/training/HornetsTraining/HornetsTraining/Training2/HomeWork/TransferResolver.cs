@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training2.HomeWork.Mbank;
+﻿using Toci.HornetsTraining.Training2.HomeWork.Mbank;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public abstract  class TransferResolver
     {

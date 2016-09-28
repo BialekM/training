@@ -7,7 +7,7 @@ namespace SeeSharpBasics.MarcinGala
     {
         public override int[] BubbleSort(int[] tableToSort)
         {
-            int[] bufor = new int[tableToSort.Length];
+            int bufor;
 
             for (int i = 1; i < tableToSort.Length; i++)
             {
@@ -15,9 +15,9 @@ namespace SeeSharpBasics.MarcinGala
                 {
                     if (tableToSort[j] < tableToSort[j - 1])
                     {
-                        bufor[i] = tableToSort[j - 1];
+                        bufor = tableToSort[j - 1];
                         tableToSort[j - 1] = tableToSort[j];
-                        tableToSort[j] = bufor[i];
+                        tableToSort[j] = bufor;
                     }
                 }
             }

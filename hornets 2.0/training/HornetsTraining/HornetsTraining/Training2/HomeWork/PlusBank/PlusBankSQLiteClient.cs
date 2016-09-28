@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public class PlusBankSQLiteClient
     {

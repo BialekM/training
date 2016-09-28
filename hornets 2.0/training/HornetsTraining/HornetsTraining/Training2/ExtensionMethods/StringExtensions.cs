@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace HornetsTraining.Training2.ExtensionMethods
+namespace Toci.HornetsTraining.Training2.ExtensionMethods
 {
     public static class StringExtensions
     {

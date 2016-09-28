@@ -1,6 +1,6 @@
 ﻿
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.Mbank;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.Mbank;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork

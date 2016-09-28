@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.Overdloading;
+﻿using Toci.HornetsTraining.Training1.Overdloading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.Overriding

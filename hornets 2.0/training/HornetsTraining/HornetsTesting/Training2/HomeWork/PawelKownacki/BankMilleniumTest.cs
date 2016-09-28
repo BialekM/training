@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.BankMillenium;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork.PawelKownacki

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using HornetsTraining.Training2.ExtensionMethods;
+using Toci.HornetsTraining.Training2.ExtensionMethods;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public class NordeaBankTransferResolver : TransferResolver
     {

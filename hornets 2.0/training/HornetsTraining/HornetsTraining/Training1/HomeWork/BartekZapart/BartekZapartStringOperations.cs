@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HornetsTraining.Training1.HomeWork.BartekZapart
+namespace Toci.HornetsTraining.Training1.HomeWork.BartekZapart
 {
     public class BartekZapartStringOperations //: StringOperations, IDisposable
     {

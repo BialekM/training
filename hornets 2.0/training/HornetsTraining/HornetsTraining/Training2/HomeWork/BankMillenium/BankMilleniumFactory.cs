@@ -1,5 +1,5 @@
 ﻿
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 using Toci.HornetsTraining.Training1.Generics.Factory;
 
 

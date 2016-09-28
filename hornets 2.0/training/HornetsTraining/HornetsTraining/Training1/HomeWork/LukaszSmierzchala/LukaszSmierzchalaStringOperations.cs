@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HornetsTraining.Training1.HomeWork.LukaszSmierzchala
+namespace Toci.HornetsTraining.Training1.HomeWork.LukaszSmierzchala
 {
     public class LukaszSmierzchalaStringOperations : StringOperations
     {

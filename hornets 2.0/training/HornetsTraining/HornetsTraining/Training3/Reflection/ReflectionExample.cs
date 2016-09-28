@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reflection;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 
-namespace HornetsTraining.Training3.Reflection
+namespace Toci.HornetsTraining.Training3.Reflection
 {
     public class ReflectionExample
     {

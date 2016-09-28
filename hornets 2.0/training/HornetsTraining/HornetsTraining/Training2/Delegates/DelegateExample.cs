@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using HornetsTraining.Training1.HomeWork;
-using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
-using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
-using HornetsTraining.Training1.HomeWork.Haski;
-using HornetsTraining.Training1.HomeWork.KrzysztofPater;
-using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
-using HornetsTraining.Training1.HomeWork.MichałMuzyczka;
-using HornetsTraining.Training1.HomeWork.PatrykDrapik;
-using HornetsTraining.Training1.HomeWork.PawelKownacki;
-using HornetsTraining.Training1.HomeWork.PawelMocarski;
-using HornetsTraining.Training1.HomeWork.SławekNowiński;
+using Toci.HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
+using Toci.HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training1.HomeWork.Haski;
+using Toci.HornetsTraining.Training1.HomeWork.KrzysztofPater;
+using Toci.HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
+using Toci.HornetsTraining.Training1.HomeWork.MichałMuzyczka;
+using Toci.HornetsTraining.Training1.HomeWork.PatrykDrapik;
+using Toci.HornetsTraining.Training1.HomeWork.PawelKownacki;
+using Toci.HornetsTraining.Training1.HomeWork.PawelMocarski;
+using Toci.HornetsTraining.Training1.HomeWork.SławekNowiński;
 
-namespace HornetsTraining.Training2.Delegates
+namespace Toci.HornetsTraining.Training2.Delegates
 {
     public class DelegateExample
     {

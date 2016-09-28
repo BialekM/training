@@ -1,6 +1,6 @@
 ﻿using System;
-using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
-using HornetsTraining.Training1.HomeWork.MichałMuzyczka;
+using Toci.HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training1.HomeWork.MichałMuzyczka;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.HomeWork.BartoszMackieiwcz

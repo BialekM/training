@@ -1,5 +1,5 @@
-﻿using HornetsTraining.Training1.HomeWork;
-using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
+﻿using Toci.HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.HomeWork.AdrianPankiewicz

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace HornetsTraining.Training2.HomeWork.MarcinJaniak
+namespace Toci.HornetsTraining.Training2.HomeWork.MarcinJaniak
 {
     public class RabobankPolskaTransferHandler:TransferHandler
     {

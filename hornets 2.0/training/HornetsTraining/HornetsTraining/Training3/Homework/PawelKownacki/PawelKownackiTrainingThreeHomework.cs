@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HornetsTraining.Training3.Homework.PawelKownacki
+namespace Toci.HornetsTraining.Training3.Homework.PawelKownacki
 {
     public class PawelKownackiTrainingThreeHomework : TrainingThreeHomework
     {

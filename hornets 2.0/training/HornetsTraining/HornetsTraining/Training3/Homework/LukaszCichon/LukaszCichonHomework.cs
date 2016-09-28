@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 
-namespace HornetsTraining.Training3.Homework.LukaszCichon
+namespace Toci.HornetsTraining.Training3.Homework.LukaszCichon
 {
     public class LukaszCichonHomework : TrainingThreeHomework
     {

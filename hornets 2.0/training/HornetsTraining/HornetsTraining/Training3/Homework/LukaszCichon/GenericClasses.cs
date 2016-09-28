@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 
-namespace HornetsTraining.Training3.Homework.LukaszCichon
+namespace Toci.HornetsTraining.Training3.Homework.LukaszCichon
 {
     public class GenericClasses
     {
