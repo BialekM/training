@@ -8,9 +8,9 @@
 	
 		$itemCollection = new RouteItemCollection();
 		
-		$itemCollection->AddRoute("test", new Route("/test", "Home\controllers\HomeController", "Index"));
+		$itemCollection->AddRoute("nameRoute", new Route("/test", "Home\controllers\HomeController", "Index"));
 		
-		$itemCollection->AddRoute("test2", new Route("/{parametr1}/{parametr2}", "Home\controllers\HomeController", "Test2"));
+		$itemCollection->AddRoute("test", new Route("/test/{parametr1}/{parametr2}", "Home\controllers\HomeController", "Test2"));
 		
 		//$itemCollection->AddPrefix("prefix"); prefix np. /prefix/przyklad
 		
