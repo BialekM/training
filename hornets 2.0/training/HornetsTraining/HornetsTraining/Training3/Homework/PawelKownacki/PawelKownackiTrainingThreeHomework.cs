@@ -8,5 +8,10 @@ namespace HornetsTraining.Training3.Homework.PawelKownacki
         {
             throw new System.NotImplementedException();
         }
+
+        private Dictionary<string,string>()
+    {
+        
+    } 
     }
 }
