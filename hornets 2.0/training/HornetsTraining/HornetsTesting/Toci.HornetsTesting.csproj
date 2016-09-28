@@ -133,7 +133,8 @@
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTest.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTplTest.cs" />
-    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkTest.cs" />
+    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkReflectionTest.cs" />
+    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkTplTest.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworktestReflection.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworkTplTest.cs" />
     <Compile Include="Training3\Linq\LinqTest.cs" />
