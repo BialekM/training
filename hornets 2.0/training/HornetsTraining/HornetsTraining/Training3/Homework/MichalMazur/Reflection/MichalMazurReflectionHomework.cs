@@ -7,27 +7,32 @@ using System.Runtime.InteropServices;
 
 namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
 {
-    public class MichalMazurReflectionHomework : TrainingThreeHomework
+    public class MichalMazurReflectionHomework<TItem> : TrainingThreeHomework
     {
-        private string _nameSpace;
-        private string _assembly;
+
         private object myGenericClass;
 
         public MichalMazurReflectionHomework()
         {
-            _nameSpace = "HornetsTraining.Training3.Homework.GenericClass";
-            _assembly = "Toci.HornetsTraining";
-            Type type = Type.GetType(_nameSpace + "," + _assembly);
+
+            Type type = Type.GetType(GetNameSpace<TItem>() + "," + GetAssembly<TItem>());
             myGenericClass = Activator.CreateInstance(type);
         }
 
-        public MichalMazurReflectionHomework(string nameSpace, string assembly)
+        public string GetNameSpace<T>()
         {
-            _nameSpace = nameSpace;
-            _assembly = assembly;
-            Type type = Type.GetType(_nameSpace + "," + _assembly);
-            myGenericClass = Activator.CreateInstance(type);
+            Type t = typeof(T);
+            return t.FullName;
+
         }
+
+        private string GetAssembly<T>()
+        {
+            Type t = typeof(T);
+            return t.Assembly.ToString().Remove(t.Assembly.ToString().IndexOf(","));
+        }
+
+
 
 
         public override void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName)
@@ -35,6 +40,7 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
 
             foreach (var item in keyMethodNameValueTypeName)
             {
+
                 var method = myGenericClass.GetType().GetMethod(item.Key);
                 Type t = Type.GetType("System." + item.Value.First().ToString().ToUpper() + String.Join("", item.Value.Skip(1)));
                 method.MakeGenericMethod(t).Invoke(myGenericClass, null);
@@ -44,13 +50,14 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
         }
 
 
-        public void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName, string nameSpace, string assembly)
+        public void RunGenericMethodsWithCustomTypes(Dictionary<string, string> keyMethodNameValueTypeName)
         {
+
 
             foreach (var item in keyMethodNameValueTypeName)
             {
                 var method = myGenericClass.GetType().GetMethod(item.Key);
-                Type t = Type.GetType(nameSpace + "." + item.Value + "," + assembly);
+                Type t = Type.GetType(item.Value);
                 method.MakeGenericMethod(t).Invoke(myGenericClass, null);
 
             }
@@ -68,8 +75,25 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
             });
             listOfExamples.Add(new Dictionary<string, string>()
             {
-               {"GenericMethod","TypeFirst"},
-                {"AnotherGenericMethod","TypeSecond"},
+               {"GenericMethod","char"},
+                {"AnotherGenericMethod","string"},
+            });
+
+            return listOfExamples;
+
+        }
+        public List<Dictionary<string, string>> CreateExamplesOfCustomTypes()
+        {
+            List<Dictionary<string, string>> listOfExamples = new List<Dictionary<string, string>>();
+            listOfExamples.Add(new Dictionary<string, string>()
+            {
+                { "GenericMethod", "HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes.TypeFirst, Toci.HornetsTraining"},
+                {"AnotherGenericMethod", "HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes.TypeSecond, Toci.HornetsTraining"},
+            });
+            listOfExamples.Add(new Dictionary<string, string>()
+            {
+                {"GenericMethod","HornetsTraining.Training3.Reflection.Entity, Toci.HornetsTraining"},
+                {"AnotherGenericMethod","Toci.HornetsTraining.Training3.Tpl.Paralelism, Toci.HornetsTraining"},
             });
 
             return listOfExamples;
