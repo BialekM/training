@@ -20,11 +20,12 @@ namespace HornetsTraining.Training2.HomeWork.MichalMazur
         {
             string DestinationBankID = transfer.DestinationBankAccount.Substring(2, 4);
             string SourceBankID = transfer.SourceBankAccount.Substring(2, 4);
-             
-             factory.GetInstance(SourceBankID).DoOutTransfer(transfer);
-             factory.GetInstance(DestinationBankID).DoInTransfer(transfer);
 
-        
+            var handlerIn = factory.GetInstance(SourceBankID);
+            var handlerOut = factory.GetInstance(DestinationBankID);
+
+            handlerIn.DoInTransfer(transfer);
+            handlerOut.DoOutTransfer(transfer);
         }
         
     }

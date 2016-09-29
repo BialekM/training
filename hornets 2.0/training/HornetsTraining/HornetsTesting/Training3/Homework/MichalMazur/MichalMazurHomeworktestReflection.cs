@@ -14,13 +14,21 @@ namespace HornetsTesting.Training3.Homework
         [TestMethod]
         public void TestReflection()
         {
-            MichalMazurReflectionHomework test = new MichalMazurReflectionHomework();
+            MichalMazurReflectionHomework<GenericClass> test = new MichalMazurReflectionHomework<GenericClass>();
 
-            List<Dictionary<string, string>> ListOdDictionary = test.CreateExamples();
+            List<Dictionary<string, string>> examples = test.CreateExamples();
+            List<Dictionary<string, string>> customExamples = test.CreateExamplesOfCustomTypes();
 
-            test.RunGenericMethods(ListOdDictionary[0]);
-            test.RunGenericMethods(ListOdDictionary[1],
-                " HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes", "Toci.HornetsTraining");
-         }
+            foreach (var item in examples)
+            {
+                test.RunGenericMethods(item);
+
+            }
+            foreach (var item in customExamples)
+            {
+                test.RunGenericMethodsWithCustomTypes(item);
+
+            }
+        }
     }
 }
