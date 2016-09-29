@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.HomeWork.MichalMazur;
+﻿using Toci.HornetsTraining.Training1.HomeWork.MichalMazur;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.Delegates.MichalMazur

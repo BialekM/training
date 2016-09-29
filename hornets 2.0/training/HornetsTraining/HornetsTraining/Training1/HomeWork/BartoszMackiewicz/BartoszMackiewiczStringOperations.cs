@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HornetsTraining.Training1.HomeWork.BartoszMackiewicz
+namespace Toci.HornetsTraining.Training1.HomeWork.BartoszMackiewicz
 {
     public class BartoszMackiewiczStringOperations : StringOperations
     {

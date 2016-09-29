@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 //using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
 using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
 
-namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
+namespace Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
 {
     public class ToyotaBankTransferHandler : TransferHandler
     {

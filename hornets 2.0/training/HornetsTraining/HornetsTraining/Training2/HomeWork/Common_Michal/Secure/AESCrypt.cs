@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace HornetsTraining.Training2.HomeWork.Common_Michal.Secure
+namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Secure
 {
     public class AESCrypt : ICrypt
     {

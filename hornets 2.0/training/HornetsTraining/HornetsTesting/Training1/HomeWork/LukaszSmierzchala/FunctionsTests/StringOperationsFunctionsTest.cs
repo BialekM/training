@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 
 namespace HornetsTesting.Training1.HomeWork.LukaszSmierzchala.FunctionsTests
 {

@@ -1,7 +1,8 @@
 ﻿using System.Linq;
-using HornetsTraining.Training1.Generics;
 using System;
-namespace HornetsTraining.Training1.HomeWork.MichalMazur
+using Toci.HornetsTraining.Training1.Generics;
+
+namespace Toci.HornetsTraining.Training1.HomeWork.MichalMazur
 {
     public class MichalMazurList<TListItem> : MyList<TListItem>
     {

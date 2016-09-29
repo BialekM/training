@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
-using HornetsTraining.Common;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Common;
+using Toci.HornetsTraining.Training1.HomeWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.Homework

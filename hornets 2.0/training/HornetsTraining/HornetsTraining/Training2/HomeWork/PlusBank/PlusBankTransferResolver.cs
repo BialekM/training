@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork.Mbank;
+using Toci.HornetsTraining.Training2.HomeWork.Mbank;
 
-namespace HornetsTraining.Training2.HomeWork
+namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public class PlusBankTransferResolver : TransferResolver // Remek
     {

@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training2.HomeWork.Common_Michal.Secure
+﻿namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Secure
 {
     public class SecurityOptions
     {

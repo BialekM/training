@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace HornetsTraining.Training1.HomeWork.RafalKawalerski
+namespace Toci.HornetsTraining.Training1.HomeWork.RafalKawalerski
 {
     public class RafalKawalerskiStringOperations : StringOperations
     {

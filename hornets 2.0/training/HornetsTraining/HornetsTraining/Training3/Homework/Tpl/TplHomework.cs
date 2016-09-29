@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training3.Homework.Tpl
+﻿namespace Toci.HornetsTraining.Training3.Homework.Tpl
 {
     public abstract class TplHomework
     {

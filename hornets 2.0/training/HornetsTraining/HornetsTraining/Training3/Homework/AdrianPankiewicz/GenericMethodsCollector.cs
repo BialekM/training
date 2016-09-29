@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace HornetsTraining.Training3.Homework.AdrianPankiewicz
+namespace Toci.HornetsTraining.Training3.Homework.AdrianPankiewicz
 {
     public static class GenericMethodsCollector
     {

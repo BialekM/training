@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Reflection;
-using HornetsTraining.Training1.Generics.Factory;
-using HornetsTraining.Training3.Homework;
-using HornetsTraining.Training3.Reflection;
+using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training3.Homework;
+using Toci.HornetsTraining.Training3.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Reflection

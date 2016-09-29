@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training2.Delegates;
+﻿using Toci.HornetsTraining.Training2.Delegates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.Delegates

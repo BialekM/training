@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
+namespace Toci.HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
 {
     public class MercedesBenzBankTransferResolver : TransferResolver
     {

@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training2.HomeWork
+﻿namespace Toci.HornetsTraining.Training2.HomeWork
 {
     public abstract class TransferHandler
     {

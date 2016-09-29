@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace HornetsTraining.Training3.Homework.MichalMazur.Reflection
+namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
 {
     public class MichalMazurReflectionHomework<TItem> : TrainingThreeHomework
     {

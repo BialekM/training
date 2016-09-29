@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HornetsTesting.Training2.HomeWork.LukaszSmierzchala.ForInitializing;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 //using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.DatabaseClass;
 

@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training2.ExtensionMethods;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.PKOBP;
+﻿using Toci.HornetsTraining.Training2.ExtensionMethods;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.PKOBP;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork

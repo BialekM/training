@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HornetsTraining.Training1.HomeWork.TomaszWilkosz
+namespace Toci.HornetsTraining.Training1.HomeWork.TomaszWilkosz
 {
     public class TomaszWilkoszStringOperations  : StringOperations
     {

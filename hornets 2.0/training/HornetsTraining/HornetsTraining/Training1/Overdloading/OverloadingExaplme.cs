@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.Overdloading
+﻿namespace Toci.HornetsTraining.Training1.Overdloading
 {
     public class OverloadingExample
     {

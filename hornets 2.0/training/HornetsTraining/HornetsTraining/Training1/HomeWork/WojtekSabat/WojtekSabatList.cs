@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training1.Generics;
+﻿using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.WojtekSabat
+namespace Toci.HornetsTraining.Training1.HomeWork.WojtekSabat
 {
     public class WojtekSabatList<TListItem> : MyList<TListItem>
     {

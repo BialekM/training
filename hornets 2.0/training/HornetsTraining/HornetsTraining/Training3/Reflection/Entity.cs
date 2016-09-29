@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training2.HomeWork;
+﻿using Toci.HornetsTraining.Training2.HomeWork;
 
-namespace HornetsTraining.Training3.Reflection
+namespace Toci.HornetsTraining.Training3.Reflection
 {
     public class Entity
     {

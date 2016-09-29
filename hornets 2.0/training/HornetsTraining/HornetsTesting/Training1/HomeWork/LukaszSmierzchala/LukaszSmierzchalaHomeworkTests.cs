@@ -7,7 +7,7 @@ using HornetsTesting.Training1.HomeWork.LukaszSmierzchala.ClassesForInitializing
 using HornetsTesting.Training1.HomeWork.LukaszSmierzchala.FunctionsTests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HornetsTesting.Training1.HomeWork.Assembly;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 using HomeworkTest = HornetsTesting.Training1.Homework.HomeworkTest;
 
 namespace HornetsTesting.Training1.HomeWork.LukaszSmierzchala

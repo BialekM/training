@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.MichalMazur;
-using HornetsTraining.Training3.Homework.Tpl;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training3.Homework.Tpl;
 
-namespace HornetsTraining.Training3.Homework.MichalMazur.Tpl
+namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Tpl
 {
     public class MichalMazurTplHomework : TplHomework
     {

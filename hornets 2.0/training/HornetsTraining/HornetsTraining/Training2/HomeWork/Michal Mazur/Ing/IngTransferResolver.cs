@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
-using HornetsTraining.Training1.Generics.Factory;
-using HornetsTraining.Training2.HomeWork.Ing;
 using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training2.HomeWork.Ing;
 
-namespace HornetsTraining.Training2.HomeWork.MichalMazur
+namespace Toci.HornetsTraining.Training2.HomeWork.MichalMazur
 {
     public class IngTransferResolver : TransferResolver
     {

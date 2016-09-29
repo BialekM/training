@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using HornetsTraining.Training3.Homework.LukaszCichon;
+using Toci.HornetsTraining.Training3.Homework.LukaszCichon;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Homework.LukaszCichon
 {
     [TestClass]
-    public class LukaszCichonHomeworkTest
+    public class LukaszCichonHomeworkReflectionTest
     {
         private Dictionary<string, string> keyMethodNameValueTypeName = new Dictionary<string, string>()
         {
@@ -24,7 +24,7 @@ namespace HornetsTesting.Training3.Homework.LukaszCichon
         [TestMethod]
         public void RunGenericMethod()
         {
-            LukaszCichonHomework testRun = new LukaszCichonHomework();
+            LukaszCichonReflectionHomework testRun = new LukaszCichonReflectionHomework();
 
             testRun.RunGenericMethods(keyMethodNameValueTypeName);
         }

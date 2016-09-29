@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace HornetsTraining.Training1.HomeWork.MateuszPorada
+namespace Toci.HornetsTraining.Training1.HomeWork.MateuszPorada
 {
     public class MateuszPoradaStringOperations : StringOperations
     {

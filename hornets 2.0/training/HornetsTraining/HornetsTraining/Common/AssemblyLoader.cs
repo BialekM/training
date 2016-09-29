@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HornetsTraining.Common
+namespace Toci.HornetsTraining.Common
 {
     public class AssemblyLoader
     {

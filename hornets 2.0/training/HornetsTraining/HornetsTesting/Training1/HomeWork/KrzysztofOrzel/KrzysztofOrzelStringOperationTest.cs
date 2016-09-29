@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.HomeWork.KrzysztofOrzel;
+﻿using Toci.HornetsTraining.Training1.HomeWork.KrzysztofOrzel;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
