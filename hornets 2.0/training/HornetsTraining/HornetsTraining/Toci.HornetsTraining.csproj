@@ -206,6 +206,7 @@
     <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonReflectionHomework.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\MichalMazurReflectionHomework.cs" />
+    <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionHomework.cs" />
     <Compile Include="Training3\Homework\Tpl\TplHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
