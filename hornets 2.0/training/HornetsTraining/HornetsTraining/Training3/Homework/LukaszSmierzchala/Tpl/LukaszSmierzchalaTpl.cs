@@ -70,7 +70,7 @@ namespace Toci.HornetsTraining.Training3.Homework.LukaszSmierzchala.Tpl
 
         private string JoinBankAccount(int preCode, string bankCode, int firstPostCode, int secondPostCode)
         {
-            return $"{preCode,2:D2}{bankCode}{firstPostCode,10:D10}{secondPostCode,10:D10}";
+            return null;// $"{preCode,2:D2}{bankCode}{firstPostCode,10:D10}{secondPostCode,10:D10}";
         }
     }
 }
