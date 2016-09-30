@@ -216,6 +216,8 @@
     <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionHomework.cs" />
     <Compile Include="Training3\Homework\Tpl\TplHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\TransferRandomizer.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatTplHomework.cs" />
     <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatTrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
     <Compile Include="Training3\Reflection\Entity.cs" />
