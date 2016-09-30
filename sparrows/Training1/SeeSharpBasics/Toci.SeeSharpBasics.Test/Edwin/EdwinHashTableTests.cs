@@ -14,6 +14,8 @@ namespace Toci.SeeSharpBasics.Test.Edwin
 
             string result2 = test.GetBankName("1020"); // zwraca nazwę banku dla kodu
 
+            EdwinPeselValidator peselVal = new EdwinPeselValidator();
+            bool peselValid = peselVal.IsPeselValid("84080818074");
             
         }
     }
