@@ -6,18 +6,20 @@ namespace Toci.HornetsTraining.Training3.Homework.KonradGalazka
 {
     public class KonradGalazkaReflection : TrainingThreeHomework
     {
-        private GenericClass GC = new GenericClass();
+        public GenericClass GC = new GenericClass();
+
         public override void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName)
         {
-            foreach (var obj in keyMethodNameValueTypeName)
+            
+            foreach (var item in keyMethodNameValueTypeName)
             {
-                var type = Type.GetType(obj.Value);
-                var method = GC.GetType().GetMethod(obj.Key);
-                var generic = method.MakeGenericMethod(type);
+                var type = Type.GetType(item.Value); //pobierz Type
+                var method = GC.GetType().GetMethod(item.Key); //pobierz klucz metody
+                var gen = method.MakeGenericMethod(type);
 
-                generic.Invoke(GC, null);
+                gen.Invoke(GC, null);
             }
-            //throw new System.NotImplementedException();
+            
         }
     }
 }
