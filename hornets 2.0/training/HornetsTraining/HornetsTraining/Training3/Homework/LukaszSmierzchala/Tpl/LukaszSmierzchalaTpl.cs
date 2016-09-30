@@ -24,7 +24,7 @@ namespace Toci.HornetsTraining.Training3.Homework.LukaszSmierzchala.Tpl
             int numberOfTransfers = 1000;
             Transfer[] transfers = RandTransfers(numberOfTransfers);
 
-            TaskFactory tasks = new TaskFactory();
+            //TaskFactory tasks = new TaskFactory();
 
             Parallel.ForEach(transfers, (transfer) => _transferResolver.DoTransfer(transfer));
 
