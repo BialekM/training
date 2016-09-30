@@ -203,6 +203,7 @@
     <Compile Include="Training3\Homework\MarcinJaniak\TransferRandomizer.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\GenericClasses.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Tpl\MichalMazurTplHomework.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\GetMethods.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTrainingThreeHomework.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonReflectionHomework.cs" />
