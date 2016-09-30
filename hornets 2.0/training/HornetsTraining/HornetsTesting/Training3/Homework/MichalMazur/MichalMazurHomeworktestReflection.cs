@@ -17,18 +17,11 @@ namespace HornetsTesting.Training3.Homework
             MichalMazurReflectionHomework<GenericClass> test = new MichalMazurReflectionHomework<GenericClass>();
 
             List<Dictionary<string, string>> examples = test.CreateExamples();
-            List<Dictionary<string, string>> customExamples = test.CreateExamplesOfCustomTypes();
-
-            foreach (var item in examples)
-            {
-                test.RunGenericMethods(item);
-
-            }
-            foreach (var item in customExamples)
-            {
-                test.RunGenericMethodsWithCustomTypes(item);
-
-            }
+ 
+            test.RunGenericMethods(examples[0]);
+            test.RunGenericMethods(examples[1]);
+            test.RunGenericMethods(examples[2],true);
+            test.RunGenericMethods(examples[3],true);
         }
     }
 }

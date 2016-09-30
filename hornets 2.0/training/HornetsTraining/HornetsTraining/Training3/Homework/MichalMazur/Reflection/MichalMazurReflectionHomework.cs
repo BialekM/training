@@ -4,13 +4,17 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using Toci.HornetsTraining.Training1.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training3.Homework.MichalMazur.Tpl;
+using Toci.HornetsTraining.Training3.Reflection;
+using Toci.HornetsTraining.Training3.Tpl;
 
 namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
 {
     public class MichalMazurReflectionHomework<TItem> : TrainingThreeHomework
     {
 
-        private object myGenericClass;
+        private readonly object myGenericClass;
 
         public MichalMazurReflectionHomework()
         {
@@ -19,7 +23,7 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
             myGenericClass = Activator.CreateInstance(type);
         }
 
-        public string GetNameSpace<T>()
+        private string GetNameSpace<T>()
         {
             Type t = typeof(T);
             return t.FullName;
@@ -32,72 +36,70 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection
             return t.Assembly.ToString().Remove(t.Assembly.ToString().IndexOf(","));
         }
 
-
+        private List<string> GetGenericMethodsList()
+        {
+            return myGenericClass.GetType()
+                   .GetMethods()
+                   .ToList()
+                   .Where(mI => mI.IsGenericMethod)
+                   .Select(m => m.Name).ToList();
+        }
 
 
         public override void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName)
         {
-
             foreach (var item in keyMethodNameValueTypeName)
             {
-
                 var method = myGenericClass.GetType().GetMethod(item.Key);
                 Type t = Type.GetType("System." + item.Value.First().ToString().ToUpper() + String.Join("", item.Value.Skip(1)));
                 method.MakeGenericMethod(t).Invoke(myGenericClass, null);
-
             }
 
         }
 
-
-        public void RunGenericMethodsWithCustomTypes(Dictionary<string, string> keyMethodNameValueTypeName)
+        /* przeciążona wersja dla typów, któe w stringu mają podany fullname oraz nazwe assembly*/
+        public void RunGenericMethods(Dictionary<string, string> keyMethodNameValueTypeName, bool customTypes)
         {
-
-
             foreach (var item in keyMethodNameValueTypeName)
             {
                 var method = myGenericClass.GetType().GetMethod(item.Key);
                 Type t = Type.GetType(item.Value);
                 method.MakeGenericMethod(t).Invoke(myGenericClass, null);
-
             }
-
         }
 
 
         public List<Dictionary<string, string>> CreateExamples()
         {
+            List<string> methodsList = GetGenericMethodsList();
             List<Dictionary<string, string>> listOfExamples = new List<Dictionary<string, string>>();
+
             listOfExamples.Add(new Dictionary<string, string>()
             {
-                {"GenericMethod","double"},
-                {"AnotherGenericMethod","decimal"},
+                {methodsList[0],"double"},
+                {methodsList[1],"decimal"},
             });
             listOfExamples.Add(new Dictionary<string, string>()
             {
-               {"GenericMethod","char"},
-                {"AnotherGenericMethod","string"},
+                {methodsList[0], "char"},
+                {methodsList[1], "string"},
             });
+            /* dla swoich typów trzeba podać fullname oraz nazwe assembly*/
+            listOfExamples.Add(new Dictionary<string, string>()
+            {
+                { methodsList[0], GetNameSpace<MichalMazurStringOperations>()+","+GetAssembly<MichalMazurStringOperations>()},
+                {methodsList[1], GetNameSpace<MichalMazurTplHomework>()+","+GetAssembly<MichalMazurTplHomework>()},
+            });
+            listOfExamples.Add(new Dictionary<string, string>()
+            {
+                {methodsList[0],GetNameSpace<Entity>()+","+GetAssembly<Entity>() },
+                {methodsList[1],GetNameSpace<Paralelism>()+","+GetAssembly<Paralelism>()},
+            });
+
 
             return listOfExamples;
 
         }
-        public List<Dictionary<string, string>> CreateExamplesOfCustomTypes()
-        {
-            List<Dictionary<string, string>> listOfExamples = new List<Dictionary<string, string>>();
-            listOfExamples.Add(new Dictionary<string, string>()
-            {
-                { "GenericMethod", "HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes.TypeFirst, Toci.HornetsTraining"},
-                {"AnotherGenericMethod", "HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes.TypeSecond, Toci.HornetsTraining"},
-            });
-            listOfExamples.Add(new Dictionary<string, string>()
-            {
-                {"GenericMethod","HornetsTraining.Training3.Reflection.Entity, Toci.HornetsTraining"},
-                {"AnotherGenericMethod","Toci.HornetsTraining.Training3.Tpl.Paralelism, Toci.HornetsTraining"},
-            });
 
-            return listOfExamples;
-
-        }
     }
 }
