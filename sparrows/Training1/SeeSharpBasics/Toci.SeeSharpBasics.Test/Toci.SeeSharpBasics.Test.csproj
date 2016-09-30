@@ -53,6 +53,7 @@
     <Compile Include="BartekZapart\BartekTablesOperationsTests.cs" />
     <Compile Include="Common\AssemblyLoader.cs" />
     <Compile Include="DominikRzepnicki\DominikTablesOperationsTests.cs" />
+    <Compile Include="Edwin\EdwinHashTableTests.cs" />
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperationsTests.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />

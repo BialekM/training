@@ -10,9 +10,11 @@ namespace Toci.SeeSharpBasics.Test.Edwin
         public void TestM()
         {
             EdwinBankResolver test = new EdwinBankResolver();
-            string result = test.GetBankCodeForAccount("124124124124");
+            string result = test.GetBankCodeForAccount("124124124124"); // test -zwraca 4 cyfry z numeru konta
 
-            string result2 = test.GetBankName("1140");
+            string result2 = test.GetBankName("1020"); // zwraca nazwę banku dla kodu
+
+            
         }
     }
 }
