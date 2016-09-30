@@ -72,6 +72,7 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperationsTests.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AssemblyLoaderTryout.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
+    <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackieiwcz\Bartosz MackiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofOrzel\KrzysztofOrzelStringOperationTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekListTests.cs" />
@@ -142,11 +143,10 @@
     <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplTests.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworktestReflection.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworkTplTest.cs" />
-
+    <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTplHomeworkTest.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\ReflectionHomeworkTest.cs" />
-
     <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionTest.cs" />
-
+    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatReflectionTest.cs" />
     <Compile Include="Training3\Linq\LinqTest.cs" />
     <Compile Include="Training3\Reflection\ReflectionTests.cs" />
     <Compile Include="Training3\Tpl\TplTest.cs" />
