@@ -173,6 +173,7 @@
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
@@ -202,8 +203,6 @@
     <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplHomeworkOneThread.cs" />
     <Compile Include="Training3\Homework\MarcinJaniak\TransferRandomizer.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\GenericClasses.cs" />
-    <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeFirst.cs" />
-    <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeSecond.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Tpl\MichalMazurTplHomework.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\GetMethods.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTplHomework.cs" />
