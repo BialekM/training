@@ -194,6 +194,13 @@
     <Compile Include="Training3\Homework\AdrianPankiewicz\RandomTransferGenerator.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonTplHomework.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\GenericMethodInfo.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\LukaszSmierzchalaHomeworkThree.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Tpl\LukaszSmierzchalaTpl.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakReflectionHomework.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplHomeworkMultiThread.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplHomeworkOneThread.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\TransferRandomizer.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\GenericClasses.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeFirst.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeSecond.cs" />
@@ -203,6 +210,7 @@
     <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonReflectionHomework.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\MichalMazurReflectionHomework.cs" />
+    <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionHomework.cs" />
     <Compile Include="Training3\Homework\Tpl\TplHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
