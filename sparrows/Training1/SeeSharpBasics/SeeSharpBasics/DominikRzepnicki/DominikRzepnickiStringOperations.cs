@@ -51,7 +51,7 @@ namespace SeeSharpBasics.DominikRzepnicki
             for (int i = 0; i < candidate.Length; i++)
             {
                 if (candidate[i] == needle)
-                    return i;
+                    return i + 1;
             }
 
             return -1;

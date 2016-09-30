@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using HornetsTraining.Training3.Homework.MichalMazur.Reflection;
+using Toci.HornetsTraining.Training3.Homework;
+using Toci.HornetsTraining.Training3.Homework.MichalMazur.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Homework
@@ -13,14 +14,14 @@ namespace HornetsTesting.Training3.Homework
         [TestMethod]
         public void TestReflection()
         {
-            MichalMazurReflectionHomework test = new MichalMazurReflectionHomework();
+            MichalMazurReflectionHomework<GenericClass> test = new MichalMazurReflectionHomework<GenericClass>();
 
-            List<Dictionary<string, string>> ListOdDictionary = test.CreateExamples();
-
-            test.RunGenericMethods(ListOdDictionary[0]);
-            test.RunGenericMethods(ListOdDictionary[1],
-                " HornetsTraining.Training3.Homework.MichalMazur.Reflection.ExamplesTypes", "Toci.HornetsTraining");
-
+            List<Dictionary<string, string>> examples = test.CreateExamples();
+ 
+            test.RunGenericMethods(examples[0]);
+            test.RunGenericMethods(examples[1]);
+            test.RunGenericMethods(examples[2],true);
+            test.RunGenericMethods(examples[3],true);
         }
     }
 }

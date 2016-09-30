@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace HornetsTraining.Training1.HomeWork.MichałMuzyczka
+namespace Toci.HornetsTraining.Training1.HomeWork.MichałMuzyczka
 {
     public class MichalStringOperations : StringOperations
     {

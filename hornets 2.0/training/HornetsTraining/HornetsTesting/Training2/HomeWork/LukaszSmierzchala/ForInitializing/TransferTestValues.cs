@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 
 namespace HornetsTesting.Training2.HomeWork.LukaszSmierzchala.ForInitializing
 {

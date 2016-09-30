@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.HomeWork.SlawekKowal
+﻿namespace Toci.HornetsTraining.Training1.HomeWork.SlawekKowal
 {
     public class SlawekKStringOperation : StringOperations
     {

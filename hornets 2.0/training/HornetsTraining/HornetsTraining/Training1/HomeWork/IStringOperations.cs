@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.HomeWork
+﻿namespace Toci.HornetsTraining.Training1.HomeWork
 {
     public interface IStringOperations
     {

@@ -1,6 +1,6 @@
 ﻿using Ninject;
 
-namespace HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure
+namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure
 {
     public static class Factory
     {

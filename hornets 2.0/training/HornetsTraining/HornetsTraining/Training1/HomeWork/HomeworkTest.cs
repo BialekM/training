@@ -1,7 +1,7 @@
-﻿using HornetsTraining.Training1.HomeWork.Adrian;
-using HornetsTraining.Training1.HomeWork.BartekZapart;
+﻿using Toci.HornetsTraining.Training1.HomeWork.Adrian;
+using Toci.HornetsTraining.Training1.HomeWork.BartekZapart;
 
-namespace HornetsTraining.Training1.HomeWork
+namespace Toci.HornetsTraining.Training1.HomeWork
 {
     public class HomeworkTest
     {

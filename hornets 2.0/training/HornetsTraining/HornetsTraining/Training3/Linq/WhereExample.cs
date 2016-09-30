@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 
-namespace HornetsTraining.Training3.Linq
+namespace Toci.HornetsTraining.Training3.Linq
 {
     public class WhereExample
     {

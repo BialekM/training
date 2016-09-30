@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training1.Generics;
+﻿using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.PatrykDrapik
+namespace Toci.HornetsTraining.Training1.HomeWork.PatrykDrapik
 {
     public class PatrykDrapikMyList<TListItem> : MyList<TListItem>
     {

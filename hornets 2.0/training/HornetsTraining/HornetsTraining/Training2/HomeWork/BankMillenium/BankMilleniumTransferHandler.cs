@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace HornetsTraining.Training2.HomeWork.BankMillenium
+namespace Toci.HornetsTraining.Training2.HomeWork.BankMillenium
 {
     public class BankMilleniumTransferHandler : TransferHandler
     {

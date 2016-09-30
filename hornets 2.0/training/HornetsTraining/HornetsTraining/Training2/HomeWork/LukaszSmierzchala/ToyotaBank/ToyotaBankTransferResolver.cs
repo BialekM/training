@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training1.Generics.Factory;
-using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.Factory;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.Factory;
 using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 
-namespace HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
+namespace Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank
 {
     public class ToyotaBankTransferResolver : TransferResolver
     {

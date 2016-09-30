@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Security.Cryptography;
 
-namespace HornetsTraining.Training3.Homework.AdrianPankiewicz
+namespace Toci.HornetsTraining.Training3.Homework.AdrianPankiewicz
 {
     public class AdrianPankiewiczHomework : TrainingThreeHomework
     {

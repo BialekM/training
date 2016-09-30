@@ -1,8 +1,8 @@
-﻿using HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
-using Ninject;
+﻿using Ninject;
 using Ninject.Modules;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Secure;
 
-namespace HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure
+namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Infrastructure
 {
     public class Container : NinjectModule
     {

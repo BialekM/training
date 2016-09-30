@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
-using HornetsTraining.Training2.HomeWork.BZWBK;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
+using Toci.HornetsTraining.Training2.HomeWork.BZWBK;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 
-namespace HornetsTraining.Training2.HomeWork.Mbank
+namespace Toci.HornetsTraining.Training2.HomeWork.Mbank
 {
     public class MBankTranferResolver : TransferResolver
     {

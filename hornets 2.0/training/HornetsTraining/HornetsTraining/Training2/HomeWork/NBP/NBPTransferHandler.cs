@@ -5,10 +5,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Xml.Serialization;
-using HornetsTraining.Training2.HomeWork.Common_Michal;
-using HornetsTraining.Training2.HomeWork.Common_Michal.Const;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Const;
+using Toci.HornetsTraining.Training2.HomeWork.Common_Michal;
 
-namespace HornetsTraining.Training2.HomeWork.NBP
+namespace Toci.HornetsTraining.Training2.HomeWork.NBP
 {
     public class NBPTransferHandler : TransferHandler
     {

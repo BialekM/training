@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.HomeWork.WojtekSabat;
+﻿using Toci.HornetsTraining.Training1.HomeWork.WojtekSabat;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.Homework.WojtekSabat

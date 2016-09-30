@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork;
-using HornetsTraining.Training2.HomeWork.MichalMazur;
-using HornetsTraining.Training3.Homework.Tpl;
+using Toci.HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training3.Homework.Tpl;
 
-namespace HornetsTraining.Training3.Homework.MichalMazur.Tpl
+namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Tpl
 {
     public class MichalMazurTplHomework : TplHomework
     {
@@ -17,8 +17,11 @@ namespace HornetsTraining.Training3.Homework.MichalMazur.Tpl
         private Random rand = new Random(DateTime.Today.Millisecond);
         private IngTransferResolver resolver;
         private TaskFactory tf;
-        public MichalMazurTplHomework()
+        private List<Task> tasks;
+         public MichalMazurTplHomework()
         {
+            tasks = new List<Task>();
+            resolver = new IngTransferResolver();
             tf = new TaskFactory();
             bankIds = CreateListOfBankId().ToArray();
             transfers = GenerateListOfTransfers().ToArray();
@@ -26,17 +29,49 @@ namespace HornetsTraining.Training3.Homework.MichalMazur.Tpl
         }
         public override void DoTransfers()
         {
-            resolver = new IngTransferResolver();
+            var WithTaskTime = WayOfPerformTransfer(resolver, tf,
+                (tr, res, fac) => fac.StartNew(() =>
+                {
+                    try
+                    {
+                        resolver.DoTransfer(tr);
+                    }
+                    catch
+                    {
+                    }
+                }));
 
-        
-            foreach (var transfer in transfers)
-            {
-                Transfer transfer1 = transfer;
-                tf.StartNew(() => resolver.DoTransfer(transfer1));
+            var WithoutTaskTime = WayOfPerformTransfer(resolver, tf,
+               (tr, res, fac) => 
+               {
+                   try
+                   {
+                       resolver.DoTransfer(tr);
+                   }
+                   catch
+                   {
+                   }
+               });
 
-             }
+
         }
 
+
+        private TimeSpan WayOfPerformTransfer(IngTransferResolver resolver, TaskFactory tf, Action<Transfer, IngTransferResolver, TaskFactory> delAction)
+        {
+            Stopwatch s = Stopwatch.StartNew();
+            foreach (var transfer in transfers)
+            {
+ 
+                delAction(transfer, resolver, tf);
+            }
+
+
+            s.Stop();
+            return s.Elapsed;
+        }
+
+     
 
         private IEnumerable<string> CreateListOfBankId()
         {
@@ -51,11 +86,16 @@ namespace HornetsTraining.Training3.Homework.MichalMazur.Tpl
         {
             List<Transfer> list = new List<Transfer>();
 
-            for (int i = 0; i < 10000; i++)
-            {
-                list.Add(GenerateRandomTransfer());
-            }
+            Stopwatch s = Stopwatch.StartNew();
 
+            Parallel.For(0, 100, i => list.Add(GenerateRandomTransfer()));
+
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    list.Add(GenerateRandomTransfer());
+            //}
+            s.Stop();
+            var ss = s.Elapsed;
 
             return list;
         }
