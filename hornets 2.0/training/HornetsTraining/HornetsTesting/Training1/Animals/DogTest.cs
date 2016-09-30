@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.Animals;
+﻿using Toci.HornetsTraining.Training1.Animals;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.Animals

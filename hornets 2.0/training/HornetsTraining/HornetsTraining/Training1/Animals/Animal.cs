@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.Animals
+﻿namespace Toci.HornetsTraining.Training1.Animals
 {
     public abstract  class Animal
     {

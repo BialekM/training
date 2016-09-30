@@ -48,6 +48,8 @@
     <Compile Include="DominikRzepnicki\DominikRzepnickiTablesOperations.cs" />
     <Compile Include="Edwin\EdwinStringOperations.cs" />
     <Compile Include="Edwin\EdwinTablesOperations.cs" />
+    <Compile Include="Edwin\HashMaps\HashMapExample.cs" />
+    <Compile Include="Edwin\HomeWorkHashTables\EdwinBankResolver.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />

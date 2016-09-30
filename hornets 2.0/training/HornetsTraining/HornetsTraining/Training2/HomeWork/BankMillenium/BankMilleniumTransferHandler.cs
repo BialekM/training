@@ -3,10 +3,12 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace HornetsTraining.Training2.HomeWork.BankMillenium
+namespace Toci.HornetsTraining.Training2.HomeWork.BankMillenium
 {
     public class BankMilleniumTransferHandler : TransferHandler
     {
+        private const string XmlFilePath = @"../../../HornetsTraining/Training2/HomeWork/BankMillenium/BankMilleniumAccountInfo.xml";
+
         public override bool DoInTransfer(Transfer transfer)
         {
             try
@@ -49,7 +51,7 @@ namespace HornetsTraining.Training2.HomeWork.BankMillenium
             }
         }
 
-        private const string XmlFilePath = "Transfers.xml";
+        
 
         public string ReadAccountBalance()
         {

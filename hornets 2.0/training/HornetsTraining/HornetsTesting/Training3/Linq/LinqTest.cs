@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training3.Linq;
+﻿using Toci.HornetsTraining.Training3.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training3.Linq

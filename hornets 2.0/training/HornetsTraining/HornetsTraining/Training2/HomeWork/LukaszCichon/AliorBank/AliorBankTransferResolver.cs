@@ -1,7 +1,7 @@
 ﻿using System.Collections.Specialized;
 using System.Diagnostics;
 
-namespace HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank
+namespace Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank
 {
     public class AliorBankTransferResolver : TransferResolver
     {

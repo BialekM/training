@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training2.HomeWork;
 
 namespace HornetsTraining.Training2.HomeWork.PKOBP
 {

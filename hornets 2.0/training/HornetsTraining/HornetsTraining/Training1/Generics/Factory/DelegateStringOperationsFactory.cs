@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using HornetsTraining.Training1.HomeWork;
-using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
-using HornetsTraining.Training1.HomeWork.Haski;
-using HornetsTraining.Training1.HomeWork.KrzysztofPater;
-using HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
+using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
+using Toci.HornetsTraining.Training1.HomeWork.Haski;
+using Toci.HornetsTraining.Training1.HomeWork.KrzysztofPater;
+using Toci.HornetsTraining.Training1.HomeWork.LukaszSmierzchala;
 
-namespace HornetsTraining.Training1.Generics.Factory
+namespace Toci.HornetsTraining.Training1.Generics.Factory
 {
     public class DelegateStringOperationsFactory :  DelegateFactoryBase<IStringOperations>
     {

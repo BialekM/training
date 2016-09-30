@@ -1,10 +1,10 @@
-﻿using HornetsTraining.Training1.HomeWork;
-using HornetsTraining.Training1.HomeWork.Adrian;
-using HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
-using HornetsTraining.Training1.HomeWork.BartekZapart;
-using HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
+﻿using Toci.HornetsTraining.Training1.HomeWork.Adrian;
+using Toci.HornetsTraining.Training1.HomeWork.BartekZapart;
+using Toci.HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz;
+using Toci.HornetsTraining.Training1.HomeWork.BartoszMackiewicz;
 
-namespace HornetsTraining.Training1.Generics.Factory
+namespace Toci.HornetsTraining.Training1.Generics.Factory
 {
     public class StringOperationsFactory :  FactoryBase<IStringOperations>
     {

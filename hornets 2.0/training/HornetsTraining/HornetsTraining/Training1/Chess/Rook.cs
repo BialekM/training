@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.Chess
+﻿namespace Toci.HornetsTraining.Training1.Chess
 {
     public class Rook : Figure
     {

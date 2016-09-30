@@ -2,7 +2,7 @@
 using System;
 using System.Management.Instrumentation;
 
-namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
+namespace Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 {
 
     public class AdrianPankiewiczStringOperations : StringOperations

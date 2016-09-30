@@ -1,5 +1,5 @@
 ﻿using HornetsTesting.Training1.HomeWork.Assembly;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace a

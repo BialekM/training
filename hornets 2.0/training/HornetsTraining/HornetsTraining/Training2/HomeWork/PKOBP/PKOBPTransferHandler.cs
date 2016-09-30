@@ -1,6 +1,7 @@
-﻿using System.IO;
+using System.IO;
 
-namespace HornetsTraining.Training2.HomeWork.PKOBP
+//namespace HornetsTraining.Training2.HomeWork.PKOBP
+﻿namespace Toci.HornetsTraining.Training2.HomeWork.PKOBP
 {
     public class PkobpTransferHandler : TransferHandler
     {

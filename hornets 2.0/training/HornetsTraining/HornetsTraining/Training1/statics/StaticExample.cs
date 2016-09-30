@@ -1,6 +1,6 @@
-﻿using HornetsTraining.Training1.Animals;
+﻿using Toci.HornetsTraining.Training1.Animals;
 
-namespace HornetsTraining.Training1.statics
+namespace Toci.HornetsTraining.Training1.statics
 {
     public static class StaticExample
     {

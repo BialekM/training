@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Diagnostics;
+using HornetsTraining.Training2.HomeWork.PKOBP;
 
-namespace HornetsTraining.Training2.HomeWork.PKOBP
+namespace Toci.HornetsTraining.Training2.HomeWork.PKOBP
 {
     public class PkobpTransferResolver : TransferResolver
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace HornetsTraining.Training2.HomeWork.Mbank
+namespace Toci.HornetsTraining.Training2.HomeWork.Mbank
 {
     public class MBankTransferHandler : TransferHandler
     {

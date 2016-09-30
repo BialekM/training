@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using HornetsTesting.Training1.Homework;
-using HornetsTraining.Common;
-using HornetsTraining.Training1.HomeWork;
-using HornetsTraining.Training1.HomeWork.LukaszCichon;
+using Toci.HornetsTraining.Common;
+using Toci.HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork.LukaszCichon;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HomeworkTest = HornetsTesting.Training1.Homework.HomeworkTest;
 

@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.HomeWork.AdrianPankiewicz
+﻿namespace Toci.HornetsTraining.Training1.HomeWork.AdrianPankiewicz
 {
     public static class GenericMethodsCollection<T>
     {

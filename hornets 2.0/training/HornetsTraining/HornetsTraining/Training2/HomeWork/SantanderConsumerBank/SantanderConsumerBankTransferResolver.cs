@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HornetsTraining.Training2.HomeWork.SantanderConsumerBank
+namespace Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank
 {
     public class SantanderConsumerBankTransferResolver : TransferResolver
     {

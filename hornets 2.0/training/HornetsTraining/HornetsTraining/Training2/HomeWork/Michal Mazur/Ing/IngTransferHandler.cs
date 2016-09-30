@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Mime;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork;
 
-namespace HornetsTraining.Training2.HomeWork.MichalMazur
+namespace Toci.HornetsTraining.Training2.HomeWork.MichalMazur
 {
     public class IngTransferHandler : TransferHandler
     {

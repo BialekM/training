@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training1.Generics.Factory;
-using HornetsTraining.Training2.HomeWork.BankMillenium;
-using HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
-using HornetsTraining.Training2.HomeWork.BZWBK;
-using HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
-using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
-using HornetsTraining.Training2.HomeWork.MarcinJaniak;
-using HornetsTraining.Training2.HomeWork.Mbank;
-using HornetsTraining.Training2.HomeWork.MichalMazur;
-using HornetsTraining.Training2.HomeWork.NBP;
-using HornetsTraining.Training2.HomeWork.PKOBP;
-using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
+using Toci.HornetsTraining.Training1.Generics.Factory;
+using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
+using Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training2.HomeWork.BZWBK;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
+using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
+using Toci.HornetsTraining.Training2.HomeWork.MarcinJaniak;
+using Toci.HornetsTraining.Training2.HomeWork.Mbank;
+using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
+using Toci.HornetsTraining.Training2.HomeWork.NBP;
+using Toci.HornetsTraining.Training2.HomeWork.PKOBP;
+using Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
 
-namespace HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
+namespace Toci.HornetsTraining.Training2.HomeWork.PawelMocarski.MercedesBenzBank
 {
     public class MercedesBenzBankFactory : DelegateFactoryBase<TransferHandler>
     {

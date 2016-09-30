@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank
+namespace Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank
 {
     public class AliorBankTransferHandler : TransferHandler
     {

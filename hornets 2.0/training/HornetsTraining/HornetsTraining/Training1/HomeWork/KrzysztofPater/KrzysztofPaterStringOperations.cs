@@ -5,7 +5,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Threading;
 using Microsoft.Win32;
 
-namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
+namespace Toci.HornetsTraining.Training1.HomeWork.KrzysztofPater
 {
     public class KrzysztofPaterStringOperations : StringOperations
     {

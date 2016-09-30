@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training1.Generics;
-using HornetsTraining.Training1.HomeWork.KrzysztofPater;
-using HornetsTraining.Training1.HomeWork.MichałMuzyczka;
+using Toci.HornetsTraining.Training1.Generics;
+using Toci.HornetsTraining.Training1.HomeWork.KrzysztofPater;
+using Toci.HornetsTraining.Training1.HomeWork.MichałMuzyczka;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 

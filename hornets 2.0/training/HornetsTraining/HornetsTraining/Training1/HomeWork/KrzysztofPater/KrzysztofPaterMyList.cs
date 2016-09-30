@@ -1,7 +1,7 @@
 ﻿using System;
-using HornetsTraining.Training1.Generics;
+using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.KrzysztofPater
+namespace Toci.HornetsTraining.Training1.HomeWork.KrzysztofPater
 {
     public class KrzysztofPaterMyList<TListItem> : MyList<TListItem>
     {
