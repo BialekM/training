@@ -4,7 +4,7 @@ namespace SeeSharpBasics.TomaszKilian
 {
     class TomaszKilianTableOperations : TableOperations
     {
-        public override int[] BubbleSort(int[] tableToSort)
+        public override void BubbleSort(int[] tableToSort)
         {
             int counter = '0';
             bool tellmetrue = false;
