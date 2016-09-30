@@ -142,6 +142,11 @@
     <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplTests.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworktestReflection.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworkTplTest.cs" />
+<<<<<<< HEAD
+	<Compile Include="Training3\Homework\WojtekSabat\WojtekSabatReflectionTest.cs" />
+=======
+    <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTplHomeworkTest.cs" />
+>>>>>>> 1d6b50367f576581a6205c697624e48b1df8f721
     <Compile Include="Training3\Homework\PawelKownacki\ReflectionHomeworkTest.cs" />
     <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionTest.cs" />
     <Compile Include="Training3\Linq\LinqTest.cs" />
