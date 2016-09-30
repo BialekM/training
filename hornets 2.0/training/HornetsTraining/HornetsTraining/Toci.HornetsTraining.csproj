@@ -81,6 +81,7 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\GrzegorzKwiesielewicz\KlasaTestowa.cs" />
