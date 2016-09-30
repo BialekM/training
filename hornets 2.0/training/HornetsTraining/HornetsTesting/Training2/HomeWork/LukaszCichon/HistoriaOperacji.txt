@@ -9840,3 +9840,157 @@ Numer konta docelowego: 7924906263802917218931547943
 Numer konta zrodlowego: 9624904622279759496940052052
 Pieniadze: 0,031473517898225
 
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:13:22
+Numer konta docelowego: 9610206555329731899955907798
+Numer konta zrodlowego: 7824900389647248402257617384
+Pieniadze: 0,994673646984004
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:13:22
+Numer konta docelowego: 3516808189777238176617500568
+Numer konta zrodlowego: 2024906045534446634073097585
+Pieniadze: 0,0940072122467715
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:19:05
+Numer konta docelowego: 5910608156718021604456700781
+Numer konta zrodlowego: 9724908518844775220037616200
+Pieniadze: 0,0833012317695195
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:19:16
+Numer konta docelowego: 7224905604644582219496935317
+Numer konta zrodlowego: 7711400115160283519196885198
+Pieniadze: 0,310410989127313
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:19:16
+Numer konta docelowego: 5710203281883253296528014502
+Numer konta zrodlowego: 6624908252285723736568655392
+Pieniadze: 0,0264914990526119
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:19:46
+Numer konta docelowego: 3324903338996023815398656640
+Numer konta zrodlowego: 5811605965275438968320212782
+Pieniadze: 0,0913608628750597
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:20:03
+Numer konta docelowego: 6924901227957847343179712937
+Numer konta zrodlowego: 4414404773288429161274005272
+Pieniadze: 0,400549129769462
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:20:03
+Numer konta docelowego: 5211607309477758052850026358
+Numer konta zrodlowego: 5424907822232150543438479457
+Pieniadze: 0,678015213775456
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:20:12
+Numer konta docelowego: 8410203101416779735922908033
+Numer konta zrodlowego: 5224902746591330708143409197
+Pieniadze: 0,194742924624469
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:20:19
+Numer konta docelowego: 4024907409159937430025035784
+Numer konta zrodlowego: 9511607722125955979509107361
+Pieniadze: 0,739577880473611
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:20:29
+Numer konta docelowego: 5614401010863762735090581019
+Numer konta zrodlowego: 7024902069665973202275828660
+Pieniadze: 0,893424717194133
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:20:29
+Numer konta docelowego: 7410507358130755689614876925
+Numer konta zrodlowego: 3424907836119499138189572803
+Pieniadze: 0,263305887236868
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:20:29
+Numer konta docelowego: 1624906422524838539986438368
+Numer konta zrodlowego: 8810508472424519326565553687
+Pieniadze: 0,433411739968421
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:20:43
+Numer konta docelowego: 0610603551293617490211153303
+Numer konta zrodlowego: 0824902201850964242496491781
+Pieniadze: 0,582497931356774
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:22:18
+Numer konta docelowego: 5810200921326009320453995616
+Numer konta zrodlowego: 6924904946859873180732564749
+Pieniadze: 0,446306374131845
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:22:18
+Numer konta docelowego: 1824903175044231408704812622
+Numer konta zrodlowego: 0324906986821702178351558079
+Pieniadze: 0,274452080612281
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:22:18
+Numer konta docelowego: 1824903175044231408704812622
+Numer konta zrodlowego: 0324906986821702178351558079
+Pieniadze: 0,274452080612281
+
+-----------------------------------------------------------------
+Transakcja wewnetrzna
+Data: 2016-09-30 11:24:43
+Numer konta docelowego: 7824903526005268922917426411
+Numer konta zrodlowego: 9910507915452869341695609109
+Pieniadze: 0,663113558508043
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:25:08
+Numer konta docelowego: 0711608398383241148355455517
+Numer konta zrodlowego: 4624901386044941057837105180
+Pieniadze: 0,571179395341864
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:25:08
+Numer konta docelowego: 5321604643225449789774317741
+Numer konta zrodlowego: 2624909445999153066371552547
+Pieniadze: 0,109431217475529
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:25:34
+Numer konta docelowego: 0616800321887382020942130911
+Numer konta zrodlowego: 8424909642808454296900004397
+Pieniadze: 0,622781906566947
+
+-----------------------------------------------------------------
+Transakcja zewnetrzna
+Data: 2016-09-30 11:25:34
+Numer konta docelowego: 4210505722292190659073637631
+Numer konta zrodlowego: 7824904972746025197657755406
+Pieniadze: 0,364060186019195
+
