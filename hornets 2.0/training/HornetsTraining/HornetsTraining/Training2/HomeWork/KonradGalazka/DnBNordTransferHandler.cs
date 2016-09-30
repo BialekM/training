@@ -1,20 +1,25 @@
 ﻿using System.IO;
-using Ninject.Activation.Strategies;
+using System;
 
 namespace Toci.HornetsTraining.Training2.HomeWork.KonradGalazka
 {
     public class DnBNordTransferHandler  : TransferHandler
     {
-        
+        StreamWriter sw = new StreamWriter(@"..\..\Training2\HomeWork\KonradGalazka\Historia.txt", true);
         public override bool DoInTransfer(Transfer transfer)
         {
-            StreamWriter _sw = new StreamWriter(@"..\..\Training2\HomeWork\LukaszCichon\HistoriaOperacji.txt", true);
+            sw.WriteLine("Numer konta docelowego: "+ transfer.DestinationBankAccount);
+            sw.WriteLine("Numer konta zrodlowego: "+ transfer.SourceBankAccount);
+            sw.WriteLine("Pieniadze: "+ transfer.Money);
+            sw.WriteLine();
+            sw.Close();
+
             return true;
         }
 
         public override bool DoOutTransfer(Transfer transfer)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }
