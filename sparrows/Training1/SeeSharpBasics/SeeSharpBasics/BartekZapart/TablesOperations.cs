@@ -31,6 +31,6 @@ for (int i = 0, j = 0; i < table.Length; i++)
             return reversed;
         }
 
-        public abstract void BubbleSort(int[] tableToSort); //posortowac tablice
+        public abstract int[] BubbleSort(int[] tableToSort); //posortowac tablice
     }
 }

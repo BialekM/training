@@ -5,7 +5,7 @@ namespace SeeSharpBasics.MarcinGala
 {
     public class MarcinTableOperations : TableOperations
     {
-        public override void BubbleSort(int[] tableToSort)
+        public override int[] BubbleSort(int[] tableToSort)
         {
             int bufor;
 

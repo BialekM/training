@@ -68,6 +68,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlawekKowal\SlawekKTableOperations.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKBankResolver.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKCodeGenerator.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />

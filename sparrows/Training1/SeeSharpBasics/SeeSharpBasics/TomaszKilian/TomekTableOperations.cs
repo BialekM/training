@@ -10,7 +10,7 @@ namespace SeeSharpBasics.TomaszKilian
     public class TomekTableOperations : TableOperations
 
     {
-        public override void BubbleSort(int[] tableToSort)
+        public override int[] BubbleSort(int[] tableToSort)
         {
             throw new NotImplementedException();
         }

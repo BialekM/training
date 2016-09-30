@@ -17,7 +17,7 @@ namespace SeeSharpBasics.KarolZareba
             return null;
         }
 
-        public override void BubbleSort(int[] tableToSort)
+        public override int[] BubbleSort(int[] tableToSort)
         {
             throw new System.NotImplementedException();
         }
