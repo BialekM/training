@@ -9,7 +9,7 @@ namespace SeeSharpBasics.MagdaSkalik
 {
     public class MagdaSkalikTableOperations : TableOperations
     {
-        public override int[] BubbleSort(int[] tableToSort) //posortowanie tablicy
+        public override void BubbleSort(int[] tableToSort) //posortowanie tablicy
         {
 
             int[] temp = new int[tableToSort.Length];

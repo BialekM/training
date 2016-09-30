@@ -5,7 +5,7 @@ namespace SeeSharpBasics.Olek
 {
     public abstract class OlekTableOperations : TableOperations//zrobiłem abstrakcyjną, bo być może nie chciało się zgrać z testem???
     {
-        public override int[] BubbleSort(int[] tableToSort)
+        public override void BubbleSort(int[] tableToSort)
         {
             //  for w forze
 
@@ -25,5 +25,6 @@ namespace SeeSharpBasics.Olek
 
             //throw new System.NotImplementedException();
         }
+        
     }
 }

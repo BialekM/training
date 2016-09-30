@@ -4,7 +4,7 @@ namespace SeeSharpBasics.Edwin
 {
     public class EdwinTablesOperations : TableOperations
     {
-        public override int[] BubbleSort(int[] tableToSort) //sortowanie bąbelkowe
+        public override void BubbleSort(int[] tableToSort) //sortowanie bąbelkowe
         {
             int tymczasowa;
 
