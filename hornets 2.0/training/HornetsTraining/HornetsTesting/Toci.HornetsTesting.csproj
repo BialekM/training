@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -135,9 +135,16 @@
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTplTest.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkReflectionTest.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkTplTest.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\GenericMethodTest.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\MethodsDictionaries.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Tpl\TplTests.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakReflectionTests.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplTests.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworktestReflection.cs" />
     <Compile Include="Training3\Homework\MichalMazur\MichalMazurHomeworkTplTest.cs" />
-    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatReflectionTest.cs" />
+	<Compile Include="Training3\Homework\WojtekSabat\WojtekSabatReflectionTest.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\ReflectionHomeworkTest.cs" />
+    <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionTest.cs" />
     <Compile Include="Training3\Linq\LinqTest.cs" />
     <Compile Include="Training3\Reflection\ReflectionTests.cs" />
     <Compile Include="Training3\Tpl\TplTest.cs" />
