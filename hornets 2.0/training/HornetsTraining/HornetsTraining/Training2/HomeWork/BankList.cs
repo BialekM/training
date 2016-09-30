@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
 using Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
+using Toci.HornetsTraining.Training2.HomeWork.KonradGalazka;
 using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
 using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 using Toci.HornetsTraining.Training2.HomeWork.MarcinJaniak;
@@ -32,6 +33,7 @@ namespace Toci.HornetsTraining.Training2.HomeWork
             result.Add("2160", () => new ToyotaBankTransferHandler());
             result.Add("1160", () => new BankMilleniumTransferHandler() );
             result.Add("1050", () => new IngTransferHandler() );
+            result.Add("2190", () => new DnBNordTransferHandler() );
             //result["1010"] += () => new BphTransferHandler();
 
             return result;
