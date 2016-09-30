@@ -29,7 +29,7 @@ namespace Toci.HornetsTraining.Training1.HomeWork.RafalKawalerski
 
             for (int i = 0; i < candidate.Length; i++)
             {
-                if (candidate[i] == needle[0])
+                if (Substring(candidate, i , needle.Length) == needle)
                 {
                     return i;
                 }
@@ -40,21 +40,19 @@ namespace Toci.HornetsTraining.Training1.HomeWork.RafalKawalerski
 
         public override string StringReplace(string candidate, string needle, string replaceWith)
         {
-            var endOfFirstPart = PositionInString(candidate, needle);
-            var firstPart = Substring(candidate, 0, endOfFirstPart);
-            var textReplace = firstPart + replaceWith;
-            var endOfEnd = endOfFirstPart + needle.Length;
-            var candidateLength = candidate.Length;
-            var text = "";
+            string text = "";
 
-            if (endOfEnd == candidateLength)
+            for (int i = 0; i < candidate.Length; i++)
             {
-                text = textReplace;
-            }
-            else
-            {
-                var endPart = Substring(candidate, endOfEnd, candidateLength - endOfEnd);
-                text = textReplace + endPart;
+                if (Substring(candidate, i, needle.Length) == needle)
+                {
+                    text += replaceWith;
+                    i += needle.Length - 1;
+                }
+                else
+                {
+                    text += candidate[i];
+                }
             }
 
             return text;
