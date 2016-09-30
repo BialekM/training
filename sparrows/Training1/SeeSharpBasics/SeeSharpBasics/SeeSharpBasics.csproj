@@ -54,6 +54,10 @@
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
+    <Compile Include="MarcinGala\Training3\MarcinBankResolver.cs" />
+    <Compile Include="MarcinGala\Training3\MarcinCodeGenerator.cs" />
+    <Compile Include="MarcinGala\Training3\MarcinHashMap.cs" />
+    <Compile Include="MarcinGala\Training3\MarcinPeselValidator.cs" />
     <Compile Include="Olek\OlekStringOperations.cs" />
     <Compile Include="Olek\OlekTableOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
