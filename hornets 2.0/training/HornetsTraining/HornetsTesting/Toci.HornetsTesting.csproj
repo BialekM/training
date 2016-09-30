@@ -75,6 +75,8 @@
     <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiListTest.cs" />
     <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiStringOperationsTest.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackieiwcz\Bartosz MackiewiczListTest.cs" />
+    <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaListTest.cs" />
+    <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaStringTest.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofOrzel\KrzysztofOrzelStringOperationTest.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekListTests.cs" />
     <Compile Include="Training1\HomeWork\LukaszPopiolek\LukaszPopiolekStringOperationsTests.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Training2\HomeWork\TransfersTest.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTest.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomeworkTplTest.cs" />
+    <Compile Include="Training3\Homework\KonradGalazka\KonradGalazkaReflectionTest.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkReflectionTest.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomeworkTplTest.cs" />
     <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\GenericMethodTest.cs" />
