@@ -172,6 +172,7 @@
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />

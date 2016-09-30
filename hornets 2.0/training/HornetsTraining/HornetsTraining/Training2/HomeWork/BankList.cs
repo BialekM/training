@@ -6,6 +6,7 @@ using HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
 using HornetsTraining.Training2.HomeWork.Mbank;
 using HornetsTraining.Training2.HomeWork.NBP;
 using HornetsTraining.Training2.HomeWork.MarcinJaniak;
+using HornetsTraining.Training2.HomeWork.PKOBP;
 using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
 
 namespace HornetsTraining.Training2.HomeWork
@@ -28,7 +29,7 @@ namespace HornetsTraining.Training2.HomeWork
             result.Add("1060", () => new BphTransferHandler());
             result.Add("2490", () => new AliorBankTransferHandler());
             result.Add("2160", () => new ToyotaBankTransferHandler());
-
+            result.Add("1020", () => new PkobpTransferHandler());
             //result["1010"] += () => new BphTransferHandler();
 
             return result;
