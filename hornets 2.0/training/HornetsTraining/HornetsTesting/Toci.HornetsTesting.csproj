@@ -147,6 +147,7 @@
     <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTplHomeworkTest.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\ReflectionHomeworkTest.cs" />
     <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionTest.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatReflectionTest.cs" />
     <Compile Include="Training3\Linq\LinqTest.cs" />
     <Compile Include="Training3\Reflection\ReflectionTests.cs" />
     <Compile Include="Training3\Tpl\TplTest.cs" />
