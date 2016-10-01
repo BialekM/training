@@ -1,10 +1,4 @@
-﻿using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using HornetsTraining.Training1.HomeWork;
-using Toci.HornetsTraining.Training1.HomeWork;
-
-namespace HornetsTraining.Training1.HomeWork.ArnoldNowak
+﻿namespace Toci.HornetsTraining.Training1.HomeWork.ArnoldNowak
 {
     public class ArnoldNowakStringOperations:StringOperations
     {
