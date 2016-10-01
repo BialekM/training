@@ -7,8 +7,8 @@ namespace SeeSharpBasics.SlawekKowal.Training3
     {
         //private int[,] mineBoard;
         private Random rnd = new Random();   // losowe liczby
-        private int bombCount = 0;           // ilość bomb
-        public override int[,] BombsCount(int dimx, int dimy)
+        //private int bombCount = 0;           // ilość bomb
+        public override int[,] BombsCount(int dimx, int dimy, int bombCount)
         {
             int[,] tB = new int[dimx, dimy];  // tablica tymczasowa
             int x, y;                        // zmienne do losowania pól z bombami

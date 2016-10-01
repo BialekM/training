@@ -14,7 +14,7 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal.Training3
             int xx = 10;
             int yy = 15;
             SlawekKMineSweeper mineSweeper = new SlawekKMineSweeper();
-            var x = mineSweeper.BombsCount(xx, yy);
+            var x = mineSweeper.BombsCount(xx, yy, 20);
             for (int i = 0; i < xx; i++)
             {
                 for (int j = 0; j < yy; j++)

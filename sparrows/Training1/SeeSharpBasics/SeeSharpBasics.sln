@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSharpBasics", "SeeSharpB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.SeeSharpBasics.Test", "Toci.SeeSharpBasics.Test\Toci.SeeSharpBasics.Test.csproj", "{FC2636EC-B4B2-4B02-956A-7505A48DB9B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FC2636EC-B4B2-4B02-956A-7505A48DB9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC2636EC-B4B2-4B02-956A-7505A48DB9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC2636EC-B4B2-4B02-956A-7505A48DB9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
