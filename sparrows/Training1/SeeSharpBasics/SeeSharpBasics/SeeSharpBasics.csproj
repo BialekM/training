@@ -50,6 +50,7 @@
     <Compile Include="Edwin\EdwinTablesOperations.cs" />
     <Compile Include="Edwin\HashMaps\HashMapExample.cs" />
     <Compile Include="Edwin\HomeWorkHashTables\EdwinBankResolver.cs" />
+    <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
