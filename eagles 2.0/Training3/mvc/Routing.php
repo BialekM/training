@@ -3,7 +3,8 @@
 	class Routing
 	{
 		protected $modelMap = array(
-			'home/index' => 'HomeModel'
+			'home/index' => 'HomeModel',
+		    
 		);
 		
 		public function Route($controllerCandidate, $methodCandidate)
@@ -11,9 +12,11 @@
 			$controllerCandidate .= 'Controller';
 			$isCalled = false;
 			$content = '';
+			
 			if (class_exists($controllerCandidate))
 			{
 				$controller = new $controllerCandidate();
+				
 				if (method_exists($controller, $methodCandidate))
 				{
 					$isCalled = true;

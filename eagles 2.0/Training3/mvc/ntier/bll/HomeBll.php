@@ -1,4 +1,8 @@
 <?php
+abstract class Bll
+{
+    public abstract  function GetDataForHome(Model $homeModel);
+}
 
 	class HomeBll extends Bll // business logic layer
 	{

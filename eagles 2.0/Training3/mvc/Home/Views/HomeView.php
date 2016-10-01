@@ -1,6 +1,6 @@
 <?php
 
-	class HomeView extends View
+class HomeView extends View
 	{
 		public function Show(Model $model)
 		{
