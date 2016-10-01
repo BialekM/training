@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training3.Homework
+﻿namespace Toci.HornetsTraining.Training3.Homework
 {
     public class GenericClass
     {

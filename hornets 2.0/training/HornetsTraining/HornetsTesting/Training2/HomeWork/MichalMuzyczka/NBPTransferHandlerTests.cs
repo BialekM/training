@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork.NBP;
-using HornetsTraining.Training2.HomeWork;
+using Toci.HornetsTraining.Training2.HomeWork.NBP;
+using Toci.HornetsTraining.Training2.HomeWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.HomeWork.MichalMuzyczka

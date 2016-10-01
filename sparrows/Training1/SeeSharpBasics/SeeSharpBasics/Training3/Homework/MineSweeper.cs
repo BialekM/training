@@ -2,7 +2,7 @@
 {
     public abstract class MineSweeper // **
     {
-        public abstract int[,] BombsCount(int dimx, int dimy); // -1 bomba
+        public abstract int[,] BombsCount(int dimx, int dimy, int bombsNumber); // -1 bomba
 
         // 0 1 1 2 -1 1 0 0 0 
 

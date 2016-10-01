@@ -8,6 +8,8 @@ using SeeSharpBasics.KarolZareba;
 using SeeSharpBasics.Olek;
 using SeeSharpBasics.SlawekKowal;
 using SeeSharpBasics.TomaszKilian;
+using SeeSharpBasics.Training4.Db;
+using SeeSharpBasics.Training4.minesweeper;
 
 namespace SeeSharpBasics
 {
@@ -16,10 +18,20 @@ namespace SeeSharpBasics
         
         static void Main(string[] args)
         {
-           
+           BartekZapartMineSweeper mnswp = new BartekZapartMineSweeper();
+
+           // mnswp.Show(mnswp.BombsCount(10, 20, 10));
+
+            //PostgresqlDbClient client = new PostgresqlDbClient();
+
+            //client.Insert("insert into toci ( name, surname,telephone) values ( 'tomasz', 'kowalski', '5551122')");
+            //client.Insert("insert into toci ( name, surname,telephone) values ( 'bartek', 'zapart', '5551122')");
+
+            //client.Select("select * from toci;");
+
             /*
              * komentarz blokowy
-            */
+            
             int liczbaCalkowita = 8;
             string zmiennaTextowa = "text w zmiennej textowej";
             int a8sd = 9;
@@ -161,7 +173,7 @@ namespace SeeSharpBasics
             string text = Console.ReadLine();
 
             Console.WriteLine("Wprowadziles: {0}", text);
-
+            */
             Console.ReadLine();
         }
                                         // beatka          e

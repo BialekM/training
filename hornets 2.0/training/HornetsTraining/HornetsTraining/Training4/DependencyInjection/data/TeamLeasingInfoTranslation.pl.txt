@@ -1,0 +1,2 @@
+﻿_klucz	wartosc po polsku
+_klucz2 wartosc 2

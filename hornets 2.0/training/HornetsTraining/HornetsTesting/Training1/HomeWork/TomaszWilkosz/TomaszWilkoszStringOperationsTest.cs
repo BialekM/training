@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using HornetsTraining.Training1.HomeWork;
+using Toci.HornetsTraining.Training1.HomeWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HornetsTraining.Training1.HomeWork.TomaszWilkosz;
+using Toci.HornetsTraining.Training1.HomeWork.TomaszWilkosz;
 
 namespace HornetsTesting.Training1.Homework.TomaszWilkosz
 

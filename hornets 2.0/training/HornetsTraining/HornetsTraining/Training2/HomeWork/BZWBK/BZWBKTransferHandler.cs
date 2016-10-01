@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HornetsTraining.Training2.HomeWork.BZWBK
+namespace Toci.HornetsTraining.Training2.HomeWork.BZWBK
 {
     class BZWBKTransferHandler : TransferHandler
     {

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace HornetsTraining.Training2.HomeWork.Common_Michal.Const
+namespace Toci.HornetsTraining.Training2.HomeWork.Common_Michal.Const
 {
     public static class AppConst
     {

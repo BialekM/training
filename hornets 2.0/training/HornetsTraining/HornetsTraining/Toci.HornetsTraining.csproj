@@ -35,6 +35,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -81,11 +85,15 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\AdrianPankiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollection.cs" />
     <Compile Include="Training1\HomeWork\Adrian\AdrianStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiList.cs" />
+    <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackiewicz\BartoszMackiewiczStringOperations.cs" />
     <Compile Include="Training1\HomeWork\GrzegorzKwiesielewicz\KlasaTestowa.cs" />
     <Compile Include="Training1\HomeWork\HomeworkTest.cs" />
     <Compile Include="Training1\HomeWork\IStringOperations.cs" />
+    <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaMyList.cs" />
+    <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaStringOperations.cs" />
     <Compile Include="Training1\HomeWork\KrzysztofOrzel\KrzysztofOrzelStringOperation.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonList.cs" />
     <Compile Include="Training1\HomeWork\LukaszCichon\LukaszCichonStringOperations.cs" />
@@ -144,6 +152,9 @@
     <Compile Include="Training2\HomeWork\Common_Michal\Secure\SecurityOptions.cs" />
     <Compile Include="Training2\HomeWork\Common_Michal\Serializer\Serializer.cs" />
     <Compile Include="Training2\HomeWork\DelegateBankList.cs" />
+    <Compile Include="Training2\HomeWork\KonradGalazka\DnBNordTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\KonradGalazka\KonradGalazkaTransferHandlerFactory.cs" />
+    <Compile Include="Training2\HomeWork\KonradGalazka\KonradGalazkaTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferHandlerFactory.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\AliorBank\AliorBankTransferResolver.cs" />
@@ -173,6 +184,7 @@
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PawelMocarski\MercedesBenzBank\MercedesBenzBankTransferResolver.cs" />
+    <Compile Include="Training2\HomeWork\PKOBP\PkobpBankFactory.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\PKOBP\PkobpTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\PlusBank\PlusBankSQLiteClient.cs" />
@@ -189,21 +201,46 @@
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferHandler.cs" />
     <Compile Include="Training2\HomeWork\VolkswagenBank\VolkswagenBankTransferResolver.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczHomework.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\AdrianPankiewiczTplHomeWork.cs" />
     <Compile Include="Training3\Homework\AdrianPankiewicz\GenericMethodsCollector.cs" />
+    <Compile Include="Training3\Homework\AdrianPankiewicz\RandomTransferGenerator.cs" />
     <Compile Include="Training3\Homework\GenericClass.cs" />
-    <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeFirst.cs" />
-    <Compile Include="Training3\Homework\MichalMazur\Reflection\ExamplesTypes\TypeSecond.cs" />
+    <Compile Include="Training3\Homework\KonradGalazka\KonradGalazkaReflection.cs" />
+    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonTplHomework.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\GenericMethodInfo.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Reflection\LukaszSmierzchalaHomeworkThree.cs" />
+    <Compile Include="Training3\Homework\LukaszSmierzchala\Tpl\LukaszSmierzchalaTpl.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakReflectionHomework.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplHomeworkMultiThread.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\MarcinJaniakTplHomeworkOneThread.cs" />
+    <Compile Include="Training3\Homework\MarcinJaniak\TransferRandomizer.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\GenericClasses.cs" />
+    <Compile Include="Training3\Homework\MichalMazur\Tpl\MichalMazurTplHomework.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\GetMethods.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTplHomework.cs" />
     <Compile Include="Training3\Homework\PawelKownacki\PawelKownackiTrainingThreeHomework.cs" />
     <Compile Include="Training3\Homework\LukaszCichon\GenericClasses.cs" />
-    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonHomework.cs" />
+    <Compile Include="Training3\Homework\LukaszCichon\LukaszCichonReflectionHomework.cs" />
     <Compile Include="Training3\Homework\MichalMazur\Reflection\MichalMazurReflectionHomework.cs" />
+    <Compile Include="Training3\Homework\PawelKownacki\TransferGenerator.cs" />
+    <Compile Include="Training3\Homework\PawelMarciniak\PawelMarciniakReflectionHomework.cs" />
     <Compile Include="Training3\Homework\Tpl\TplHomework.cs" />
     <Compile Include="Training3\Homework\TrainingThreeHomework.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\TransferRandomizer.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatTplHomework.cs" />
+    <Compile Include="Training3\Homework\WojtekSabat\WojtekSabatTrainingThreeHomework.cs" />
     <Compile Include="Training3\Linq\WhereExample.cs" />
     <Compile Include="Training3\Reflection\Entity.cs" />
     <Compile Include="Training3\Reflection\ReflectionExample.cs" />
     <Compile Include="Training3\Tpl\Paralelism.cs" />
     <Compile Include="Training3\Tpl\Randomizer.cs" />
+    <Compile Include="Training4\DependencyInjection\ITeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\Resolver.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfo.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoEnglishTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoGermanTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
@@ -228,6 +265,9 @@
     <None Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.dbml.layout">
       <DependentUpon>BankAccounts.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.pl.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

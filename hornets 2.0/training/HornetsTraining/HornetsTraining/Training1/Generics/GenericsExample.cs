@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HornetsTraining.Training1.Generics
+namespace Toci.HornetsTraining.Training1.Generics
 {
     public class GenericsExample
     {

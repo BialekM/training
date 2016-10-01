@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
-using HornetsTraining.Training1.Generics;
+using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.SławekNowiński
+namespace Toci.HornetsTraining.Training1.HomeWork.SławekNowiński
 {
     class SlawekList<TListItem> : MyList<TListItem>
     {

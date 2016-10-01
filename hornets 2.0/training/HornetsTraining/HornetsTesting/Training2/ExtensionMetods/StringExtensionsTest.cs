@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training2.ExtensionMethods;
+﻿using Toci.HornetsTraining.Training2.ExtensionMethods;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training2.ExtensionMetods

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml;
 
-namespace HornetsTraining.Training2.HomeWork.SantanderConsumerBank
+namespace Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank
 {
     public class SantanderConsumerBankTransferHandler : TransferHandler
     {

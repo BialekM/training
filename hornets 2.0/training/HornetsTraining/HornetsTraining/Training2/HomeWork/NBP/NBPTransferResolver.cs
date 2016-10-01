@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace HornetsTraining.Training2.HomeWork.NBP
+namespace Toci.HornetsTraining.Training2.HomeWork.NBP
 {
     public class NBPTransferResolver : TransferResolver
     {

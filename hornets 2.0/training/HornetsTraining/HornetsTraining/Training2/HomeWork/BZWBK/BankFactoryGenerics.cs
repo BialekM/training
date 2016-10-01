@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
-using HornetsTraining.Training2.HomeWork.Mbank;
+using Toci.HornetsTraining.Training2.HomeWork.Mbank;
 
-namespace HornetsTraining.Training2.HomeWork.BZWBK
+namespace Toci.HornetsTraining.Training2.HomeWork.BZWBK
 {
     public static class BankFactoryGenerics
     {

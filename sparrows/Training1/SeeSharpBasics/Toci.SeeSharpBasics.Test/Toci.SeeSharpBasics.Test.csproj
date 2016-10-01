@@ -53,6 +53,7 @@
     <Compile Include="BartekZapart\BartekTablesOperationsTests.cs" />
     <Compile Include="Common\AssemblyLoader.cs" />
     <Compile Include="DominikRzepnicki\DominikTablesOperationsTests.cs" />
+    <Compile Include="Edwin\EdwinHashTableTests.cs" />
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperationsTests.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
@@ -62,6 +63,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlawekKowal\SlawekKTablesOperationsTest.cs" />
     <Compile Include="SlawekKowal\SlawekStringOperationTest.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKBankMoneyTest.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKBombTest.cs" />
+    <Compile Include="SlawekKowal\Training3\SlawekKTestPesel.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
     <Compile Include="TomaszKil\TestStrings.cs" />

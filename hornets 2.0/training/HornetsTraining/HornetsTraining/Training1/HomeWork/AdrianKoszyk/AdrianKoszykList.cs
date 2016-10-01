@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.Generics;
+﻿using Toci.HornetsTraining.Training1.Generics;
 
  public class AdrianKoszykList<TListItem> : MyList<TListItem>
  {
@@ -24,5 +24,12 @@
             newList[_index - 1] = item;
             _lastIndex++;
             ListOfItems = newList;
-        } 
+        }
+
+        public TListItem GetElement(int index)
+        {
+            return ListOfItems[index];
+        }
+
+
 }

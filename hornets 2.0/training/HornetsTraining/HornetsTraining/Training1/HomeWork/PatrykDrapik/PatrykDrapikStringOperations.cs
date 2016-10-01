@@ -1,4 +1,4 @@
-﻿namespace HornetsTraining.Training1.HomeWork.PatrykDrapik
+﻿namespace Toci.HornetsTraining.Training1.HomeWork.PatrykDrapik
 {
     public class PatrykDrapikStringOperations : StringOperations
     {

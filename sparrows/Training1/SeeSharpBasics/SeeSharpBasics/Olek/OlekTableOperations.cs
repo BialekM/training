@@ -3,11 +3,11 @@ using SeeSharpBasics.BartekZapart;
 
 namespace SeeSharpBasics.Olek
 {
-    public class OlekTableOperations : TableOperations
+    public abstract class OlekTableOperations : TableOperations//zrobiłem abstrakcyjną, bo być może nie chciało się zgrać z testem???
     {
         public override int[] BubbleSort(int[] tableToSort)
         {
-            //  tutaj moja implementacja
+            //  for w forze
 
             int[] a = new int[tableToSort.Length];
             var b = tableToSort.Length;
@@ -20,10 +20,11 @@ namespace SeeSharpBasics.Olek
                     
                 }
             }
-            
-           
 
-            throw new System.NotImplementedException();
+
+            return a;
+            //throw new System.NotImplementedException();
         }
+        
     }
 }

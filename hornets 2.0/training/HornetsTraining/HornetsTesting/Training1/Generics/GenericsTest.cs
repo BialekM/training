@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.Generics.Factory;
+﻿using Toci.HornetsTraining.Training1.Generics.Factory;
 
 namespace HornetsTesting.Training1.Generics
 {

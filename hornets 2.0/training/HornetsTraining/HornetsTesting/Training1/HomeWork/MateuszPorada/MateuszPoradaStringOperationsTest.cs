@@ -1,4 +1,4 @@
-﻿using HornetsTraining.Training1.HomeWork.MateuszPorada;
+﻿using Toci.HornetsTraining.Training1.HomeWork.MateuszPorada;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HornetsTesting.Training1.HomeWork.MateuszPorada
