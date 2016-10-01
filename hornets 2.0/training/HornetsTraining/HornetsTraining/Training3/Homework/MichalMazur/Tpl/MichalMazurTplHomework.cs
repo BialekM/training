@@ -57,7 +57,7 @@ namespace Toci.HornetsTraining.Training3.Homework.MichalMazur.Tpl
         }
 
 
-        private TimeSpan WayOfPerformTransfer(IngTransferResolver resolver, TaskFactory tf, Action<Transfer, IngTransferResolver, TaskFactory> delAction)
+        private TimeSpan WayOfPerformTransfer(TransferResolver resolver, TaskFactory tf, Action<Transfer, TransferResolver, TaskFactory> delAction)
         {
             Stopwatch s = Stopwatch.StartNew();
             foreach (var transfer in transfers)

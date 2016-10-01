@@ -12,7 +12,7 @@ namespace Toci.HornetsTraining.Training3.Homework.WojtekSabat
 {
     public class WojtekSabatTplHomework : TplHomework
     {
-        private readonly BankMilleniumTransferResolver _transferResolver = new BankMilleniumTransferResolver();
+        private readonly TransferResolver _transferResolver = new BankMilleniumTransferResolver();
         private List<Transfer> transfers = new List<Transfer>();
 
         public override void DoTransfers()

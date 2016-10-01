@@ -35,6 +35,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -230,6 +234,13 @@
     <Compile Include="Training3\Reflection\ReflectionExample.cs" />
     <Compile Include="Training3\Tpl\Paralelism.cs" />
     <Compile Include="Training3\Tpl\Randomizer.cs" />
+    <Compile Include="Training4\DependencyInjection\ITeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\Resolver.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfo.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoEnglishTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoGermanTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
+    <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
@@ -254,6 +265,9 @@
     <None Include="Training2\HomeWork\LukaszSmierzchala\DatabaseClass\BankAccounts.dbml.layout">
       <DependentUpon>BankAccounts.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.pl.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

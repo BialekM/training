@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.HornetsTraining", "Hor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.HornetsTesting", "HornetsTesting\Toci.HornetsTesting.csproj", "{EE527365-3066-4742-95DC-C9453DB3A20C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Mvcexample", "Toci.Mvcexample\Toci.Mvcexample.csproj", "{367895E5-4774-44B2-A0DD-9840C6D2A9C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EE527365-3066-4742-95DC-C9453DB3A20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE527365-3066-4742-95DC-C9453DB3A20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE527365-3066-4742-95DC-C9453DB3A20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367895E5-4774-44B2-A0DD-9840C6D2A9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367895E5-4774-44B2-A0DD-9840C6D2A9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367895E5-4774-44B2-A0DD-9840C6D2A9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367895E5-4774-44B2-A0DD-9840C6D2A9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
