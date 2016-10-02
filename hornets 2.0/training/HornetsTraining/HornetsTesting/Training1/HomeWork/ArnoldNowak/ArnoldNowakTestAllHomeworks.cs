@@ -30,11 +30,11 @@ namespace HornetsTesting.Training1.Homework.ArnoldNowak
         {
             //bool substring = instance.Substring("bartek", 1, 3) == "art";
 
-            List<PositionInStringTest> listOfCandidates = new List<PositionInStringTest>
+            List<SubstringTest> listOfCandidates = new List<SubstringTest>
             {
-                new PositionInStringTest { Candidate = "bartek", Expected = "art", Start = 1, Length = 3},
-                new PositionInStringTest { Candidate = "bartek", Expected = "arte", Start = 1, Length = 4},
-                new PositionInStringTest { Candidate = "beatka", Expected = "ka", Start = 4, Length = 2},
+                new SubstringTest() { Candidate = "bartek", Expected = "art", Start = 1, Length = 3},
+                new SubstringTest() { Candidate = "bartek", Expected = "arte", Start = 1, Length = 4},
+                new SubstringTest() { Candidate = "beatka", Expected = "ka", Start = 4, Length = 2},
             };
 
             foreach (var candidate in listOfCandidates)
@@ -99,7 +99,7 @@ namespace HornetsTesting.Training1.Homework.ArnoldNowak
         }
     }
 
-    class StringTestExpanded : PositionInStringTest
+    class StringTestExpanded : SubstringTest
     {
         public string Needle;
         public string ReplaceWith;
