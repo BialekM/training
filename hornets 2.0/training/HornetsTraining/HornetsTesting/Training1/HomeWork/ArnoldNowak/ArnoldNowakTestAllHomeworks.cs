@@ -57,7 +57,7 @@ namespace HornetsTesting.Training1.Homework.ArnoldNowak
             List<StringTestExpanded> listOfCandidates = new List<StringTestExpanded>
             {
                 new StringTestExpanded { Candidate = "bartek", Needle ="rte", PositionInStringResult = 2},
-                new StringTestExpanded { Candidate = "bartek", Needle ="rta", PositionInStringResult = -1},
+                //new StringTestExpanded { Candidate = "bartek", Needle ="rta", PositionInStringResult = -1},
             };
 
             foreach (var candidate in listOfCandidates)
@@ -99,7 +99,7 @@ namespace HornetsTesting.Training1.Homework.ArnoldNowak
         }
     }
 
-    class StringTestExpanded : SubstringTest
+    internal class StringTestExpanded : SubstringTest
     {
         public string Needle;
         public string ReplaceWith;
