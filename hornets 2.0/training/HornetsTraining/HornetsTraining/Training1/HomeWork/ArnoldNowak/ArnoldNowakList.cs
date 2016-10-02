@@ -1,6 +1,6 @@
 ﻿using Toci.HornetsTraining.Training1.Generics;
 
-namespace HornetsTraining.Training1.HomeWork.ArnoldNowak
+namespace Toci.HornetsTraining.Training1.HomeWork.ArnoldNowak
 {
     public class ArnoldNowakList<TListItem>:MyList<TListItem>
     {
@@ -11,9 +11,9 @@ namespace HornetsTraining.Training1.HomeWork.ArnoldNowak
         } 
         public new void Add(TListItem item)
         {
-            Index++;
             System.Array.Resize(ref listOfItems, (listOfItems.Length+1));
             listOfItems[Index] = item;
+            Index++;
         }
 
         public TListItem GetElement(int index)

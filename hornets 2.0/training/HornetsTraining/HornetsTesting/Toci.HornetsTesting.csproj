@@ -74,7 +74,9 @@
     <Compile Include="Training1\HomeWork\AdrianPankiewicz\GenericMethodsCollectionTest.cs" />
     <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiListTest.cs" />
     <Compile Include="Training1\HomeWork\AndrzejIwanski\AndrzejIwanskiStringOperationsTest.cs" />
+    <Compile Include="Training1\HomeWork\ArnoldNowak\ArnoldNowakListUnitTest.cs" />
     <Compile Include="Training1\HomeWork\ArnoldNowak\ArnoldNowakStringOperationsUnitTest.cs" />
+    <Compile Include="Training1\HomeWork\ArnoldNowak\ArnoldNowakTestAllHomeworks.cs" />
     <Compile Include="Training1\HomeWork\BartoszMackieiwcz\Bartosz MackiewiczListTest.cs" />
     <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaListTest.cs" />
     <Compile Include="Training1\HomeWork\KonradGalazka\KonradGalazkaStringTest.cs" />
