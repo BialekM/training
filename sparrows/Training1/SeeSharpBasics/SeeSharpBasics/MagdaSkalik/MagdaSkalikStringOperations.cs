@@ -109,6 +109,10 @@ namespace SeeSharpBasics.MagdaSkalik
             return result;
              }// bartlomiej, art, beatka => bbeatkalomiej
 
+        public void Magda(string a)
+        {
+
+        }
 
         //public static string ReplaceInText(string candidate, string find, string replace)
         //{
