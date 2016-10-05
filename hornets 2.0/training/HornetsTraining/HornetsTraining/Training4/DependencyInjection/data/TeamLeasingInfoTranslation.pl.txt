@@ -1,2 +1,7 @@
 ﻿_klucz	wartosc po polsku
-_klucz2 wartosc 2
+_klucz2	wartosc 2
+_klucz3	trzeci
+_cos	cos
+_klucz4	klucz
+_klicz	klicz
+_klacz	klacz
