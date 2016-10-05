@@ -246,6 +246,7 @@
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoGermanTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
@@ -274,6 +275,9 @@
   <ItemGroup>
     <Content Include="Training2\HomeWork\AdrianKoszyk\Eurobank\Transfers.txt" />
     <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.pl.txt" />
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.pl.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
