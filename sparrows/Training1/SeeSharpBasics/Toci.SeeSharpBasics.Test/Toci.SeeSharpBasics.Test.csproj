@@ -56,6 +56,7 @@
     <Compile Include="Edwin\EdwinHashTableTests.cs" />
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperationsTests.cs" />
+    <Compile Include="MagdaSkalik\Hashtables\HashtablesTest.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
@@ -74,7 +75,9 @@
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
     <Compile Include="Training3\Hashtables\HashtablesTest.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MagdaSkalik\HashMaps\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SeeSharpBasics\SeeSharpBasics.csproj">
       <Project>{4c4afb47-c5d5-479a-a52d-6515e47fa275}</Project>
