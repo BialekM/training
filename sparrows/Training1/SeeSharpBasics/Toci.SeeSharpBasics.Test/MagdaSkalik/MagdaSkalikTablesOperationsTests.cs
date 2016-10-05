@@ -15,7 +15,7 @@ namespace Toci.SeeSharpBasics.Test.MagdaSkalik
 
             var parameter = new[] { 3, 6, 2, 4, 1 };
             var result = test.BubbleSort(parameter);
-            Assert.AreEqual(parameter[0], result[1]);
+            Assert.AreEqual(parameter[0], result[0]);
 
         }
 
