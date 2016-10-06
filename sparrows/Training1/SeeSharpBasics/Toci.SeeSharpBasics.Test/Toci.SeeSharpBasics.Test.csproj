@@ -45,7 +45,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -57,6 +59,7 @@
     <Compile Include="Edwin\EdwinTablesOperationsTests.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperationsTests.cs" />
     <Compile Include="MagdaSkalik\Hashtables\HashtablesTest.cs" />
+    <Compile Include="MagdaSkalik\Homework\MagdaCodeGeneratorTests.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />

@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 using SeeSharpBasics.Training3.Homework;
 using System.Collections;
 
+
 namespace SeeSharpBasics.MagdaSkalik.Homework
 {
     public class MagdaBankResolver : BankResolver
     {
         public override string GetBankCodeForAccount(string account)
         {
-            throw new NotImplementedException();
+            string bankCode;
+            string bankName;
+            MagdaSkalikStringOperations sub = new MagdaSkalikStringOperations();
+            bankCode = sub.Substring(account, 1, 4);
+            bankName = GetBankName(bankCode);
+
+            return bankName;
         }
 
         public override string GetBankName(string bankCodeId)
