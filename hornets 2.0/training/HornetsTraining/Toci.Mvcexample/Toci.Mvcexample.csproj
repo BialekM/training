@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -165,6 +166,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -174,11 +176,52 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\logo%402x.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo_2%402x.png" />
+    <Content Include="Content\images\logo_2.png" />
+    <Content Include="Content\images\logo_3%402x.png" />
+    <Content Include="Content\images\logo_3.png" />
+    <Content Include="Content\images\logo_color2%402x.png" />
+    <Content Include="Content\images\logo_color2.png" />
+    <Content Include="Content\images\logo_color3%402x.png" />
+    <Content Include="Content\images\logo_color3.png" />
+    <Content Include="Content\images\logo_s%402x.png" />
+    <Content Include="Content\images\logo_s.png" />
+    <Content Include="Content\images\logo_s_2%402x.png" />
+    <Content Include="Content\images\logo_s_2.png" />
+    <Content Include="Content\images\logo_s_3%402x.png" />
+    <Content Include="Content\images\logo_s_3.png" />
+    <Content Include="Content\images\logo_s_color2%402x.png" />
+    <Content Include="Content\images\logo_s_color2.png" />
+    <Content Include="Content\images\logo_s_color3%402x.png" />
+    <Content Include="Content\images\logo_s_color3.png" />
+    <Content Include="Content\phoenix\animate.css" />
+    <Content Include="Content\phoenix\bootstrap.css" />
+    <Content Include="Content\phoenix\calendar.css" />
+    <Content Include="Content\phoenix\colors\color1.css" />
+    <Content Include="Content\phoenix\colors\color2.css" />
+    <Content Include="Content\phoenix\flexslider.css" />
+    <Content Include="Content\phoenix\font-awesome.css" />
+    <Content Include="Content\phoenix\icomoon.css" />
+    <Content Include="Content\phoenix\owl.carousel.css" />
+    <Content Include="Content\phoenix\shortcodes.css" />
+    <Content Include="Content\phoenix\socialico.css" />
+    <Content Include="Content\phoenix\style.css" />
+    <Content Include="Content\phoenix\_icomoon.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Content\fonts\icomoon.svg" />
+    <Content Include="Content\fonts\Socialico.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\fonts\Socialico.eot" />
+    <Content Include="Content\fonts\Socialico.ttf" />
+    <Content Include="Content\fonts\Socialico.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -188,6 +231,31 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\phoenix\bootstrap.min.js" />
+    <Content Include="Scripts\phoenix\datepicker.js" />
+    <Content Include="Scripts\phoenix\gmap3.min.js" />
+    <Content Include="Scripts\phoenix\html5shiv.js" />
+    <Content Include="Scripts\phoenix\imagesloaded.min.js" />
+    <Content Include="Scripts\phoenix\jquery-countTo.js" />
+    <Content Include="Scripts\phoenix\jquery-waypoints.js" />
+    <Content Include="Scripts\phoenix\jquery.bxslider.js" />
+    <Content Include="Scripts\phoenix\jquery.cookie.js" />
+    <Content Include="Scripts\phoenix\jquery.easing.js" />
+    <Content Include="Scripts\phoenix\jquery.easypiechart.min.js" />
+    <Content Include="Scripts\phoenix\jquery.fitvids.js" />
+    <Content Include="Scripts\phoenix\jquery.flexslider-min.js" />
+    <Content Include="Scripts\phoenix\jquery.gomap-1.3.2.min.js" />
+    <Content Include="Scripts\phoenix\jquery.isotope.min.js" />
+    <Content Include="Scripts\phoenix\jquery.min.js" />
+    <Content Include="Scripts\phoenix\jquery.sticky.js" />
+    <Content Include="Scripts\phoenix\jquery.tweet.min.js" />
+    <Content Include="Scripts\phoenix\main.js" />
+    <Content Include="Scripts\phoenix\owl.carousel.js" />
+    <Content Include="Scripts\phoenix\parallax.js" />
+    <Content Include="Scripts\phoenix\respond.min.js" />
+    <Content Include="Scripts\phoenix\select.js" />
+    <Content Include="Scripts\phoenix\switcher.js" />
+    <Content Include="Scripts\phoenix\_bootstrap.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -226,9 +294,23 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\blog\" />
+    <Folder Include="Content\images\counter\" />
+    <Folder Include="Content\images\courses\" />
+    <Folder Include="Content\images\form-search\" />
+    <Folder Include="Content\images\gallery\" />
+    <Folder Include="Content\images\icon\" />
+    <Folder Include="Content\images\instructors\" />
+    <Folder Include="Content\images\member\" />
+    <Folder Include="Content\images\page-title\" />
+    <Folder Include="Content\images\project\" />
+    <Folder Include="Content\images\slide\" />
+    <Folder Include="Content\images\team\" />
+    <Folder Include="Content\images\testimonial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
