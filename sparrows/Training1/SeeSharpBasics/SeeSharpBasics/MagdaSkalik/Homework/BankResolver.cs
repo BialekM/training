@@ -21,7 +21,6 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             Hashtable bankCode = new Hashtable();
 
             bankCode.Add("1010", "Narodowy Bank Polski");
-            bankCode.Add("1011", "Narodowy Bank Polski");
             bankCode.Add("1020", "PKO BP");
             bankCode.Add("1030", "Citibank Handlowy");
             bankCode.Add("1050", "ING");
@@ -67,7 +66,7 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             }
             else
             {
-                nameOfBank = "Brak kodu, lubbłędny kod";
+                nameOfBank = "Brak kodu, lub błędny kod";
             }
 
             return nameOfBank;
