@@ -20,6 +20,7 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             string nameOfBank = "";
             Hashtable bankCode = new Hashtable();
 
+
             bankCode.Add("1010", "Narodowy Bank Polski");
             bankCode.Add("1020", "PKO BP");
             bankCode.Add("1030", "Citibank Handlowy");
