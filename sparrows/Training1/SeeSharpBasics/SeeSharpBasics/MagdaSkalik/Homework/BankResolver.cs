@@ -60,6 +60,15 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             bankCode.Add("2490", "Alior Bank");
 
 
+            if (bankCode.ContainsKey(bankCodeId))
+            {
+                nameOfBank = (string)bankCode[bankCodeId];
+            }
+            else
+            {
+                nameOfBank = "Brak kodu, lubbłędny kod";
+            }
+
             return nameOfBank;
         }
     }
