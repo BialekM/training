@@ -246,6 +246,9 @@
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoGermanTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\AdrianPankiewiczTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingFileReader.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingInfoRussianTranslation.cs" />
     <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
@@ -254,6 +257,7 @@
     <Folder Include="Training3\Tpl\txt\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.ru.txt" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
