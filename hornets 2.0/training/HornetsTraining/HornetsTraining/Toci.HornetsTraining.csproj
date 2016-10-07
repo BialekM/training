@@ -247,6 +247,7 @@
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
