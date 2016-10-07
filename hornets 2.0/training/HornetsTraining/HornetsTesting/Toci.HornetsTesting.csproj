@@ -160,6 +160,7 @@
     <Compile Include="Training3\Linq\LinqTest.cs" />
     <Compile Include="Training3\Reflection\ReflectionTests.cs" />
     <Compile Include="Training3\Tpl\TplTest.cs" />
+    <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTests.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTests.cs" />
     <Compile Include="Training4\IoC\ResolverTest.cs" />
   </ItemGroup>
