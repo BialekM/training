@@ -251,9 +251,11 @@
     <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingInfoRussianTranslation.cs" />
     <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
-    <Compile Include="Training4\HomeWork\TomaszWilkosz\TomaszWilkoszTeamLeasingInfoTranslation.cs" />
+<<<<<<< HEAD
     <Compile Include="Training4\HomeWork\WojtekSabatTeamLeasingInfoTranslation.cs" />
+=======
     <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
+>>>>>>> 4c0e7d0e8ab0224413eaa50426c88f4efa8e4b7c
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
