@@ -8,14 +8,14 @@ namespace Toci.HornetsTraining.Training4.HomeWork.MichalMazur
 {
     public class MichalMazurTeamLeasingInfoTranslation : TeamLeasingInfoTranslation
     {
-        private string pathToFile = @"..\..\HornetsTraining\Training4\DependencyInjection\data\";
-        private string pathDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+        private string pathToFile = @"..\..\..\HornetsTraining\Training4\DependencyInjection\data\";
+     
 
         public MichalMazurTeamLeasingInfoTranslation(string language)
             : base(language)
         {
             FileNamePattern = String.Format(FileNamePattern, language);
-            pathToFile = String.Format(pathDirectory + pathToFile + FileNamePattern);
+            pathToFile = String.Format(pathToFile + FileNamePattern);
         }
 
         public override Dictionary<string, string> GetTranslations(List<string> keys)
