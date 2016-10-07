@@ -57,6 +57,7 @@
     <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
+    <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
     <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaBankResolver.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaCodeGenerator.cs" />
@@ -65,10 +66,8 @@
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
-
     <Compile Include="MarcinGala\Training3\MarcinMineSweeper.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMoneyValue.cs" />
-
     <Compile Include="Olek\OlekBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinCodeGenerator.cs" />
