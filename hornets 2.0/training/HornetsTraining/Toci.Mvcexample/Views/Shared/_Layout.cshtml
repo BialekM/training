@@ -6,9 +6,23 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    
+    @RenderSection("Styles", false)
+
+    <!--Toci Custom Theme Phoenix-->
+    @Styles.Render("~/Content/phoenix")
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!--/Toci Custom Theme Phoenix-->
+
 
 </head>
 <body>
+    @Html.Partial("_HeaderPartial")
+
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Application name", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -29,16 +43,22 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    <div> @*class="container body-content">*@
         @RenderBody()
-        <hr />
+    <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/bootstrap")
+
+        <!--Toci Custom Theme Phoenix-->
+    @Scripts.Render("~/bundles/phoenix")
+        <!--/Toci Custom Theme Phoenix-->
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

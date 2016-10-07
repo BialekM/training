@@ -120,6 +120,7 @@
     <Compile Include="Training1\HomeWork\WojtekSabat\WojtekSabatStringOperationsTest.cs" />
     <Compile Include="Training1\Overriding\OverridingTest.cs" />
     <Compile Include="Training2\Delegates\DelegateExampleTest.cs" />
+    <Compile Include="Training2\HomeWork\AdrianKoszyk\EurobankTest.cs" />
     <Compile Include="Training2\HomeWork\Bartosz Mackiewicz\BphBankTest.cs" />
     <Compile Include="Training2\HomeWork\KonradGalazka\TestDnB_Nord.cs" />
     <Compile Include="Training2\HomeWork\LukaszCichon\TestAliorBank.cs" />
@@ -159,6 +160,9 @@
     <Compile Include="Training3\Linq\LinqTest.cs" />
     <Compile Include="Training3\Reflection\ReflectionTests.cs" />
     <Compile Include="Training3\Tpl\TplTest.cs" />
+    <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTests.cs" />
+    <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTests.cs" />
+    <Compile Include="Training4\HomeWork\MichalMazur\TeamLeasingInfoTranslationsTest.cs" />
     <Compile Include="Training4\IoC\ResolverTest.cs" />
   </ItemGroup>
   <ItemGroup>
