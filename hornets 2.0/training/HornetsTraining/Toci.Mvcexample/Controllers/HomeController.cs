@@ -17,6 +17,14 @@ namespace Toci.Mvcexample.Controllers
             return View(model);
         }
 
+        public ActionResult WelcomeToBeSmart()
+        {
+
+             
+            return View("_WelcomeToBeSmartPartial");
+        }
+
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
