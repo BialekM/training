@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.Training3.Homework;
+using System.Collections;
 
 namespace SeeSharpBasics.MagdaSkalik.Homework
 {
@@ -18,6 +19,7 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             string year = sub.Substring(peselCandidate, 0, 2);
             string month = sub.Substring(peselCandidate, 2, 2);
             string day = sub.Substring(peselCandidate, 4, 2);
+            int[] constDigit = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
 
             int[] peselDigit=new int[11];
 
@@ -32,13 +34,13 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
 
             }
 
-            int sum;
-            int sumContr;
-            
-            sum = 1 * peselDigit[0] + 3 * peselDigit[1] + 7 * peselDigit[2] +
-                9 * peselDigit[3] + 1 * peselDigit[4] + 3 * peselDigit[5] +
-                7 * peselDigit[6] + 9 * peselDigit[7] + 1 * peselDigit[8] +
-                3 * peselDigit[9];
+            int sum = 0;
+            int sumContr = 0;
+            for(int i=0; i <10; i++)
+            {
+                sum += (constDigit[i] * peselDigit[i]);
+            }
+
 
             sumContr = (10 - (sum % 10)) % 10;
 
@@ -72,6 +74,7 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             Int32.TryParse(month, out monthInt);
             int dayInt;
             Int32.TryParse(day, out dayInt);
+
             if ((monthInt > 12 && monthInt < 21) 
                 || (monthInt > 32 && monthInt < 41)
                 || (monthInt > 52 && monthInt < 61)

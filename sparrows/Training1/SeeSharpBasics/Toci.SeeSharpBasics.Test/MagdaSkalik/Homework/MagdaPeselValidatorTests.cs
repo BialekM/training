@@ -12,7 +12,7 @@ namespace Toci.SeeSharpBasics.Test.MagdaSkalik.Homework
         {
             MagdaPeselValidator test = new MagdaPeselValidator();
             
-            var parameter = "810519029855";
+            var parameter = "81051902985";
             var result = test.IsPeselValid(parameter);
 
 
