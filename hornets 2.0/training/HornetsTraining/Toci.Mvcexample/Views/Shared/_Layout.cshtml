@@ -10,6 +10,7 @@
 
 
     <!--Toci Custom Theme Phoenix-->
+    @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/phoenix")
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,900' rel='stylesheet' type='text/css'>
@@ -19,8 +20,7 @@
 
 
 </head>
-    <body>
-        
+    <body class="header-sticky home">
         @*Coś nie działają te loader'y*@
 
         @*<div class="loader">
@@ -29,19 +29,15 @@
         <span class="loader3 block-loader"></span>
     </div>*@
 
-        <div class="wrap-slide clearfix">
-            @Html.Partial("_TopPartial")
-            @Html.Partial("_HeaderPartial")
-        </div>
-
-
-    <div> @*class="container body-content">*@
-        @RenderBody()
-    <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <div class="wrap-slide clearfix">
+        @Html.Partial("_TopPartial")
+        @Html.Partial("_HeaderPartial")
+        @Html.Partial("_OurInstructors")
     </div>
+    
+    @RenderBody()
+
+
 
 
       
