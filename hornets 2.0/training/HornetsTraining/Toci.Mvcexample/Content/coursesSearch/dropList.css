@@ -1,0 +1,10 @@
+﻿.dropdownList 
+{
+    height: 50px;
+    width: 200px;
+    background-color: darkgray;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}

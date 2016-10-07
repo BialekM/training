@@ -1,0 +1,57 @@
+﻿@model Toci.Mvcexample.Models.CoursesSearch.CoursesSearchModel
+
+@*Should be display as a partial View! -> Need to fix controller*@
+
+@section Styles {
+    <link href="@Url.Content("~/Content/coursesSearch/dropList.css")" rel="stylesheet" type="text/css" />
+}
+
+
+
+<section id="sec-formsearch" class="section form-search parallax" style="background-position: 50% 40px;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-box text-center">
+                    <h2 class="text-white">Courses Search</h2>
+                    <p class="sub-title">Fill keywords to seek for courses</p>
+                </div><!-- /.titile-box -->
+                <form id="courses-search-form" class="courses-serch-form" method="post" action="#">
+                    @using (Html.BeginForm("CoursesSearch", "CoursesSearch", FormMethod.Post, new { role = "form", app = Model }))
+                    {
+                        <div class="wrap-input clearfix">
+                            <div class="wrap-select">
+                                @Html.DropDownListFor(m => m.Discipline.Value, @Model.Discipline.Items, "- Discipline -",
+                                    new { @class = "dropdownList" })
+                            </div><!-- /.wrap-select -->
+                            <div class="wrap-select">
+
+                                @Html.DropDownListFor(m => m.Duration.Value, @Model.Duration.Items, "- Duration -",
+                                    new { @class = "dropdownList" })
+
+                            </div><!-- /.wrap-select -->
+                            <div class="wrap-select">
+
+                                @Html.DropDownListFor(m => m.CourseLevel.Value, @Model.CourseLevel.Items, "- Level -",
+                                    new { @class = "dropdownList" })
+
+                                </div><!-- /.wrap-select -->
+                                <div class="wrap-select">
+                                    @Html.DropDownListFor(m => m.Location.Value, @Model.Location.Items, "- Location -",
+                                    new { @id = "newId", @class = "dropdownList" }) @*, @AutoPostBack = "true", @OnChange = "CallChangefunc"})*@
+                                </div><!-- /.wrap-select -->
+                                <div class="input-wrap">
+                                    <input type="text" value="" tabindex="1" placeholder="Keyword" name="Keyword" id="Keyword2">
+                                </div>
+                            </div>
+                        <!-- /.wrap-input -->
+                            <div class="submit-wrap text-center clearfix">
+                                <button class="btn-besmart">Search</button>
+                            </div>
+                    }
+                </form><!-- /.comment-form -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
