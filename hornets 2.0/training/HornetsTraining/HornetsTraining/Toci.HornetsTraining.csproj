@@ -248,6 +248,7 @@
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\WojtekSabatTeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
