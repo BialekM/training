@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c1b7056472394232a0cbd3285577d583" Name="Diagram1">
+        <EntityTypeShape EntityType="CoursesSearchDataModel.tblCourse_KeyWord" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesSearchDataModel.tblCourses" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoursesSearchDataModel.tblKeywords" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="CoursesSearchDataModel.FK__tblCourse__Cours__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="CoursesSearchDataModel.FK__tblCourse__KeyWo__1DB06A4F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
