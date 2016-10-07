@@ -1,0 +1,8 @@
+_klucz	開始
+_klucz2	コースについて
+_klucz3	何々
+_klucz4　講師
+_klucz5	ビデオ
+_klucz6	FAQ
+_klucz7	適用
+_klucz8	コンタクト

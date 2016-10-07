@@ -251,6 +251,7 @@
     <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingInfoRussianTranslation.cs" />
     <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\MichalMuzyczka\MichalMuzyczkaTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\TomaszWilkosz\TomaszWilkoszTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\WojtekSabatTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
