@@ -60,6 +60,7 @@
     <Compile Include="KarolZareba\KarolZarebaTablesOperationsTests.cs" />
     <Compile Include="MagdaSkalik\Hashtables\HashtablesTest.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaCodeGeneratorTests.cs" />
+    <Compile Include="MagdaSkalik\Homework\MagdaPeselValidatorTests.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
