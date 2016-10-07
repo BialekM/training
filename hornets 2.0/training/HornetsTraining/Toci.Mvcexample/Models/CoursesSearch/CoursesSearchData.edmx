@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CoursesSearchDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblCourse_KeyWord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Course_ID" Type="int" />
+          <Property Name="KeyWord_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblCourses">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="Discipline" Type="varchar(max)" />
+          <Property Name="Duration" Type="int" />
+          <Property Name="CourseLevel" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblKeywords">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Keyword" Type="varchar(max)" />
+        </EntityType>
+        <Association Name="FK__tblCourse__Cours__1CBC4616">
+          <End Role="tblCourses" Type="Self.tblCourses" Multiplicity="0..1" />
+          <End Role="tblCourse_KeyWord" Type="Self.tblCourse_KeyWord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCourses">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblCourse_KeyWord">
+              <PropertyRef Name="Course_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblCourse__KeyWo__1DB06A4F">
+          <End Role="tblKeywords" Type="Self.tblKeywords" Multiplicity="0..1" />
+          <End Role="tblCourse_KeyWord" Type="Self.tblCourse_KeyWord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKeywords">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblCourse_KeyWord">
+              <PropertyRef Name="KeyWord_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoursesSearchDataModelStoreContainer">
+          <EntitySet Name="tblCourse_KeyWord" EntityType="Self.tblCourse_KeyWord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblCourses" EntityType="Self.tblCourses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKeywords" EntityType="Self.tblKeywords" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tblCourse__Cours__1CBC4616" Association="Self.FK__tblCourse__Cours__1CBC4616">
+            <End Role="tblCourses" EntitySet="tblCourses" />
+            <End Role="tblCourse_KeyWord" EntitySet="tblCourse_KeyWord" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblCourse__KeyWo__1DB06A4F" Association="Self.FK__tblCourse__KeyWo__1DB06A4F">
+            <End Role="tblKeywords" EntitySet="tblKeywords" />
+            <End Role="tblCourse_KeyWord" EntitySet="tblCourse_KeyWord" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CoursesSearchDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblCourse_KeyWord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Course_ID" Type="Int32" />
+          <Property Name="KeyWord_ID" Type="Int32" />
+          <NavigationProperty Name="tblCourses" Relationship="Self.FK__tblCourse__Cours__1CBC4616" FromRole="tblCourse_KeyWord" ToRole="tblCourses" />
+          <NavigationProperty Name="tblKeywords" Relationship="Self.FK__tblCourse__KeyWo__1DB06A4F" FromRole="tblCourse_KeyWord" ToRole="tblKeywords" />
+        </EntityType>
+        <EntityType Name="tblCourses">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Discipline" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Duration" Type="Int32" />
+          <Property Name="CourseLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblCourse_KeyWord" Relationship="Self.FK__tblCourse__Cours__1CBC4616" FromRole="tblCourses" ToRole="tblCourse_KeyWord" />
+        </EntityType>
+        <EntityType Name="tblKeywords">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Keyword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblCourse_KeyWord" Relationship="Self.FK__tblCourse__KeyWo__1DB06A4F" FromRole="tblKeywords" ToRole="tblCourse_KeyWord" />
+        </EntityType>
+        <Association Name="FK__tblCourse__Cours__1CBC4616">
+          <End Role="tblCourses" Type="Self.tblCourses" Multiplicity="0..1" />
+          <End Role="tblCourse_KeyWord" Type="Self.tblCourse_KeyWord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCourses">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblCourse_KeyWord">
+              <PropertyRef Name="Course_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblCourse__KeyWo__1DB06A4F">
+          <End Role="tblKeywords" Type="Self.tblKeywords" Multiplicity="0..1" />
+          <End Role="tblCourse_KeyWord" Type="Self.tblCourse_KeyWord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKeywords">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblCourse_KeyWord">
+              <PropertyRef Name="KeyWord_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoursesSearchEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblCourse_KeyWord" EntityType="Self.tblCourse_KeyWord" />
+          <EntitySet Name="tblCourses" EntityType="Self.tblCourses" />
+          <EntitySet Name="tblKeywords" EntityType="Self.tblKeywords" />
+          <AssociationSet Name="FK__tblCourse__Cours__1CBC4616" Association="Self.FK__tblCourse__Cours__1CBC4616">
+            <End Role="tblCourses" EntitySet="tblCourses" />
+            <End Role="tblCourse_KeyWord" EntitySet="tblCourse_KeyWord" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblCourse__KeyWo__1DB06A4F" Association="Self.FK__tblCourse__KeyWo__1DB06A4F">
+            <End Role="tblKeywords" EntitySet="tblKeywords" />
+            <End Role="tblCourse_KeyWord" EntitySet="tblCourse_KeyWord" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CoursesSearchDataModelStoreContainer" CdmEntityContainer="CoursesSearchEntities">
+          <EntitySetMapping Name="tblCourse_KeyWord">
+            <EntityTypeMapping TypeName="CoursesSearchDataModel.tblCourse_KeyWord">
+              <MappingFragment StoreEntitySet="tblCourse_KeyWord">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+                <ScalarProperty Name="KeyWord_ID" ColumnName="KeyWord_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCourses">
+            <EntityTypeMapping TypeName="CoursesSearchDataModel.tblCourses">
+              <MappingFragment StoreEntitySet="tblCourses">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Discipline" ColumnName="Discipline" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="CourseLevel" ColumnName="CourseLevel" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKeywords">
+            <EntityTypeMapping TypeName="CoursesSearchDataModel.tblKeywords">
+              <MappingFragment StoreEntitySet="tblKeywords">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

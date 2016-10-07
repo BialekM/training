@@ -1,0 +1,60 @@
+﻿//To make it works correctly need to create Database and edit connection string!
+
+drop table tblCourse_KeyWord
+drop table tblKeywords
+drop table tblCourses
+
+Create Table tblCourses
+( 
+ID int IDENTITY(1,1) NOT NULL Primary Key,
+Name varchar(max) NOT NULL,
+Discipline varchar(max),
+Duration int, 
+CourseLevel varchar(max),
+Location varchar(max), 
+)
+
+Create Table tblKeywords
+(
+ID int IDENTITY(1,1) NOT NULL Primary Key,
+Keyword varchar(max)
+)
+
+Create Table tblCourse_KeyWord
+(
+ID int IDENTITY(1,1) NOT NULL Primary Key,
+Course_ID int,
+KeyWord_ID int,
+Foreign Key (Course_ID) references tblCourses(ID), 
+Foreign Key (KeyWord_ID) references tblKeywords(ID) 
+)
+
+Insert Into tblCourses Values  ('Toci C# Programming', 'Programming', 3, 'Advanced', 'UK')
+Insert Into tblCourses Values  ('Toci PHP Programming', 'Programming', 2, 'Begginers', 'DE')
+Insert Into tblCourses Values  ('Playing the guitar course', 'Music', 2, 'Advanced', 'PL')
+Insert Into tblCourses Values  ('Playing violin course', 'Music', 2, 'Advanced', 'DE')
+Insert Into tblCourses Values  ('Playing guitar course3', 'Programming', 2, 'Begginers', 'PL')
+Insert Into tblCourses Values  ('Playing guitar course4', 'Music', 2, 'Advanced', 'PL')
+Insert Into tblCourses Values  ('Playing guitar course5', 'Fun', 2, 'Begginers', 'UK')
+Insert Into tblCourses Values  ('Playing guitar course6', 'Music', 2, 'Advanced', 'UK')
+
+Insert Into tblKeywords Values  ('C#')
+Insert Into tblKeywords Values  ('PHP')
+Insert Into tblKeywords Values  ('Guitar')
+Insert Into tblKeywords Values  ('Music')
+Insert Into tblKeywords Values  ('Best')
+Insert Into tblKeywords Values  ('Idontknow')
+
+Insert Into tblCourse_KeyWord Values (1, 1)
+Insert Into tblCourse_KeyWord Values (1, 5)
+Insert Into tblCourse_KeyWord Values (1, 6)
+Insert Into tblCourse_KeyWord Values (2, 3)
+Insert Into tblCourse_KeyWord Values (2, 4)
+Insert Into tblCourse_KeyWord Values (3, 2)
+
+
+Select * From tblCourses
+Select * From tblKeywords
+Select * From tblCourse_KeyWord
+
+
