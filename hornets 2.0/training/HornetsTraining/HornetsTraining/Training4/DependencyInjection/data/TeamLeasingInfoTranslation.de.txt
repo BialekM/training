@@ -1,0 +1,8 @@
+﻿_klucz	start
+_klucz2	natürlich
+_klucz3	Wie funktioniert das
+_klucz4	Lautsprecher
+_klucz5	video
+_klucz6	faq
+_klucz7	anwenden
+_klucz8	kontakt
