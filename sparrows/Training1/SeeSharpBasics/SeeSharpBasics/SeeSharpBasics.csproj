@@ -85,12 +85,10 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
-
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiMoneyValue.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
-
     <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
@@ -118,7 +116,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Training5\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
