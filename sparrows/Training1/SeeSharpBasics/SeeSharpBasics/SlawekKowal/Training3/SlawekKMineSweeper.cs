@@ -12,7 +12,7 @@ namespace SeeSharpBasics.SlawekKowal.Training3
         {
             int[,] tB = new int[dimx, dimy];  // tablica tymczasowa
             int x, y;                        // zmienne do losowania pól z bombami
-            bombCount = 10;                  // ustawienie ilości bomb;
+            //bombCount = 10;                  // ustawienie ilości bomb;
 
             // 1.wypełnienie tablicy zerami
             for (int i = 0; i < dimx; i++)

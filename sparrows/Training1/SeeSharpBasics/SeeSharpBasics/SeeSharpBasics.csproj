@@ -85,6 +85,7 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+    <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />

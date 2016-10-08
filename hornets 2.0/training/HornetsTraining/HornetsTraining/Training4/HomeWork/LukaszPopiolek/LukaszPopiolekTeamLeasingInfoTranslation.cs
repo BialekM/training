@@ -14,7 +14,12 @@ namespace Toci.HornetsTraining.Training4.HomeWork.LukaszPopiolek
 
         public override Dictionary<string, string> GetTranslations(List<string> keys)
         {
-            throw new System.NotImplementedException();
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            var temp = ReadDictionary();
+            foreach (var element in keys)
+            {
+            }
+            return ReadDictionary();
         }
 
         protected override Dictionary<string, string> ReadDictionary()
@@ -27,7 +32,6 @@ namespace Toci.HornetsTraining.Training4.HomeWork.LukaszPopiolek
                 _dictionary.Add(temp[0], temp[1]);
             }
             return _dictionary;
-
         }
     }
 }
