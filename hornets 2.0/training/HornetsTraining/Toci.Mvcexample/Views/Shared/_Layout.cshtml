@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Toci.Mvcexample.Models.EntireAppModel
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,6 +21,12 @@
     <!--/Toci Custom Theme Phoenix-->
 </head>
     <body class="header-sticky home">
+        <div class="wrap-slide clearfix">
+            @Html.Partial("_TopPartial")
+            @Html.Partial("_HeaderPartial")
+            @Html.Partial("_OurInstructors", Model.Instructors)
+            @Html.Partial("_CoursesSearch")
+        </div>
         @*Coś nie działają te loader'y*@
         @*
         <div class="loader">
