@@ -71,10 +71,6 @@
     <Compile Include="SlawekKowal\Training3\SlawekKBankMoneyTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKBombTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKTestPesel.cs" />
-
-    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolverTest.cs" />
-    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGeneratorTest.cs" />
-
     <Compile Include="SlawekKowal\Training4\TestSql.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
@@ -83,9 +79,11 @@
     <Compile Include="TomaszKil\TomaszKilianStringTests.cs" />
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
     <Compile Include="Training3\Hashtables\HashtablesTest.cs" />
+    <Compile Include="training5\Chess\ChessBoardTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MagdaSkalik\HashMaps\" />
+    <Folder Include="SlawekNowinski\training3\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SeeSharpBasics\SeeSharpBasics.csproj">

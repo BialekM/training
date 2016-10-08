@@ -71,6 +71,12 @@ namespace SeeSharpBasics.MagdaSkalik.Homework
             if (bankCode.ContainsKey(bankCodeId))
             {
                 nameOfBank = (string)bankCode[bankCodeId];
+
+                foreach (DictionaryEntry item in bankCode)
+                {
+                    //item.Value == bankCodeId;
+                    //item.Key
+                }
             }
             else
             {

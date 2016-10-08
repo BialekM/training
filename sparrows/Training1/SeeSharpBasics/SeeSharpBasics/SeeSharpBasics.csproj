@@ -113,14 +113,23 @@
     <Compile Include="Training3\Homework\PeselValidator.cs" />
     <Compile Include="Training4\Db\PostgresqlDbClient.cs" />
     <Compile Include="Training4\minesweeper\BartekZapartMineSweeper.cs" />
+    <Compile Include="Training5\Chess\Bishop.cs" />
+    <Compile Include="Training5\Chess\ChessBoard.cs" />
+    <Compile Include="Training5\Chess\ChessField.cs" />
+    <Compile Include="Training5\Chess\Figure.cs" />
+    <Compile Include="Training5\Chess\King.cs" />
+    <Compile Include="Training5\Chess\Knight.cs" />
+    <Compile Include="Training5\Chess\Pawn.cs" />
+    <Compile Include="Training5\Chess\Queen.cs" />
+    <Compile Include="Training5\Chess\Rook.cs" />
+    <Compile Include="Training5\Homework.cs" />
+    <Compile Include="Training5\StaticClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Training5\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
