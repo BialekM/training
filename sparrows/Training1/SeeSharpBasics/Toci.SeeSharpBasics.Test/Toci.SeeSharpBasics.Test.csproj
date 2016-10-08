@@ -71,6 +71,10 @@
     <Compile Include="SlawekKowal\Training3\SlawekKBankMoneyTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKBombTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKTestPesel.cs" />
+
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolverTest.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGeneratorTest.cs" />
+
     <Compile Include="SlawekKowal\Training4\TestSql.cs" />
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />

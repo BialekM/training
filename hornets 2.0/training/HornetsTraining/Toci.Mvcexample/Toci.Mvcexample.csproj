@@ -182,6 +182,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelLogic\Handlers\CoursesSearchHandler.cs" />
+    <Compile Include="ModelLogic\Handlers\EntirreAppModelChor.cs" />
+    <Compile Include="ModelLogic\Handlers\InstructorsHandler.cs" />
+    <Compile Include="ModelLogic\ModelLogic.cs" />
+    <Compile Include="ModelLogic\ModelLogicBase.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
@@ -211,12 +216,20 @@
     <Compile Include="Models\CoursesSearch\tblKeywords.cs">
       <DependentUpon>CoursesSearchData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EntireAppModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OurInstructorsModel.cs" />
     <Compile Include="Models\OurInstructors\Instructor.cs" />
     <Compile Include="Models\OurInstructors\OurInstructorsContext.cs" />
+    <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Logic.cs" />
+    <Compile Include="Ntier\Dal\CoursesSearch\CoursesSearchDal.cs" />
+    <Compile Include="Ntier\Dal\DataAccessLayer.cs" />
+    <Compile Include="Ntier\Dal\Interfaces\ICoursesSearchDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -364,8 +377,8 @@
     <Content Include="Views\Shared\_HeaderPartial.cshtml" />
     <Content Include="Views\Shared\_WelcomeToBeSmartPartial.cshtml" />
     <Content Include="Views\Shared\_TopPartial.cshtml" />
-    <Content Include="Views\CoursesSearch\CoursesSearch.cshtml" />
-    <Content Include="Views\CoursesSearch\CoursesDisplay.cshtml" />
+    <Content Include="Views\Shared\_CoursesSearch.cshtml" />
+    <Content Include="Views\Shared\_CoursesDisplay.cshtml" />
     <Content Include="Views\Shared\_OurInstructors.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -383,6 +396,8 @@
     <Folder Include="Content\images\slide\" />
     <Folder Include="Content\images\team\" />
     <Folder Include="Content\images\testimonial\" />
+    <Folder Include="ModelLogic\Interfaces\" />
+    <Folder Include="Views\CoursesSearch\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -394,6 +409,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.DesignPatterns\Toci.DesignPatterns.csproj">
+      <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
+      <Name>Toci.DesignPatterns</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
