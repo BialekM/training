@@ -10,7 +10,7 @@ namespace Toci.Mvcexample.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(HomeModel model)
+        public ActionResult Index(EntireAppModel model)
         {
             /*
             using (var db = new OurInstructorsContext())
@@ -21,29 +21,9 @@ namespace Toci.Mvcexample.Controllers
             }
             */
 
-            var instructors = new List<Instructor>();
-            instructors.Add(
-                new Instructor
-                {
-                    Id = 1,
-                    Name = "Bartłomiej Zapart",
-                    Specialty = ".NET Developer",
-                    SpecialtyDescription = "Senior",
-                    Description = "Specjalista zajmujący się...",
-                    ImageUrl = "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/44685_102217393170996_2670587_n.jpg?oh=36f636670b9e08d2b759ada776edfc4e&oe=589FFFD0"
-                });
+            ModelLogic.ModelLogic mLogic = new ModelLogic.ModelLogic();
 
-            instructors.Add(
-                new Instructor
-                {
-                    Id = 2,
-                    Name = "Perła",
-                    Specialty = "PHP Developer",
-                    SpecialtyDescription = "Middle",
-                    Description = "Specjalista zajmujący się...",
-                    ImageUrl = "http://www.twojabizuteria.pl/images/kamienie/perla_duza.jpg"
-                });
-            return View(instructors);
+            return View(mLogic.GetEntireAppModel());
         }
 
         public ActionResult WelcomeToBeSmart()
