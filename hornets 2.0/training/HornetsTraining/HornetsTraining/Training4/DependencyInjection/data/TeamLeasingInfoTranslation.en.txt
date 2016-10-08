@@ -1,0 +1,8 @@
+﻿_klucz	start
+_klucz2	of course
+_klucz3	how it's working
+_klucz4	speaker
+_klucz5	video
+_klucz6	faq
+_klucz7	apply
+_klucz8	contact

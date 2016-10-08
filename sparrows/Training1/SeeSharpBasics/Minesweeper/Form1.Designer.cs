@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Text = "Form1";
+
+            SlawekKowal kowal = new SlawekKowal();
+            kowal.Show();
         }
 
         #endregion

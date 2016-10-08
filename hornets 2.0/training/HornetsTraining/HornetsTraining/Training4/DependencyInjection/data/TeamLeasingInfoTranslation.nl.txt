@@ -1,0 +1,8 @@
+﻿_klucz	begin
+_klucz2	natuurlijk
+_klucz3	hoe het werkt
+_klucz4	spreker
+_klucz5	video
+_klucz6	faq
+_klucz7	van toepassing zijn
+_klucz8	contact

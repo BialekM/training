@@ -246,12 +246,22 @@
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoGermanTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoPolishTranslation.cs" />
     <Compile Include="Training4\DependencyInjection\TeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\AdrianPankiewiczTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingFileReader.cs" />
+    <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingInfoRussianTranslation.cs" />
+    <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\LukaszPopiolek\LukaszPopiolekTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\MichalMuzyczka\MichalMuzyczkaTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\TomaszWilkosz\TomaszWilkoszTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\WojtekSabatTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.ru.txt" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -263,6 +273,8 @@
       <LastGenOutput>BankAccounts.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.de.txt" />
+    <Content Include="Training4\DependencyInjection\data\TeamLeasingInfoTranslation.en.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

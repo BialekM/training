@@ -1,0 +1,31 @@
+﻿@model Toci.Mvcexample.Models.OurInstructorsModel
+
+@{
+    string partialHeader = "Nasi instruktorzy";
+}
+
+<section id="sec-instructors" class="section padding-section section-instructors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="roll-accordion instructors">
+                    <h3>@partialHeader</h3>
+                    @foreach (var element in Model.Instructors)
+                    {
+                        <div class="roll-toggle">
+                            <div class="toggle-title">@element.Name</div>
+                            <div class="toggle-content">
+                                <img src="@element.ImageUrl" alt="images">
+                                <div class="info">
+                                    <h6>@element.Specialty</h6>
+                                    <p class="desc-info">@element.SpecialtyDescription</p>
+                                    <p>@element.Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div><!-- /.accordion -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>

@@ -21,6 +21,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,7 +45,21 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.103\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.103\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.103\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -160,22 +176,67 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesSearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelLogic\Handlers\CoursesSearchHandler.cs" />
+    <Compile Include="ModelLogic\Handlers\EntirreAppModelChor.cs" />
+    <Compile Include="ModelLogic\Handlers\InstructorsHandler.cs" />
+    <Compile Include="ModelLogic\ModelLogic.cs" />
+    <Compile Include="ModelLogic\ModelLogicBase.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
+    <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
+    <Compile Include="Models\CoursesSearch\CoursesSearchData.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoursesSearchData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoursesSearch\CoursesSearchData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoursesSearchData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoursesSearch\CoursesSearchData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoursesSearchData.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoursesSearch\CoursesSearchModel.cs" />
+    <Compile Include="Models\CoursesSearch\DropDownListModel.cs" />
+    <Compile Include="Models\CoursesSearch\tblCourses.cs">
+      <DependentUpon>CoursesSearchData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoursesSearch\tblCourse_KeyWord.cs">
+      <DependentUpon>CoursesSearchData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CoursesSearch\tblKeywords.cs">
+      <DependentUpon>CoursesSearchData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntireAppModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OurInstructorsModel.cs" />
+    <Compile Include="Models\OurInstructors\Instructor.cs" />
+    <Compile Include="Models\OurInstructors\OurInstructorsContext.cs" />
+    <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Logic.cs" />
+    <Compile Include="Ntier\Dal\CoursesSearch\CoursesSearchDal.cs" />
+    <Compile Include="Ntier\Dal\DataAccessLayer.cs" />
+    <Compile Include="Ntier\Dal\Interfaces\ICoursesSearchDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\coursesSearch\dropList.css" />
     <Content Include="Content\images\logo%402x.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logo_2%402x.png" />
@@ -214,6 +275,17 @@
     <Content Include="Content\fonts\Socialico.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\CoursesSearch\CoursesSearchData.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CoursesSearchData.edmx</DependentUpon>
+      <LastGenOutput>CoursesSearchData.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CoursesSearch\CoursesSearchData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CoursesSearchData.edmx</DependentUpon>
+      <LastGenOutput>CoursesSearchData.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CoursesSearch\ScriptForDatabase.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\fonts\icomoon.eot" />
@@ -222,6 +294,14 @@
     <Content Include="Content\fonts\Socialico.eot" />
     <Content Include="Content\fonts\Socialico.ttf" />
     <Content Include="Content\fonts\Socialico.woff" />
+    <EntityDeploy Include="Models\CoursesSearch\CoursesSearchData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CoursesSearchData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CoursesSearch\CoursesSearchData.edmx.diagram">
+      <DependentUpon>CoursesSearchData.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\OurInstructors\OurInstructorsDb.sqlite" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -295,6 +375,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_WelcomeToBeSmartPartial.cshtml" />
+    <Content Include="Views\Shared\_TopPartial.cshtml" />
+    <Content Include="Views\Shared\_CoursesSearch.cshtml" />
+    <Content Include="Views\Shared\_CoursesDisplay.cshtml" />
+    <Content Include="Views\Shared\_OurInstructors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,6 +396,8 @@
     <Folder Include="Content\images\slide\" />
     <Folder Include="Content\images\team\" />
     <Folder Include="Content\images\testimonial\" />
+    <Folder Include="ModelLogic\Interfaces\" />
+    <Folder Include="Views\CoursesSearch\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -319,6 +406,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.DesignPatterns\Toci.DesignPatterns.csproj">
+      <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
+      <Name>Toci.DesignPatterns</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -348,6 +444,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
