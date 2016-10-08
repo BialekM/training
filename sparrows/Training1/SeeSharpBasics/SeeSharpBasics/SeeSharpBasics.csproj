@@ -57,7 +57,6 @@
     <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
-    <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
@@ -79,6 +78,10 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiMoneyValue.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
