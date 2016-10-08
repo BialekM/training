@@ -1,109 +1,29 @@
 ﻿@{
-    Layout = null;
-    string title = "Nasi instruktorzy";
+    string partialHeader = "Nasi instruktorzy";
 }
+
 <section id="sec-instructors" class="section padding-section section-instructors">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <div class="roll-accordion instructors">
-                    <h3>@title</h3>
-                    <div class="roll-toggle">
-                        <div class="toggle-title active">Nathan Burk</div>
-                        <div class="toggle-content" style="display: block;">
-                            <img src="/Content/images/instructors/1.jpg" alt="images">
-                            <div class="info">
-                                <h6>Economics, Finance</h6>
-                                <p class="desc-info">Undergraduate</p>
-                                <p>Awisi enim minim veniam qus nostorud exerci tation ullamcorper suscipit.</p>
+                    <h3>@partialHeader</h3>
+                    @foreach (var element in Model)
+                    {
+                        <div class="roll-toggle">
+                            <div class="toggle-title">@element.Name</div>
+                            <div class="toggle-content">
+                                <img src="@element.ImageUrl" alt="images">
+                                <div class="info">
+                                    <h6>@element.Specialty</h6>
+                                    <p class="desc-info">@element.SpecialtyDescription</p>
+                                    <p>@element.Description</p>
+                                </div>
                             </div>
                         </div>
-                    </div><!-- /toggle -->
-                    <div class="roll-toggle">
-                        <div class="toggle-title">Jessica Cafrey</div>
-                        <div class="toggle-content">
-                            <img src="/Content/images/instructors/1.jpg" alt="images">
-                            <div class="info">
-                                <h6>Economics, Finance</h6>
-                                <p class="desc-info">Undergraduate</p>
-                                <p>Awisi enim minim veniam qus nostorud exerci tation ullamcorper suscipit.</p>
-                            </div>
-                        </div>
-                    </div><!-- /.toggle -->
-                    <div class="roll-toggle">
-                        <div class="toggle-title">Michael Delancey</div>
-                        <div class="toggle-content">
-                            <img src="/Content/images/instructors/1.jpg" alt="images">
-                            <div class="info">
-                                <h6>Economics, Finance</h6>
-                                <p class="desc-info">Undergraduate</p>
-                                <p>Awisi enim minim veniam qus nostorud exerci tation ullamcorper suscipit.</p>
-                            </div>
-                        </div>
-                    </div><!-- /.toggle -->
-                    <div class="roll-toggle">
-                        <div class="toggle-title">Amanda Shepard</div>
-                        <div class="toggle-content">
-                            <img src="/Content/images/instructors/1.jpg" alt="images">
-                            <div class="info">
-                                <h6>Economics, Finance</h6>
-                                <p class="desc-info">Undergraduate</p>
-                                <p>Awisi enim minim veniam qus nostorud exerci tation ullamcorper suscipit.</p>
-                            </div>
-                        </div>
-                    </div><!-- /.toggle -->
-                    <div class="roll-toggle">
-                        <div class="toggle-title">Victor Stanton</div>
-                        <div class="toggle-content">
-                            <img src="/Content/images/instructors/1.jpg" alt="images">
-                            <div class="info">
-                                <h6>Economics, Finance</h6>
-                                <p class="desc-info">Undergraduate</p>
-                                <p>Awisi enim minim veniam qus nostorud exerci tation ullamcorper suscipit.</p>
-                            </div>
-                        </div>
-                    </div><!-- /.toggle -->
+                    }
                 </div><!-- /.accordion -->
-            </div><!-- /.col-md-4 -->
-
-            <div class="col-md-4">
-                <div class="about-us padding-l7">
-                    <h3>Services</h3>
-                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat:</p>
-                    <ul>
-                        <li><a href="#">At vero eos et accusam</a></li>
-                        <li><a href="#">Justo duo dolores et ea rebum</a></li>
-                        <li><a href="#">Stet clita kasd gubergren</a></li>
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                        <li><a href="#">Consetetur sadipscing</a></li>
-                    </ul>
-                </div><!-- /.about-us -->
-            </div><!-- /.col-md-4 -->
-
-            <div class="col-md-4">
-                <div class="roll-tabs advantages-tabs">
-                    <h3>Advantages</h3>
-                    <ul class="menu-tab">
-                        <li class="active"><a href="#">Quality</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Results</a></li>
-                    </ul><!-- /.menu-tab -->
-                    <div class="content-tab">
-                        <div class="content-inner" style="display: block;">
-                            <img src="/Content/images/blog/1.jpg" alt="images">
-                            <p>At vero eos et accusam et justo duo doloresga rebum clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="content-inner" style="display: none;">
-                            <img src="/Content/images/blog/4.jpg" alt="images">
-                            <p>Lorem ipsum dolosit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        </div>
-                        <div class="content-inner" style="display: none;">
-                            <img src="/Content/images/blog/3.jpg" alt="images">
-                            <p>At vero eos et accusam et justo duo dolor rebum. Stet clta kasd gubergren ipsum dolor sit amet.</p>
-                        </div>
-                    </div><!-- /.content-tab -->
-                </div><!-- /.roll-tabs -->
-            </div><!-- /.col-md-4 -->
+            </div><!-- /.col-md-12 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
