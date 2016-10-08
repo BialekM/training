@@ -71,7 +71,12 @@
     <Compile Include="SlawekKowal\Training3\SlawekKBankMoneyTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKBombTest.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKTestPesel.cs" />
+<<<<<<< HEAD
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolverTest.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGeneratorTest.cs" />
+=======
     <Compile Include="SlawekKowal\Training4\TestSql.cs" />
+>>>>>>> a598ae90cd0b0285360458af30c232af8b70cfc3
     <Compile Include="StringOperations\StringOperationsTest.cs" />
     <Compile Include="TablesOperations\TablesOperationsTests.cs" />
     <Compile Include="TomaszKil\TestStrings.cs" />

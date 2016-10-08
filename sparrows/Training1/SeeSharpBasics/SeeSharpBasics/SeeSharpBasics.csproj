@@ -57,11 +57,14 @@
     <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
     <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaBankResolver.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaCodeGenerator.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaPeselValidator.cs" />
+>>>>>>> a598ae90cd0b0285360458af30c232af8b70cfc3
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
@@ -85,7 +88,14 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+<<<<<<< HEAD
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiMoneyValue.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
+=======
     <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
+>>>>>>> a598ae90cd0b0285360458af30c232af8b70cfc3
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
