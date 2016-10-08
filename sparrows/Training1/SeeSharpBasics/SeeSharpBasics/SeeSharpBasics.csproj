@@ -85,12 +85,11 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
-
+    <Compile Include="SlawekNowinski\SlawekNowinskiPostgresqlDbClient.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiMoneyValue.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
-
     <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
