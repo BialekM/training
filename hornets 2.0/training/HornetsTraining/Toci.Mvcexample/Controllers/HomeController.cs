@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Toci.Mvcexample.ModelLogic.Interfaces;
 using Toci.Mvcexample.Models;
 using Toci.Mvcexample.Models.OurInstructors;
 
@@ -10,20 +11,17 @@ namespace Toci.Mvcexample.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(EntireAppModel model)
+        private IModelLogic _modelLogic;
+
+        public HomeController(IModelLogic modelLogic)
         {
-            /*
-            using (var db = new OurInstructorsContext())
-            {
-                var instructors = db.instructors;
+            _modelLogic = modelLogic;
+        }
 
-                return View(instructors);
-            }
-            */
-
-            ModelLogic.ModelLogic mLogic = new ModelLogic.ModelLogic();
-
-            return View(mLogic.GetEntireAppModel());
+        public ActionResult Index()
+        {
+            var model = _modelLogic.GetEntireAppModel();
+            return View(model);
         }
 
         public ActionResult WelcomeToBeSmart()
