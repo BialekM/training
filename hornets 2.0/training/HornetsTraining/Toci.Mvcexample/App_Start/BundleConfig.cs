@@ -26,6 +26,50 @@ namespace Toci.Mvcexample
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //Custom TOCI phoenix template bundles
+
+            bundles.Add(new StyleBundle("~/Content/phoenix").Include(
+                "~/Content/phoenix/socialico.css",
+                "~/Content/phoenix/colors/color1.css",
+                "~/Content/phoenix/colors/color2.css",
+                "~/Content/phoenix/_icomoon.css",
+                "~/Content/phoenix/animate.css",
+                "~/Content/phoenix/calendar.css",
+                "~/Content/phoenix/flexslider.css",
+                "~/Content/phoenix/font-awesome.css",
+                "~/Content/phoenix/icomoon.css",
+                "~/Content/phoenix/owl.carousel.css",
+                "~/Content/phoenix/shortcodes.css",
+                "~/Content/phoenix/style.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/phoenix").Include(
+                "~/Scripts/phoenix/datepicker.js",
+                "~/Scripts/phoenix/gmap3.min.js",
+                "~/Scripts/phoenix/html5shiv.js",
+                "~/Scripts/phoenix/imagesloaded.min.js",
+                "~/Scripts/phoenix/jquery-countTo.js",
+                "~/Scripts/phoenix/jquery-waypoints.js",
+                "~/Scripts/phoenix/jquery.bxslider.js",
+                "~/Scripts/phoenix/jquery.easing.js",
+                "~/Scripts/phoenix/jquery.easypiechart.min.js",
+                "~/Scripts/phoenix/jquery.fitvids.js",
+                "~/Scripts/phoenix/jquery.flexslider-min.js",
+                "~/Scripts/phoenix/jquery.gomap-1.3.2.js",
+                "~/Scripts/phoenix/jquery.isotope.min.js",
+                "~/Scripts/phoenix/jquery.min.js",
+                "~/Scripts/phoenix/jquery.sticky.js",
+                "~/Scripts/phoenix/jquery.tweet.min.js",
+                "~/Scripts/phoenix/main.js",
+                "~/Scripts/phoenix/owl.carousel.js",
+                "~/Scripts/phoenix/parallax.js",
+                "~/Scripts/phoenix/respond.min.js",
+                "~/Scripts/phoenix/select.js",
+                "~/Scripts/phoenix/switcher.js"
+                ));
+
+
         }
     }
 }

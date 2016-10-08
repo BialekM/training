@@ -18,6 +18,11 @@ namespace Toci.Mvcexample
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+              name: "WelcomeToBeSmart",
+              url: "{controller}/{action}/{id}",
+              defaults: new { controller = "Home", action = "WelcomeToBeSmart", id = UrlParameter.Optional }
+          );
         }
     }
 }
