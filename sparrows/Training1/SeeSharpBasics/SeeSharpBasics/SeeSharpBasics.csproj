@@ -100,9 +100,6 @@
     <Compile Include="TomaszKilian\TomaszKilianCodeGenerator.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
-    <Compile Include="TomaszKilian\TomekStringOperations.cs" />
-    <Compile Include="TomaszKilian\TomekTableOperations.cs" />
-    <Compile Include="TomaszKilian\TomekTablesOperations.cs" />
     <Compile Include="Training3\Hashmaps\HashmapExample.cs" />
     <Compile Include="Training3\Hashmaps\MultiDimensionalTables.cs" />
     <Compile Include="Training3\Homework\BankResolver.cs" />

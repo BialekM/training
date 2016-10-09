@@ -2,7 +2,7 @@
 {
     public class Homework
     {
-        public virtual string StringReverse() //beatka aktaeb
+        public virtual string StringReverse(string candidate) //beatka aktaeb
         {
             return null;
         }
