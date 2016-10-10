@@ -142,6 +142,8 @@
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankFactory.cs" />
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankTransfersHandler.cs" />
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankTransfersResolver.cs" />
+    <Compile Include="Training2\HomeWork\AndrzejIwanski\HSBCTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\AndrzejIwanski\HSBCTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\BankList.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumFactory.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
