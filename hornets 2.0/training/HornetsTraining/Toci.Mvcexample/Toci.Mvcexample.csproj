@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Toci.Mvcexample</RootNamespace>
     <AssemblyName>Toci.Mvcexample</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -21,6 +21,9 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,9 +43,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.4.0.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.0\lib\net451\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.103\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.103\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.103\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -50,11 +72,8 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -96,6 +115,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -165,9 +185,16 @@
     <Compile Include="Controllers\CoursesSearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DependencyInjection\AutofacResolver.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelLogic\Handlers\CoursesSearchHandler.cs" />
+    <Compile Include="ModelLogic\Handlers\EntirreAppModelChor.cs" />
+    <Compile Include="ModelLogic\Handlers\InstructorsHandler.cs" />
+    <Compile Include="ModelLogic\Interfaces\IModelLogic.cs" />
+    <Compile Include="ModelLogic\ModelLogic.cs" />
+    <Compile Include="ModelLogic\ModelLogicBase.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
@@ -197,10 +224,20 @@
     <Compile Include="Models\CoursesSearch\tblKeywords.cs">
       <DependentUpon>CoursesSearchData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EntireAppModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OurInstructorsModel.cs" />
+    <Compile Include="Models\OurInstructors\Instructor.cs" />
+    <Compile Include="Models\OurInstructors\OurInstructorsContext.cs" />
+    <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Logic.cs" />
+    <Compile Include="Ntier\Dal\CoursesSearch\CoursesSearchDal.cs" />
+    <Compile Include="Ntier\Dal\DataAccessLayer.cs" />
+    <Compile Include="Ntier\Dal\Interfaces\ICoursesSearchDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -272,6 +309,7 @@
     <Content Include="Models\CoursesSearch\CoursesSearchData.edmx.diagram">
       <DependentUpon>CoursesSearchData.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\OurInstructors\OurInstructorsDb.sqlite" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -347,8 +385,8 @@
     <Content Include="Views\Shared\_HeaderPartial.cshtml" />
     <Content Include="Views\Shared\_WelcomeToBeSmartPartial.cshtml" />
     <Content Include="Views\Shared\_TopPartial.cshtml" />
-    <Content Include="Views\CoursesSearch\CoursesSearch.cshtml" />
-    <Content Include="Views\CoursesSearch\CoursesDisplay.cshtml" />
+    <Content Include="Views\Shared\_CoursesSearch.cshtml" />
+    <Content Include="Views\Shared\_CoursesDisplay.cshtml" />
     <Content Include="Views\Shared\_OurInstructors.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -366,6 +404,7 @@
     <Folder Include="Content\images\slide\" />
     <Folder Include="Content\images\team\" />
     <Folder Include="Content\images\testimonial\" />
+    <Folder Include="Views\CoursesSearch\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -377,6 +416,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toci.DesignPatterns\Toci.DesignPatterns.csproj">
+      <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
+      <Name>Toci.DesignPatterns</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

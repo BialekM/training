@@ -1,0 +1,30 @@
+﻿@using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay
+@model Toci.Mvcexample.Models.EntireAppModel
+   
+@*Additionl view, just for testing how does it work*@
+
+<div style="margin-left: 50px; margin-top: 20px">
+    @using (Html.BeginForm("CoursesDisplay", "CoursesSearch", FormMethod.Post, new { role = "form", app = Model }))
+    {
+        foreach (CourseDisplay course in Model.CoursesResult.Courses)
+        {
+            <div>
+
+                @Html.Label(course.Name)
+
+                <div style="margin-left: 50px">
+                    @foreach (string keyword in course.Keywords)
+                    {
+                        @Html.Label(keyword + ",")
+                    }
+                </div>
+            </div>
+        }
+
+
+        <button style="color: darkred">Research</button>
+
+    }
+
+</div>
+

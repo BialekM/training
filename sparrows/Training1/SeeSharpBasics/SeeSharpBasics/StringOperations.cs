@@ -2,6 +2,17 @@
 {
     public abstract class StringOperations
     {
+        protected readonly int whatever;
+        protected StringOperations()
+        {
+            whatever = 1;
+        }
+
+        public void test()
+        {
+            //whatever = 9;
+        }
+
         public abstract string Substring(string candidate, int start, int length); // beatka, 1, 3 => eat ; bartek, 2, 4 => rtek
 
         public abstract string GetName(); // zwrocic swoje imie i nazwisko

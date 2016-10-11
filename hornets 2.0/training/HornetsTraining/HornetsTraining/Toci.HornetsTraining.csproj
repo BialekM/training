@@ -142,6 +142,8 @@
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankFactory.cs" />
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankTransfersHandler.cs" />
     <Compile Include="Training2\HomeWork\AdrianKoszyk\Eurobank\EurobankTransfersResolver.cs" />
+    <Compile Include="Training2\HomeWork\AndrzejIwanski\HSBCTransferHandler.cs" />
+    <Compile Include="Training2\HomeWork\AndrzejIwanski\HSBCTransferResolver.cs" />
     <Compile Include="Training2\HomeWork\BankList.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumFactory.cs" />
     <Compile Include="Training2\HomeWork\BankMillenium\BankMilleniumTransferHandler.cs" />
@@ -250,6 +252,7 @@
     <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingFileReader.cs" />
     <Compile Include="Training4\HomeWork\AdrianPankiewicz\TeamLeasingInfoRussianTranslation.cs" />
     <Compile Include="Training4\HomeWork\LukaszCichon\LukaszCichonTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training4\HomeWork\LukaszPopiolek\LukaszPopiolekTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MarcinJaniak\MarcinJaniakTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MichalMuzyczka\MichalMuzyczkaTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\TomaszWilkosz\TomaszWilkoszTeamLeasingInfoTranslation.cs" />

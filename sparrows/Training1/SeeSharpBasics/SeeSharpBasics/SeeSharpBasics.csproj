@@ -55,6 +55,7 @@
     <Compile Include="Edwin\HashMaps\HashMapExample.cs" />
     <Compile Include="Edwin\HomeWorkHashTables\EdwinBankResolver.cs" />
     <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
+    <Compile Include="Edwin\Training 4\DB\EdwinPostgresqlDbClient.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
     <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMineSweeper.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMoneyValue.cs" />
+    <Compile Include="MarcinGala\Training5\MarcinHomework5.cs" />
     <Compile Include="Olek\OlekBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinCodeGenerator.cs" />
@@ -85,6 +87,11 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+    <Compile Include="SlawekNowinski\SlawekNowinskiPostgresqlDbClient.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiMoneyValue.cs" />
+    <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
     <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
@@ -94,9 +101,6 @@
     <Compile Include="TomaszKilian\TomaszKilianCodeGenerator.cs" />
     <Compile Include="TomaszKilian\TomaszKilianStringOperations.cs" />
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
-    <Compile Include="TomaszKilian\TomekStringOperations.cs" />
-    <Compile Include="TomaszKilian\TomekTableOperations.cs" />
-    <Compile Include="TomaszKilian\TomekTablesOperations.cs" />
     <Compile Include="Training3\Hashmaps\HashmapExample.cs" />
     <Compile Include="Training3\Hashmaps\MultiDimensionalTables.cs" />
     <Compile Include="Training3\Homework\BankResolver.cs" />
@@ -107,6 +111,17 @@
     <Compile Include="Training3\Homework\PeselValidator.cs" />
     <Compile Include="Training4\Db\PostgresqlDbClient.cs" />
     <Compile Include="Training4\minesweeper\BartekZapartMineSweeper.cs" />
+    <Compile Include="Training5\Chess\Bishop.cs" />
+    <Compile Include="Training5\Chess\ChessBoard.cs" />
+    <Compile Include="Training5\Chess\ChessField.cs" />
+    <Compile Include="Training5\Chess\Figure.cs" />
+    <Compile Include="Training5\Chess\King.cs" />
+    <Compile Include="Training5\Chess\Knight.cs" />
+    <Compile Include="Training5\Chess\Pawn.cs" />
+    <Compile Include="Training5\Chess\Queen.cs" />
+    <Compile Include="Training5\Chess\Rook.cs" />
+    <Compile Include="Training5\Homework.cs" />
+    <Compile Include="Training5\StaticClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -16,16 +16,20 @@ using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay;
 //by dzialalo uniwersalnie ?
 
 //To play with Database need to create it from script (Models/Courses/ScriptForDatabase) and edit connection string (Web.config)
+using Toci.Mvcexample.Ntier.Bll.Interfaces;
 
 namespace Toci.Mvcexample.Controllers
 {
     public class CoursesSearchController : Controller
     {
         private readonly CoursesSearchEntities _courses;
+        protected ICoursesSearchLogic CoursesSearchLogic;
 
-        public CoursesSearchController()
+        public CoursesSearchController(ICoursesSearchLogic coursesSearchLogic)
         {
             _courses = new CoursesSearchEntities();
+
+            CoursesSearchLogic = coursesSearchLogic;
         }
         // GET: Test
         public ActionResult CoursesSearch()
@@ -51,10 +55,10 @@ namespace Toci.Mvcexample.Controllers
         [HttpPost]
         public ActionResult CoursesSearch(CoursesSearchModel model)
         {
-            CoursesDisplayModel coursesModel = new CoursesDisplayModel { Courses = new List<CourseDisplay>() };
+            CoursesDisplayModel coursesModel = new CoursesDisplayModel { Courses = new List<CourseDisplay> { new CourseDisplay() { Name = "c#", Keywords = new List<string> { "cokolwiek" }} } };
 
             //selecting courses that match user's input
-            var foundCourses = _courses.tblCourses.Where(
+            /*var foundCourses = _courses.tblCourses.Where(
                 c => (model.Discipline.Value == null || c.Discipline == model.Discipline.Value) &&
                      (model.Duration.Value == null || c.Duration == model.Duration.Value) &&
                      (model.CourseLevel.Value == null || c.CourseLevel == model.CourseLevel.Value) &&
@@ -87,7 +91,9 @@ namespace Toci.Mvcexample.Controllers
                         Keywords = keywordsList
                     });
 
-            }
+            }*/
+
+
 
             return CoursesDisplay(coursesModel);
         }
@@ -95,8 +101,12 @@ namespace Toci.Mvcexample.Controllers
         [AllowAnonymous]
         public ActionResult CoursesDisplay(CoursesDisplayModel model)
         {
+            ModelLogic.ModelLogic mLogic = new ModelLogic.ModelLogic(); // model logic w konstruktorze lista handlerow
+            var entireModel = mLogic.GetEntireAppModel();
+            //handler!!
+            entireModel.CoursesResult = model;
 
-            return View("~/Views/CoursesSearch/CoursesDisplay.cshtml", model);
+            return View("~/Views/Home/Index.cshtml", entireModel);
         }
 
         [HttpPost]

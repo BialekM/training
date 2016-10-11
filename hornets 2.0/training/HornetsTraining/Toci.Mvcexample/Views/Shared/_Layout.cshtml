@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@model Toci.Mvcexample.Models.EntireAppModel
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Team Leasing</title>
 
     
     @RenderSection("Styles", false)
@@ -17,37 +19,26 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
     <!--/Toci Custom Theme Phoenix-->
-
-
 </head>
     <body class="header-sticky home">
+        <div class="wrap-slide clearfix">
+            @Html.Partial("_TopPartial")
+            @Html.Partial("_HeaderPartial")
+            @Html.Partial("_OurInstructors", Model.Instructors)
+            @Html.Partial("_CoursesSearch")
+        </div>
         @*Coś nie działają te loader'y*@
-
-        @*<div class="loader">
+        @*
+        <div class="loader">
         <span class="loader1 block-loader"></span>
         <span class="loader2 block-loader"></span>
         <span class="loader3 block-loader"></span>
-    </div>*@
-
-    <div class="wrap-slide clearfix">
-        @Html.Partial("_TopPartial")
-        @Html.Partial("_HeaderPartial")
-        @Html.Partial("_OurInstructors")
-    </div>
-    
-    @RenderBody()
-
-
-
-
-      
-
+        </div>
+        *@    
+        @RenderBody()
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
-
-        <!--Toci Custom Theme Phoenix-->
         @Scripts.Render("~/bundles/phoenix")
-        <!--/Toci Custom Theme Phoenix-->
         @RenderSection("scripts", required: false)
     </body>
 </html>
