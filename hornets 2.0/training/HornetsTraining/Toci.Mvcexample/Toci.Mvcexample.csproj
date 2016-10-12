@@ -388,6 +388,7 @@
     <Content Include="Views\Shared\_CoursesSearch.cshtml" />
     <Content Include="Views\Shared\_CoursesDisplay.cshtml" />
     <Content Include="Views\Shared\_OurInstructors.cshtml" />
+    <Content Include="Views\Shared\_RecentProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
