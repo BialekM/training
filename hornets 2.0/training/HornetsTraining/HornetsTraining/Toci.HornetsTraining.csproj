@@ -90,6 +90,7 @@
     <Compile Include="GhostRider\ML\Model.cs" />
     <Compile Include="GhostRider\ML\Trainer.cs" />
     <Compile Include="GhostRider\ML\TrainingInput.cs" />
+    <Compile Include="GhostRider\NN\Backpropagation\Pattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
