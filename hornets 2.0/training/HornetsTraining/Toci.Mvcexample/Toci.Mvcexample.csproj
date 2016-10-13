@@ -195,6 +195,10 @@
     <Compile Include="ModelLogic\Interfaces\IModelLogic.cs" />
     <Compile Include="ModelLogic\ModelLogic.cs" />
     <Compile Include="ModelLogic\ModelLogicBase.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategyBasic.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\ICoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\IModelStrategy.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />

@@ -6,13 +6,10 @@ namespace Toci.Mvcexample.ModelLogic
 {
     public class ModelLogic : ModelLogicBase
     {
-        public ModelLogic()
+        public ModelLogic(Dictionary<string, Handler> handlers)
         {
-            Handlers = new EntirreAppModelChor(new Dictionary<string, Handler>
-            {
-                { "instructors", new InstructorsHandler() },
-                { "coursesSearch", new CoursesSearchHandler() },
-            });
+            Handlers = new EntirreAppModelChor(handlers);
+
         }
     }
 }
