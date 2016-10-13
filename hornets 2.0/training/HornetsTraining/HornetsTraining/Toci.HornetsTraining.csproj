@@ -45,8 +45,15 @@
     <Reference Include="IronPython.Modules">
       <HintPath>..\packages\python\IronPython.Modules.dll</HintPath>
     </Reference>
+    <Reference Include="LinkedIn.NET, Version=1.0.2.0, Culture=neutral, PublicKeyToken=88e61090765d8c56, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinkedIn.NET.1.0.2.0\lib\net40-client\LinkedIn.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Dynamic">
       <HintPath>..\packages\python\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting">
       <HintPath>..\packages\python\Microsoft.Scripting.dll</HintPath>

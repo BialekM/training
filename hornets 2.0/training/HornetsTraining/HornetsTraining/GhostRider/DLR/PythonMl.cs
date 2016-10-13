@@ -1,4 +1,8 @@
-﻿using Microsoft.Scripting.Hosting;
+﻿using LinkedIn.NET;
+using LinkedIn.NET.Members;
+using LinkedIn.NET.Options;
+using Microsoft.Owin.Security.OAuth;
+using Microsoft.Scripting.Hosting;
 using IronPython.Hosting;
 
 namespace Toci.HornetsTraining.GhostRider.DLR
@@ -7,6 +11,10 @@ namespace Toci.HornetsTraining.GhostRider.DLR
     {
         public void Test()
         {
+            //LinkedIn.NET.LinkedInClient person = new LinkedInClient("", "");
+            //var response = person.GetMember(new LinkedInGetMemberOptions {});
+            //response.Result.FullProfile.Connections.
+
             System.IO.Directory.SetCurrentDirectory("../../../HornetsTraining/GhostRider/DLR/Lib");
             ScriptRuntime py = Python.CreateRuntime();
 
