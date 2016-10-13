@@ -1,4 +1,6 @@
-﻿using LinkedIn.NET;
+﻿using Facebook;
+using Google.Apis.Calendar.v3;
+using LinkedIn.NET;
 using LinkedIn.NET.Members;
 using LinkedIn.NET.Options;
 using Microsoft.Owin.Security.OAuth;
@@ -14,6 +16,13 @@ namespace Toci.HornetsTraining.GhostRider.DLR
             //LinkedIn.NET.LinkedInClient person = new LinkedInClient("", "");
             //var response = person.GetMember(new LinkedInGetMemberOptions {});
             //response.Result.FullProfile.Connections.
+
+            Facebook.FacebookClient cl = new FacebookClient();
+            Google.Apis.Calendar.v3.CalendarService cs = new CalendarService();
+
+            //cs.Calendars.Get("");
+
+            //cl.ge
 
             System.IO.Directory.SetCurrentDirectory("../../../HornetsTraining/GhostRider/DLR/Lib");
             ScriptRuntime py = Python.CreateRuntime();
