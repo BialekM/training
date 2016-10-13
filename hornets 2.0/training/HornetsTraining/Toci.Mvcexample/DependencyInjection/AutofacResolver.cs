@@ -43,7 +43,8 @@ namespace Toci.Mvcexample.DependencyInjection
                 new Dictionary<string, Handler>
                 {
                     { "OurInstructors", new InstructorsHandler() },
-                    { "CoursesSearc", new CoursesSearchHandler(new CoursesSearchModelStrategyBasic(), new CoursesSearchLogic(new CoursesSearchDal())) }
+                    { "CoursesSearc", new CoursesSearchHandler(new CoursesSearchModelStrategyBasic(), new CoursesSearchLogic(new CoursesSearchDal())) },
+                    {"RecentProjects", new RecentProjectsHandler()}
                 })).As<IModelLogic>();
 
         }
