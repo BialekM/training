@@ -20,6 +20,7 @@ namespace Toci.Mvcexample.Controllers
 
         public ActionResult Index()
         {
+
             var model = _modelLogic.GetEntireAppModel();
             return View(model);
         }

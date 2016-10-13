@@ -14,12 +14,14 @@
                         <p class="sub-title">View all project</p>
                     </div><!-- /.titile-box -->
                     <div class="owl-carousel">
-                        <div class="item">
-                            <img src="images/project/1.jpg" alt="image">
+                        @foreach (var item in Model.RecentProjects.Projects)
+                        {
+                            <div class="item">
+                                <img src="images/project/1.jpg" alt="image">
                                 <div class="text-courses">
-                                    <h4><a href="#">Team Leasing</a></h4>
+                                    <h4>@item.NameProject</h4>
                                     <div class="detail-courses clearfix">
-                                        <a href="#"><span class="btn-besmart btn-small price">Go to website</span></a>
+                                        <a href="@item.UrlWebsite"><span class="btn-besmart btn-small price">Go to website</span></a>
                                     </div>
                                     <div class="roll-accordion instructors">
                                         <div class="roll-toggle">
@@ -27,16 +29,33 @@
                                             <div class="toggle-content">
                                                 <p>Information about project</p>
                                                 <ul>
-                                                    <li><a href="#">Created by developers:</a></li>
-                                                    <li><a href="#">Duration of project</a></li>
-                                                    <li><a href="#">Use technologies</a></li>
+                                                    <li><a >Created by developers:</a></li>
+                                                         @foreach (var developer in item.Developers)
+                                                         {
+                                                            <ul style="padding-left: 20px">
+                                                                <li>
+                                                                    <a href="#"> @developer</a>
+                                                                </li>
+                                                            </ul>
+                                                         }
+                                                    <li><a >Start date: @item.StartDate</a></li>
+                                                    <li><a >End date: @item.EndDate</a></li>                                          
+                                                    <li><a >Use technologies:</a></li>
+                                                    @foreach (var technology in item.Technologies)
+                                                    {
+                                                        <ul style ="padding-left: 20px">
+                                                            <li>
+                                                                @technology
+                                                            </li>
+                                                        </ul>
+                                                    }
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>        
                                 </div><!-- /.detail-courses -->
-                        </div>
-                        
+                            </div>
+                        }
 
                         @*<div class="item">
                                     <img src="images/project/1.jpg" alt="image">
