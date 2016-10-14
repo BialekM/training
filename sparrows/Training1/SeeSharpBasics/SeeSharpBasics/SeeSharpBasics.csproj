@@ -96,6 +96,7 @@
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiPeselValidator.cs" />
     <Compile Include="SlawekKowal\Training4\SlawekKPostgresglDbClient.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
+    <Compile Include="SoniaKozubik\SoniaKozubikHomework.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="SlawekKowal\SlawekKStringOperations.cs" />
