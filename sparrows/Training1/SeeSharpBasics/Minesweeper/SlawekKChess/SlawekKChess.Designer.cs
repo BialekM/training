@@ -48,6 +48,7 @@
             this.Controls.Add(this.button1);
             this.Name = "SlawekKChess";
             this.Text = "SlawekKChess";
+            this.Load += new System.EventHandler(this.SlawekKChess_Load);
             this.ResumeLayout(false);
 
         }
