@@ -10,7 +10,7 @@ namespace SeeSharpBasics.MagdaSkalik.Chess
     {
         public override bool Move(int srcX, int srcY, int destX, int destY, ChessBoard chess)
         {
-            return (destY == (srcY-1));
+            return (destX == (srcX-1) || destY == (srcY + 1) || destX == (srcX + 1) || (destY == (srcY+1) && destX == (srcX - 1)) || (destY == (srcY + 1) && destX == (srcX + 1)));
         }
     }
 }
