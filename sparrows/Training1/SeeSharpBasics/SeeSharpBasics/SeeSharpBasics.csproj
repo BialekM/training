@@ -78,6 +78,7 @@
     <Compile Include="Olek\OlekTableOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
+    <Compile Include="PawelHanus\PawelHanusTableOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlawekKowal\SlawekKTableOperations.cs" />

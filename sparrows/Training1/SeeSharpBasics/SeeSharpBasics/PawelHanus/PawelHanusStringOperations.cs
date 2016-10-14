@@ -6,6 +6,7 @@ namespace SeeSharpBasics.PawelHanus
 {
     public class PawelHanusStringOperations : StringOperations
     {
+       
         public override string Substring(string candidate, int start, int length)
         {
             string result = "";
