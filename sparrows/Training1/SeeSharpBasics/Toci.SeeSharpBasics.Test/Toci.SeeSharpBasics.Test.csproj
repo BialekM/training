@@ -65,6 +65,7 @@
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />
+    <Compile Include="PawelHanus\PawelTablesOperationsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlawekKowal\SlawekKTablesOperationsTest.cs" />
     <Compile Include="SlawekKowal\SlawekStringOperationTest.cs" />
