@@ -3,20 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Toci.DesignPatterns.ChainOfResponsibility;
+using Toci.Mvcexample.ModelLogic.Handlers;
+using Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch;
 using Toci.Mvcexample.Models.CoursesSearch;
 using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay;
-
-//Prawdopodobnie metody powinny byc zawarte w Controllerze odpowiedzialnym za wyswietlanie konkretnej zakladki
-
-//Jaki jest wlasciwy sposob zmiany widokow wraz z przekazywaniem odpowiednich modeli ?
-
-//Jak rozsadnie wykorzystac wzorzez Dependancy injection w MVC ?
-
-//Jak powinno się dołączać baze danych do projektu, i jaki 'connection string' powinno sie podawac,
-//by dzialalo uniwersalnie ?
-
-//To play with Database need to create it from script (Models/Courses/ScriptForDatabase) and edit connection string (Web.config)
+using Toci.Mvcexample.Ntier.Bll.CoursesSearch;
 using Toci.Mvcexample.Ntier.Bll.Interfaces;
+using Toci.Mvcexample.Ntier.Dal.CoursesSearch;
 
 namespace Toci.Mvcexample.Controllers
 {
@@ -101,7 +95,12 @@ namespace Toci.Mvcexample.Controllers
         [AllowAnonymous]
         public ActionResult CoursesDisplay(CoursesDisplayModel model)
         {
-            ModelLogic.ModelLogic mLogic = new ModelLogic.ModelLogic(); // model logic w konstruktorze lista handlerow
+            ModelLogic.ModelLogic mLogic = new ModelLogic.ModelLogic(
+                new Dictionary<string, Handler>
+                {
+                    { "OurInstructors", new InstructorsHandler() },
+                    { "CoursesSearc", new CoursesSearchHandler(new CoursesSearchModelStrategyBasic(), new CoursesSearchLogic(new CoursesSearchDal())) }
+                }); // model logic w konstruktorze lista handlerow
             var entireModel = mLogic.GetEntireAppModel();
             //handler!!
             entireModel.CoursesResult = model;

@@ -192,9 +192,14 @@
     <Compile Include="ModelLogic\Handlers\CoursesSearchHandler.cs" />
     <Compile Include="ModelLogic\Handlers\EntirreAppModelChor.cs" />
     <Compile Include="ModelLogic\Handlers\InstructorsHandler.cs" />
+    <Compile Include="ModelLogic\Handlers\RecentProjectsHandler.cs" />
     <Compile Include="ModelLogic\Interfaces\IModelLogic.cs" />
     <Compile Include="ModelLogic\ModelLogic.cs" />
     <Compile Include="ModelLogic\ModelLogicBase.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategyBasic.cs" />
+    <Compile Include="ModelLogic\Strategy\CoursesSearch\ICoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\IModelStrategy.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
@@ -232,12 +237,18 @@
     <Compile Include="Models\OurInstructorsModel.cs" />
     <Compile Include="Models\OurInstructors\Instructor.cs" />
     <Compile Include="Models\OurInstructors\OurInstructorsContext.cs" />
+    <Compile Include="Models\RecentProjects\Project.cs" />
+    <Compile Include="Models\RecentProjects\RecentProjectsModel.cs" />
     <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
     <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\IRecentProjectsLogic.cs" />
     <Compile Include="Ntier\Bll\Logic.cs" />
+    <Compile Include="Ntier\Bll\RecentProjects\RecentProjectsLogic.cs" />
     <Compile Include="Ntier\Dal\CoursesSearch\CoursesSearchDal.cs" />
     <Compile Include="Ntier\Dal\DataAccessLayer.cs" />
     <Compile Include="Ntier\Dal\Interfaces\ICoursesSearchDal.cs" />
+    <Compile Include="Ntier\Dal\Interfaces\IRecentProjectsDal.cs" />
+    <Compile Include="Ntier\Dal\RecentProjects\RecentProjectsDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -388,6 +399,7 @@
     <Content Include="Views\Shared\_CoursesSearch.cshtml" />
     <Content Include="Views\Shared\_CoursesDisplay.cshtml" />
     <Content Include="Views\Shared\_OurInstructors.cshtml" />
+    <Content Include="Views\Shared\_RecentProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -451,13 +463,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.103\build\net45\System.Data.SQLite.Core.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

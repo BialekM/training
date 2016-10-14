@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SeeSharpBasics.MagdaSkalik.Homework;
+using SeeSharpBasics.MagdaSkalik.Homework3;
 using SeeSharpBasics.Training5;
 using SeeSharpBasics.Training5.Chess;
 
