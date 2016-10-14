@@ -15,7 +15,7 @@ namespace SeeSharpBasics
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
            BartekZapartMineSweeper mnswp = new BartekZapartMineSweeper();
@@ -176,7 +176,7 @@ namespace SeeSharpBasics
             */
             Console.ReadLine();
         }
-                                        // beatka          e
+                                      // beatka          e
         public static int LetterPosition(string candidate, char needle) // beatka, e => 1
         {
                // deklaracje zmiennych
@@ -201,7 +201,7 @@ namespace SeeSharpBasics
         }
         
         
-
+        
         public static string ReverseString(string candidate)
         {
             // candidate = beatka aktaeb
