@@ -14,7 +14,7 @@ namespace SeeSharpBasics.MagdaSkalik.Training5
         {
             string result = "";
 
-            for (int i = candidate.Length - 1; i >0; i--)
+            for (int i = candidate.Length - 1; i >=0; i--)
             {
                 result += candidate[i];
             }
