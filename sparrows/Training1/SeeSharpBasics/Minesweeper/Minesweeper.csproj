@@ -105,7 +105,20 @@
       <Name>SeeSharpBasics</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SlawekKChess\ChessImg\bb.png" />
+    <Content Include="SlawekKChess\ChessImg\bk.png" />
+    <Content Include="SlawekKChess\ChessImg\bn.png" />
+    <Content Include="SlawekKChess\ChessImg\bp.png" />
+    <Content Include="SlawekKChess\ChessImg\bq.png" />
+    <Content Include="SlawekKChess\ChessImg\br.png" />
+    <Content Include="SlawekKChess\ChessImg\wb.png" />
+    <Content Include="SlawekKChess\ChessImg\wk.png" />
+    <Content Include="SlawekKChess\ChessImg\wn.png" />
+    <Content Include="SlawekKChess\ChessImg\wp.png" />
+    <Content Include="SlawekKChess\ChessImg\wq.png" />
+    <Content Include="SlawekKChess\ChessImg\wr.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

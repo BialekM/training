@@ -81,32 +81,32 @@ namespace Minesweeper.SlawekKChess
         {
             for (int i = 0; i < 8; i++)
             {
-                chessBoard.Chess[i, 1].BackgroundImage = Image.FromFile("img//bp.png");
-                chessBoard.Chess[i, 6].BackgroundImage = Image.FromFile("img//wp.png");
+                chessBoard.Chess[i, 1].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/bp.png");
+                chessBoard.Chess[i, 6].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wp.png");
                 switch (i)
                 {
                     case 0:
                     case 7:
-                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("img//br.png");
-                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("img//wr.png");
+                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/br.png");
+                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wr.png");
                         break;
                     case 1:
                     case 6:
-                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("img//bn.png");
-                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("img//wn.png");
+                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/bn.png");
+                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wn.png");
                         break;
                     case 2:
                     case 5:
-                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("img//bb.png");
-                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("img//wb.png");
+                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/bb.png");
+                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wb.png");
                         break;
                     case 3:
-                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("img//bq.png");
-                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("img//wq.png");
+                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/bq.png");
+                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wq.png");
                         break;
                     default:
-                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("img//bk.png");
-                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("img//wk.png");
+                        chessBoard.Chess[i, 0].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/bk.png");
+                        chessBoard.Chess[i, 7].BackgroundImage = Image.FromFile("../../SlawekKChess/ChessImg/wk.png");
                         break;
                 }
             }
