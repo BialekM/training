@@ -62,6 +62,7 @@
     <Compile Include="MagdaSkalik\Homework\MagdaCodeGeneratorTests.cs" />
     <Compile Include="MagdaSkalik\Homework\MagdaPeselValidatorTests.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTablesOperationsTests.cs" />
+    <Compile Include="MagdaSkalik\Training5\MagdaHomeworkTest.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperationsTests.cs" />
     <Compile Include="Olek\OlekTablesOperationsTests.cs" />
     <Compile Include="MarcinGala\MarcinTablesOperationsTests.cs" />

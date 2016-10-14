@@ -12,7 +12,13 @@ namespace SeeSharpBasics.MagdaSkalik.Training5
     {
         public override string StringReverse(string candidate)
         {
-            return base.StringReverse(candidate);
+            string result = "";
+
+            for (int i = candidate.Length - 1; i >0; i--)
+            {
+                result += candidate[i];
+            }
+            return result;
         }
 
         public override string Substring(string candidate, int start, int length)
