@@ -38,6 +38,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -98,6 +100,13 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+    <Compile Include="SlawekKowal\Training5\Bishop.cs" />
+    <Compile Include="SlawekKowal\Training5\King.cs" />
+    <Compile Include="SlawekKowal\Training5\Knight.cs" />
+    <Compile Include="SlawekKowal\Training5\Pawn.cs" />
+    <Compile Include="SlawekKowal\Training5\Queen.cs" />
+    <Compile Include="SlawekKowal\Training5\Rook.cs" />
+    <Compile Include="SlawekKowal\Training5\SlawekKowalMove.cs" />
     <Compile Include="SlawekNowinski\SlawekNowinskiPostgresqlDbClient.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
@@ -125,7 +134,9 @@
     <Compile Include="Training4\minesweeper\BartekZapartMineSweeper.cs" />
     <Compile Include="Training5\Chess\Bishop.cs" />
     <Compile Include="Training5\Chess\ChessBoard.cs" />
-    <Compile Include="Training5\Chess\ChessField.cs" />
+    <Compile Include="Training5\Chess\ChessField.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Training5\Chess\Figure.cs" />
     <Compile Include="Training5\Chess\King.cs" />
     <Compile Include="Training5\Chess\Knight.cs" />
