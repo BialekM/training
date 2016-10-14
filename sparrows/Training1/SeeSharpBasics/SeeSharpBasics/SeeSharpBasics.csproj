@@ -60,11 +60,12 @@
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
     <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
     <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaBankResolver.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaCodeGenerator.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaPeselValidator.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaBankResolver.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaCodeGenerator.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaPeselValidator.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
+    <Compile Include="MagdaSkalik\Training5\MagdaHomework.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMineSweeper.cs" />

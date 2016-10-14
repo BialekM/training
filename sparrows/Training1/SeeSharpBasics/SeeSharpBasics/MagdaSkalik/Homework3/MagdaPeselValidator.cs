@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SeeSharpBasics.Training3.Homework;
 using System.Collections;
 
-namespace SeeSharpBasics.MagdaSkalik.Homework
+namespace SeeSharpBasics.MagdaSkalik.Homework3
 {
     public class MagdaPeselValidator : PeselValidator
     {

@@ -7,7 +7,7 @@ using SeeSharpBasics.Training3.Homework;
 using System.IO;
 using System.Collections;
 
-namespace SeeSharpBasics.MagdaSkalik.Homework
+namespace SeeSharpBasics.MagdaSkalik.Homework3
 {
     public class MagdaCodeGenerator : CodeGenerator
     {

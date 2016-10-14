@@ -30,7 +30,16 @@ namespace SeeSharpBasics.MagdaSkalik.Db
 
         public override bool Delete(string query)
         {
-            throw new NotImplementedException();
+            Connection.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand(query);
+            command.Connection = Connection;
+
+            command.ExecuteNonQuery();
+
+            Connection.Close();
+
+            return true;
         }
         public Hashtable[] Select(string query)
         {
