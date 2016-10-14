@@ -69,6 +69,7 @@
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMineSweeper.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMoneyValue.cs" />
+    <Compile Include="MarcinGala\Training5\MarcinHomework5.cs" />
     <Compile Include="Olek\OlekBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinBankResolver.cs" />
     <Compile Include="MarcinGala\Training3\MarcinCodeGenerator.cs" />

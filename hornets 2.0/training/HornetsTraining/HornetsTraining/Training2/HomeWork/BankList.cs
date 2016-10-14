@@ -9,6 +9,7 @@ using System.Collections.Generic;
 //using HornetsTraining.Training2.HomeWork.PKOBP;
 //using HornetsTraining.Training2.HomeWork.SantanderConsumerBank;
 using Toci.HornetsTraining.Training2.HomeWork.AdrianKoszyk.Eurobank;
+using Toci.HornetsTraining.Training2.HomeWork.AndrzejIwanski;
 using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
 using Toci.HornetsTraining.Training2.HomeWork.BartoszMackiewicz;
 using Toci.HornetsTraining.Training2.HomeWork.KonradGalazka;
@@ -46,6 +47,7 @@ namespace Toci.HornetsTraining.Training2.HomeWork
             result.Add("1050", () => new IngTransferHandler() );
             result.Add("2190", () => new DnBNordTransferHandler() );
             result.Add("1470", () => new EurobankTransfersHandler());
+            result.Add("1280", () => new HSBCTransferHandler());
             //result["1010"] += () => new BphTransferHandler();
 
             return result;

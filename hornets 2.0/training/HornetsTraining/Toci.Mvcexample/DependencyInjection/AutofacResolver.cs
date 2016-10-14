@@ -1,6 +1,12 @@
-﻿using Autofac;
+﻿using System.Collections.Generic;
+using Autofac;
 using Autofac.Integration.Mvc;
+using Toci.DesignPatterns.ChainOfResponsibility;
+using Toci.Mvcexample.ModelLogic.Handlers;
 using Toci.Mvcexample.ModelLogic.Interfaces;
+using Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch;
+using Toci.Mvcexample.Ntier.Bll.CoursesSearch;
+using Toci.Mvcexample.Ntier.Dal.CoursesSearch;
 
 namespace Toci.Mvcexample.DependencyInjection
 {
@@ -33,7 +39,14 @@ namespace Toci.Mvcexample.DependencyInjection
         private static void RegisterTypes(ContainerBuilder builder)
         {
             //Register Types here
-            builder.RegisterType<ModelLogic.ModelLogic>().As<IModelLogic>();
+            builder.Register(c => new ModelLogic.ModelLogic(
+                new Dictionary<string, Handler>
+                {
+                    { "OurInstructors", new InstructorsHandler() },
+                    { "CoursesSearc", new CoursesSearchHandler(new CoursesSearchModelStrategyBasic(), new CoursesSearchLogic(new CoursesSearchDal())) },
+                    {"RecentProjects", new RecentProjectsHandler()}
+                })).As<IModelLogic>();
+
         }
     }
 }
