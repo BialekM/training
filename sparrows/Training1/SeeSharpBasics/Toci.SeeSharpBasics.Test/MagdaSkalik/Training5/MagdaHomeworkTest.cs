@@ -9,12 +9,14 @@ using SeeSharpBasics.MagdaSkalik.Training5;
 namespace Toci.SeeSharpBasics.Test.MagdaSkalik.Training5
 {
     [TestClass]
-    public class MagdaHomeworkTest : MagdaHomework
+    public class MagdaHomeworkTest
     {
         [TestMethod]
         public void TestMethod()
         {
+            MagdaHomework test = new MagdaHomework();
 
+            test.StringReverse("Magda");
         }
     }
 }

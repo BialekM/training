@@ -58,6 +58,15 @@
     <Compile Include="Edwin\Training 4\DB\EdwinPostgresqlDbClient.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
+    <Compile Include="MagdaSkalik\Chess\Bishop.cs" />
+    <Compile Include="MagdaSkalik\Chess\ChessBoard.cs" />
+    <Compile Include="MagdaSkalik\Chess\ChessField.cs" />
+    <Compile Include="MagdaSkalik\Chess\Figure.cs" />
+    <Compile Include="MagdaSkalik\Chess\King.cs" />
+    <Compile Include="MagdaSkalik\Chess\Knight.cs" />
+    <Compile Include="MagdaSkalik\Chess\Pawn.cs" />
+    <Compile Include="MagdaSkalik\Chess\Queen.cs" />
+    <Compile Include="MagdaSkalik\Chess\Rook.cs" />
     <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
     <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
     <Compile Include="MagdaSkalik\Homework3\MagdaBankResolver.cs" />
