@@ -34,5 +34,14 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal
             test = str.GlueBeginingEnd("beatka");
             Assert.AreEqual(test, "baekat");
         }
+
+        [TestMethod]
+        public void ReverseTest()
+        {
+            var test = str.StringReverse("Beata");
+            Assert.AreEqual(test, "ataeB");
+            test = str.StringReverse("Slawek");
+            Assert.AreEqual(test, "kewalS");
+        }
     }
 }

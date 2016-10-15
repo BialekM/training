@@ -18,6 +18,18 @@
             return "Sławek Kowal";
         }
 
+        public string StringReverse(string candidate)
+        {
+            if (candidate.Length <= 0) return "";
+            string sub = "";
+            for (int i = candidate.Length - 1; i >= 0; i--)
+            {
+                sub += Substring(candidate, i, 1);
+            }
+
+            return sub;
+        }
+
         public override string GlueBeginingEnd(string candidate)
         {
             string result = "";

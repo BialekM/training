@@ -58,6 +58,7 @@
     <Compile Include="Edwin\HomeWorkHashTables\EdwinBankResolver.cs" />
     <Compile Include="Edwin\HomeWorkHashTables\EdwinPeselValidator.cs" />
     <Compile Include="Edwin\Training 4\DB\EdwinPostgresqlDbClient.cs" />
+    <Compile Include="Edwin\Training5\Edwin_Strings.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
     <Compile Include="MagdaSkalik\Chess\Bishop.cs" />

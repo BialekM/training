@@ -179,6 +179,8 @@
     <Compile Include="Training4\HomeWork\MichalMazur\TeamLeasingInfoTranslationsTest.cs" />
     <Compile Include="Training4\IoC\ResolverTest.cs" />
     <Compile Include="Training4\php\php.cs" />
+    <Compile Include="Training6\Populate\GeneratorTest.cs" />
+    <Compile Include="Training6\Train\TrainerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

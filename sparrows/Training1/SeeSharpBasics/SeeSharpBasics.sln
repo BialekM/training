@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSharpBasics", "SeeSharpBasics\SeeSharpBasics.csproj", "{4C4AFB47-C5D5-479A-A52D-6515E47FA275}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.SeeSharpBasics.Test", "Toci.SeeSharpBasics.Test\Toci.SeeSharpBasics.Test.csproj", "{FC2636EC-B4B2-4B02-956A-7505A48DB9B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edwin_chessboard_drawn", "Edwin_chessboard_drawn\Edwin_chessboard_drawn.csproj", "{B6DAE382-DDFD-49AD-9D10-95A5C32B2C44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F7D8FC-BF53-4A1C-ABB9-80C9F49D722E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6DAE382-DDFD-49AD-9D10-95A5C32B2C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DAE382-DDFD-49AD-9D10-95A5C32B2C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DAE382-DDFD-49AD-9D10-95A5C32B2C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DAE382-DDFD-49AD-9D10-95A5C32B2C44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

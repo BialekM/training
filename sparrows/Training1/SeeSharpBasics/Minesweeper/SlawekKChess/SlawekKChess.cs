@@ -73,7 +73,7 @@ namespace Minesweeper.SlawekKChess
             }
 
             if (_sField == null) _sField = helpBtn;
-
+            _sField.BackColor = Color.BlueViolet;
             var xx = helpBtn.Figure.GetType().Name;
             game.ChessFieldEnabled(_chessBoard);
 
