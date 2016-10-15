@@ -101,9 +101,7 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
-
     <Compile Include="SlawekNowinski\SlawekNowinskiHomework.cs" />
-
     <Compile Include="SlawekKowal\Training5\Bishop.cs" />
     <Compile Include="SlawekKowal\Training5\King.cs" />
     <Compile Include="SlawekKowal\Training5\Knight.cs" />
@@ -158,6 +156,8 @@
     <Compile Include="Training5\Chess\Rook.cs" />
     <Compile Include="Training5\Homework.cs" />
     <Compile Include="Training5\StaticClass.cs" />
+    <Compile Include="Training6\ExtensionMethods\Extensions.cs" />
+    <Compile Include="Training6\Generics\MyGenerics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

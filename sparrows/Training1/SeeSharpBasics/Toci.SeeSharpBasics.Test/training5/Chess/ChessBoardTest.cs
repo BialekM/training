@@ -15,7 +15,7 @@ namespace Toci.SeeSharpBasics.Test.training5.Chess
 
             res.GetBankName("1610");
 
-            ChessField chessField = new ChessField();
+            //ChessField chessField = new ChessField();
 
             //StaticClass st = new StaticClass();
 
