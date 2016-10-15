@@ -131,6 +131,7 @@
     <Compile Include="GhostRider\ML\Trainer.cs" />
     <Compile Include="GhostRider\ML\TrainingInput.cs" />
     <Compile Include="GhostRider\NN\Backpropagation\Pattern.cs" />
+    <Compile Include="GhostRider\Training6Homework\BzMlTrainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -327,9 +328,17 @@
     <Compile Include="Training4\HomeWork\TomaszWilkosz\TomaszWilkoszTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\WojtekSabatTeamLeasingInfoTranslation.cs" />
     <Compile Include="Training4\HomeWork\MichalMazur\MichalMazurTeamLeasingInfoTranslation.cs" />
+    <Compile Include="Training6\ExtMethods\Example.cs" />
+    <Compile Include="Training6\ExtMethods\Extensions.cs" />
+    <Compile Include="Training6\ExtMethods\StaticExample.cs" />
+    <Compile Include="Training6\MachineLearning\Populate\MlDataGenerator.cs" />
+    <Compile Include="Training6\MachineLearning\Training\MlTrainer.cs" />
+    <Compile Include="Training6\NeuralNetworks\NeuralNetwork.cs" />
+    <Compile Include="Training6\NeuralNetworks\Perceptron.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Training3\Tpl\txt\" />
+    <Folder Include="Training6\MachineLearning\Populate\data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GhostRider\DLR\Lib\distutils\command\wininst-6.0.exe" />
