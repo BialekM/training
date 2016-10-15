@@ -37,11 +37,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net45\System.Data.SQLite.dll</HintPath>
@@ -63,6 +72,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ExceptionHandling\ErrorLog\ErrorLogTests.cs" />
+    <Compile Include="GhostRider\PythonMlTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Training1\Animals\DogTest.cs" />
     <Compile Include="Training1\Generics\GenericsTest.cs" />
@@ -170,12 +181,17 @@
     <Compile Include="Training4\php\php.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HornetsTraining\Toci.HornetsTraining.csproj">
       <Project>{78236dbe-77fa-44af-a976-26ade3f8066b}</Project>
       <Name>Toci.HornetsTraining</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.DesignPatterns\Toci.DesignPatterns.csproj">
+      <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
+      <Name>Toci.DesignPatterns</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

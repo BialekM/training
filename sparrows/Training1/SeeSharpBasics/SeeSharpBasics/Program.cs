@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SeeSharpBasics.BartekZapart;
 using SeeSharpBasics.KarolZareba;
+using SeeSharpBasics.PawelHanus;
 using SeeSharpBasics.Olek;
 using SeeSharpBasics.SlawekKowal;
 using SeeSharpBasics.TomaszKilian;
@@ -15,10 +16,27 @@ namespace SeeSharpBasics
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-           BartekZapartMineSweeper mnswp = new BartekZapartMineSweeper();
+
+            PawelHanusStringOperations Strop = new PawelHanusStringOperations();
+            PawelHanusTableOperations Top = new PawelHanusTableOperations();
+
+            int[] tosort = new[] {32,1, 3, 24, 5,54,333,3,0,31,3};
+            int[] sorted;
+            Console.WriteLine("to sort");
+            foreach (var i in tosort)
+            {
+                Console.WriteLine("{0}",i);
+            }
+
+            sorted = Top.BubbleSort(tosort);
+            Console.WriteLine("to sorted");
+            foreach (var i in sorted)
+            {
+                Console.WriteLine("{0}", i);
+            }         
 
            // mnswp.Show(mnswp.BombsCount(10, 20, 10));
 
@@ -176,7 +194,7 @@ namespace SeeSharpBasics
             */
             Console.ReadLine();
         }
-                                        // beatka          e
+                                      // beatka          e
         public static int LetterPosition(string candidate, char needle) // beatka, e => 1
         {
                // deklaracje zmiennych
@@ -196,12 +214,13 @@ namespace SeeSharpBasics
                     return i;
                 }
             }
+            
 
             return -1;
         }
         
         
-
+        
         public static string ReverseString(string candidate)
         {
             // candidate = beatka aktaeb
@@ -216,6 +235,7 @@ namespace SeeSharpBasics
             }
 
             return result;
+            
         }
     }
 }

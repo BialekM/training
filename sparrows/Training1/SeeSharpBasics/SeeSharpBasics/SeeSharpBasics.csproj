@@ -38,6 +38,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,13 +60,23 @@
     <Compile Include="Edwin\Training 4\DB\EdwinPostgresqlDbClient.cs" />
     <Compile Include="KarolZareba\KarolZarebaStringOperations.cs" />
     <Compile Include="KarolZareba\KarolZarebaTablesOperations.cs" />
+    <Compile Include="MagdaSkalik\Chess\Bishop.cs" />
+    <Compile Include="MagdaSkalik\Chess\ChessBoard.cs" />
+    <Compile Include="MagdaSkalik\Chess\ChessField.cs" />
+    <Compile Include="MagdaSkalik\Chess\Figure.cs" />
+    <Compile Include="MagdaSkalik\Chess\King.cs" />
+    <Compile Include="MagdaSkalik\Chess\Knight.cs" />
+    <Compile Include="MagdaSkalik\Chess\Pawn.cs" />
+    <Compile Include="MagdaSkalik\Chess\Queen.cs" />
+    <Compile Include="MagdaSkalik\Chess\Rook.cs" />
     <Compile Include="MagdaSkalik\Db\MagdaPostgresqlDbClient.cs" />
     <Compile Include="MagdaSkalik\HashMaps\HashMapsExample.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaBankResolver.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaCodeGenerator.cs" />
-    <Compile Include="MagdaSkalik\Homework\MagdaPeselValidator.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaBankResolver.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaCodeGenerator.cs" />
+    <Compile Include="MagdaSkalik\Homework3\MagdaPeselValidator.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
+    <Compile Include="MagdaSkalik\Training5\MagdaHomework.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />
     <Compile Include="MarcinGala\Training3\MarcinMineSweeper.cs" />
@@ -79,6 +91,7 @@
     <Compile Include="Olek\OlekTableOperations.cs" />
     <Compile Include="PatrykDrapik\PatrykDrapikStringOperations.cs" />
     <Compile Include="PawelHanus\PawelHanusStringOperations.cs" />
+    <Compile Include="PawelHanus\PawelHanusTableOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlawekKowal\SlawekKTableOperations.cs" />
@@ -87,7 +100,16 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+
     <Compile Include="SlawekNowinski\SlawekNowinskiHomework.cs" />
+
+    <Compile Include="SlawekKowal\Training5\Bishop.cs" />
+    <Compile Include="SlawekKowal\Training5\King.cs" />
+    <Compile Include="SlawekKowal\Training5\Knight.cs" />
+    <Compile Include="SlawekKowal\Training5\Pawn.cs" />
+    <Compile Include="SlawekKowal\Training5\Queen.cs" />
+    <Compile Include="SlawekKowal\Training5\Rook.cs" />
+    <Compile Include="SlawekKowal\Training5\SlawekKowalMove.cs" />
     <Compile Include="SlawekNowinski\SlawekNowinskiPostgresqlDbClient.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiBankResolver.cs" />
     <Compile Include="SlawekNowinski\training3\SlawekNowinskiCodeGenerator.cs" />
@@ -104,6 +126,7 @@
     <Compile Include="SlawekNowinski\training5\SNQueen.cs" />
     <Compile Include="SlawekNowinski\training5\SNRook.cs" />
     <Compile Include="Slawek\SlawekStringOperations.cs" />
+    <Compile Include="SoniaKozubik\SoniaKozubikHomework.cs" />
     <Compile Include="SoniaKozubik\SoniaKozubikStringOperations.cs" />
     <Compile Include="StringOperations.cs" />
     <Compile Include="SlawekKowal\SlawekKStringOperations.cs" />
@@ -123,7 +146,9 @@
     <Compile Include="Training4\minesweeper\BartekZapartMineSweeper.cs" />
     <Compile Include="Training5\Chess\Bishop.cs" />
     <Compile Include="Training5\Chess\ChessBoard.cs" />
-    <Compile Include="Training5\Chess\ChessField.cs" />
+    <Compile Include="Training5\Chess\ChessField.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Training5\Chess\Figure.cs" />
     <Compile Include="Training5\Chess\King.cs" />
     <Compile Include="Training5\Chess\Knight.cs" />

@@ -17,5 +17,6 @@ namespace Toci.SeeSharpBasics.Test.TablesOperations
         }
 
         public abstract void TestReversing();
+
     }
 }

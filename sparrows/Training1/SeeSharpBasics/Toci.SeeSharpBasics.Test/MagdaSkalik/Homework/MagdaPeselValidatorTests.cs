@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SeeSharpBasics.MagdaSkalik.Homework;
+using SeeSharpBasics.MagdaSkalik.Homework3;
 
 namespace Toci.SeeSharpBasics.Test.MagdaSkalik.Homework
 {

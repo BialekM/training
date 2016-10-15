@@ -17,6 +17,7 @@ namespace Toci.DesignPatterns.ExceptionHandling
             BackendMessage = backendMessage;
 
             //dodatkowo logowanie do np bazy danych bledou - BackendMessage i code
+            ExceptionLogger.LogIntoDatabase(this);
         }
     }
 }
