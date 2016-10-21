@@ -16,8 +16,9 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal.Trainig6
             var xx = lista.GetLenght();
             lista.RemoveItem(3);
             xx = lista.GetIndex(5);
+            Debug.WriteLine(xx);
             xx = lista.GetLenght();
-
+            Debug.WriteLine(xx);
             foreach (var item in lista) Debug.WriteLine(item.ToString());
 
 
