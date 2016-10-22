@@ -18,6 +18,7 @@ namespace Toci.SeeSharpBasics.Test.SlawekKowal.Trainig6
             xx = lista.GetIndex(5);
             Debug.WriteLine(xx);
             xx = lista.GetLenght();
+            xx = lista.SumAll();
             Debug.WriteLine(xx);
 
             foreach (var item in lista) Debug.WriteLine(item.ToString());
