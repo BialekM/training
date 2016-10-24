@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e02b4f09fdc44de5a564ffd4dcbb7394" Name="Diagram1">
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.accbankaccounts" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.account" Width="1.5" PointX="0.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.accountadresses" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.accpayments" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.client" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.clientsearch" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.contact" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.course" Width="1.5" PointX="5.25" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.courses" Width="1.5" PointX="3" PointY="45.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.coursesgroups" Width="1.5" PointX="13.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.devavailabilitydetailed" Width="1.5" PointX="5.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.developer" Width="1.5" PointX="3" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.dictionary" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.groupscodenames" Width="1.5" PointX="8.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.lessons" Width="1.5" PointX="5.25" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.lessonsdetails" Width="1.5" PointX="7.5" PointY="44.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.phrasetechnology" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.positions" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.post" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.post_course" Width="1.5" PointX="8.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.post_tags" Width="1.5" PointX="10.25" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.project" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.projectdata" Width="1.5" PointX="5.25" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.projectdeveloper" Width="1.5" PointX="5.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.projectstage" Width="1.5" PointX="5.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.projecttechnologies" Width="1.5" PointX="8.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.projecttype" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.promotorcourses" Width="1.5" PointX="8.25" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.recruitmenttest" Width="1.5" PointX="3" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.stages" Width="1.5" PointX="5.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.stageteam" Width="1.5" PointX="7.5" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.studygroups" Width="1.5" PointX="11" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.tags" Width="1.5" PointX="8" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.technologies" Width="1.5" PointX="6" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.technologiesdeveloper" Width="1.5" PointX="8.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeamLeasingDatabaseModel.technologypromotor" Width="1.5" PointX="3" PointY="48.25" IsExpanded="true" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.accountadresses_fk_accountAdresses__account" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.client_fk_client_on_account" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.clientsearch_fk_ClientSearch_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.developer_fk_Developer_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.post_fk_post_owner" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.project_fk_Project_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.recruitmenttest_fk_RecruitmentTest_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.studygroups_fk_studygroups__account" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.technologypromotor_fk_Promotor_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.course_fk_course__courses" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.course_fk_course__technology_promotor" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.coursesgroups_fk_GroupCourse_to_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.post_course_fk_post_course_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.lessons_fk_subCourses__Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.promotorcourses_fk_promotorcourses_courses" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.coursesgroups_fk_coursesgroup__studygroups" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projectdeveloper_fk_ProjectDeveloper_Developer1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.stageteam_fk_stageteam_developer" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.technologiesdeveloper_fk_TechnologiesDeveloper_Developer1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.studygroups_fk_studygroups_groupscodenames" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.lessonsdetails_fk_lessonsdetails__lessons" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.post_course_fk_post_course_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.post_tags_fk_post_tags_Post1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.post_tags_fk_post_tags_tags1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projectdata_fk_projectdata_project" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projectdeveloper_fk_ProjectDeveloper_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projectstage_fk_ProjectStage_Project1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projecttechnologies_fk_project" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.stages_fk_Stages_Project1" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.projecttechnologies_fk_technologies" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.promotorcourses_fk_promotor_courses__techpromotor" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.stageteam_fk_StagesTeams_Stages" ManuallyRouted="false" />
+        <AssociationConnector Association="TeamLeasingDatabaseModel.technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

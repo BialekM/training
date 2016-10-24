@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Toci.Mvcexample.ModelLogic.Interfaces;
 using Toci.Mvcexample.Models;
+using Toci.Mvcexample.Models.DBContext;
 using Toci.Mvcexample.Models.OurInstructors;
 
 namespace Toci.Mvcexample.Controllers
