@@ -83,7 +83,10 @@
     <Compile Include="TomaszKil\TomaszKilianStringTests.cs" />
     <Compile Include="TomaszKil\TomaszKilianTests.cs" />
     <Compile Include="Training3\Hashtables\HashtablesTest.cs" />
-    <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiCodeGeneratorTest.cs" />
+    <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiBankResolverTest.cs" />
+    <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiMineSweeperTest.cs" />
+    <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiMoneyValueTest.cs" />
+    <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiPeselValidatorTest.cs" />
     <Compile Include="training5\Chess\ChessBoardTest.cs" />
   </ItemGroup>
   <ItemGroup>

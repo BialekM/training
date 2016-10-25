@@ -10,33 +10,20 @@ namespace SeeSharpBasics.Training3.Homework.AndrzejIwanski
             throw new System.NotImplementedException();
         }
 
-        public void BankHashtableGenerate()
+        public void BankHastableAdd()
         {
-            StreamReader str = new StreamReader(@"C:\banki.txt");
-            StreamWriter wtr = new StreamWriter(@"C:\Studia\wygenerowany_kod.txt");
+            StreamReader str = new StreamReader(@"C:\Users\Andrew\Desktop\banki.txt");
+            StreamWriter wtr = new StreamWriter(@"C:\Users\Andrew\Desktop\wynik.txt");
 
             while (!str.EndOfStream)
             {
                 string line = str.ReadLine();
-
                 string[] split = line.Split(new[] { " \t" }, StringSplitOptions.None);
-
-                //split[0] -> code split[1] -> bank name
-
-                
-
-                wtr.WriteLine("banksHashtable.Add(\"{0}\",\"{1}\");", split[0], split[1]);
-
+                wtr.WriteLine("hashtableOfBanks.Add({0},\"{1}\");", split[0], split[1]);
             }
-            
+            str.Close();
+            wtr.Close();
         }
-
-        public void BankHastableAdd()
-        {
-
-            
-        }
-            
     }
 }
 
