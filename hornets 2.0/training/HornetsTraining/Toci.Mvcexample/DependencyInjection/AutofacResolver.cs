@@ -5,6 +5,7 @@ using Toci.DesignPatterns.ChainOfResponsibility;
 using Toci.Mvcexample.ModelLogic.Handlers;
 using Toci.Mvcexample.ModelLogic.Interfaces;
 using Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch;
+using Toci.Mvcexample.Models.NewCoursesSearch;
 using Toci.Mvcexample.Ntier.Bll.CoursesSearch;
 using Toci.Mvcexample.Ntier.Dal.CoursesSearch;
 

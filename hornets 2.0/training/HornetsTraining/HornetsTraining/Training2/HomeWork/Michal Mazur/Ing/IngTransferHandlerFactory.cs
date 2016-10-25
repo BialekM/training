@@ -11,14 +11,7 @@ using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
 using Toci.HornetsTraining.Training2.HomeWork.NBP;
 using Toci.HornetsTraining.Training2.HomeWork.PKOBP;
 using Toci.HornetsTraining.Training2.HomeWork.SantanderConsumerBank; 
-using Toci.HornetsTraining.Training1.Generics.Factory;
-using Toci.HornetsTraining.Training2.HomeWork.BankMillenium;
-using Toci.HornetsTraining.Training2.HomeWork.LukaszCichon.AliorBank;
-using Toci.HornetsTraining.Training2.HomeWork.LukaszSmierzchala.ToyotaBank;
-using Toci.HornetsTraining.Training2.HomeWork.Mbank;
-using Toci.HornetsTraining.Training2.HomeWork.MichalMazur;
-using Toci.HornetsTraining.Training2.HomeWork.NBP;
-using Toci.HornetsTraining.Training2.HomeWork.PKOBP;
+
 
 namespace Toci.HornetsTraining.Training2.HomeWork.Ing
 {

@@ -357,6 +357,8 @@
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NewCoursesSearch\CoursesSearchModel.cs" />
+    <Compile Include="Models\NewCoursesSearch\DropDownListModel.cs" />
     <Compile Include="Models\OurInstructorsModel.cs" />
     <Compile Include="Models\OurInstructors\Instructor.cs" />
     <Compile Include="Models\OurInstructors\OurInstructorsContext.cs" />
