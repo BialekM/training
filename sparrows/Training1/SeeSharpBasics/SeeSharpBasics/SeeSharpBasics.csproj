@@ -103,6 +103,8 @@
     <Compile Include="SlawekKowal\Training3\SlawekKMineSweeper.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKMoneyValue.cs" />
     <Compile Include="SlawekKowal\Training3\SlawekKPeselValidator.cs" />
+    <Compile Include="SlawekKowal\Training6\SlawekKExMethod.cs" />
+    <Compile Include="SlawekKowal\Training6\SlawekKMyList.cs" />
     <Compile Include="SlawekNowinski\SlawekNowinskiHomework.cs" />
     <Compile Include="SlawekKowal\Training5\Bishop.cs" />
     <Compile Include="SlawekKowal\Training5\King.cs" />

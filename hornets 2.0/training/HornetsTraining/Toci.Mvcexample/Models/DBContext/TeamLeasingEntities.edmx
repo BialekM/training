@@ -1,0 +1,2406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TeamLeasingDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="accbankaccounts">
+          <Key>
+            <PropertyRef Name="idAccBankAccounts" />
+          </Key>
+          <Property Name="idAccBankAccounts" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="accounts_idAccounts" Type="int" Nullable="false" />
+          <Property Name="bank_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="iban" Type="int" />
+          <Property Name="control_number" Type="int" />
+          <Property Name="accountnumber" Type="nvarchar" MaxLength="45" />
+          <Property Name="accountadress_id" Type="int" />
+        </EntityType>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id_account" />
+          </Key>
+          <Property Name="id_account" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="login" Type="nvarchar" MaxLength="25" />
+          <Property Name="password" Type="nvarchar" MaxLength="64" />
+          <Property Name="role" Type="nvarchar" MaxLength="255" />
+          <Property Name="firstName" Type="nvarchar" MaxLength="255" />
+          <Property Name="lastName" Type="nvarchar" MaxLength="255" />
+          <Property Name="location" Type="nvarchar" MaxLength="255" />
+          <Property Name="email" Type="nvarchar" MaxLength="255" />
+          <Property Name="is_active" Type="smallint" />
+          <Property Name="is_enabled" Type="smallint" />
+          <Property Name="country" Type="nvarchar" MaxLength="45" />
+          <Property Name="latitude" Type="nvarchar" MaxLength="255" />
+          <Property Name="longitude" Type="nvarchar" MaxLength="255" />
+          <Property Name="register_date" Type="varchar" MaxLength="8000" />
+          <Property Name="email_hash" Type="nvarchar" MaxLength="100" />
+          <Property Name="account_token" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="accountadresses">
+          <Key>
+            <PropertyRef Name="idAccountAdresses" />
+          </Key>
+          <Property Name="idAccountAdresses" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="account_idaccount" Type="int" Nullable="false" />
+          <Property Name="phone" Type="nvarchar" MaxLength="45" />
+          <Property Name="street" Type="nvarchar" MaxLength="255" />
+          <Property Name="numbp1" Type="nvarchar" MaxLength="45" />
+          <Property Name="numbp2" Type="nvarchar" MaxLength="45" />
+          <Property Name="town" Type="nvarchar" MaxLength="100" />
+          <Property Name="is_main_adress" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="accpayments">
+          <Key>
+            <PropertyRef Name="idAccPayments" />
+          </Key>
+          <Property Name="idAccPayments" Type="int" Nullable="false" />
+          <Property Name="account_id_account" Type="int" />
+          <Property Name="project_id_project" Type="int" />
+          <Property Name="AccPaymentscol" Type="nvarchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="idClient" />
+          </Key>
+          <Property Name="idClient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_account" Type="int" />
+        </EntityType>
+        <EntityType Name="clientsearch">
+          <Key>
+            <PropertyRef Name="idClientSearch" />
+          </Key>
+          <Property Name="idClientSearch" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Account_idAccount" Type="int" Nullable="false" />
+          <Property Name="search_phrase" Type="nvarchar(max)" />
+          <Property Name="search_date" Type="datetime2" Precision="0" />
+        </EntityType>
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="id_contact" />
+          </Key>
+          <Property Name="id_contact" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="message" Type="nvarchar(max)" />
+          <Property Name="topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="phone_number" Type="nvarchar" MaxLength="45" />
+          <Property Name="email" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="course">
+          <Key>
+            <PropertyRef Name="idCourse" />
+          </Key>
+          <Property Name="idCourse" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="technology_id_promotor" Type="int" Nullable="false" />
+          <Property Name="courses_idCourses" Type="int" Nullable="false" />
+          <Property Name="topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="agenda" Type="nvarchar(max)" />
+          <Property Name="start_date" Type="date" />
+          <Property Name="end_date" Type="date" />
+          <Property Name="level" Type="int" />
+          <Property Name="attachments" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="courses">
+          <Key>
+            <PropertyRef Name="idCourses" />
+          </Key>
+          <Property Name="idCourses" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="course_main_name" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="coursesgroups">
+          <Key>
+            <PropertyRef Name="id_courses_group" />
+          </Key>
+          <Property Name="id_courses_group" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Course_idCourse" Type="int" Nullable="false" />
+          <Property Name="studygroups_group_number" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="devavailabilitydetailed">
+          <Key>
+            <PropertyRef Name="idDevAvailability" />
+          </Key>
+          <Property Name="idDevAvailability" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Developer_idDeveloper" Type="int" Nullable="false" />
+          <Property Name="LinkToCalendar" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="developer">
+          <Key>
+            <PropertyRef Name="id_developer" />
+          </Key>
+          <Property Name="id_developer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Account_idAccount" Type="int" Nullable="false" />
+          <Property Name="experience_from" Type="varchar" MaxLength="8000" />
+          <Property Name="per_hour_cost" Type="nvarchar" MaxLength="45" />
+          <Property Name="week_availability" Type="nvarchar(max)" />
+          <Property Name="whoiam" Type="nvarchar(max)" />
+          <Property Name="isSuspendedForJobs" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="dictionary">
+          <Key>
+            <PropertyRef Name="idDictionary" />
+          </Key>
+          <Property Name="idDictionary" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="group" Type="int" />
+          <Property Name="entity" Type="int" />
+          <Property Name="smallEntity" Type="int" />
+          <Property Name="display" Type="nvarchar" MaxLength="255" />
+          <Property Name="isActive" Type="smallint" />
+          <Property Name="smallEntityOrder" Type="int" />
+          <Property Name="is_in_dropdown_list" Type="smallint" />
+          <Property Name="access_level" Type="int" />
+        </EntityType>
+        <EntityType Name="groupscodenames">
+          <Key>
+            <PropertyRef Name="idGroupsCodenames" />
+          </Key>
+          <Property Name="idGroupsCodenames" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cd_name" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="lessons">
+          <Key>
+            <PropertyRef Name="id_lessons" />
+          </Key>
+          <Property Name="id_lessons" Type="int" Nullable="false" />
+          <Property Name="courses_id_courses" Type="int" Nullable="false" />
+          <Property Name="lesson_enumeration" Type="int" Nullable="false" />
+          <Property Name="topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="lesson_materials" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="lessonsdetails">
+          <Key>
+            <PropertyRef Name="id_lessons_details" />
+          </Key>
+          <Property Name="id_lessons_details" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="lessons_id_lessons" Type="int" />
+          <Property Name="ld_overview" Type="nvarchar(max)" />
+          <Property Name="ld_topic" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="phrasetechnology">
+          <Key>
+            <PropertyRef Name="search_phrase" />
+          </Key>
+          <Property Name="search_phrase" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="technology" Type="nvarchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="positions">
+          <Key>
+            <PropertyRef Name="id_positions" />
+          </Key>
+          <Property Name="id_positions" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="pos_name" Type="nvarchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="post">
+          <Key>
+            <PropertyRef Name="idPost" />
+          </Key>
+          <Property Name="idPost" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar(max)" />
+          <Property Name="add_date" Type="varchar" MaxLength="8000" />
+          <Property Name="update_date" Type="varchar" MaxLength="8000" />
+          <Property Name="post_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="post_type" Type="int" />
+          <Property Name="PostOwner" Type="int" />
+        </EntityType>
+        <EntityType Name="post_course">
+          <Key>
+            <PropertyRef Name="idPostCourse" />
+          </Key>
+          <Property Name="idPostCourse" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Course_idCourse" Type="int" Nullable="false" />
+          <Property Name="Post_idPost" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="post_tags">
+          <Key>
+            <PropertyRef Name="idpost_tags" />
+          </Key>
+          <Property Name="idpost_tags" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="post_id" Type="int" />
+          <Property Name="Post_post_id" Type="int" Nullable="false" />
+          <Property Name="tags_id_tags" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="project">
+          <Key>
+            <PropertyRef Name="id_project" />
+          </Key>
+          <Property Name="id_project" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Account_idAccount" Type="int" Nullable="false" />
+          <Property Name="start_date" Type="date" />
+          <Property Name="death_line" Type="date" />
+          <Property Name="end_date" Type="date" />
+          <Property Name="estimated_hours" Type="int" />
+          <Property Name="logged_hours" Type="int" />
+          <Property Name="started_by_account" Type="int" />
+          <Property Name="projectStatus" Type="int" Nullable="false" />
+          <Property Name="project_leader_dev_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="projectdata">
+          <Key>
+            <PropertyRef Name="idProjectData" />
+          </Key>
+          <Property Name="idProjectData" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Project_ProjectId" Type="int" Nullable="false" />
+          <Property Name="ProjectDataDir" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="projectdeveloper">
+          <Key>
+            <PropertyRef Name="idProjectDeveloper" />
+          </Key>
+          <Property Name="idProjectDeveloper" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Developer_idDeveloper" Type="int" Nullable="false" />
+          <Property Name="Project_idProject" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="projectstage">
+          <Key>
+            <PropertyRef Name="idProjectStage" />
+          </Key>
+          <Property Name="idProjectStage" Type="int" Nullable="false" />
+          <Property Name="start_date" Type="nvarchar" MaxLength="45" />
+          <Property Name="end_date" Type="nvarchar" MaxLength="45" />
+          <Property Name="death_line" Type="nvarchar" MaxLength="45" />
+          <Property Name="stage_number" Type="nvarchar" MaxLength="45" />
+          <Property Name="Project_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="projecttechnologies">
+          <Key>
+            <PropertyRef Name="id_projectTechnologies" />
+            <PropertyRef Name="Technologies_idTechnologies" />
+            <PropertyRef Name="Project_idProject" />
+          </Key>
+          <Property Name="id_projectTechnologies" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Technologies_idTechnologies" Type="int" Nullable="false" />
+          <Property Name="Project_idProject" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="projecttype">
+          <Key>
+            <PropertyRef Name="idProjectType" />
+          </Key>
+          <Property Name="idProjectType" Type="int" Nullable="false" />
+          <Property Name="description" Type="int" />
+          <Property Name="Dictionary_idDictionary" Type="int" />
+        </EntityType>
+        <EntityType Name="promotorcourses">
+          <Key>
+            <PropertyRef Name="idPromotorCourses" />
+          </Key>
+          <Property Name="idPromotorCourses" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="techpromotor_id_tech_promotor" Type="int" Nullable="false" />
+          <Property Name="courses_id_courses" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recruitmenttest">
+          <Key>
+            <PropertyRef Name="idRecruitmentTest" />
+          </Key>
+          <Property Name="idRecruitmentTest" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Account_idAccount" Type="int" Nullable="false" />
+          <Property Name="api" Type="nvarchar(max)" />
+          <Property Name="test_accepted" Type="varchar" MaxLength="8000" />
+          <Property Name="test_finished" Type="varchar" MaxLength="8000" />
+          <Property Name="timeForTest" Type="varchar" MaxLength="8000" />
+          <Property Name="test_result" Type="smallint" />
+          <Property Name="test_valid_to_date" Type="varchar" MaxLength="8000" />
+          <Property Name="user_comment" Type="nvarchar(max)" />
+          <Property Name="feedback" Type="nvarchar" MaxLength="255" />
+          <Property Name="feedback_accountID" Type="int" />
+        </EntityType>
+        <EntityType Name="stages">
+          <Key>
+            <PropertyRef Name="idStages" />
+          </Key>
+          <Property Name="idStages" Type="int" Nullable="false" />
+          <Property Name="Project_idProject" Type="int" Nullable="false" />
+          <Property Name="Stage_number" Type="int" />
+          <Property Name="start_stage_date" Type="date" />
+          <Property Name="end_stage_date" Type="date" />
+          <Property Name="Stage_accepted" Type="smallint" />
+          <Property Name="Stage_leaderDeveloperId" Type="int" />
+          <Property Name="StageOpis" Type="nvarchar" MaxLength="45" />
+          <Property Name="StageStatus" Type="int" />
+        </EntityType>
+        <EntityType Name="stageteam">
+          <Key>
+            <PropertyRef Name="id_stage_team" />
+          </Key>
+          <Property Name="id_stage_team" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Stages_idStages" Type="int" Nullable="false" />
+          <Property Name="isStageLeader" Type="smallint" />
+          <Property Name="Developer_idDeveloper" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="studygroups">
+          <Key>
+            <PropertyRef Name="id_study_groups" />
+          </Key>
+          <Property Name="id_study_groups" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="account_idaccount" Type="int" Nullable="false" />
+          <Property Name="codename_id_codename" Type="int" Nullable="false" />
+          <Property Name="group_number" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tags">
+          <Key>
+            <PropertyRef Name="id_tags" />
+          </Key>
+          <Property Name="id_tags" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="255" />
+          <Property Name="category" Type="nvarchar" MaxLength="255" />
+          <Property Name="tagscol" Type="nvarchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="technologies">
+          <Key>
+            <PropertyRef Name="idTechnologies" />
+          </Key>
+          <Property Name="idTechnologies" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tech_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="is_active" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="technologiesdeveloper">
+          <Key>
+            <PropertyRef Name="id_technologies_dev" />
+          </Key>
+          <Property Name="id_technologies_dev" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Technologies_idTechnologies" Type="int" Nullable="false" />
+          <Property Name="Developer_idDeveloper" Type="int" Nullable="false" />
+          <Property Name="experience_from" Type="date" />
+          <Property Name="skill_level" Type="int" />
+          <Property Name="is_tech_promotor" Type="smallint" />
+          <Property Name="technology_promotor_approved" Type="smallint" />
+        </EntityType>
+        <EntityType Name="technologypromotor">
+          <Key>
+            <PropertyRef Name="idtechnology_promotor" />
+          </Key>
+          <Property Name="idtechnology_promotor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Account_idAccount" Type="int" Nullable="false" />
+          <Property Name="course_id_courses" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="accountadresses$fk_accountAdresses__account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="accountadresses" Type="Self.accountadresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="accountadresses">
+              <PropertyRef Name="account_idaccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="client$fk_client_on_account">
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
+          <End Role="client" Type="Self.client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="client">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="clientsearch$fk_ClientSearch_Account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="clientsearch" Type="Self.clientsearch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="clientsearch">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="course$fk_course__courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="course" Type="Self.course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="course">
+              <PropertyRef Name="courses_idCourses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="course$fk_course__technology_promotor">
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="1" />
+          <End Role="course" Type="Self.course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologypromotor">
+              <PropertyRef Name="idtechnology_promotor" />
+            </Principal>
+            <Dependent Role="course">
+              <PropertyRef Name="technology_id_promotor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="coursesgroups$fk_coursesgroup__studygroups">
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="1" />
+          <End Role="coursesgroups" Type="Self.coursesgroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="studygroups">
+              <PropertyRef Name="id_study_groups" />
+            </Principal>
+            <Dependent Role="coursesgroups">
+              <PropertyRef Name="studygroups_group_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="coursesgroups$fk_GroupCourse_to_Course">
+          <End Role="course" Type="Self.course" Multiplicity="1" />
+          <End Role="coursesgroups" Type="Self.coursesgroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="course">
+              <PropertyRef Name="idCourse" />
+            </Principal>
+            <Dependent Role="coursesgroups">
+              <PropertyRef Name="Course_idCourse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="devavailabilitydetailed$fk_DevAvailabilityDetailed_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="devavailabilitydetailed" Type="Self.devavailabilitydetailed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="devavailabilitydetailed">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="developer$fk_Developer_Account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="developer" Type="Self.developer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="developer">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="lessons$fk_subCourses__Courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="lessons" Type="Self.lessons" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="lessons">
+              <PropertyRef Name="courses_id_courses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="lessonsdetails$fk_lessonsdetails__lessons">
+          <End Role="lessons" Type="Self.lessons" Multiplicity="0..1" />
+          <End Role="lessonsdetails" Type="Self.lessonsdetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lessons">
+              <PropertyRef Name="id_lessons" />
+            </Principal>
+            <Dependent Role="lessonsdetails">
+              <PropertyRef Name="lessons_id_lessons" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post$fk_post_owner">
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
+          <End Role="post" Type="Self.post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="post">
+              <PropertyRef Name="PostOwner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_course$fk_post_course_Course">
+          <End Role="course" Type="Self.course" Multiplicity="1" />
+          <End Role="post_course" Type="Self.post_course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="course">
+              <PropertyRef Name="idCourse" />
+            </Principal>
+            <Dependent Role="post_course">
+              <PropertyRef Name="Course_idCourse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_course$fk_post_course_Post">
+          <End Role="post" Type="Self.post" Multiplicity="1" />
+          <End Role="post_course" Type="Self.post_course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="post">
+              <PropertyRef Name="idPost" />
+            </Principal>
+            <Dependent Role="post_course">
+              <PropertyRef Name="Post_idPost" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_tags$fk_post_tags_Post1">
+          <End Role="post" Type="Self.post" Multiplicity="1" />
+          <End Role="post_tags" Type="Self.post_tags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="post">
+              <PropertyRef Name="idPost" />
+            </Principal>
+            <Dependent Role="post_tags">
+              <PropertyRef Name="Post_post_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_tags$fk_post_tags_tags1">
+          <End Role="tags" Type="Self.tags" Multiplicity="1" />
+          <End Role="post_tags" Type="Self.post_tags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tags">
+              <PropertyRef Name="id_tags" />
+            </Principal>
+            <Dependent Role="post_tags">
+              <PropertyRef Name="tags_id_tags" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project$fk_Project_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="project" Type="Self.project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="project">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdata$fk_projectdata_project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectdata" Type="Self.projectdata" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectdata">
+              <PropertyRef Name="Project_ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdeveloper$fk_ProjectDeveloper_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="projectdeveloper" Type="Self.projectdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="projectdeveloper">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdeveloper$fk_ProjectDeveloper_Project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectdeveloper" Type="Self.projectdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectdeveloper">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectstage$fk_ProjectStage_Project1">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectstage" Type="Self.projectstage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectstage">
+              <PropertyRef Name="Project_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projecttechnologies$fk_project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projecttechnologies" Type="Self.projecttechnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projecttechnologies">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projecttechnologies$fk_technologies">
+          <End Role="technologies" Type="Self.technologies" Multiplicity="1" />
+          <End Role="projecttechnologies" Type="Self.projecttechnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologies">
+              <PropertyRef Name="idTechnologies" />
+            </Principal>
+            <Dependent Role="projecttechnologies">
+              <PropertyRef Name="Technologies_idTechnologies" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="promotorcourses$fk_promotor_courses__techpromotor">
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="1" />
+          <End Role="promotorcourses" Type="Self.promotorcourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologypromotor">
+              <PropertyRef Name="idtechnology_promotor" />
+            </Principal>
+            <Dependent Role="promotorcourses">
+              <PropertyRef Name="techpromotor_id_tech_promotor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="promotorcourses$fk_promotorcourses_courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="promotorcourses" Type="Self.promotorcourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="promotorcourses">
+              <PropertyRef Name="courses_id_courses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="recruitmenttest$fk_RecruitmentTest_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="recruitmenttest" Type="Self.recruitmenttest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="recruitmenttest">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stages$fk_Stages_Project1">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="stages" Type="Self.stages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="stages">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stageteam$fk_StagesTeams_Stages">
+          <End Role="stages" Type="Self.stages" Multiplicity="1" />
+          <End Role="stageteam" Type="Self.stageteam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="stages">
+              <PropertyRef Name="idStages" />
+            </Principal>
+            <Dependent Role="stageteam">
+              <PropertyRef Name="Stages_idStages" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stageteam$fk_stageteam_developer">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="stageteam" Type="Self.stageteam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="stageteam">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="studygroups$fk_studygroups__account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="studygroups">
+              <PropertyRef Name="account_idaccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="studygroups$fk_studygroups_groupscodenames">
+          <End Role="groupscodenames" Type="Self.groupscodenames" Multiplicity="1" />
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="groupscodenames">
+              <PropertyRef Name="idGroupsCodenames" />
+            </Principal>
+            <Dependent Role="studygroups">
+              <PropertyRef Name="codename_id_codename" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologiesdeveloper$fk_TechnologiesDeveloper_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="technologiesdeveloper" Type="Self.technologiesdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="technologiesdeveloper">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologiesdeveloper$fk_TechnologiesDeveloper_Technologies1">
+          <End Role="technologies" Type="Self.technologies" Multiplicity="1" />
+          <End Role="technologiesdeveloper" Type="Self.technologiesdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologies">
+              <PropertyRef Name="idTechnologies" />
+            </Principal>
+            <Dependent Role="technologiesdeveloper">
+              <PropertyRef Name="Technologies_idTechnologies" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologypromotor$fk_Promotor_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="technologypromotor">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TeamLeasingDatabaseModelStoreContainer">
+          <EntitySet Name="accbankaccounts" EntityType="Self.accbankaccounts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="account" EntityType="Self.account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="accountadresses" EntityType="Self.accountadresses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="accpayments" EntityType="Self.accpayments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="client" EntityType="Self.client" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="clientsearch" EntityType="Self.clientsearch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contact" EntityType="Self.contact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="courses" EntityType="Self.courses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="coursesgroups" EntityType="Self.coursesgroups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="devavailabilitydetailed" EntityType="Self.devavailabilitydetailed" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="developer" EntityType="Self.developer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dictionary" EntityType="Self.dictionary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="groupscodenames" EntityType="Self.groupscodenames" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lessons" EntityType="Self.lessons" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lessonsdetails" EntityType="Self.lessonsdetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="phrasetechnology" EntityType="Self.phrasetechnology" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="positions" EntityType="Self.positions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="post" EntityType="Self.post" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="post_course" EntityType="Self.post_course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="post_tags" EntityType="Self.post_tags" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="project" EntityType="Self.project" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="projectdata" EntityType="Self.projectdata" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="projectdeveloper" EntityType="Self.projectdeveloper" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="projectstage" EntityType="Self.projectstage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="projecttechnologies" EntityType="Self.projecttechnologies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="projecttype" EntityType="Self.projecttype" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="promotorcourses" EntityType="Self.promotorcourses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="recruitmenttest" EntityType="Self.recruitmenttest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stages" EntityType="Self.stages" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stageteam" EntityType="Self.stageteam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="studygroups" EntityType="Self.studygroups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tags" EntityType="Self.tags" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="technologies" EntityType="Self.technologies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="technologiesdeveloper" EntityType="Self.technologiesdeveloper" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="technologypromotor" EntityType="Self.technologypromotor" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="accountadresses$fk_accountAdresses__account" Association="Self.accountadresses$fk_accountAdresses__account">
+            <End Role="account" EntitySet="account" />
+            <End Role="accountadresses" EntitySet="accountadresses" />
+          </AssociationSet>
+          <AssociationSet Name="client$fk_client_on_account" Association="Self.client$fk_client_on_account">
+            <End Role="account" EntitySet="account" />
+            <End Role="client" EntitySet="client" />
+          </AssociationSet>
+          <AssociationSet Name="clientsearch$fk_ClientSearch_Account" Association="Self.clientsearch$fk_ClientSearch_Account">
+            <End Role="account" EntitySet="account" />
+            <End Role="clientsearch" EntitySet="clientsearch" />
+          </AssociationSet>
+          <AssociationSet Name="course$fk_course__courses" Association="Self.course$fk_course__courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="course" EntitySet="course" />
+          </AssociationSet>
+          <AssociationSet Name="course$fk_course__technology_promotor" Association="Self.course$fk_course__technology_promotor">
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+            <End Role="course" EntitySet="course" />
+          </AssociationSet>
+          <AssociationSet Name="coursesgroups$fk_coursesgroup__studygroups" Association="Self.coursesgroups$fk_coursesgroup__studygroups">
+            <End Role="studygroups" EntitySet="studygroups" />
+            <End Role="coursesgroups" EntitySet="coursesgroups" />
+          </AssociationSet>
+          <AssociationSet Name="coursesgroups$fk_GroupCourse_to_Course" Association="Self.coursesgroups$fk_GroupCourse_to_Course">
+            <End Role="course" EntitySet="course" />
+            <End Role="coursesgroups" EntitySet="coursesgroups" />
+          </AssociationSet>
+          <AssociationSet Name="devavailabilitydetailed$fk_DevAvailabilityDetailed_Developer1" Association="Self.devavailabilitydetailed$fk_DevAvailabilityDetailed_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="devavailabilitydetailed" EntitySet="devavailabilitydetailed" />
+          </AssociationSet>
+          <AssociationSet Name="developer$fk_Developer_Account" Association="Self.developer$fk_Developer_Account">
+            <End Role="account" EntitySet="account" />
+            <End Role="developer" EntitySet="developer" />
+          </AssociationSet>
+          <AssociationSet Name="lessons$fk_subCourses__Courses" Association="Self.lessons$fk_subCourses__Courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="lessons" EntitySet="lessons" />
+          </AssociationSet>
+          <AssociationSet Name="lessonsdetails$fk_lessonsdetails__lessons" Association="Self.lessonsdetails$fk_lessonsdetails__lessons">
+            <End Role="lessons" EntitySet="lessons" />
+            <End Role="lessonsdetails" EntitySet="lessonsdetails" />
+          </AssociationSet>
+          <AssociationSet Name="post$fk_post_owner" Association="Self.post$fk_post_owner">
+            <End Role="account" EntitySet="account" />
+            <End Role="post" EntitySet="post" />
+          </AssociationSet>
+          <AssociationSet Name="post_course$fk_post_course_Course" Association="Self.post_course$fk_post_course_Course">
+            <End Role="course" EntitySet="course" />
+            <End Role="post_course" EntitySet="post_course" />
+          </AssociationSet>
+          <AssociationSet Name="post_course$fk_post_course_Post" Association="Self.post_course$fk_post_course_Post">
+            <End Role="post" EntitySet="post" />
+            <End Role="post_course" EntitySet="post_course" />
+          </AssociationSet>
+          <AssociationSet Name="post_tags$fk_post_tags_Post1" Association="Self.post_tags$fk_post_tags_Post1">
+            <End Role="post" EntitySet="post" />
+            <End Role="post_tags" EntitySet="post_tags" />
+          </AssociationSet>
+          <AssociationSet Name="post_tags$fk_post_tags_tags1" Association="Self.post_tags$fk_post_tags_tags1">
+            <End Role="tags" EntitySet="tags" />
+            <End Role="post_tags" EntitySet="post_tags" />
+          </AssociationSet>
+          <AssociationSet Name="project$fk_Project_Account1" Association="Self.project$fk_Project_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="project" EntitySet="project" />
+          </AssociationSet>
+          <AssociationSet Name="projectdata$fk_projectdata_project" Association="Self.projectdata$fk_projectdata_project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectdata" EntitySet="projectdata" />
+          </AssociationSet>
+          <AssociationSet Name="projectdeveloper$fk_ProjectDeveloper_Developer1" Association="Self.projectdeveloper$fk_ProjectDeveloper_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="projectdeveloper" EntitySet="projectdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="projectdeveloper$fk_ProjectDeveloper_Project" Association="Self.projectdeveloper$fk_ProjectDeveloper_Project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectdeveloper" EntitySet="projectdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="projectstage$fk_ProjectStage_Project1" Association="Self.projectstage$fk_ProjectStage_Project1">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectstage" EntitySet="projectstage" />
+          </AssociationSet>
+          <AssociationSet Name="projecttechnologies$fk_project" Association="Self.projecttechnologies$fk_project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projecttechnologies" EntitySet="projecttechnologies" />
+          </AssociationSet>
+          <AssociationSet Name="projecttechnologies$fk_technologies" Association="Self.projecttechnologies$fk_technologies">
+            <End Role="technologies" EntitySet="technologies" />
+            <End Role="projecttechnologies" EntitySet="projecttechnologies" />
+          </AssociationSet>
+          <AssociationSet Name="promotorcourses$fk_promotor_courses__techpromotor" Association="Self.promotorcourses$fk_promotor_courses__techpromotor">
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+            <End Role="promotorcourses" EntitySet="promotorcourses" />
+          </AssociationSet>
+          <AssociationSet Name="promotorcourses$fk_promotorcourses_courses" Association="Self.promotorcourses$fk_promotorcourses_courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="promotorcourses" EntitySet="promotorcourses" />
+          </AssociationSet>
+          <AssociationSet Name="recruitmenttest$fk_RecruitmentTest_Account1" Association="Self.recruitmenttest$fk_RecruitmentTest_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="recruitmenttest" EntitySet="recruitmenttest" />
+          </AssociationSet>
+          <AssociationSet Name="stages$fk_Stages_Project1" Association="Self.stages$fk_Stages_Project1">
+            <End Role="project" EntitySet="project" />
+            <End Role="stages" EntitySet="stages" />
+          </AssociationSet>
+          <AssociationSet Name="stageteam$fk_StagesTeams_Stages" Association="Self.stageteam$fk_StagesTeams_Stages">
+            <End Role="stages" EntitySet="stages" />
+            <End Role="stageteam" EntitySet="stageteam" />
+          </AssociationSet>
+          <AssociationSet Name="stageteam$fk_stageteam_developer" Association="Self.stageteam$fk_stageteam_developer">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="stageteam" EntitySet="stageteam" />
+          </AssociationSet>
+          <AssociationSet Name="studygroups$fk_studygroups__account" Association="Self.studygroups$fk_studygroups__account">
+            <End Role="account" EntitySet="account" />
+            <End Role="studygroups" EntitySet="studygroups" />
+          </AssociationSet>
+          <AssociationSet Name="studygroups$fk_studygroups_groupscodenames" Association="Self.studygroups$fk_studygroups_groupscodenames">
+            <End Role="groupscodenames" EntitySet="groupscodenames" />
+            <End Role="studygroups" EntitySet="studygroups" />
+          </AssociationSet>
+          <AssociationSet Name="technologiesdeveloper$fk_TechnologiesDeveloper_Developer1" Association="Self.technologiesdeveloper$fk_TechnologiesDeveloper_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="technologiesdeveloper" EntitySet="technologiesdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="technologiesdeveloper$fk_TechnologiesDeveloper_Technologies1" Association="Self.technologiesdeveloper$fk_TechnologiesDeveloper_Technologies1">
+            <End Role="technologies" EntitySet="technologies" />
+            <End Role="technologiesdeveloper" EntitySet="technologiesdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="technologypromotor$fk_Promotor_Account1" Association="Self.technologypromotor$fk_Promotor_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TeamLeasingDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="accbankaccounts">
+          <Key>
+            <PropertyRef Name="idAccBankAccounts" />
+          </Key>
+          <Property Name="idAccBankAccounts" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="accounts_idAccounts" Type="Int32" Nullable="false" />
+          <Property Name="bank_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="iban" Type="Int32" />
+          <Property Name="control_number" Type="Int32" />
+          <Property Name="accountnumber" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="accountadress_id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id_account" />
+          </Key>
+          <Property Name="id_account" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="login" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="role" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="firstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="lastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="location" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="is_active" Type="Int16" />
+          <Property Name="is_enabled" Type="Int16" />
+          <Property Name="country" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="latitude" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="longitude" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="register_date" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="email_hash" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="account_token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="accountadresses" Relationship="Self.accountadresses_fk_accountAdresses__account" FromRole="account" ToRole="accountadresses" />
+          <NavigationProperty Name="client" Relationship="Self.client_fk_client_on_account" FromRole="account" ToRole="client" />
+          <NavigationProperty Name="clientsearch" Relationship="Self.clientsearch_fk_ClientSearch_Account" FromRole="account" ToRole="clientsearch" />
+          <NavigationProperty Name="developer" Relationship="Self.developer_fk_Developer_Account" FromRole="account" ToRole="developer" />
+          <NavigationProperty Name="post" Relationship="Self.post_fk_post_owner" FromRole="account" ToRole="post" />
+          <NavigationProperty Name="project" Relationship="Self.project_fk_Project_Account1" FromRole="account" ToRole="project" />
+          <NavigationProperty Name="recruitmenttest" Relationship="Self.recruitmenttest_fk_RecruitmentTest_Account1" FromRole="account" ToRole="recruitmenttest" />
+          <NavigationProperty Name="studygroups" Relationship="Self.studygroups_fk_studygroups__account" FromRole="account" ToRole="studygroups" />
+          <NavigationProperty Name="technologypromotor" Relationship="Self.technologypromotor_fk_Promotor_Account1" FromRole="account" ToRole="technologypromotor" />
+        </EntityType>
+        <EntityType Name="accountadresses">
+          <Key>
+            <PropertyRef Name="idAccountAdresses" />
+          </Key>
+          <Property Name="idAccountAdresses" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="account_idaccount" Type="Int32" Nullable="false" />
+          <Property Name="phone" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="street" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="numbp1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="numbp2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="town" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="is_main_adress" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="account" Relationship="Self.accountadresses_fk_accountAdresses__account" FromRole="accountadresses" ToRole="account" />
+        </EntityType>
+        <EntityType Name="accpayments">
+          <Key>
+            <PropertyRef Name="idAccPayments" />
+          </Key>
+          <Property Name="idAccPayments" Type="Int32" Nullable="false" />
+          <Property Name="account_id_account" Type="Int32" />
+          <Property Name="project_id_project" Type="Int32" />
+          <Property Name="AccPaymentscol" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="idClient" />
+          </Key>
+          <Property Name="idClient" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_account" Type="Int32" />
+          <NavigationProperty Name="account" Relationship="Self.client_fk_client_on_account" FromRole="client" ToRole="account" />
+        </EntityType>
+        <EntityType Name="clientsearch">
+          <Key>
+            <PropertyRef Name="idClientSearch" />
+          </Key>
+          <Property Name="idClientSearch" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_idAccount" Type="Int32" Nullable="false" />
+          <Property Name="search_phrase" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="search_date" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="account" Relationship="Self.clientsearch_fk_ClientSearch_Account" FromRole="clientsearch" ToRole="account" />
+        </EntityType>
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="id_contact" />
+          </Key>
+          <Property Name="id_contact" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="topic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="phone_number" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="course">
+          <Key>
+            <PropertyRef Name="idCourse" />
+          </Key>
+          <Property Name="idCourse" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="technology_id_promotor" Type="Int32" Nullable="false" />
+          <Property Name="courses_idCourses" Type="Int32" Nullable="false" />
+          <Property Name="topic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="agenda" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="start_date" Type="DateTime" Precision="0" />
+          <Property Name="end_date" Type="DateTime" Precision="0" />
+          <Property Name="level" Type="Int32" />
+          <Property Name="attachments" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="courses" Relationship="Self.course_fk_course__courses" FromRole="course" ToRole="courses" />
+          <NavigationProperty Name="technologypromotor" Relationship="Self.course_fk_course__technology_promotor" FromRole="course" ToRole="technologypromotor" />
+          <NavigationProperty Name="coursesgroups" Relationship="Self.coursesgroups_fk_GroupCourse_to_Course" FromRole="course" ToRole="coursesgroups" />
+          <NavigationProperty Name="post_course" Relationship="Self.post_course_fk_post_course_Course" FromRole="course" ToRole="post_course" />
+        </EntityType>
+        <EntityType Name="courses">
+          <Key>
+            <PropertyRef Name="idCourses" />
+          </Key>
+          <Property Name="idCourses" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="course_main_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="course" Relationship="Self.course_fk_course__courses" FromRole="courses" ToRole="course" />
+          <NavigationProperty Name="lessons" Relationship="Self.lessons_fk_subCourses__Courses" FromRole="courses" ToRole="lessons" />
+          <NavigationProperty Name="promotorcourses" Relationship="Self.promotorcourses_fk_promotorcourses_courses" FromRole="courses" ToRole="promotorcourses" />
+        </EntityType>
+        <EntityType Name="coursesgroups">
+          <Key>
+            <PropertyRef Name="id_courses_group" />
+          </Key>
+          <Property Name="id_courses_group" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Course_idCourse" Type="Int32" Nullable="false" />
+          <Property Name="studygroups_group_number" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="course" Relationship="Self.coursesgroups_fk_GroupCourse_to_Course" FromRole="coursesgroups" ToRole="course" />
+          <NavigationProperty Name="studygroups" Relationship="Self.coursesgroups_fk_coursesgroup__studygroups" FromRole="coursesgroups" ToRole="studygroups" />
+        </EntityType>
+        <EntityType Name="devavailabilitydetailed">
+          <Key>
+            <PropertyRef Name="idDevAvailability" />
+          </Key>
+          <Property Name="idDevAvailability" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Developer_idDeveloper" Type="Int32" Nullable="false" />
+          <Property Name="LinkToCalendar" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="developer" Relationship="Self.devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1" FromRole="devavailabilitydetailed" ToRole="developer" />
+        </EntityType>
+        <EntityType Name="developer">
+          <Key>
+            <PropertyRef Name="id_developer" />
+          </Key>
+          <Property Name="id_developer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_idAccount" Type="Int32" Nullable="false" />
+          <Property Name="experience_from" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="per_hour_cost" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="week_availability" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="whoiam" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isSuspendedForJobs" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="account" Relationship="Self.developer_fk_Developer_Account" FromRole="developer" ToRole="account" />
+          <NavigationProperty Name="devavailabilitydetailed" Relationship="Self.devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1" FromRole="developer" ToRole="devavailabilitydetailed" />
+          <NavigationProperty Name="projectdeveloper" Relationship="Self.projectdeveloper_fk_ProjectDeveloper_Developer1" FromRole="developer" ToRole="projectdeveloper" />
+          <NavigationProperty Name="stageteam" Relationship="Self.stageteam_fk_stageteam_developer" FromRole="developer" ToRole="stageteam" />
+          <NavigationProperty Name="technologiesdeveloper" Relationship="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Developer1" FromRole="developer" ToRole="technologiesdeveloper" />
+        </EntityType>
+        <EntityType Name="dictionary">
+          <Key>
+            <PropertyRef Name="idDictionary" />
+          </Key>
+          <Property Name="idDictionary" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="group" Type="Int32" />
+          <Property Name="entity" Type="Int32" />
+          <Property Name="smallEntity" Type="Int32" />
+          <Property Name="display" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="isActive" Type="Int16" />
+          <Property Name="smallEntityOrder" Type="Int32" />
+          <Property Name="is_in_dropdown_list" Type="Int16" />
+          <Property Name="access_level" Type="Int32" />
+        </EntityType>
+        <EntityType Name="groupscodenames">
+          <Key>
+            <PropertyRef Name="idGroupsCodenames" />
+          </Key>
+          <Property Name="idGroupsCodenames" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cd_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="studygroups" Relationship="Self.studygroups_fk_studygroups_groupscodenames" FromRole="groupscodenames" ToRole="studygroups" />
+        </EntityType>
+        <EntityType Name="lessons">
+          <Key>
+            <PropertyRef Name="id_lessons" />
+          </Key>
+          <Property Name="id_lessons" Type="Int32" Nullable="false" />
+          <Property Name="courses_id_courses" Type="Int32" Nullable="false" />
+          <Property Name="lesson_enumeration" Type="Int32" Nullable="false" />
+          <Property Name="topic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="lesson_materials" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="courses" Relationship="Self.lessons_fk_subCourses__Courses" FromRole="lessons" ToRole="courses" />
+          <NavigationProperty Name="lessonsdetails" Relationship="Self.lessonsdetails_fk_lessonsdetails__lessons" FromRole="lessons" ToRole="lessonsdetails" />
+        </EntityType>
+        <EntityType Name="lessonsdetails">
+          <Key>
+            <PropertyRef Name="id_lessons_details" />
+          </Key>
+          <Property Name="id_lessons_details" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="lessons_id_lessons" Type="Int32" />
+          <Property Name="ld_overview" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ld_topic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="lessons" Relationship="Self.lessonsdetails_fk_lessonsdetails__lessons" FromRole="lessonsdetails" ToRole="lessons" />
+        </EntityType>
+        <EntityType Name="phrasetechnology">
+          <Key>
+            <PropertyRef Name="search_phrase" />
+          </Key>
+          <Property Name="search_phrase" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="technology" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="positions">
+          <Key>
+            <PropertyRef Name="id_positions" />
+          </Key>
+          <Property Name="id_positions" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="pos_name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="post">
+          <Key>
+            <PropertyRef Name="idPost" />
+          </Key>
+          <Property Name="idPost" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="add_date" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="update_date" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="post_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="post_type" Type="Int32" />
+          <Property Name="PostOwner" Type="Int32" />
+          <NavigationProperty Name="account" Relationship="Self.post_fk_post_owner" FromRole="post" ToRole="account" />
+          <NavigationProperty Name="post_course" Relationship="Self.post_course_fk_post_course_Post" FromRole="post" ToRole="post_course" />
+          <NavigationProperty Name="post_tags" Relationship="Self.post_tags_fk_post_tags_Post1" FromRole="post" ToRole="post_tags" />
+        </EntityType>
+        <EntityType Name="post_course">
+          <Key>
+            <PropertyRef Name="idPostCourse" />
+          </Key>
+          <Property Name="idPostCourse" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Course_idCourse" Type="Int32" Nullable="false" />
+          <Property Name="Post_idPost" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="course" Relationship="Self.post_course_fk_post_course_Course" FromRole="post_course" ToRole="course" />
+          <NavigationProperty Name="post" Relationship="Self.post_course_fk_post_course_Post" FromRole="post_course" ToRole="post" />
+        </EntityType>
+        <EntityType Name="post_tags">
+          <Key>
+            <PropertyRef Name="idpost_tags" />
+          </Key>
+          <Property Name="idpost_tags" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="post_id" Type="Int32" />
+          <Property Name="Post_post_id" Type="Int32" Nullable="false" />
+          <Property Name="tags_id_tags" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="post" Relationship="Self.post_tags_fk_post_tags_Post1" FromRole="post_tags" ToRole="post" />
+          <NavigationProperty Name="tags" Relationship="Self.post_tags_fk_post_tags_tags1" FromRole="post_tags" ToRole="tags" />
+        </EntityType>
+        <EntityType Name="project">
+          <Key>
+            <PropertyRef Name="id_project" />
+          </Key>
+          <Property Name="id_project" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_idAccount" Type="Int32" Nullable="false" />
+          <Property Name="start_date" Type="DateTime" Precision="0" />
+          <Property Name="death_line" Type="DateTime" Precision="0" />
+          <Property Name="end_date" Type="DateTime" Precision="0" />
+          <Property Name="estimated_hours" Type="Int32" />
+          <Property Name="logged_hours" Type="Int32" />
+          <Property Name="started_by_account" Type="Int32" />
+          <Property Name="projectStatus" Type="Int32" Nullable="false" />
+          <Property Name="project_leader_dev_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="account" Relationship="Self.project_fk_Project_Account1" FromRole="project" ToRole="account" />
+          <NavigationProperty Name="projectdata" Relationship="Self.projectdata_fk_projectdata_project" FromRole="project" ToRole="projectdata" />
+          <NavigationProperty Name="projectdeveloper" Relationship="Self.projectdeveloper_fk_ProjectDeveloper_Project" FromRole="project" ToRole="projectdeveloper" />
+          <NavigationProperty Name="projectstage" Relationship="Self.projectstage_fk_ProjectStage_Project1" FromRole="project" ToRole="projectstage" />
+          <NavigationProperty Name="projecttechnologies" Relationship="Self.projecttechnologies_fk_project" FromRole="project" ToRole="projecttechnologies" />
+          <NavigationProperty Name="stages" Relationship="Self.stages_fk_Stages_Project1" FromRole="project" ToRole="stages" />
+        </EntityType>
+        <EntityType Name="projectdata">
+          <Key>
+            <PropertyRef Name="idProjectData" />
+          </Key>
+          <Property Name="idProjectData" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Project_ProjectId" Type="Int32" Nullable="false" />
+          <Property Name="ProjectDataDir" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="project" Relationship="Self.projectdata_fk_projectdata_project" FromRole="projectdata" ToRole="project" />
+        </EntityType>
+        <EntityType Name="projectdeveloper">
+          <Key>
+            <PropertyRef Name="idProjectDeveloper" />
+          </Key>
+          <Property Name="idProjectDeveloper" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Developer_idDeveloper" Type="Int32" Nullable="false" />
+          <Property Name="Project_idProject" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="developer" Relationship="Self.projectdeveloper_fk_ProjectDeveloper_Developer1" FromRole="projectdeveloper" ToRole="developer" />
+          <NavigationProperty Name="project" Relationship="Self.projectdeveloper_fk_ProjectDeveloper_Project" FromRole="projectdeveloper" ToRole="project" />
+        </EntityType>
+        <EntityType Name="projectstage">
+          <Key>
+            <PropertyRef Name="idProjectStage" />
+          </Key>
+          <Property Name="idProjectStage" Type="Int32" Nullable="false" />
+          <Property Name="start_date" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="end_date" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="death_line" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="stage_number" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="Project_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="project" Relationship="Self.projectstage_fk_ProjectStage_Project1" FromRole="projectstage" ToRole="project" />
+        </EntityType>
+        <EntityType Name="projecttechnologies">
+          <Key>
+            <PropertyRef Name="id_projectTechnologies" />
+            <PropertyRef Name="Technologies_idTechnologies" />
+            <PropertyRef Name="Project_idProject" />
+          </Key>
+          <Property Name="id_projectTechnologies" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Technologies_idTechnologies" Type="Int32" Nullable="false" />
+          <Property Name="Project_idProject" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="project" Relationship="Self.projecttechnologies_fk_project" FromRole="projecttechnologies" ToRole="project" />
+          <NavigationProperty Name="technologies" Relationship="Self.projecttechnologies_fk_technologies" FromRole="projecttechnologies" ToRole="technologies" />
+        </EntityType>
+        <EntityType Name="projecttype">
+          <Key>
+            <PropertyRef Name="idProjectType" />
+          </Key>
+          <Property Name="idProjectType" Type="Int32" Nullable="false" />
+          <Property Name="description" Type="Int32" />
+          <Property Name="Dictionary_idDictionary" Type="Int32" />
+        </EntityType>
+        <EntityType Name="promotorcourses">
+          <Key>
+            <PropertyRef Name="idPromotorCourses" />
+          </Key>
+          <Property Name="idPromotorCourses" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="techpromotor_id_tech_promotor" Type="Int32" Nullable="false" />
+          <Property Name="courses_id_courses" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="courses" Relationship="Self.promotorcourses_fk_promotorcourses_courses" FromRole="promotorcourses" ToRole="courses" />
+          <NavigationProperty Name="technologypromotor" Relationship="Self.promotorcourses_fk_promotor_courses__techpromotor" FromRole="promotorcourses" ToRole="technologypromotor" />
+        </EntityType>
+        <EntityType Name="recruitmenttest">
+          <Key>
+            <PropertyRef Name="idRecruitmentTest" />
+          </Key>
+          <Property Name="idRecruitmentTest" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_idAccount" Type="Int32" Nullable="false" />
+          <Property Name="api" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="test_accepted" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="test_finished" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="timeForTest" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="test_result" Type="Int16" />
+          <Property Name="test_valid_to_date" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="user_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="feedback" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="feedback_accountID" Type="Int32" />
+          <NavigationProperty Name="account" Relationship="Self.recruitmenttest_fk_RecruitmentTest_Account1" FromRole="recruitmenttest" ToRole="account" />
+        </EntityType>
+        <EntityType Name="stages">
+          <Key>
+            <PropertyRef Name="idStages" />
+          </Key>
+          <Property Name="idStages" Type="Int32" Nullable="false" />
+          <Property Name="Project_idProject" Type="Int32" Nullable="false" />
+          <Property Name="Stage_number" Type="Int32" />
+          <Property Name="start_stage_date" Type="DateTime" Precision="0" />
+          <Property Name="end_stage_date" Type="DateTime" Precision="0" />
+          <Property Name="Stage_accepted" Type="Int16" />
+          <Property Name="Stage_leaderDeveloperId" Type="Int32" />
+          <Property Name="StageOpis" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="StageStatus" Type="Int32" />
+          <NavigationProperty Name="project" Relationship="Self.stages_fk_Stages_Project1" FromRole="stages" ToRole="project" />
+          <NavigationProperty Name="stageteam" Relationship="Self.stageteam_fk_StagesTeams_Stages" FromRole="stages" ToRole="stageteam" />
+        </EntityType>
+        <EntityType Name="stageteam">
+          <Key>
+            <PropertyRef Name="id_stage_team" />
+          </Key>
+          <Property Name="id_stage_team" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Stages_idStages" Type="Int32" Nullable="false" />
+          <Property Name="isStageLeader" Type="Int16" />
+          <Property Name="Developer_idDeveloper" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="developer" Relationship="Self.stageteam_fk_stageteam_developer" FromRole="stageteam" ToRole="developer" />
+          <NavigationProperty Name="stages" Relationship="Self.stageteam_fk_StagesTeams_Stages" FromRole="stageteam" ToRole="stages" />
+        </EntityType>
+        <EntityType Name="studygroups">
+          <Key>
+            <PropertyRef Name="id_study_groups" />
+          </Key>
+          <Property Name="id_study_groups" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="account_idaccount" Type="Int32" Nullable="false" />
+          <Property Name="codename_id_codename" Type="Int32" Nullable="false" />
+          <Property Name="group_number" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="account" Relationship="Self.studygroups_fk_studygroups__account" FromRole="studygroups" ToRole="account" />
+          <NavigationProperty Name="coursesgroups" Relationship="Self.coursesgroups_fk_coursesgroup__studygroups" FromRole="studygroups" ToRole="coursesgroups" />
+          <NavigationProperty Name="groupscodenames" Relationship="Self.studygroups_fk_studygroups_groupscodenames" FromRole="studygroups" ToRole="groupscodenames" />
+        </EntityType>
+        <EntityType Name="tags">
+          <Key>
+            <PropertyRef Name="id_tags" />
+          </Key>
+          <Property Name="id_tags" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tagscol" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="post_tags" Relationship="Self.post_tags_fk_post_tags_tags1" FromRole="tags" ToRole="post_tags" />
+        </EntityType>
+        <EntityType Name="technologies">
+          <Key>
+            <PropertyRef Name="idTechnologies" />
+          </Key>
+          <Property Name="idTechnologies" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tech_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="is_active" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="projecttechnologies" Relationship="Self.projecttechnologies_fk_technologies" FromRole="technologies" ToRole="projecttechnologies" />
+          <NavigationProperty Name="technologiesdeveloper" Relationship="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1" FromRole="technologies" ToRole="technologiesdeveloper" />
+        </EntityType>
+        <EntityType Name="technologiesdeveloper">
+          <Key>
+            <PropertyRef Name="id_technologies_dev" />
+          </Key>
+          <Property Name="id_technologies_dev" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Technologies_idTechnologies" Type="Int32" Nullable="false" />
+          <Property Name="Developer_idDeveloper" Type="Int32" Nullable="false" />
+          <Property Name="experience_from" Type="DateTime" Precision="0" />
+          <Property Name="skill_level" Type="Int32" />
+          <Property Name="is_tech_promotor" Type="Int16" />
+          <Property Name="technology_promotor_approved" Type="Int16" />
+          <NavigationProperty Name="developer" Relationship="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Developer1" FromRole="technologiesdeveloper" ToRole="developer" />
+          <NavigationProperty Name="technologies" Relationship="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1" FromRole="technologiesdeveloper" ToRole="technologies" />
+        </EntityType>
+        <EntityType Name="technologypromotor">
+          <Key>
+            <PropertyRef Name="idtechnology_promotor" />
+          </Key>
+          <Property Name="idtechnology_promotor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_idAccount" Type="Int32" Nullable="false" />
+          <Property Name="course_id_courses" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="account" Relationship="Self.technologypromotor_fk_Promotor_Account1" FromRole="technologypromotor" ToRole="account" />
+          <NavigationProperty Name="course" Relationship="Self.course_fk_course__technology_promotor" FromRole="technologypromotor" ToRole="course" />
+          <NavigationProperty Name="promotorcourses" Relationship="Self.promotorcourses_fk_promotor_courses__techpromotor" FromRole="technologypromotor" ToRole="promotorcourses" />
+        </EntityType>
+        <Association Name="accountadresses_fk_accountAdresses__account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="accountadresses" Type="Self.accountadresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="accountadresses">
+              <PropertyRef Name="account_idaccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="client_fk_client_on_account">
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
+          <End Role="client" Type="Self.client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="client">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="clientsearch_fk_ClientSearch_Account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="clientsearch" Type="Self.clientsearch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="clientsearch">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="developer_fk_Developer_Account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="developer" Type="Self.developer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="developer">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_fk_post_owner">
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
+          <End Role="post" Type="Self.post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="post">
+              <PropertyRef Name="PostOwner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="project_fk_Project_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="project" Type="Self.project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="project">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="recruitmenttest_fk_RecruitmentTest_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="recruitmenttest" Type="Self.recruitmenttest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="recruitmenttest">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="studygroups_fk_studygroups__account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="studygroups">
+              <PropertyRef Name="account_idaccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologypromotor_fk_Promotor_Account1">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="technologypromotor">
+              <PropertyRef Name="Account_idAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="course_fk_course__courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="course" Type="Self.course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="course">
+              <PropertyRef Name="courses_idCourses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="course_fk_course__technology_promotor">
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="1" />
+          <End Role="course" Type="Self.course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologypromotor">
+              <PropertyRef Name="idtechnology_promotor" />
+            </Principal>
+            <Dependent Role="course">
+              <PropertyRef Name="technology_id_promotor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="coursesgroups_fk_GroupCourse_to_Course">
+          <End Role="course" Type="Self.course" Multiplicity="1" />
+          <End Role="coursesgroups" Type="Self.coursesgroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="course">
+              <PropertyRef Name="idCourse" />
+            </Principal>
+            <Dependent Role="coursesgroups">
+              <PropertyRef Name="Course_idCourse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_course_fk_post_course_Course">
+          <End Role="course" Type="Self.course" Multiplicity="1" />
+          <End Role="post_course" Type="Self.post_course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="course">
+              <PropertyRef Name="idCourse" />
+            </Principal>
+            <Dependent Role="post_course">
+              <PropertyRef Name="Course_idCourse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="lessons_fk_subCourses__Courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="lessons" Type="Self.lessons" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="lessons">
+              <PropertyRef Name="courses_id_courses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="promotorcourses_fk_promotorcourses_courses">
+          <End Role="courses" Type="Self.courses" Multiplicity="1" />
+          <End Role="promotorcourses" Type="Self.promotorcourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="courses">
+              <PropertyRef Name="idCourses" />
+            </Principal>
+            <Dependent Role="promotorcourses">
+              <PropertyRef Name="courses_id_courses" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="coursesgroups_fk_coursesgroup__studygroups">
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="1" />
+          <End Role="coursesgroups" Type="Self.coursesgroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="studygroups">
+              <PropertyRef Name="id_study_groups" />
+            </Principal>
+            <Dependent Role="coursesgroups">
+              <PropertyRef Name="studygroups_group_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="devavailabilitydetailed" Type="Self.devavailabilitydetailed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="devavailabilitydetailed">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdeveloper_fk_ProjectDeveloper_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="projectdeveloper" Type="Self.projectdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="projectdeveloper">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stageteam_fk_stageteam_developer">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="stageteam" Type="Self.stageteam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="stageteam">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologiesdeveloper_fk_TechnologiesDeveloper_Developer1">
+          <End Role="developer" Type="Self.developer" Multiplicity="1" />
+          <End Role="technologiesdeveloper" Type="Self.technologiesdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="developer">
+              <PropertyRef Name="id_developer" />
+            </Principal>
+            <Dependent Role="technologiesdeveloper">
+              <PropertyRef Name="Developer_idDeveloper" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="studygroups_fk_studygroups_groupscodenames">
+          <End Role="groupscodenames" Type="Self.groupscodenames" Multiplicity="1" />
+          <End Role="studygroups" Type="Self.studygroups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="groupscodenames">
+              <PropertyRef Name="idGroupsCodenames" />
+            </Principal>
+            <Dependent Role="studygroups">
+              <PropertyRef Name="codename_id_codename" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="lessonsdetails_fk_lessonsdetails__lessons">
+          <End Role="lessons" Type="Self.lessons" Multiplicity="0..1" />
+          <End Role="lessonsdetails" Type="Self.lessonsdetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lessons">
+              <PropertyRef Name="id_lessons" />
+            </Principal>
+            <Dependent Role="lessonsdetails">
+              <PropertyRef Name="lessons_id_lessons" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_course_fk_post_course_Post">
+          <End Role="post" Type="Self.post" Multiplicity="1" />
+          <End Role="post_course" Type="Self.post_course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="post">
+              <PropertyRef Name="idPost" />
+            </Principal>
+            <Dependent Role="post_course">
+              <PropertyRef Name="Post_idPost" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_tags_fk_post_tags_Post1">
+          <End Role="post" Type="Self.post" Multiplicity="1" />
+          <End Role="post_tags" Type="Self.post_tags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="post">
+              <PropertyRef Name="idPost" />
+            </Principal>
+            <Dependent Role="post_tags">
+              <PropertyRef Name="Post_post_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="post_tags_fk_post_tags_tags1">
+          <End Role="tags" Type="Self.tags" Multiplicity="1" />
+          <End Role="post_tags" Type="Self.post_tags" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tags">
+              <PropertyRef Name="id_tags" />
+            </Principal>
+            <Dependent Role="post_tags">
+              <PropertyRef Name="tags_id_tags" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdata_fk_projectdata_project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectdata" Type="Self.projectdata" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectdata">
+              <PropertyRef Name="Project_ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectdeveloper_fk_ProjectDeveloper_Project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectdeveloper" Type="Self.projectdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectdeveloper">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projectstage_fk_ProjectStage_Project1">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projectstage" Type="Self.projectstage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projectstage">
+              <PropertyRef Name="Project_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projecttechnologies_fk_project">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="projecttechnologies" Type="Self.projecttechnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="projecttechnologies">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stages_fk_Stages_Project1">
+          <End Role="project" Type="Self.project" Multiplicity="1" />
+          <End Role="stages" Type="Self.stages" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="project">
+              <PropertyRef Name="id_project" />
+            </Principal>
+            <Dependent Role="stages">
+              <PropertyRef Name="Project_idProject" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="projecttechnologies_fk_technologies">
+          <End Role="technologies" Type="Self.technologies" Multiplicity="1" />
+          <End Role="projecttechnologies" Type="Self.projecttechnologies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologies">
+              <PropertyRef Name="idTechnologies" />
+            </Principal>
+            <Dependent Role="projecttechnologies">
+              <PropertyRef Name="Technologies_idTechnologies" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="promotorcourses_fk_promotor_courses__techpromotor">
+          <End Role="technologypromotor" Type="Self.technologypromotor" Multiplicity="1" />
+          <End Role="promotorcourses" Type="Self.promotorcourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologypromotor">
+              <PropertyRef Name="idtechnology_promotor" />
+            </Principal>
+            <Dependent Role="promotorcourses">
+              <PropertyRef Name="techpromotor_id_tech_promotor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="stageteam_fk_StagesTeams_Stages">
+          <End Role="stages" Type="Self.stages" Multiplicity="1" />
+          <End Role="stageteam" Type="Self.stageteam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="stages">
+              <PropertyRef Name="idStages" />
+            </Principal>
+            <Dependent Role="stageteam">
+              <PropertyRef Name="Stages_idStages" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1">
+          <End Role="technologies" Type="Self.technologies" Multiplicity="1" />
+          <End Role="technologiesdeveloper" Type="Self.technologiesdeveloper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="technologies">
+              <PropertyRef Name="idTechnologies" />
+            </Principal>
+            <Dependent Role="technologiesdeveloper">
+              <PropertyRef Name="Technologies_idTechnologies" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TeamLeasingDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="accbankaccounts" EntityType="Self.accbankaccounts" />
+          <EntitySet Name="account" EntityType="Self.account" />
+          <EntitySet Name="accountadresses" EntityType="Self.accountadresses" />
+          <EntitySet Name="accpayments" EntityType="Self.accpayments" />
+          <EntitySet Name="client" EntityType="Self.client" />
+          <EntitySet Name="clientsearch" EntityType="Self.clientsearch" />
+          <EntitySet Name="contact" EntityType="Self.contact" />
+          <EntitySet Name="course" EntityType="Self.course" />
+          <EntitySet Name="courses" EntityType="Self.courses" />
+          <EntitySet Name="coursesgroups" EntityType="Self.coursesgroups" />
+          <EntitySet Name="devavailabilitydetailed" EntityType="Self.devavailabilitydetailed" />
+          <EntitySet Name="developer" EntityType="Self.developer" />
+          <EntitySet Name="dictionary" EntityType="Self.dictionary" />
+          <EntitySet Name="groupscodenames" EntityType="Self.groupscodenames" />
+          <EntitySet Name="lessons" EntityType="Self.lessons" />
+          <EntitySet Name="lessonsdetails" EntityType="Self.lessonsdetails" />
+          <EntitySet Name="phrasetechnology" EntityType="Self.phrasetechnology" />
+          <EntitySet Name="positions" EntityType="Self.positions" />
+          <EntitySet Name="post" EntityType="Self.post" />
+          <EntitySet Name="post_course" EntityType="Self.post_course" />
+          <EntitySet Name="post_tags" EntityType="Self.post_tags" />
+          <EntitySet Name="project" EntityType="Self.project" />
+          <EntitySet Name="projectdata" EntityType="Self.projectdata" />
+          <EntitySet Name="projectdeveloper" EntityType="Self.projectdeveloper" />
+          <EntitySet Name="projectstage" EntityType="Self.projectstage" />
+          <EntitySet Name="projecttechnologies" EntityType="Self.projecttechnologies" />
+          <EntitySet Name="projecttype" EntityType="Self.projecttype" />
+          <EntitySet Name="promotorcourses" EntityType="Self.promotorcourses" />
+          <EntitySet Name="recruitmenttest" EntityType="Self.recruitmenttest" />
+          <EntitySet Name="stages" EntityType="Self.stages" />
+          <EntitySet Name="stageteam" EntityType="Self.stageteam" />
+          <EntitySet Name="studygroups" EntityType="Self.studygroups" />
+          <EntitySet Name="tags" EntityType="Self.tags" />
+          <EntitySet Name="technologies" EntityType="Self.technologies" />
+          <EntitySet Name="technologiesdeveloper" EntityType="Self.technologiesdeveloper" />
+          <EntitySet Name="technologypromotor" EntityType="Self.technologypromotor" />
+          <AssociationSet Name="accountadresses_fk_accountAdresses__account" Association="Self.accountadresses_fk_accountAdresses__account">
+            <End Role="account" EntitySet="account" />
+            <End Role="accountadresses" EntitySet="accountadresses" />
+          </AssociationSet>
+          <AssociationSet Name="client_fk_client_on_account" Association="Self.client_fk_client_on_account">
+            <End Role="account" EntitySet="account" />
+            <End Role="client" EntitySet="client" />
+          </AssociationSet>
+          <AssociationSet Name="clientsearch_fk_ClientSearch_Account" Association="Self.clientsearch_fk_ClientSearch_Account">
+            <End Role="account" EntitySet="account" />
+            <End Role="clientsearch" EntitySet="clientsearch" />
+          </AssociationSet>
+          <AssociationSet Name="developer_fk_Developer_Account" Association="Self.developer_fk_Developer_Account">
+            <End Role="account" EntitySet="account" />
+            <End Role="developer" EntitySet="developer" />
+          </AssociationSet>
+          <AssociationSet Name="post_fk_post_owner" Association="Self.post_fk_post_owner">
+            <End Role="account" EntitySet="account" />
+            <End Role="post" EntitySet="post" />
+          </AssociationSet>
+          <AssociationSet Name="project_fk_Project_Account1" Association="Self.project_fk_Project_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="project" EntitySet="project" />
+          </AssociationSet>
+          <AssociationSet Name="recruitmenttest_fk_RecruitmentTest_Account1" Association="Self.recruitmenttest_fk_RecruitmentTest_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="recruitmenttest" EntitySet="recruitmenttest" />
+          </AssociationSet>
+          <AssociationSet Name="studygroups_fk_studygroups__account" Association="Self.studygroups_fk_studygroups__account">
+            <End Role="account" EntitySet="account" />
+            <End Role="studygroups" EntitySet="studygroups" />
+          </AssociationSet>
+          <AssociationSet Name="technologypromotor_fk_Promotor_Account1" Association="Self.technologypromotor_fk_Promotor_Account1">
+            <End Role="account" EntitySet="account" />
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+          </AssociationSet>
+          <AssociationSet Name="course_fk_course__courses" Association="Self.course_fk_course__courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="course" EntitySet="course" />
+          </AssociationSet>
+          <AssociationSet Name="course_fk_course__technology_promotor" Association="Self.course_fk_course__technology_promotor">
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+            <End Role="course" EntitySet="course" />
+          </AssociationSet>
+          <AssociationSet Name="coursesgroups_fk_GroupCourse_to_Course" Association="Self.coursesgroups_fk_GroupCourse_to_Course">
+            <End Role="course" EntitySet="course" />
+            <End Role="coursesgroups" EntitySet="coursesgroups" />
+          </AssociationSet>
+          <AssociationSet Name="post_course_fk_post_course_Course" Association="Self.post_course_fk_post_course_Course">
+            <End Role="course" EntitySet="course" />
+            <End Role="post_course" EntitySet="post_course" />
+          </AssociationSet>
+          <AssociationSet Name="lessons_fk_subCourses__Courses" Association="Self.lessons_fk_subCourses__Courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="lessons" EntitySet="lessons" />
+          </AssociationSet>
+          <AssociationSet Name="promotorcourses_fk_promotorcourses_courses" Association="Self.promotorcourses_fk_promotorcourses_courses">
+            <End Role="courses" EntitySet="courses" />
+            <End Role="promotorcourses" EntitySet="promotorcourses" />
+          </AssociationSet>
+          <AssociationSet Name="coursesgroups_fk_coursesgroup__studygroups" Association="Self.coursesgroups_fk_coursesgroup__studygroups">
+            <End Role="studygroups" EntitySet="studygroups" />
+            <End Role="coursesgroups" EntitySet="coursesgroups" />
+          </AssociationSet>
+          <AssociationSet Name="devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1" Association="Self.devavailabilitydetailed_fk_DevAvailabilityDetailed_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="devavailabilitydetailed" EntitySet="devavailabilitydetailed" />
+          </AssociationSet>
+          <AssociationSet Name="projectdeveloper_fk_ProjectDeveloper_Developer1" Association="Self.projectdeveloper_fk_ProjectDeveloper_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="projectdeveloper" EntitySet="projectdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="stageteam_fk_stageteam_developer" Association="Self.stageteam_fk_stageteam_developer">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="stageteam" EntitySet="stageteam" />
+          </AssociationSet>
+          <AssociationSet Name="technologiesdeveloper_fk_TechnologiesDeveloper_Developer1" Association="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Developer1">
+            <End Role="developer" EntitySet="developer" />
+            <End Role="technologiesdeveloper" EntitySet="technologiesdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="studygroups_fk_studygroups_groupscodenames" Association="Self.studygroups_fk_studygroups_groupscodenames">
+            <End Role="groupscodenames" EntitySet="groupscodenames" />
+            <End Role="studygroups" EntitySet="studygroups" />
+          </AssociationSet>
+          <AssociationSet Name="lessonsdetails_fk_lessonsdetails__lessons" Association="Self.lessonsdetails_fk_lessonsdetails__lessons">
+            <End Role="lessons" EntitySet="lessons" />
+            <End Role="lessonsdetails" EntitySet="lessonsdetails" />
+          </AssociationSet>
+          <AssociationSet Name="post_course_fk_post_course_Post" Association="Self.post_course_fk_post_course_Post">
+            <End Role="post" EntitySet="post" />
+            <End Role="post_course" EntitySet="post_course" />
+          </AssociationSet>
+          <AssociationSet Name="post_tags_fk_post_tags_Post1" Association="Self.post_tags_fk_post_tags_Post1">
+            <End Role="post" EntitySet="post" />
+            <End Role="post_tags" EntitySet="post_tags" />
+          </AssociationSet>
+          <AssociationSet Name="post_tags_fk_post_tags_tags1" Association="Self.post_tags_fk_post_tags_tags1">
+            <End Role="tags" EntitySet="tags" />
+            <End Role="post_tags" EntitySet="post_tags" />
+          </AssociationSet>
+          <AssociationSet Name="projectdata_fk_projectdata_project" Association="Self.projectdata_fk_projectdata_project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectdata" EntitySet="projectdata" />
+          </AssociationSet>
+          <AssociationSet Name="projectdeveloper_fk_ProjectDeveloper_Project" Association="Self.projectdeveloper_fk_ProjectDeveloper_Project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectdeveloper" EntitySet="projectdeveloper" />
+          </AssociationSet>
+          <AssociationSet Name="projectstage_fk_ProjectStage_Project1" Association="Self.projectstage_fk_ProjectStage_Project1">
+            <End Role="project" EntitySet="project" />
+            <End Role="projectstage" EntitySet="projectstage" />
+          </AssociationSet>
+          <AssociationSet Name="projecttechnologies_fk_project" Association="Self.projecttechnologies_fk_project">
+            <End Role="project" EntitySet="project" />
+            <End Role="projecttechnologies" EntitySet="projecttechnologies" />
+          </AssociationSet>
+          <AssociationSet Name="stages_fk_Stages_Project1" Association="Self.stages_fk_Stages_Project1">
+            <End Role="project" EntitySet="project" />
+            <End Role="stages" EntitySet="stages" />
+          </AssociationSet>
+          <AssociationSet Name="projecttechnologies_fk_technologies" Association="Self.projecttechnologies_fk_technologies">
+            <End Role="technologies" EntitySet="technologies" />
+            <End Role="projecttechnologies" EntitySet="projecttechnologies" />
+          </AssociationSet>
+          <AssociationSet Name="promotorcourses_fk_promotor_courses__techpromotor" Association="Self.promotorcourses_fk_promotor_courses__techpromotor">
+            <End Role="technologypromotor" EntitySet="technologypromotor" />
+            <End Role="promotorcourses" EntitySet="promotorcourses" />
+          </AssociationSet>
+          <AssociationSet Name="stageteam_fk_StagesTeams_Stages" Association="Self.stageteam_fk_StagesTeams_Stages">
+            <End Role="stages" EntitySet="stages" />
+            <End Role="stageteam" EntitySet="stageteam" />
+          </AssociationSet>
+          <AssociationSet Name="technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1" Association="Self.technologiesdeveloper_fk_TechnologiesDeveloper_Technologies1">
+            <End Role="technologies" EntitySet="technologies" />
+            <End Role="technologiesdeveloper" EntitySet="technologiesdeveloper" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TeamLeasingDatabaseModelStoreContainer" CdmEntityContainer="TeamLeasingDBContext">
+          <EntitySetMapping Name="accbankaccounts">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.accbankaccounts">
+              <MappingFragment StoreEntitySet="accbankaccounts">
+                <ScalarProperty Name="idAccBankAccounts" ColumnName="idAccBankAccounts" />
+                <ScalarProperty Name="accounts_idAccounts" ColumnName="accounts_idAccounts" />
+                <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+                <ScalarProperty Name="iban" ColumnName="iban" />
+                <ScalarProperty Name="control_number" ColumnName="control_number" />
+                <ScalarProperty Name="accountnumber" ColumnName="accountnumber" />
+                <ScalarProperty Name="accountadress_id" ColumnName="accountadress_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="account">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.account">
+              <MappingFragment StoreEntitySet="account">
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+                <ScalarProperty Name="is_enabled" ColumnName="is_enabled" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="register_date" ColumnName="register_date" />
+                <ScalarProperty Name="email_hash" ColumnName="email_hash" />
+                <ScalarProperty Name="account_token" ColumnName="account_token" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="accountadresses">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.accountadresses">
+              <MappingFragment StoreEntitySet="accountadresses">
+                <ScalarProperty Name="idAccountAdresses" ColumnName="idAccountAdresses" />
+                <ScalarProperty Name="account_idaccount" ColumnName="account_idaccount" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="street" ColumnName="street" />
+                <ScalarProperty Name="numbp1" ColumnName="numbp1" />
+                <ScalarProperty Name="numbp2" ColumnName="numbp2" />
+                <ScalarProperty Name="town" ColumnName="town" />
+                <ScalarProperty Name="is_main_adress" ColumnName="is_main_adress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="accpayments">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.accpayments">
+              <MappingFragment StoreEntitySet="accpayments">
+                <ScalarProperty Name="idAccPayments" ColumnName="idAccPayments" />
+                <ScalarProperty Name="account_id_account" ColumnName="account_id_account" />
+                <ScalarProperty Name="project_id_project" ColumnName="project_id_project" />
+                <ScalarProperty Name="AccPaymentscol" ColumnName="AccPaymentscol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="client">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.client">
+              <MappingFragment StoreEntitySet="client">
+                <ScalarProperty Name="idClient" ColumnName="idClient" />
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clientsearch">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.clientsearch">
+              <MappingFragment StoreEntitySet="clientsearch">
+                <ScalarProperty Name="idClientSearch" ColumnName="idClientSearch" />
+                <ScalarProperty Name="Account_idAccount" ColumnName="Account_idAccount" />
+                <ScalarProperty Name="search_phrase" ColumnName="search_phrase" />
+                <ScalarProperty Name="search_date" ColumnName="search_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contact">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.contact">
+              <MappingFragment StoreEntitySet="contact">
+                <ScalarProperty Name="id_contact" ColumnName="id_contact" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="topic" ColumnName="topic" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="course">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.course">
+              <MappingFragment StoreEntitySet="course">
+                <ScalarProperty Name="idCourse" ColumnName="idCourse" />
+                <ScalarProperty Name="technology_id_promotor" ColumnName="technology_id_promotor" />
+                <ScalarProperty Name="courses_idCourses" ColumnName="courses_idCourses" />
+                <ScalarProperty Name="topic" ColumnName="topic" />
+                <ScalarProperty Name="agenda" ColumnName="agenda" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="level" ColumnName="level" />
+                <ScalarProperty Name="attachments" ColumnName="attachments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="courses">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.courses">
+              <MappingFragment StoreEntitySet="courses">
+                <ScalarProperty Name="idCourses" ColumnName="idCourses" />
+                <ScalarProperty Name="course_main_name" ColumnName="course_main_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="coursesgroups">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.coursesgroups">
+              <MappingFragment StoreEntitySet="coursesgroups">
+                <ScalarProperty Name="id_courses_group" ColumnName="id_courses_group" />
+                <ScalarProperty Name="Course_idCourse" ColumnName="Course_idCourse" />
+                <ScalarProperty Name="studygroups_group_number" ColumnName="studygroups_group_number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="devavailabilitydetailed">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.devavailabilitydetailed">
+              <MappingFragment StoreEntitySet="devavailabilitydetailed">
+                <ScalarProperty Name="idDevAvailability" ColumnName="idDevAvailability" />
+                <ScalarProperty Name="Developer_idDeveloper" ColumnName="Developer_idDeveloper" />
+                <ScalarProperty Name="LinkToCalendar" ColumnName="LinkToCalendar" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="developer">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.developer">
+              <MappingFragment StoreEntitySet="developer">
+                <ScalarProperty Name="id_developer" ColumnName="id_developer" />
+                <ScalarProperty Name="Account_idAccount" ColumnName="Account_idAccount" />
+                <ScalarProperty Name="experience_from" ColumnName="experience_from" />
+                <ScalarProperty Name="per_hour_cost" ColumnName="per_hour_cost" />
+                <ScalarProperty Name="week_availability" ColumnName="week_availability" />
+                <ScalarProperty Name="whoiam" ColumnName="whoiam" />
+                <ScalarProperty Name="isSuspendedForJobs" ColumnName="isSuspendedForJobs" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dictionary">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.dictionary">
+              <MappingFragment StoreEntitySet="dictionary">
+                <ScalarProperty Name="idDictionary" ColumnName="idDictionary" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="entity" ColumnName="entity" />
+                <ScalarProperty Name="smallEntity" ColumnName="smallEntity" />
+                <ScalarProperty Name="display" ColumnName="display" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="smallEntityOrder" ColumnName="smallEntityOrder" />
+                <ScalarProperty Name="is_in_dropdown_list" ColumnName="is_in_dropdown_list" />
+                <ScalarProperty Name="access_level" ColumnName="access_level" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="groupscodenames">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.groupscodenames">
+              <MappingFragment StoreEntitySet="groupscodenames">
+                <ScalarProperty Name="idGroupsCodenames" ColumnName="idGroupsCodenames" />
+                <ScalarProperty Name="cd_name" ColumnName="cd_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lessons">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.lessons">
+              <MappingFragment StoreEntitySet="lessons">
+                <ScalarProperty Name="id_lessons" ColumnName="id_lessons" />
+                <ScalarProperty Name="courses_id_courses" ColumnName="courses_id_courses" />
+                <ScalarProperty Name="lesson_enumeration" ColumnName="lesson_enumeration" />
+                <ScalarProperty Name="topic" ColumnName="topic" />
+                <ScalarProperty Name="lesson_materials" ColumnName="lesson_materials" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lessonsdetails">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.lessonsdetails">
+              <MappingFragment StoreEntitySet="lessonsdetails">
+                <ScalarProperty Name="id_lessons_details" ColumnName="id_lessons_details" />
+                <ScalarProperty Name="lessons_id_lessons" ColumnName="lessons_id_lessons" />
+                <ScalarProperty Name="ld_overview" ColumnName="ld_overview" />
+                <ScalarProperty Name="ld_topic" ColumnName="ld_topic" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="phrasetechnology">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.phrasetechnology">
+              <MappingFragment StoreEntitySet="phrasetechnology">
+                <ScalarProperty Name="search_phrase" ColumnName="search_phrase" />
+                <ScalarProperty Name="technology" ColumnName="technology" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="positions">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.positions">
+              <MappingFragment StoreEntitySet="positions">
+                <ScalarProperty Name="id_positions" ColumnName="id_positions" />
+                <ScalarProperty Name="pos_name" ColumnName="pos_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="post">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.post">
+              <MappingFragment StoreEntitySet="post">
+                <ScalarProperty Name="idPost" ColumnName="idPost" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="add_date" ColumnName="add_date" />
+                <ScalarProperty Name="update_date" ColumnName="update_date" />
+                <ScalarProperty Name="post_title" ColumnName="post_title" />
+                <ScalarProperty Name="post_type" ColumnName="post_type" />
+                <ScalarProperty Name="PostOwner" ColumnName="PostOwner" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="post_course">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.post_course">
+              <MappingFragment StoreEntitySet="post_course">
+                <ScalarProperty Name="idPostCourse" ColumnName="idPostCourse" />
+                <ScalarProperty Name="Course_idCourse" ColumnName="Course_idCourse" />
+                <ScalarProperty Name="Post_idPost" ColumnName="Post_idPost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="post_tags">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.post_tags">
+              <MappingFragment StoreEntitySet="post_tags">
+                <ScalarProperty Name="idpost_tags" ColumnName="idpost_tags" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="Post_post_id" ColumnName="Post_post_id" />
+                <ScalarProperty Name="tags_id_tags" ColumnName="tags_id_tags" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="project">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.project">
+              <MappingFragment StoreEntitySet="project">
+                <ScalarProperty Name="id_project" ColumnName="id_project" />
+                <ScalarProperty Name="Account_idAccount" ColumnName="Account_idAccount" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="death_line" ColumnName="death_line" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="estimated_hours" ColumnName="estimated_hours" />
+                <ScalarProperty Name="logged_hours" ColumnName="logged_hours" />
+                <ScalarProperty Name="started_by_account" ColumnName="started_by_account" />
+                <ScalarProperty Name="projectStatus" ColumnName="projectStatus" />
+                <ScalarProperty Name="project_leader_dev_id" ColumnName="project_leader_dev_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="projectdata">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.projectdata">
+              <MappingFragment StoreEntitySet="projectdata">
+                <ScalarProperty Name="idProjectData" ColumnName="idProjectData" />
+                <ScalarProperty Name="Project_ProjectId" ColumnName="Project_ProjectId" />
+                <ScalarProperty Name="ProjectDataDir" ColumnName="ProjectDataDir" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="projectdeveloper">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.projectdeveloper">
+              <MappingFragment StoreEntitySet="projectdeveloper">
+                <ScalarProperty Name="idProjectDeveloper" ColumnName="idProjectDeveloper" />
+                <ScalarProperty Name="Developer_idDeveloper" ColumnName="Developer_idDeveloper" />
+                <ScalarProperty Name="Project_idProject" ColumnName="Project_idProject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="projectstage">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.projectstage">
+              <MappingFragment StoreEntitySet="projectstage">
+                <ScalarProperty Name="idProjectStage" ColumnName="idProjectStage" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="death_line" ColumnName="death_line" />
+                <ScalarProperty Name="stage_number" ColumnName="stage_number" />
+                <ScalarProperty Name="Project_id" ColumnName="Project_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="projecttechnologies">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.projecttechnologies">
+              <MappingFragment StoreEntitySet="projecttechnologies">
+                <ScalarProperty Name="id_projectTechnologies" ColumnName="id_projectTechnologies" />
+                <ScalarProperty Name="Technologies_idTechnologies" ColumnName="Technologies_idTechnologies" />
+                <ScalarProperty Name="Project_idProject" ColumnName="Project_idProject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="projecttype">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.projecttype">
+              <MappingFragment StoreEntitySet="projecttype">
+                <ScalarProperty Name="idProjectType" ColumnName="idProjectType" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="Dictionary_idDictionary" ColumnName="Dictionary_idDictionary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="promotorcourses">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.promotorcourses">
+              <MappingFragment StoreEntitySet="promotorcourses">
+                <ScalarProperty Name="idPromotorCourses" ColumnName="idPromotorCourses" />
+                <ScalarProperty Name="techpromotor_id_tech_promotor" ColumnName="techpromotor_id_tech_promotor" />
+                <ScalarProperty Name="courses_id_courses" ColumnName="courses_id_courses" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recruitmenttest">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.recruitmenttest">
+              <MappingFragment StoreEntitySet="recruitmenttest">
+                <ScalarProperty Name="idRecruitmentTest" ColumnName="idRecruitmentTest" />
+                <ScalarProperty Name="Account_idAccount" ColumnName="Account_idAccount" />
+                <ScalarProperty Name="api" ColumnName="api" />
+                <ScalarProperty Name="test_accepted" ColumnName="test_accepted" />
+                <ScalarProperty Name="test_finished" ColumnName="test_finished" />
+                <ScalarProperty Name="timeForTest" ColumnName="timeForTest" />
+                <ScalarProperty Name="test_result" ColumnName="test_result" />
+                <ScalarProperty Name="test_valid_to_date" ColumnName="test_valid_to_date" />
+                <ScalarProperty Name="user_comment" ColumnName="user_comment" />
+                <ScalarProperty Name="feedback" ColumnName="feedback" />
+                <ScalarProperty Name="feedback_accountID" ColumnName="feedback_accountID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stages">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.stages">
+              <MappingFragment StoreEntitySet="stages">
+                <ScalarProperty Name="idStages" ColumnName="idStages" />
+                <ScalarProperty Name="Project_idProject" ColumnName="Project_idProject" />
+                <ScalarProperty Name="Stage_number" ColumnName="Stage_number" />
+                <ScalarProperty Name="start_stage_date" ColumnName="start_stage_date" />
+                <ScalarProperty Name="end_stage_date" ColumnName="end_stage_date" />
+                <ScalarProperty Name="Stage_accepted" ColumnName="Stage_accepted" />
+                <ScalarProperty Name="Stage_leaderDeveloperId" ColumnName="Stage_leaderDeveloperId" />
+                <ScalarProperty Name="StageOpis" ColumnName="StageOpis" />
+                <ScalarProperty Name="StageStatus" ColumnName="StageStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stageteam">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.stageteam">
+              <MappingFragment StoreEntitySet="stageteam">
+                <ScalarProperty Name="id_stage_team" ColumnName="id_stage_team" />
+                <ScalarProperty Name="Stages_idStages" ColumnName="Stages_idStages" />
+                <ScalarProperty Name="isStageLeader" ColumnName="isStageLeader" />
+                <ScalarProperty Name="Developer_idDeveloper" ColumnName="Developer_idDeveloper" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="studygroups">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.studygroups">
+              <MappingFragment StoreEntitySet="studygroups">
+                <ScalarProperty Name="id_study_groups" ColumnName="id_study_groups" />
+                <ScalarProperty Name="account_idaccount" ColumnName="account_idaccount" />
+                <ScalarProperty Name="codename_id_codename" ColumnName="codename_id_codename" />
+                <ScalarProperty Name="group_number" ColumnName="group_number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tags">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.tags">
+              <MappingFragment StoreEntitySet="tags">
+                <ScalarProperty Name="id_tags" ColumnName="id_tags" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="tagscol" ColumnName="tagscol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="technologies">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.technologies">
+              <MappingFragment StoreEntitySet="technologies">
+                <ScalarProperty Name="idTechnologies" ColumnName="idTechnologies" />
+                <ScalarProperty Name="tech_name" ColumnName="tech_name" />
+                <ScalarProperty Name="is_active" ColumnName="is_active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="technologiesdeveloper">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.technologiesdeveloper">
+              <MappingFragment StoreEntitySet="technologiesdeveloper">
+                <ScalarProperty Name="id_technologies_dev" ColumnName="id_technologies_dev" />
+                <ScalarProperty Name="Technologies_idTechnologies" ColumnName="Technologies_idTechnologies" />
+                <ScalarProperty Name="Developer_idDeveloper" ColumnName="Developer_idDeveloper" />
+                <ScalarProperty Name="experience_from" ColumnName="experience_from" />
+                <ScalarProperty Name="skill_level" ColumnName="skill_level" />
+                <ScalarProperty Name="is_tech_promotor" ColumnName="is_tech_promotor" />
+                <ScalarProperty Name="technology_promotor_approved" ColumnName="technology_promotor_approved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="technologypromotor">
+            <EntityTypeMapping TypeName="TeamLeasingDatabaseModel.technologypromotor">
+              <MappingFragment StoreEntitySet="technologypromotor">
+                <ScalarProperty Name="idtechnology_promotor" ColumnName="idtechnology_promotor" />
+                <ScalarProperty Name="Account_idAccount" ColumnName="Account_idAccount" />
+                <ScalarProperty Name="course_id_courses" ColumnName="course_id_courses" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

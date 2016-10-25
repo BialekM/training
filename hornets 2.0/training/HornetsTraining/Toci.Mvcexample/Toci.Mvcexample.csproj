@@ -16,10 +16,10 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressSSLPort>44367</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -229,6 +229,129 @@
     <Compile Include="Models\CoursesSearch\tblKeywords.cs">
       <DependentUpon>CoursesSearchData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DBContext\accbankaccounts.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\account.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\accountadresses.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\accpayments.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\client.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\clientsearch.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\contact.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\course.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\courses.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\coursesgroups.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\devavailabilitydetailed.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\developer.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\dictionary.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\groupscodenames.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\lessons.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\lessonsdetails.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\phrasetechnology.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\positions.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\post.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\post_course.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\post_tags.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\project.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\projectdata.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\projectdeveloper.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\projectstage.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\projecttechnologies.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\projecttype.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\promotorcourses.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\recruitmenttest.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\stages.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\stageteam.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\studygroups.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\tags.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\TeamLeasingEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamLeasingEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\TeamLeasingEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\TeamLeasingEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamLeasingEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\technologies.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\technologiesdeveloper.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBContext\technologypromotor.cs">
+      <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\EntireAppModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
@@ -253,6 +376,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TeamLeasingDatabase.mdf" />
+    <Content Include="App_Data\TeamLeasingDatabase_log.ldf">
+      <DependentUpon>TeamLeasingDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\coursesSearch\dropList.css" />
@@ -305,6 +432,16 @@
       <LastGenOutput>CoursesSearchData.cs</LastGenOutput>
     </Content>
     <Content Include="Models\CoursesSearch\ScriptForDatabase.txt" />
+    <Content Include="Models\DBContext\TeamLeasingEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TeamLeasingEntities.edmx</DependentUpon>
+      <LastGenOutput>TeamLeasingEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBContext\TeamLeasingEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TeamLeasingEntities.edmx</DependentUpon>
+      <LastGenOutput>TeamLeasingEntities.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\fonts\icomoon.eot" />
@@ -321,6 +458,13 @@
       <DependentUpon>CoursesSearchData.edmx</DependentUpon>
     </Content>
     <Content Include="Models\OurInstructors\OurInstructorsDb.sqlite" />
+    <EntityDeploy Include="Models\DBContext\TeamLeasingEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TeamLeasingEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBContext\TeamLeasingEntities.edmx.diagram">
+      <DependentUpon>TeamLeasingEntities.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -402,7 +546,7 @@
     <Content Include="Views\Shared\_RecentProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\Scripts\" />
     <Folder Include="Content\images\blog\" />
     <Folder Include="Content\images\counter\" />
     <Folder Include="Content\images\courses\" />
