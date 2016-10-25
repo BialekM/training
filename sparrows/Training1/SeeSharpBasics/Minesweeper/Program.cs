@@ -16,7 +16,8 @@ namespace Minesweeper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SlawekKChess.SlawekKChess());
+            //Application.Run(new SlawekKChess.SlawekKChess());
+            Application.Run(new AndrzejIwanski());
         }
     }
 }
