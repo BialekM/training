@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndrzejIwanski\AndrzejIwanskiStringOperations.cs" />
+    <Compile Include="AndrzejIwanski\AndrzejIwanskiTableOperations.cs" />
     <Compile Include="BartekZapart\BartekTableOperations.cs" />
     <Compile Include="BartekZapart\BartekZapartStringOperations.cs" />
     <Compile Include="BartekZapart\TablesOperations.cs" />
@@ -135,6 +137,11 @@
     <Compile Include="TomaszKilian\TomaszKilTablesOperations.cs" />
     <Compile Include="Training3\Hashmaps\HashmapExample.cs" />
     <Compile Include="Training3\Hashmaps\MultiDimensionalTables.cs" />
+    <Compile Include="Training3\Homework\AndrzejIwanski\AndrzejIwanskiBankResolver.cs" />
+    <Compile Include="Training3\Homework\AndrzejIwanski\AndrzejIwanskiCodeGenerator.cs" />
+    <Compile Include="Training3\Homework\AndrzejIwanski\AndrzejIwanskiMineSweeper.cs" />
+    <Compile Include="Training3\Homework\AndrzejIwanski\AndrzejIwanskiPeselValidator.cs" />
+    <Compile Include="Training3\Homework\AndrzejIwanski\AndrzejIwnskiMoneyValue.cs" />
     <Compile Include="Training3\Homework\BankResolver.cs" />
     <Compile Include="Training3\Homework\BartekZapartMoneyValue.cs" />
     <Compile Include="Training3\Homework\CodeGenerator.cs" />
