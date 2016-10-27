@@ -21,24 +21,29 @@ namespace Toci.Mvcexample.Ntier.Bll.CoursesSearch
             return _coursesSearchDal.GetCourses(null, start, end, level, instructor).Select(courses => courses.topic);
         }
 
-        public IQueryable<DateTime?> GetAllowedStartDatas()
+        public IQueryable<DateTime?> GetAllowedStartDatas(string topic = null, DateTime? end = null,
+            int? level = null, string instructor = null)
         {
-            return _coursesSearchDal.GetStartDatas().Distinct();
+            return _coursesSearchDal.GetCourses(topic, null, end, level, instructor).Select(courses => courses.start_date);
         }
 
-        public IQueryable<DateTime?> GetAllowedEndDatas()
+        public IQueryable<DateTime?> GetAllowedEndDatas(string topic = null, DateTime? start = null,
+            int? level = null, string instructor = null)
         {
-            return _coursesSearchDal.GetEndDatas().Distinct();
+            return _coursesSearchDal.GetCourses(topic, start, null, level, instructor).Select(courses => courses.end_date);
         }
 
-        public IQueryable<int?> GetAllowedLevels()
+        public IQueryable<int?> GetAllowedLevels(string topic = null, DateTime? start = null, DateTime? end = null,
+            string instructor = null)
         {
-            return _coursesSearchDal.GetLevels().Distinct();
+            return _coursesSearchDal.GetCourses(topic, start, end, null, instructor).Select(courses => courses.level);
         }
 
-        public IQueryable<string> GetAllowedInstructors()
+        public IQueryable<string> GetAllowedInstructors(string topic = null, DateTime? start = null, DateTime? end = null,
+            int? level = null)
         {
-            return _coursesSearchDal.GetInstructors().Distinct();
+            return _coursesSearchDal.GetCourses(topic, start, end, level, null).Select(courses => 
+                courses.technologypromotor.account.firstName + courses.technologypromotor.account.lastName);
         }
     }
 }

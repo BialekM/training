@@ -21,6 +21,9 @@ namespace Toci.Mvcexample.Controllers
 
         public ActionResult Index()
         {
+            var entity = new TeamLeasingDBContext();
+
+            var x = entity.course.Select(z => z.level).ToList();
 
             var model = _modelLogic.GetEntireAppModel();
             return View(model);

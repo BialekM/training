@@ -24,7 +24,8 @@ namespace Toci.Mvcexample.ModelLogic.Handlers
         {
             EntireAppModel model = (EntireAppModel)entity;
 
-            _strategy.GetModel(_logic);
+            //model.CoursesSearch = _strategy.GetModel(_logic);  -> w ostatecznej wersji w ten sposob ?
+
             model.CoursesSearch = new CoursesSearchModel
             {
                 CourseLevel = new DropDownListModel<string> { Items = new List<SelectListItem> { new SelectListItem { Text = "beginner", Value = "beginner" } } },

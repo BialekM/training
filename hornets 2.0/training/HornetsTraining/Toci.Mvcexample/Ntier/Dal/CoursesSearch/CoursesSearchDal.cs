@@ -11,31 +11,7 @@ namespace Toci.Mvcexample.Ntier.Dal.CoursesSearch
 {
     public class CoursesSearchDal : DataAccessLayer, ICoursesSearchDal
     {
-        public IQueryable<string> GetTopics()
-        {
-            return TeamLeasingDb.course.Select((courses) => courses.topic);
-        }
 
-        public IQueryable<DateTime?> GetStartDatas()
-        {
-            return TeamLeasingDb.course.Select((courses) => courses.start_date);
-        }
-
-        public IQueryable<DateTime?> GetEndDatas()
-        {
-            return TeamLeasingDb.course.Select((courses) => courses.end_date);
-        }
-
-        public IQueryable<int?> GetLevels()
-        {
-            return TeamLeasingDb.course.Select((courses) => courses.level);
-        }
-
-        public IQueryable<string> GetInstructors()
-        {
-            return TeamLeasingDb.course.Select((courses) =>
-                    courses.technologypromotor.account.lastName + courses.technologypromotor.account.firstName);
-        }
 
         public IQueryable<course> GetCourses(string topic = null, DateTime? start = null, DateTime? end = null,
             int? level = null, string instructor = null)
@@ -48,5 +24,30 @@ namespace Toci.Mvcexample.Ntier.Dal.CoursesSearch
                 instructor == null ||
                 course.technologypromotor.account.lastName + " " + course.technologypromotor.account.firstName == instructor);
         }
+        //public IQueryable<string> GetTopics()
+        //{
+        //    return TeamLeasingDb.course.Select((courses) => courses.topic);
+        //}
+
+        //public IQueryable<DateTime?> GetStartDatas()
+        //{
+        //    return TeamLeasingDb.course.Select((courses) => courses.start_date);
+        //}
+
+        //public IQueryable<DateTime?> GetEndDatas()
+        //{
+        //    return TeamLeasingDb.course.Select((courses) => courses.end_date);
+        //}
+
+        //public IQueryable<int?> GetLevels()
+        //{
+        //    return TeamLeasingDb.course.Select((courses) => courses.level);
+        //}
+
+        //public IQueryable<string> GetInstructors()
+        //{
+        //    return TeamLeasingDb.course.Select((courses) =>
+        //            courses.technologypromotor.account.lastName + courses.technologypromotor.account.firstName);
+        //}
     }
 }

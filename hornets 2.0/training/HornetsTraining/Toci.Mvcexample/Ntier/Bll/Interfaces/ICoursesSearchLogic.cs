@@ -7,9 +7,13 @@ namespace Toci.Mvcexample.Ntier.Bll.Interfaces
     {
         IQueryable<string> GetAllowedTopics(DateTime? start = null, DateTime? end = null,
             int? level = null, string instructor = null);
-        IQueryable<DateTime?> GetAllowedStartDatas();
-        IQueryable<DateTime?> GetAllowedEndDatas();
-        IQueryable<int?> GetAllowedLevels();
-        IQueryable<string> GetAllowedInstructors();
+        IQueryable<DateTime?> GetAllowedStartDatas(string topic = null, DateTime? end = null,
+            int? level = null, string instructor = null);
+        IQueryable<DateTime?> GetAllowedEndDatas(string topic = null, DateTime? start = null,
+            int? level = null, string instructor = null);
+        IQueryable<int?> GetAllowedLevels(string topic = null, DateTime? start = null, DateTime? end = null,
+            string instructor = null);
+        IQueryable<string> GetAllowedInstructors(string topic = null, DateTime? start = null, DateTime? end = null,
+            int? level = null);
     }
 }
