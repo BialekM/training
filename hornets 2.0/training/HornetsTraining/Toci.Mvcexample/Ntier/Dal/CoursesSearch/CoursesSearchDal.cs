@@ -16,7 +16,9 @@ namespace Toci.Mvcexample.Ntier.Dal.CoursesSearch
         public IQueryable<course> GetCourses(string topic = null, DateTime? start = null, DateTime? end = null,
             int? level = null, string instructor = null)
         {
-            return TeamLeasingDb.course.Select(m => m); /*Where(course =>
+            var test =  TeamLeasingDb.course.Select(m => m);
+            return test;
+            /*Where(course =>
                 topic == null || course.topic == topic &&
                 start == null || course.start_date == start &&
                 end == null || course.end_date == end &&

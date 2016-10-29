@@ -49,3 +49,12 @@ insert into technologypromotor (Account_idAccount, course_id_courses) values (10
 
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (1, 1, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (2, 2, 'php', 'dluga', '2016-08-08', '2016-12-12', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (11, 11, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (6, 6, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (3, 3, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (9, 9, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (12, 12, 'java', 'klasy abstrakcyjne', '2016-05-01', '2016-12-10', 2);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (7, 7, 'AngularJS', 'Ciekawa', '2017-09-02', '2016-2-1', 1);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (7, 7, 'python', 'taMojaFantastycznaAgenda', '2016-10-08', '2017-12-12', 5);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (1, 1, 'js', 'dlugaaa', '2017-01-01', '2017-10-12', 3);
+insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (10, 10, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);

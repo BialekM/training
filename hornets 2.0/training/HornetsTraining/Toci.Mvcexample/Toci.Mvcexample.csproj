@@ -199,6 +199,7 @@
     <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategy.cs" />
     <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategyBasic.cs" />
     <Compile Include="ModelLogic\Strategy\CoursesSearch\ICoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\DevelopersSearch\IDevelopersSearchStartegy.cs" />
     <Compile Include="ModelLogic\Strategy\IModelStrategy.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
