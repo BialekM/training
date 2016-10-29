@@ -20,7 +20,7 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
             _recentModel = recentModel;
         }
 
-        public override CoursesSearchModel GetModel(ICoursesSearchLogic logic)
+        public override CoursesSearchModel GetModel(ILogic logic)
         {
             Logic = (CoursesSearchLogic) logic;
 

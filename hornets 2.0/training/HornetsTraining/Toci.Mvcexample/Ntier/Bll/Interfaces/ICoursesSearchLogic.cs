@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Toci.Mvcexample.Ntier.Bll.Interfaces
 {
-    public interface ICoursesSearchLogic
+    public interface ICoursesSearchLogic : ILogic
     {
         IQueryable<string> GetAllowedTopics(DateTime? start = null, DateTime? end = null,
             int? level = null, string instructor = null);

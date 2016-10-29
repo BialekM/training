@@ -15,6 +15,6 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
         protected CoursesSearchLogic Logic;
 
 
-        public abstract CoursesSearchModel GetModel(ICoursesSearchLogic logic);
+        public abstract CoursesSearchModel GetModel(ILogic logic);
     }
 }

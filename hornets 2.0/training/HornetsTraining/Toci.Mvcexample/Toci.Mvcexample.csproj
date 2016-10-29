@@ -199,6 +199,7 @@
     <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategy.cs" />
     <Compile Include="ModelLogic\Strategy\CoursesSearch\CoursesSearchModelStrategyBasic.cs" />
     <Compile Include="ModelLogic\Strategy\CoursesSearch\ICoursesSearchModelStrategy.cs" />
+    <Compile Include="ModelLogic\Strategy\DevelopersSearch\DevelopersSearchModelStrategy.cs" />
     <Compile Include="ModelLogic\Strategy\DevelopersSearch\IDevelopersSearchStartegy.cs" />
     <Compile Include="ModelLogic\Strategy\IModelStrategy.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -371,6 +372,8 @@
     <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
     <Compile Include="Ntier\Bll\DevelopersSearch\DevelopersSearchLogic.cs" />
     <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\IDevelopersSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\Interfaces\ILogic.cs" />
     <Compile Include="Ntier\Bll\Interfaces\IRecentProjectsLogic.cs" />
     <Compile Include="Ntier\Bll\Logic.cs" />
     <Compile Include="Ntier\Bll\RecentProjects\RecentProjectsLogic.cs" />

@@ -11,6 +11,6 @@ namespace Toci.Mvcexample.ModelLogic.Strategy
 {
     public interface IModelStrategy<TModel>
     {
-        TModel GetModel(ICoursesSearchLogic logic);
+        TModel GetModel(ILogic logic);
     }
 }
