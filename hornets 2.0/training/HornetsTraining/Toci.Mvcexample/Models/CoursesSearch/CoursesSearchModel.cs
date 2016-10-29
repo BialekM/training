@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-
 //Niepotrzebne, zbyt duze rozdrabnianie modeli ?
+using Toci.Mvcexample.Ntier.Bll.Interfaces;
 
 namespace Toci.Mvcexample.Models.CoursesSearch
 {
@@ -19,6 +19,7 @@ namespace Toci.Mvcexample.Models.CoursesSearch
 
         public DropDownListModel<string> Location { get; set; }
 
+        //private readonly ICoursesSearchLogic coursesSearchLogic;
 
         public static List<SelectListItem> ToSelectList(IEnumerable<string> list, string additionalString = "")
         {

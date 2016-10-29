@@ -1,5 +1,5 @@
 ﻿using Toci.DesignPatterns.ChainOfResponsibility;
-using Toci.Mvcexample.Models.CoursesSearch;
+using Toci.Mvcexample.Models.NewCoursesSearch;
 using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay;
 using Toci.Mvcexample.Models.RecentCourses;
 

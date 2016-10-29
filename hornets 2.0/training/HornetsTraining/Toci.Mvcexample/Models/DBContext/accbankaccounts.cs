@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -14,6 +16,7 @@ namespace Toci.Mvcexample.Models.DBContext
     
     public partial class accbankaccounts
     {
+        [Key]
         public int idAccBankAccounts { get; set; }
         public int accounts_idAccounts { get; set; }
         public string bank_name { get; set; }

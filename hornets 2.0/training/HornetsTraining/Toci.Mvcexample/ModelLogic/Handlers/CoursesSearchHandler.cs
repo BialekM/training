@@ -12,9 +12,9 @@ namespace Toci.Mvcexample.ModelLogic.Handlers
     public class CoursesSearchHandler : Handler
     {
         private ICoursesSearchModelStrategy _strategy;
-        private CoursesSearchLogic _logic;
+        private ICoursesSearchLogic _logic;
 
-        public CoursesSearchHandler(ICoursesSearchModelStrategy strategy, CoursesSearchLogic logic)
+        public CoursesSearchHandler(ICoursesSearchModelStrategy strategy, ICoursesSearchLogic logic)
         {
             _strategy = strategy;
             _logic = logic;
@@ -24,22 +24,7 @@ namespace Toci.Mvcexample.ModelLogic.Handlers
         {
             EntireAppModel model = (EntireAppModel)entity;
 
-            //model.CoursesSearch = _strategy.GetModel(_logic);  -> w ostatecznej wersji w ten sposob ?
-
-            model.CoursesSearch = new CoursesSearchModel
-            {
-                CourseLevel = new DropDownListModel<string> { Items = new List<SelectListItem> { new SelectListItem { Text = "beginner", Value = "beginner" } } },
-                Discipline = new DropDownListModel<string>
-                {
-                    Items = new List<SelectListItem>
-                {
-                    new SelectListItem { Text = "c#", Value = "c#" },
-                    new SelectListItem { Text = "php", Value = "php" }
-                }
-                },
-                Duration = new DropDownListModel<int?> { Items = new List<SelectListItem> { new SelectListItem { Text = "3", Value = "3" } } },
-                Location = new DropDownListModel<string> { Items = new List<SelectListItem> { new SelectListItem { Text = "internet", Value = "internet" } } }
-            };
+            model.CoursesSearch = _strategy.GetModel(_logic);  //-> w ostatecznej wersji w ten sposob ?
         }
     }
 }

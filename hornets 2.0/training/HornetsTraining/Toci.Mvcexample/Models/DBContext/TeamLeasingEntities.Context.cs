@@ -22,7 +22,7 @@ namespace Toci.Mvcexample.Models.DBContext
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            //throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<accbankaccounts> accbankaccounts { get; set; }

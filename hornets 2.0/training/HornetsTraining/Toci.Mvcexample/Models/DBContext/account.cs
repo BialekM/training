@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -28,6 +30,7 @@ namespace Toci.Mvcexample.Models.DBContext
             this.technologypromotor = new HashSet<technologypromotor>();
         }
     
+        [Key]
         public int id_account { get; set; }
         public string login { get; set; }
         public string password { get; set; }

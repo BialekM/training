@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Toci.Mvcexample.ModelLogic.Interfaces;
 using Toci.Mvcexample.Models.NewCoursesSearch;
 using Toci.Mvcexample.Ntier.Bll;
 using Toci.Mvcexample.Ntier.Bll.CoursesSearch;
+using Toci.Mvcexample.Ntier.Bll.Interfaces;
 
 namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
 {
@@ -18,9 +20,11 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
             _recentModel = recentModel;
         }
 
-        public override CoursesSearchModel GetModel(Logic logic)
+        public override CoursesSearchModel GetModel(ICoursesSearchLogic logic)
         {
             Logic = (CoursesSearchLogic) logic;
+
+            var test = ToSelectList(Logic.GetAllowedInstructors(), s => s);
 
             var model = new CoursesSearchModel
             {
@@ -34,13 +38,13 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
                 },
                 End = new DropDownListModel<DateTime?>
                 {
-                    Items = ToSelectList(Logic.GetAllowedEndDatas(), 
-                        time => time?.ToLongDateString())
+                    //Items = ToSelectList(Logic.GetAllowedEndDatas(), 
+                    //    time => time?.ToLongDateString())
                 },
                 Start = new DropDownListModel<DateTime?>
                 {
-                    Items = ToSelectList(Logic.GetAllowedStartDatas(),
-                        time => time?.ToLongDateString())
+                    //Items = ToSelectList(Logic.GetAllowedStartDatas(),
+                    //    time => time?.ToLongDateString())
                 },
                 Level = new DropDownListModel<string>
                 {
