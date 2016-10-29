@@ -90,6 +90,8 @@
     <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiMoneyValueTest.cs" />
     <Compile Include="Training3\HomeWork\AndrzejIwanski\AndrzejIwanskiPeselValidatorTest.cs" />
     <Compile Include="training5\Chess\ChessBoardTest.cs" />
+    <Compile Include="training7\linq\Test.cs" />
+    <Compile Include="training7\Tpl\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MagdaSkalik\HashMaps\" />

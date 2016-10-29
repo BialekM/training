@@ -167,6 +167,10 @@
     <Compile Include="Training5\StaticClass.cs" />
     <Compile Include="Training6\ExtensionMethods\Extensions.cs" />
     <Compile Include="Training6\Generics\MyGenerics.cs" />
+    <Compile Include="training7\linq\LinqExample.cs" />
+    <Compile Include="training7\linq\LinqTest.cs" />
+    <Compile Include="training7\tpl\Homework.cs" />
+    <Compile Include="training7\tpl\Tpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
