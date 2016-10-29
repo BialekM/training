@@ -590,6 +590,10 @@
       <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
       <Name>Toci.DesignPatterns</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.EmployeeLeasing.Dal.Interfaces\Toci.EmployeeLeasing.Dal.Interfaces.csproj">
+      <Project>{46918a2c-e68e-4497-9596-f48b187829f8}</Project>
+      <Name>Toci.EmployeeLeasing.Dal.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
