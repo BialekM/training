@@ -58,3 +58,38 @@ insert into course (technology_id_promotor, courses_idCourses, topic, agenda, st
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (7, 7, 'python', 'taMojaFantastycznaAgenda', '2016-10-08', '2017-12-12', 5);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (1, 1, 'js', 'dlugaaa', '2017-01-01', '2017-10-12', 3);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (10, 10, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
+
+
+---developers
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2004-06-01', '100', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (12, '20014-09-21', '39', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (3, '2015-08-26', '20', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2015-08-01', '10', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (9, '2015-01-01', '1', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (7, '2016-09-01', '15', '2', 1);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2016-03', '1', '10', 0);
+
+select * from technologies;
+
+insert into technologies (tech_name, is_active) values ('c#', 1);
+insert into technologies (tech_name, is_active) values ('php', 1);
+insert into technologies (tech_name, is_active) values ('javascript', 1);
+
+insert into technologies (tech_name, is_active) values ('c#', 1);
+insert into technologies (tech_name, is_active) values ('java', 1);
+insert into technologies (tech_name, is_active) values ('Unity3D/c#', 1);
+insert into technologies (tech_name, is_active) values ('scala', 1);
+insert into technologies (tech_name, is_active) values ('c/c++', 1);
+insert into technologies (tech_name, is_active) values ('Microsoft assembler', 1);
+insert into technologies (tech_name, is_active) values ('Python', 1)
+insert into technologies (tech_name, is_active) values ('SAP ABAP', 1);
+insert into technologies (tech_name, is_active) values ('AngularJS', 1);
+insert into technologies (tech_name, is_active) values ('Backbone', 1);
+insert into technologies (tech_name, is_active) values ('React', 1);
+insert into technologies (tech_name, is_active) values ('Ember', 1);
+
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2007-02-01', 9);
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (5, 8, '2012-07-01', 6);
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2015-08-01', 3);
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2015-05-04', 4);
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2016-03-09', 3);

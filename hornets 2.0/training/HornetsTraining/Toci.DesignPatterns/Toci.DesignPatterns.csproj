@@ -75,6 +75,7 @@
     <Compile Include="ExceptionHandling\TociApplicationException.cs" />
     <Compile Include="ExceptionHandling\TociBllApplicationException.cs" />
     <Compile Include="ExceptionHandling\TociDbApplicationException.cs" />
+    <Compile Include="PluginDependencyInjection\IDiDllInjector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
