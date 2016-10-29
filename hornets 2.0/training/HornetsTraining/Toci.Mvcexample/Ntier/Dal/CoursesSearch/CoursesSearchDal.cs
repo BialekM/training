@@ -17,6 +17,7 @@ namespace Toci.Mvcexample.Ntier.Dal.CoursesSearch
             int? level = null, string instructor = null)
         {
             var test =  TeamLeasingDb.course.Select(m => m);
+            //TeamLeasingDb.developer.Select(m => m.tec).technologiesdeveloper.)
             return test;
             /*Where(course =>
                 topic == null || course.topic == topic &&

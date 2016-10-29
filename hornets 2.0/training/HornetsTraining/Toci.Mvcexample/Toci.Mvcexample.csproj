@@ -373,6 +373,7 @@
     <Compile Include="Ntier\Dal\CoursesSearch\CoursesSearchDal.cs" />
     <Compile Include="Ntier\Dal\DataAccessLayer.cs" />
     <Compile Include="Ntier\Dal\Interfaces\ICoursesSearchDal.cs" />
+    <Compile Include="Ntier\Dal\Interfaces\IDevelopersSearchDal.cs" />
     <Compile Include="Ntier\Dal\Interfaces\IRecentProjectsDal.cs" />
     <Compile Include="Ntier\Dal\RecentProjects\RecentProjectsDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -563,6 +564,7 @@
     <Folder Include="Content\images\slide\" />
     <Folder Include="Content\images\team\" />
     <Folder Include="Content\images\testimonial\" />
+    <Folder Include="Ntier\Dal\DevelopersSearch\" />
     <Folder Include="Views\CoursesSearch\" />
   </ItemGroup>
   <ItemGroup>
