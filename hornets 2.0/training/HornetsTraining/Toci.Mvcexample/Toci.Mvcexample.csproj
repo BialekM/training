@@ -353,6 +353,9 @@
     <Compile Include="Models\DBContext\technologypromotor.cs">
       <DependentUpon>TeamLeasingEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DevelopersSearch\DeveloperModel.cs" />
+    <Compile Include="Models\DevelopersSearch\DevelopersSearchModel.cs" />
+    <Compile Include="Models\DevelopersSearch\SearchValues.cs" />
     <Compile Include="Models\EntireAppModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
@@ -366,6 +369,7 @@
     <Compile Include="Models\RecentProjects\Project.cs" />
     <Compile Include="Models\RecentProjects\RecentProjectsModel.cs" />
     <Compile Include="Ntier\Bll\CoursesSearch\CoursesSearchLogic.cs" />
+    <Compile Include="Ntier\Bll\DevelopersSearch\DevelopersSearchLogic.cs" />
     <Compile Include="Ntier\Bll\Interfaces\ICoursesSearchLogic.cs" />
     <Compile Include="Ntier\Bll\Interfaces\IRecentProjectsLogic.cs" />
     <Compile Include="Ntier\Bll\Logic.cs" />
@@ -598,7 +602,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50965</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
