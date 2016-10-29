@@ -7,13 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
     using System.Collections.Generic;
     
     public partial class post_course
-    {
+    { 
+        [Key]
         public int idPostCourse { get; set; }
         public int Course_idCourse { get; set; }
         public int Post_idPost { get; set; }

@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -14,6 +16,7 @@ namespace Toci.Mvcexample.Models.DBContext
     
     public partial class stageteam
     {
+        [Key]
         public int id_stage_team { get; set; }
         public int Stages_idStages { get; set; }
         public Nullable<short> isStageLeader { get; set; }

@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -21,7 +23,8 @@ namespace Toci.Mvcexample.Models.DBContext
             this.lessons = new HashSet<lessons>();
             this.promotorcourses = new HashSet<promotorcourses>();
         }
-    
+
+        [Key]
         public int idCourses { get; set; }
         public string course_main_name { get; set; }
     
