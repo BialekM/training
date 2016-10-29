@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -22,7 +24,8 @@ namespace Toci.Mvcexample.Models.DBContext
             this.stageteam = new HashSet<stageteam>();
             this.technologiesdeveloper = new HashSet<technologiesdeveloper>();
         }
-    
+
+        [Key]
         public int id_developer { get; set; }
         public int Account_idAccount { get; set; }
         public string experience_from { get; set; }

@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -14,6 +16,7 @@ namespace Toci.Mvcexample.Models.DBContext
     
     public partial class projectstage
     {
+        [Key]
         public int idProjectStage { get; set; }
         public string start_date { get; set; }
         public string end_date { get; set; }

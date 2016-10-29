@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Toci.Mvcexample.Models.DBContext
 {
     using System;
@@ -20,7 +22,8 @@ namespace Toci.Mvcexample.Models.DBContext
             this.post_course = new HashSet<post_course>();
             this.post_tags = new HashSet<post_tags>();
         }
-    
+
+        [Key]
         public int idPost { get; set; }
         public string content { get; set; }
         public string add_date { get; set; }
