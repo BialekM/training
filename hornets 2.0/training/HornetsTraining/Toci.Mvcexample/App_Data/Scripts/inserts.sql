@@ -1,3 +1,5 @@
+USE [D:\GITREPOSITORY\WARRIORREP\HORNETS 2.0\TRAINING\HORNETSTRAINING\TOCI.MVCEXAMPLE\APP_DATA\TEAMLEASINGDATABASE.MDF]
+GO
 insert into courses (course_main_name) values ('Bartek Zapart');
 
 insert into courses (course_main_name) values ('Wojtek Sabat');
@@ -42,7 +44,6 @@ insert into technologypromotor (Account_idAccount, course_id_courses) values (9,
 insert into technologypromotor (Account_idAccount, course_id_courses) values (6, 6);
 insert into  technologypromotor (Account_idAccount, course_id_courses) values (12, 12);
 insert into technologypromotor (Account_idAccount, course_id_courses) values (13, 13);
-insert into technologypromotor (Account_idAccount, course_id_courses) values (6, 6);
 insert into technologypromotor (Account_idAccount, course_id_courses) values (14, 14);
 insert into technologypromotor (Account_idAccount, course_id_courses) values (10, 10);
 
@@ -53,10 +54,7 @@ insert into course (technology_id_promotor, courses_idCourses, topic, agenda, st
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (6, 6, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (3, 3, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (9, 9, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
-insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (12, 12, 'java', 'klasy abstrakcyjne', '2016-05-01', '2016-12-10', 2);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (7, 7, 'AngularJS', 'Ciekawa', '2017-09-02', '2016-2-1', 1);
-insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (7, 7, 'python', 'taMojaFantastycznaAgenda', '2016-10-08', '2017-12-12', 5);
-insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (1, 1, 'js', 'dlugaaa', '2017-01-01', '2017-10-12', 3);
 insert into course (technology_id_promotor, courses_idCourses, topic, agenda, start_date, end_date, level) values (10, 10, 'c#', 'dluga', '2016-08-08', '2016-12-12', 2);
 
 
@@ -64,10 +62,10 @@ insert into course (technology_id_promotor, courses_idCourses, topic, agenda, st
 insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2004-06-01', '100', '10', 0);
 insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (12, '20014-09-21', '39', '10', 0);
 insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (3, '2015-08-26', '20', '10', 0);
-insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2015-08-01', '10', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (10, '2015-08-01', '10', '10', 0);
 insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (9, '2015-01-01', '1', '10', 0);
 insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (7, '2016-09-01', '15', '2', 1);
-insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (1, '2016-03', '1', '10', 0);
+insert into developer (Account_idAccount, experience_from, per_hour_cost, week_availability, isSuspendedForJobs) values (5, '2016-03', '1', '10', 0);
 
 select * from technologies;
 
@@ -92,4 +90,4 @@ insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeve
 insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (5, 8, '2012-07-01', 6);
 insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2015-08-01', 3);
 insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2015-05-04', 4);
-insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2016-03-09', 3);
+insert into technologiesdeveloper (Technologies_idTechnologies, Developer_idDeveloper, experience_from, skill_level) values (1, 1, '2016-03-09', 2);

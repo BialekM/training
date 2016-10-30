@@ -31,6 +31,7 @@ namespace Toci.Mvcexample.DependencyInjection
 
             RegisterTypes(builder);
             _container = builder.Build();
+
         }
 
         

@@ -4,6 +4,6 @@
     {
         void InjectDll(string name); //base64
 
-        void RegisterDependencies(); // ICOntainer container lista parametrow ?
+        void RegisterDependencies(object register); // ICOntainer container lista parametrow ?
     }
 }

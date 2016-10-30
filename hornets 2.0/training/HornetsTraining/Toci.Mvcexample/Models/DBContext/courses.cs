@@ -15,7 +15,6 @@ namespace Toci.Mvcexample.Models.DBContext
     using System;
     using System.Collections.Generic;
     
-    [Table("courses")]
     public partial class courses
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
