@@ -28,7 +28,24 @@ namespace SeeSharpBasics.Olek
 
         public override string GlueBeginingEnd(string candidate)
         {
-            throw new System.NotImplementedException();
+            string result = "";
+            int j = candidate.Length - 1;
+            for (int i = 0; i < candidate.Length / 2; i++)
+            {
+                result = result + candidate[i] + candidate[j];
+                j--;
+            }
+            if (candidate.Length % 2 == 0)
+            {
+                Console.WriteLine("ilość parzysta znaków - " + result);
+                return result;
+            }
+            else
+            {
+                result = result + candidate[(candidate.Length / 2)];
+                Console.WriteLine("ilość nieparzysta znaków - " + result);
+                return result;
+            }
         }
 
         public override int CountOccurences(string candidate, char needle)
