@@ -61,6 +61,12 @@ namespace SeeSharpBasics.Olek
         // Letter......2 bez ołwerrajdowania ;)
         // zamiast int zrobiłem string, ale dałem "int result" i później
         // na końcu zwracam result.ToString i bangla :)
+        //  klasa, w której umieściłem kod nazywa się "Opracowana", więc w "Program.cs"
+        //  umiesczam to, co poniżej zakomentowane:
+        //{
+        //    Opracowana xyz = new Opracowana(); //wystąpienie-instancja klasy nazwane xyz
+        //    xyz.LetterPositionInString("Kapsel", 'p'); //imię mojego psa ;)
+        //}
         public string LetterPositionInString2(string candidate, char needle)
         {
             int result = 0;
