@@ -58,6 +58,31 @@ namespace SeeSharpBasics.Olek
             throw new System.NotImplementedException();
         }
 
+        // Letter......2 bez ołwerrajdowania ;)
+        // zamiast int zrobiłem string, ale dałem "int result" i później
+        // na końcu zwracam result.ToString i bangla :)
+        public string LetterPositionInString2(string candidate, char needle)
+        {
+            int result = 0;
+            for (int i = 0; i < candidate.Length; i++)
+            {
+                if (candidate[i] == needle)
+                {
+                    result = i + 1; //nie liczę znaków w wyrazie od zera, 
+                                    //tylko tak, jak przeciętny człowiek
+                }
+            }
+            Console.WriteLine("literka \"{0}\" w wyrazie {1} jest na miejscu {2}"
+                                        , needle, candidate, result);
+            Console.ReadKey();
+            return result.ToString();
+        }
+
+
+
+
+
+
         public override string LetterReplace(string candidate, char needle, char replace)
         {
             throw new System.NotImplementedException();
