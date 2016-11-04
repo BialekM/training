@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using Autofac;
 
@@ -9,7 +10,8 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
     {
         private const string NameOfTypeContainsDependancies = "Register";
         private const string NameOfMethodReturnDependancies = "GetTypesToRegister";
-        private const string PathPrefix = "../../../";
+        //private const string PathPrefix = "../../../";
+        private const string PathPrefix = "D:/GitRepository/warriorRep/hornets 2.0/training/HornetsTraining/";
         private const string PathMidfix = "/bin/Debug/";
         private const string PathPostfix = ".dll";
         private const string Seperator = ".";
@@ -18,6 +20,9 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
 
         public void InjectDll(string name)
         {
+            string myPath = PathPrefix + name + PathMidfix + name + PathPostfix;
+            var x = Path.GetFullPath(myPath);
+
             Assembly assembly = Assembly.LoadFrom(PathPrefix + name + PathMidfix + name + PathPostfix);
 
             _typesToRegister = (Dictionary<Type, Type>)assembly.

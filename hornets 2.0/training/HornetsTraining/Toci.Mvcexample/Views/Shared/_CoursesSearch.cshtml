@@ -1,4 +1,5 @@
-﻿@model Toci.Mvcexample.Models.EntireAppModel
+﻿@using Toci.Mvcexample.Models.NewCoursesSearch.CourseDisplay
+@model Toci.Mvcexample.Models.EntireAppModel
 
 @*Should be display as a partial View! -> Need to fix controller*@
 
@@ -18,46 +19,53 @@
                     <p class="sub-title">Fill keywords to seek for courses</p>
                 </div><!-- /.titile-box -->
                 <!--<form id="courses-search-form" class="" method="post" action="#"> -->
-                    @using (Html.BeginForm("CoursesSearch", "CoursesSearch", FormMethod.Post, new { id="courses-search-form", role = "form", app = Model, @class = "courses-serch-form" }))
-                    {
-                        <div class="wrap-input clearfix">
-                            <div class="wrap-select">
-                                @Html.DropDownListFor(m => m.CoursesSearch.Discipline.Value, @Model.CoursesSearch.Discipline.Items, "- Discipline -",
-                                    new { @class = "dropdownList" })
-                            </div><!-- /.wrap-select -->
-                            <div class="wrap-select">
+                @using (Html.BeginForm("CoursesSearch", "CoursesSearch", FormMethod.Post, new { id="courses-search-form", role = "form", app = Model, @class = "courses-serch-form" }))
+                {
+                    <div class="wrap-input clearfix">
+                        <div class="wrap-select">
+                            @Html.DropDownListFor(m => m.CoursesSearch.Topic.Value, @Model.CoursesSearch.Topic.Items, "- Topic -",
+                                new { @class = "dropdownList" })
+                        </div><!-- /.wrap-select -->
+                        <div class="wrap-select">
 
-                                @Html.DropDownListFor(m => m.CoursesSearch.Duration.Value, @Model.CoursesSearch.Duration.Items, "- Duration -",
-                                    new { @class = "dropdownList" })
+                            @Html.DropDownListFor(m => m.CoursesSearch.Start.Value, @Model.CoursesSearch.Start.Items, "- Start Date -",
+                                new { @class = "dropdownList" })
 
-                            </div><!-- /.wrap-select -->
-                            <div class="wrap-select">
+                        </div><!-- /.wrap-select -->
+                        <div class="wrap-select">
 
-                                @Html.DropDownListFor(m => m.CoursesSearch.CourseLevel.Value, @Model.CoursesSearch.CourseLevel.Items, "- Level -",
-                                    new { @class = "dropdownList" })
+                            @Html.DropDownListFor(m => m.CoursesSearch.End.Value, @Model.CoursesSearch.End.Items, "- End Date -",
+                                new { @class = "dropdownList" })
 
-                                </div><!-- /.wrap-select -->
-                                <div class="wrap-select">
-                                    @Html.DropDownListFor(m => m.CoursesSearch.Location.Value, @Model.CoursesSearch.Location.Items, "- Location -",
-                                    new { @id = "newId", @class = "dropdownList" }) @*, @AutoPostBack = "true", @OnChange = "CallChangefunc"})*@
-                                </div><!-- /.wrap-select -->
-                                <div class="input-wrap">
+                        </div><!-- /.wrap-select -->
+                        <div class="wrap-select">
+
+                            @Html.DropDownListFor(m => m.CoursesSearch.Level.Value, @Model.CoursesSearch.Level.Items, "- Level -",
+                                new { @class = "dropdownList" })
+
+                        </div><!-- /.wrap-select -->
+                        <div class="wrap-select">
+                            @Html.DropDownListFor(m => m.CoursesSearch.Instructor.Value, @Model.CoursesSearch.Instructor.Items, "- Location -",
+                                new { @id = "newId", @class = "dropdownList" }) @*, @AutoPostBack = "true", @OnChange = "CallChangefunc"})*@
+                        </div><!-- /.wrap-select -->
+                        @*<div class="input-wrap">
                                     <input type="text" value="" tabindex="1" placeholder="Keyword" name="Keyword" id="Keyword2">
-                                </div>
-                            </div>
-                        <!-- /.wrap-input -->
-                            <div class="submit-wrap text-center clearfix">
-                                <button class="btn-besmart">Search</button>
-                            </div>
-                    }
+                                </div>*@
+                    </div>
+                    <!-- /.wrap-input -->
+                    <div class="submit-wrap text-center clearfix">
+                        <button class="btn-besmart">Search</button>
+                    </div>
+                }
                 <!-- /.comment-form -->
             </div><!-- /.col-md-12 -->
         
-        @if (Model.CoursesResult != null)
-        {
-            @Html.Partial("_CoursesDisplay", Model)
-        }
+            @if (Model.CoursesSearch.Courses != null)
+            {
+                @Html.Partial("_CoursesDisplay", Model)
+            }
 
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
+

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Autofac;
 using Toci.DesignPatterns.PluginDependencyInjection;
 using Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac;
+using Toci.Mvcexample.Models.DBContext;
 
 namespace HornetsTesting.MVCTests.PluginDiTests
 {
@@ -28,11 +29,20 @@ namespace HornetsTesting.MVCTests.PluginDiTests
         {
             _builder = new ContainerBuilder();
 
+            
+
             IDiDllInjector dllInjector = new AutofacDllInjector();
             dllInjector.InjectDll("Toci.DevelopersLeasing.Dal");
             dllInjector.RegisterDependencies(_builder);
 
+            dllInjector.InjectDll("Toci.DevelopersLeasing.Bll");
+            dllInjector.RegisterDependencies(_builder);
+
             _builder.RegisterType<ExampleClass>();
+            _builder.RegisterType<TestBllImplementation>();
+            _builder.RegisterType<ExampleClass2>();
+            _builder.RegisterType<TeamLeasingDBContext>();
+
 
             _container = _builder.Build();
 

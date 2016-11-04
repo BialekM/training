@@ -3,7 +3,6 @@ using System.Data.Entity;
 using System.Linq;
 using Toci.DesignPatterns.ExceptionHandling;
 using Toci.Mvcexample.Models.CoursesSearch;
-using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay;
 using Toci.Mvcexample.Models.DBContext;
 using Toci.Mvcexample.Ntier.Dal.Interfaces;
 

@@ -37,8 +37,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -81,6 +81,7 @@
     <Compile Include="MVCTests\PluginDiTests\DITests.cs" />
     <Compile Include="MVCTests\PluginDiTests\ExampleAutofacResolve.cs" />
     <Compile Include="MVCTests\PluginDiTests\ExampleClass.cs" />
+    <Compile Include="MVCTests\PluginDiTests\TestBllImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Training1\Animals\DogTest.cs" />
     <Compile Include="Training1\Generics\GenericsTest.cs" />
@@ -205,6 +206,14 @@
     <ProjectReference Include="..\Toci.EmployeeLeasing.Dal.Interfaces\Toci.EmployeeLeasing.Dal.Interfaces.csproj">
       <Project>{46918A2C-E68E-4497-9596-F48B187829F8}</Project>
       <Name>Toci.EmployeeLeasing.Dal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.Mvcexample\Toci.Mvcexample.csproj">
+      <Project>{367895E5-4774-44B2-A0DD-9840C6D2A9C6}</Project>
+      <Name>Toci.Mvcexample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TociEmployeeLeasing.Bll.Interfaces\Toci.EmployeeLeasing.Bll.Interfaces.csproj">
+      <Project>{CBEB18E4-64C4-4FF3-A809-C9972EEC3C82}</Project>
+      <Name>Toci.EmployeeLeasing.Bll.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

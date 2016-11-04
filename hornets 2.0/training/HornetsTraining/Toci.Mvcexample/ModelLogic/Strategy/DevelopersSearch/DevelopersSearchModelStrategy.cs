@@ -14,7 +14,7 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.DevelopersSearch
         protected DevelopersSearchLogic Logic;
 
 
-        public DevelopersSearchModel GetModel(ILogic logic)
+        public DevelopersSearchModel GetModel()
         {
 
             throw new NotImplementedException();

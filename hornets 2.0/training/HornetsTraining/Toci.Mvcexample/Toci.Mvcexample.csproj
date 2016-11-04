@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Toci.Mvcexample</RootNamespace>
     <AssemblyName>Toci.Mvcexample</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44367</IISExpressSSLPort>
@@ -43,14 +43,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.4.0.1\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Autofac.Integration.Mvc">
-      <HintPath>..\packages\Autofac.Mvc5.4.0.0\lib\net451\Autofac.Integration.Mvc.dll</HintPath>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -66,6 +69,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -191,6 +196,8 @@
     </Compile>
     <Compile Include="ModelLogic\Handlers\CoursesSearchHandler.cs" />
     <Compile Include="ModelLogic\Handlers\EntirreAppModelChor.cs" />
+    <Compile Include="ModelLogic\Handlers\Enums\EHandlers.cs" />
+    <Compile Include="ModelLogic\Handlers\Enums\EnumsConvert.cs" />
     <Compile Include="ModelLogic\Handlers\InstructorsHandler.cs" />
     <Compile Include="ModelLogic\Handlers\RecentProjectsHandler.cs" />
     <Compile Include="ModelLogic\Interfaces\IModelLogic.cs" />
@@ -203,8 +210,8 @@
     <Compile Include="ModelLogic\Strategy\DevelopersSearch\IDevelopersSearchStartegy.cs" />
     <Compile Include="ModelLogic\Strategy\IModelStrategy.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CoursesSearch\CourseDisplay\CourseDisplay.cs" />
-    <Compile Include="Models\CoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
+    <Compile Include="Models\NewCoursesSearch\CourseDisplay\CourseDisplay.cs" />
+    <Compile Include="Models\NewCoursesSearch\CourseDisplay\CoursesDisplayModel.cs" />
     <Compile Include="Models\CoursesSearch\CoursesSearchData.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -387,6 +394,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Scripts\inserts.sql" />
+    <Content Include="App_Data\Scripts\TeamLeasingScript.sql" />
     <Content Include="App_Data\TeamLeasingDatabase.mdf" />
     <Content Include="App_Data\TeamLeasingDatabase_log.ldf">
       <DependentUpon>TeamLeasingDatabase.mdf</DependentUpon>
@@ -557,7 +566,6 @@
     <Content Include="Views\Shared\_RecentProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\Scripts\" />
     <Folder Include="Content\images\blog\" />
     <Folder Include="Content\images\counter\" />
     <Folder Include="Content\images\courses\" />
@@ -593,6 +601,10 @@
     <ProjectReference Include="..\Toci.EmployeeLeasing.Dal.Interfaces\Toci.EmployeeLeasing.Dal.Interfaces.csproj">
       <Project>{46918a2c-e68e-4497-9596-f48b187829f8}</Project>
       <Name>Toci.EmployeeLeasing.Dal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TociEmployeeLeasing.Bll.Interfaces\Toci.EmployeeLeasing.Bll.Interfaces.csproj">
+      <Project>{CBEB18E4-64C4-4FF3-A809-C9972EEC3C82}</Project>
+      <Name>Toci.EmployeeLeasing.Bll.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

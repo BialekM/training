@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Toci.Mvcexample.Models.CoursesSearch;
-using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay;
 using Toci.Mvcexample.Models.DBContext;
 
 namespace Toci.Mvcexample.Ntier.Dal.Interfaces

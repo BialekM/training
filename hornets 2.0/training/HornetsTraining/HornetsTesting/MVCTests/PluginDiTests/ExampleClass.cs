@@ -9,9 +9,9 @@ namespace HornetsTesting.MVCTests.PluginDiTests
 {
     public class ExampleClass
     {
-        private ICoursesSearch _coursesSearch;
+        private ICoursesSearchDal _coursesSearch;
 
-        public ExampleClass(ICoursesSearch coursesSearch)
+        public ExampleClass(ICoursesSearchDal coursesSearch)
         {
             _coursesSearch = coursesSearch;
         }
@@ -20,5 +20,16 @@ namespace HornetsTesting.MVCTests.PluginDiTests
         {
             _coursesSearch.GetCourses(null);
         }
+    }
+
+    public class ExampleClass2
+    {
+        private ICoursesSearchDal _model;
+
+        public ExampleClass2(ICoursesSearchDal model)
+        {
+            _model = model;
+        }
+
     }
 }

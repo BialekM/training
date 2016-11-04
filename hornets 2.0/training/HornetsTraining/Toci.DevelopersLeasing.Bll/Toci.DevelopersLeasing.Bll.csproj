@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,12 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoursesSearch\ProgrammingCoursesEndDateSearchParams.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesInstructorsSearchParams.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesLevelsSearchParams.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesSearchBll.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesStartDateSearchParams.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesTopicsSearchParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Toci.DesignPatterns\Toci.DesignPatterns.csproj">
       <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
       <Name>Toci.DesignPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.DevelopersLeasing.Dal\Toci.DevelopersLeasing.Dal.csproj">
+      <Project>{28ECCCD2-382F-46C4-A5FA-A1B098F68533}</Project>
+      <Name>Toci.DevelopersLeasing.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toci.EmployeeLeasing.Dal.Interfaces\Toci.EmployeeLeasing.Dal.Interfaces.csproj">
       <Project>{46918a2c-e68e-4497-9596-f48b187829f8}</Project>
@@ -54,6 +69,10 @@
       <Project>{cbeb18e4-64c4-4ff3-a809-c9972eec3c82}</Project>
       <Name>Toci.EmployeeLeasing.Bll.Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

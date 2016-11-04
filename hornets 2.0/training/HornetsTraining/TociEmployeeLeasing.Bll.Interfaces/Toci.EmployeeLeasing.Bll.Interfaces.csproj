@@ -39,6 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoursesSearch\ICoursesSearchBll.cs" />
+    <Compile Include="CoursesSearch\IEndDateSearchParams.cs" />
+    <Compile Include="CoursesSearch\IInstructorsSearchParams.cs" />
+    <Compile Include="CoursesSearch\ILevelSearchParams.cs" />
+    <Compile Include="CoursesSearch\IStartDateSearchParams.cs" />
+    <Compile Include="CoursesSearch\ITopicsSearchParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,7 +54,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CoursesSearch\" />
     <Folder Include="DevelopersSearch\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

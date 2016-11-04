@@ -1,4 +1,4 @@
-﻿@using Toci.Mvcexample.Models.CoursesSearch.CourseDisplay
+﻿@using Toci.Mvcexample.Models.NewCoursesSearch.CourseDisplay
 @model Toci.Mvcexample.Models.EntireAppModel
    
 @*Additionl view, just for testing how does it work*@
@@ -6,7 +6,7 @@
 <div style="margin-left: 50px; margin-top: 20px">
     @using (Html.BeginForm("CoursesDisplay", "CoursesSearch", FormMethod.Post, new { role = "form", app = Model }))
     {
-        foreach (CourseDisplay course in Model.CoursesResult.Courses)
+        foreach (CourseDisplay course in Model.CoursesSearch.Courses.Courses)
         {
             <div>
 

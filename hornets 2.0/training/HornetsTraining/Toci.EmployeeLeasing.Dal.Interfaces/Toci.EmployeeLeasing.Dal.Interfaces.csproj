@@ -39,14 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoursesSearch\ICourseSearchModel.cs" />
-    <Compile Include="CoursesSearch\ICourseSearchParams.cs" />
-    <Compile Include="CoursesSearch\ICoursesSearch.cs" />
+    <Compile Include="CoursesSearch\ICourseModel.cs" />
+    <Compile Include="CoursesSearch\ICoursesSearchParams.cs" />
+    <Compile Include="CoursesSearch\ICoursesSearchDal.cs" />
+    <Compile Include="EmployeeSearch\IEmployeeSearchDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EmployeeSearch\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

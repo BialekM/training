@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Toci.EmployeeLeasing.Bll.Interfaces.CoursesSearch;
 using Toci.Mvcexample.ModelLogic.Interfaces;
 using Toci.Mvcexample.Models.NewCoursesSearch;
 using Toci.Mvcexample.Ntier.Bll;
@@ -13,42 +14,57 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
 {
     public class CoursesSearchModelStrategyBasic : CoursesSearchModelStrategy
     {
+        private IEndDateSearchParams _endDateSearchParams;
+        private IInstructorsSearchParams _instructorsSearchParams;
+        private ILevelSearchParams _levelSearchParams;
+        private IStartDateSearchParams _startDateSearchParams;
+        private ITopicsSearchParams _topicsSearchParams;
+
         private CoursesSearchModel _recentModel;
 
-        public CoursesSearchModelStrategyBasic(CoursesSearchModel recentModel = null)
+        public CoursesSearchModelStrategyBasic(
+            ICoursesSearchBll coursesSearchBll,
+            IEndDateSearchParams endDateSearchParams,
+            IInstructorsSearchParams instructorsSearchParams,
+            ILevelSearchParams levelSearchParams,
+            IStartDateSearchParams startDateSearchParams,
+            ITopicsSearchParams topicsSearchParams,
+            CoursesSearchModel recentModel) 
+            : base(coursesSearchBll)
         {
+            _endDateSearchParams = endDateSearchParams;
+            _instructorsSearchParams = instructorsSearchParams;
+            _levelSearchParams = levelSearchParams;
+            _startDateSearchParams = startDateSearchParams;
+            _topicsSearchParams = topicsSearchParams;
             _recentModel = recentModel;
         }
 
-        public override CoursesSearchModel GetModel(ILogic logic)
+        public override CoursesSearchModel GetModel()
         {
-            Logic = (CoursesSearchLogic) logic;
-
-            var test = ToSelectList(Logic.GetAllowedInstructors(), s => s);
-
             var model = new CoursesSearchModel
             {
                 Instructor = new DropDownListModel<string>
                 {
-                    Items = ToSelectList(Logic.GetAllowedInstructors(), s => s)
+                    Items = ToSelectList(CoursesSearchBll.GetAllowedInstructors(_instructorsSearchParams), s => s)
                 },
                 Topic = new DropDownListModel<string>
                 {
-                    Items = ToSelectList(Logic.GetAllowedTopics(), s => s)
+                    Items = ToSelectList(CoursesSearchBll.GetAllowedTopics(_topicsSearchParams), s => s)
                 },
                 End = new DropDownListModel<DateTime?>
                 {
-                    //Items = ToSelectList(Logic.GetAllowedEndDatas(), 
-                    //    time => time?.ToLongDateString())
+                    Items = ToSelectList(CoursesSearchBll.GetAllowedEndDatas(_endDateSearchParams), 
+                        time => time?.ToLongDateString())
                 },
                 Start = new DropDownListModel<DateTime?>
                 {
-                    //Items = ToSelectList(Logic.GetAllowedStartDatas(),
-                    //    time => time?.ToLongDateString())
+                    Items = ToSelectList(CoursesSearchBll.GetAllowedStartDatas(_startDateSearchParams),
+                        time => time?.ToLongDateString())
                 },
                 Level = new DropDownListModel<string>
                 {
-                    Items = ToSelectList(Logic.GetAllowedLevels(), s => s.ToString())
+                    Items = ToSelectList(CoursesSearchBll.GetAllowedLevels(_levelSearchParams), s => s.ToString())
                 }
                 
             };

@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoursesSearch\ProgrammingCoursesSearch.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCourseModel.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesSearchDal.cs" />
+    <Compile Include="CoursesSearch\ProgrammingCoursesSearchParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs" />
   </ItemGroup>
@@ -48,6 +59,14 @@
       <Project>{46918a2c-e68e-4497-9596-f48b187829f8}</Project>
       <Name>Toci.EmployeeLeasing.Dal.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.Mvcexample\Toci.Mvcexample.csproj">
+      <Project>{367895e5-4774-44b2-a0dd-9840c6d2a9c6}</Project>
+      <Name>Toci.Mvcexample</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

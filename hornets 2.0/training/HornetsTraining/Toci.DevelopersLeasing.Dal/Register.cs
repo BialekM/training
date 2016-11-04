@@ -14,7 +14,9 @@ namespace Toci.DevelopersLeasing.Dal
         {
             return new Dictionary<Type, Type>
             {
-                {typeof(ICoursesSearch), typeof(ProgrammingCoursesSearch) }
+                {typeof(ICoursesSearchDal), typeof(ProgrammingCoursesSearchDal) },
+                {typeof(ICourseModel), typeof(ProgrammingCourseModel) },
+                {typeof(ICoursesSearchParams), typeof(ProgrammingCoursesSearchParams) }
             };
         }
     }
