@@ -68,8 +68,42 @@ namespace SeeSharpBasics.Olek
 
         public override int CountOccurences(string candidate, char needle)
         {
-            throw new System.NotImplementedException();
+            if (candidate.Contains(needle.ToString()))
+                {
+                    for (int i = 0; i < candidate.Length; i++)
+                    {
+                        if (candidate[i] == needle)
+                        {
+                            var result = i + 1;
+                            Console.Write("Znak '{0}' znajduje się na {1} miejscu w stringu '{2}.", needle, result,
+                                candidate);
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.Write("Nie ma znaku '{0}' w stringu '{1}'.",needle, candidate);
+                }
+            return 0; // system zaproponował....
         }
+
+
+            //{
+            //    for (int i = 0; i < candidate.Length; i++)
+            //    {
+            //        if (candidate[i] == needle)
+            //        {
+            //            var result = i + 1;
+            //            Console.Write("Znak '{0}' znajduje się na {1} miejscu w stringu '{2}.", needle, result,
+            //                candidate);
+            //            return;
+            //        }
+            //    }
+            //    Console.Write("Nie ma znaku '{0}' w stringu '{1}'.", needle, candidate);
+            //}
+
+        //}
 
         public override int LetterPositionInString(string candidate, char needle)
         {
