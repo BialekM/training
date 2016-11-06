@@ -5,18 +5,36 @@ namespace SeeSharpBasics.Olek
     public class OlekStringOperations : StringOperations
 
     {
-        public override string Substring(string candidate, int start, int length)
+        //public override string Substring(string candidate, int start, int length)
+        //{
+        //    //throw new System.NotImplementedException();
+        //    string result = "";
+
+        //    //Substring("beatka", 1, 3); eat
+        //    //Substring("bartek", 2, 4); rtek
+        //    //Substring("aleksander", 5, 2);  an
+        //    for (int i = start; i < start + length; i++)
+        //    {
+        //        result += candidate[i].ToString();
+        //        Console.Write(result);
+        //    }
+        //    return result;
+        //}
+
+        public override string Substring(string candidate, int start, int length)   // beatka, 1, 3 => eat ; bartek, 2, 4 => rtek
         {
-            //throw new System.NotImplementedException();
             string result = "";
 
-            //Substring("beatka", 1, 3); eat
-            //Substring("bartek", 2, 4); rtek
-            //Substring("aleksander", 5, 2);  an
-            for (int i = start; i < start + length; i++)
+            if (start >= candidate.Length - 1)
             {
-                result += candidate[i].ToString();
-                Console.Write(result);
+                Console.Write("Przekroczony zakres stringu. \nDługość stringu = {0}.\nPodaj mniejszą wartość niż {0}", candidate.Length - 1);
+            }
+            else
+            {
+                for (int i = start; i <= (start + length) - 1 && i < candidate.Length; i++)
+                {
+                    result += candidate[i].ToString();
+                }
             }
             return result;
         }
