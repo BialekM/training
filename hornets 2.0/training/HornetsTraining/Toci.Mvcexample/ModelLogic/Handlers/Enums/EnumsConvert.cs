@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Autofac;
+using Autofac.Core;
 using Toci.DesignPatterns.ChainOfResponsibility;
 using Toci.Mvcexample.DependencyInjection;
+using Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch;
+using Toci.Mvcexample.Models;
+using Toci.Mvcexample.Models.NewCoursesSearch;
 
 namespace Toci.Mvcexample.ModelLogic.Handlers.Enums
 {
@@ -43,6 +47,12 @@ namespace Toci.Mvcexample.ModelLogic.Handlers.Enums
             {
                 resolveHandlers.Add(handler.Key, handler.Value);
             }
+
+            //var x = AutofacResolver.GetContainer().Resolve<CoursesSearchHandler>
+            //(new TypedParameter(typeof(ICoursesSearchModelStrategy),
+            //    AutofacResolver.GetContainer().Resolve<CoursesSearchModelStrategyDisplayCourses>(new TypedParameter(typeof(CoursesSearchModel), new CoursesSearchModel()))));
+
+            //x.Handle(new EntireAppModel());
 
             return resolveHandlers;
         }

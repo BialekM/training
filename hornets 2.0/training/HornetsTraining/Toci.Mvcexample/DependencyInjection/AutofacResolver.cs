@@ -66,9 +66,10 @@ namespace Toci.Mvcexample.DependencyInjection
             _builder.RegisterType<RecentProjectsHandler>();
             _builder.RegisterType<CoursesSearchHandler>();
 
+            _builder.RegisterType<CoursesSearchModelStrategyDisplayCourses>();
+
             _builder.RegisterType<CoursesSearchModelStrategyBasic>().
-                As<ICoursesSearchModelStrategy>().
-                WithParameter("recentModel", null);
+                As<ICoursesSearchModelStrategy>();
 
             _builder.RegisterType<ModelLogic.ModelLogic>().
                 As<IModelLogic>().

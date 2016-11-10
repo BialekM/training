@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.HornetsTraining", "HornetsTraining\Toci.HornetsTraining.csproj", "{78236DBE-77FA-44AF-A976-26ADE3F8066B}"
 EndProject
@@ -18,6 +18,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.EmployeeLeasing.Bll.Interfaces", "TociEmployeeLeasing.Bll.Interfaces\Toci.EmployeeLeasing.Bll.Interfaces.csproj", "{CBEB18E4-64C4-4FF3-A809-C9972EEC3C82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.DevelopersLeasing.Bll", "Toci.DevelopersLeasing.Bll\Toci.DevelopersLeasing.Bll.csproj", "{2C79802D-8635-44DB-A9D8-DAC003C02666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.EmployeeLeasing.HandlerStrategies.Interfaces", "Toci.EmployeeLeasing.HandlerStrategies.Interfaces\Toci.EmployeeLeasing.HandlerStrategies.Interfaces.csproj", "{64293669-7C1E-49CD-92C9-504CE7B5127D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.EmployeeLeasing.Models.Interfaces", "Toci.EmployeeLeasing.Models.Interfaces\Toci.EmployeeLeasing.Models.Interfaces.csproj", "{DB84E502-EC32-406A-A44C-A214C9D8A292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.DevelopersLeasing.Models", "Toci.DevelopersLeasing.Models\Toci.DevelopersLeasing.Models.csproj", "{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.EmployeeLeasing.ModelHandlers.Interfaces", "Toci.EmployeeLeasing.ModelHandlers.Interfaces\Toci.EmployeeLeasing.ModelHandlers.Interfaces.csproj", "{28848648-EC5D-4769-9F90-29753ED0F3F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.DevelopersLeasing.ModelHandlers", "Toci.DevelopersLeasing.ModelHandlers\Toci.DevelopersLeasing.ModelHandlers.csproj", "{24443C22-B596-4703-9F0A-5E8D15532027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.DevelopersLeasing.HandlerStrategies", "Toci.DevelopersLeasing.HandlerStrategies\Toci.DevelopersLeasing.HandlerStrategies.csproj", "{498DCF0D-0366-4E05-A031-D884C51CFE98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +69,30 @@ Global
 		{2C79802D-8635-44DB-A9D8-DAC003C02666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C79802D-8635-44DB-A9D8-DAC003C02666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C79802D-8635-44DB-A9D8-DAC003C02666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64293669-7C1E-49CD-92C9-504CE7B5127D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64293669-7C1E-49CD-92C9-504CE7B5127D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64293669-7C1E-49CD-92C9-504CE7B5127D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64293669-7C1E-49CD-92C9-504CE7B5127D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB84E502-EC32-406A-A44C-A214C9D8A292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB84E502-EC32-406A-A44C-A214C9D8A292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB84E502-EC32-406A-A44C-A214C9D8A292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB84E502-EC32-406A-A44C-A214C9D8A292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28848648-EC5D-4769-9F90-29753ED0F3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28848648-EC5D-4769-9F90-29753ED0F3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28848648-EC5D-4769-9F90-29753ED0F3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28848648-EC5D-4769-9F90-29753ED0F3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24443C22-B596-4703-9F0A-5E8D15532027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24443C22-B596-4703-9F0A-5E8D15532027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24443C22-B596-4703-9F0A-5E8D15532027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24443C22-B596-4703-9F0A-5E8D15532027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498DCF0D-0366-4E05-A031-D884C51CFE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498DCF0D-0366-4E05-A031-D884C51CFE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498DCF0D-0366-4E05-A031-D884C51CFE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498DCF0D-0366-4E05-A031-D884C51CFE98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

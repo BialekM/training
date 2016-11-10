@@ -20,16 +20,13 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
         private IStartDateSearchParams _startDateSearchParams;
         private ITopicsSearchParams _topicsSearchParams;
 
-        private CoursesSearchModel _recentModel;
-
         public CoursesSearchModelStrategyBasic(
             ICoursesSearchBll coursesSearchBll,
             IEndDateSearchParams endDateSearchParams,
             IInstructorsSearchParams instructorsSearchParams,
             ILevelSearchParams levelSearchParams,
             IStartDateSearchParams startDateSearchParams,
-            ITopicsSearchParams topicsSearchParams,
-            CoursesSearchModel recentModel) 
+            ITopicsSearchParams topicsSearchParams) 
             : base(coursesSearchBll)
         {
             _endDateSearchParams = endDateSearchParams;
@@ -37,7 +34,6 @@ namespace Toci.Mvcexample.ModelLogic.Strategy.CoursesSearch
             _levelSearchParams = levelSearchParams;
             _startDateSearchParams = startDateSearchParams;
             _topicsSearchParams = topicsSearchParams;
-            _recentModel = recentModel;
         }
 
         public override CoursesSearchModel GetModel()

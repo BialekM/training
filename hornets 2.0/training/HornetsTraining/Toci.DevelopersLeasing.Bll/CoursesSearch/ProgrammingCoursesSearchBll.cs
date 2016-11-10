@@ -78,5 +78,6 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
 
             return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Instructor);
         }
+
     }
 }
