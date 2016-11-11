@@ -600,9 +600,21 @@
       <Project>{252501b7-6324-4067-8899-f8ebba5f234b}</Project>
       <Name>Toci.DesignPatterns</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Toci.DevelopersLeasing.Models\Toci.DevelopersLeasing.Models.csproj">
+      <Project>{41BFE649-3B97-4CBC-97E3-8E657B9A0F92}</Project>
+      <Name>Toci.DevelopersLeasing.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toci.EmployeeLeasing.Dal.Interfaces\Toci.EmployeeLeasing.Dal.Interfaces.csproj">
       <Project>{46918a2c-e68e-4497-9596-f48b187829f8}</Project>
       <Name>Toci.EmployeeLeasing.Dal.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.EmployeeLeasing.ModelHandlers.Interfaces\Toci.EmployeeLeasing.ModelHandlers.Interfaces.csproj">
+      <Project>{28848648-EC5D-4769-9F90-29753ED0F3F6}</Project>
+      <Name>Toci.EmployeeLeasing.ModelHandlers.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toci.EmployeeLeasing.Models.Interfaces\Toci.EmployeeLeasing.Models.Interfaces.csproj">
+      <Project>{DB84E502-EC32-406A-A44C-A214C9D8A292}</Project>
+      <Name>Toci.EmployeeLeasing.Models.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\TociEmployeeLeasing.Bll.Interfaces\Toci.EmployeeLeasing.Bll.Interfaces.csproj">
       <Project>{CBEB18E4-64C4-4FF3-A809-C9972EEC3C82}</Project>

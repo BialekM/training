@@ -72,7 +72,12 @@
     <Compile Include="CoursesSearch\DisplayCourses\ProgrammingCourseDisplay.cs" />
     <Compile Include="CoursesSearch\DropDownListModel.cs" />
     <Compile Include="CoursesSearch\ProgrammingCoursesSearchModel.cs" />
+    <Compile Include="Instructors\Instructor.cs" />
+    <Compile Include="Instructors\InstructorsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentProjects\RecentProjectsModel.cs" />
+    <Compile Include="RecentProjects\ProjectModel.cs" />
+    <Compile Include="Register.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

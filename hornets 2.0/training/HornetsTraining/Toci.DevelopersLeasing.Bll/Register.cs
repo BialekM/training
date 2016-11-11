@@ -24,5 +24,13 @@ namespace Toci.DevelopersLeasing.Bll
                 {typeof(ITopicsSearchParams), typeof(ProgrammingCoursesTopicsSearchParams) }
             };
         }
+
+        public static Dictionary<Type, Type> GetGenericTypesToRegister()
+        {
+            return new Dictionary<Type, Type>
+            {
+                
+            };
+        }
     }
 }

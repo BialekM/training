@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Toci.DesignPatterns.ChainOfResponsibility;
+using Toci.DesignPatterns.ChainOfResponsibility.Interfaces;
 using Toci.Mvcexample.ModelLogic.Handlers;
 using Toci.Mvcexample.ModelLogic.Handlers.Enums;
 
@@ -12,7 +13,7 @@ namespace Toci.Mvcexample.ModelLogic
             Handlers = new EntirreAppModelChor(new EnumsConvert().ToHandlers(handlers));
         }
 
-        public ModelLogic(Dictionary<string, Handler> handlers)
+        public ModelLogic(Dictionary<string, IModelHandler> handlers)
         {
             Handlers = new EntirreAppModelChor(handlers);
         }

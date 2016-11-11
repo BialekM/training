@@ -60,6 +60,15 @@ namespace Toci.Mvcexample.DependencyInjection
             dllInjector.InjectDll("Toci.DevelopersLeasing.Bll");
             dllInjector.RegisterDependencies(_builder);
 
+            dllInjector.InjectDll("Toci.DevelopersLeasing.HandlerStrategies");
+            dllInjector.RegisterDependencies(_builder);
+
+            dllInjector.InjectDll("Toci.DevelopersLeasing.ModelHandlers");
+            dllInjector.RegisterDependencies(_builder);
+
+            dllInjector.InjectDll("Toci.DevelopersLeasing.Models");
+            dllInjector.RegisterDependencies(_builder);
+
             _builder.RegisterType<TeamLeasingDBContext>();
 
             _builder.RegisterType<InstructorsHandler>();

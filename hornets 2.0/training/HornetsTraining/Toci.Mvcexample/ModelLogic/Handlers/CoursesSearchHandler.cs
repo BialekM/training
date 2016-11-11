@@ -22,7 +22,7 @@ namespace Toci.Mvcexample.ModelLogic.Handlers
         {
             EntireAppModel model = (EntireAppModel)entity;
 
-            model.CoursesSearch = _strategy.GetModel();  //-> w ostatecznej wersji w ten sposob ?
+            //model.CoursesSearch = _strategy.GetModel();  //-> w ostatecznej wersji w ten sposob ?
         }
     }
 }

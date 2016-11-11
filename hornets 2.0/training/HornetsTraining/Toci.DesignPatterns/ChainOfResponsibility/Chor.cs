@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
+using Toci.DesignPatterns.ChainOfResponsibility.Interfaces;
 
 namespace Toci.DesignPatterns.ChainOfResponsibility
 {
     public abstract class Chor
     {
-        protected Dictionary<string, Handler>  Handlers { get; set; }
+        protected Dictionary<string, IModelHandler>  Handlers { get; set; }
 
-        protected Chor(Dictionary<string, Handler> handlers)
+        protected Chor(Dictionary<string, IModelHandler> handlers)
         {
             Handlers = handlers;
         }

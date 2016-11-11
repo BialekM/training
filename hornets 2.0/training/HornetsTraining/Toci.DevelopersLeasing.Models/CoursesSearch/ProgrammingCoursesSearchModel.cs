@@ -14,7 +14,7 @@ namespace Toci.DevelopersLeasing.Models.CoursesSearch
             IDropDownListModel<string> level,
             IDropDownListModel<string> instructor)
         {
-            Courses = courses;
+            //Courses = courses;
             Topic = topic;
             Start = start;
             End = end;

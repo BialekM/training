@@ -18,7 +18,7 @@ namespace Toci.DevelopersLeasing.ModelHandlers.CoursesSearch
         {
             EntireAppModel model = (EntireAppModel)entity;
 
-            //model.CoursesSearch = _strategy.GetModel();
+            model.CoursesSearch = _strategy.GetModel();
         }
     }
 }
