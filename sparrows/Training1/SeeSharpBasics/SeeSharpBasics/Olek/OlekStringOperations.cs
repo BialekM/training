@@ -27,14 +27,17 @@ namespace SeeSharpBasics.Olek
 
             if (start >= candidate.Length - 1)
             {
-                Console.Write("Przekroczony zakres stringu. \nDługość stringu = {0}.\nPodaj mniejszą wartość niż {0}", candidate.Length - 1);
+                Console.Write("Przekroczony zakres stringu. \nDługość stringu = {0}.\n" +
+                              "Podaj mniejszą wartość niż {0}", candidate.Length - 1);
             }
             else
-            {
-                for (int i = start; i <= (start + length) - 1 && i < candidate.Length; i++)
+                if (length >= candidate.Length - 1)
                 {
-                    result += candidate[i].ToString();
+                    Console.WriteLine("za duża wartość wyświtelania zanaków\nprogram odczyta i tak tylko tyle, ile indekśów ma string ({0}) i nie więcej.\nMaksymalna wartość drugiego parametru: {1}\n", candidate.Length, candidate.Length - 1);
                 }
+            for (int i = start; i <= (start + length) - 1 && i < candidate.Length; i++)
+            {
+                result += candidate[i].ToString();
             }
             return result;
         }
