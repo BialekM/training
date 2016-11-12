@@ -1,4 +1,4 @@
-﻿@model Toci.Mvcexample.Models.OurInstructorsModel
+﻿@model Toci.Mvcexample.Models.EntireAppModel
 
 @{
     string partialHeader = "Nasi instruktorzy";
@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="roll-accordion instructors">
                     <h3>@partialHeader</h3>
-                    @foreach (var element in Model.Instructors)
+                    @foreach (var element in Model.Instructors.Instructors)
                     {
                         <div class="roll-toggle">
                             <div class="toggle-title">@element.Name</div>

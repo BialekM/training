@@ -10,6 +10,7 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
     {
         private const string NameOfTypeContainsDependancies = "Register";
         private const string NameOfMethodReturnDependancies = "GetTypesToRegister";
+        private const string NameOfMethodReturnGenericDependancies = "GetGenericTypesToRegister";
         //private const string PathPrefix = "../../../";
         private const string PathPrefix = "D:/GitRepository/warriorRep/hornets 2.0/training/HornetsTraining/";
         private const string PathMidfix = "/bin/Debug/";
@@ -17,6 +18,7 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
         private const string Seperator = ".";
 
         private Dictionary<Type, Type> _typesToRegister;
+        private Dictionary<Type, Type> _genericTypesToRegister;
 
         public void InjectDll(string name)
         {
@@ -29,6 +31,12 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
                 GetType(name + Seperator + NameOfTypeContainsDependancies).
                 GetMethod(NameOfMethodReturnDependancies).
                 Invoke(null, null);
+
+            _genericTypesToRegister = (Dictionary<Type, Type>) assembly.
+                GetType(name + Seperator + NameOfTypeContainsDependancies).
+                GetMethod(NameOfMethodReturnGenericDependancies).
+                Invoke(null, null);
+            
         }
 
         public void RegisterDependencies(object register)
@@ -38,6 +46,11 @@ namespace Toci.DesignPatterns.PluginDependencyInjection.DllInjectorForAutofac
             foreach (var type in _typesToRegister)
             {
                 builder.RegisterType(type.Value).As(type.Key);
+            }
+
+            foreach (var type in _genericTypesToRegister)
+            {
+                builder.RegisterGeneric(type.Value).As(type.Key);
             }
         }
     }

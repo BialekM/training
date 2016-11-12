@@ -28,7 +28,7 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
             _coursesSearchParams.Topic = null;
             _coursesSearchParams.Technologies = null;
 
-            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.CourseName);
+            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.CourseName).Distinct();
         }
 
         public IQueryable<DateTime?> GetAllowedStartDatas(IStartDateSearchParams searchParams)
@@ -40,7 +40,7 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
             _coursesSearchParams.Topic = searchParams.Topic;
             _coursesSearchParams.Technologies = null;
 
-            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Start);
+            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Start).Distinct();
         }
 
         public IQueryable<DateTime?> GetAllowedEndDatas(IEndDateSearchParams searchParams)
@@ -52,7 +52,7 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
             _coursesSearchParams.Topic = searchParams.Topic;
             _coursesSearchParams.Technologies = null;
 
-            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.End);
+            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.End).Distinct();
         }
 
         public IQueryable<int?> GetAllowedLevels(ILevelSearchParams searchParams)
@@ -64,7 +64,7 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
             _coursesSearchParams.Topic = searchParams.Topic;
             _coursesSearchParams.Technologies = null;
 
-            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Level);
+            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Level).Distinct();
         }
 
         public IQueryable<string> GetAllowedInstructors(IInstructorsSearchParams searchParams)
@@ -76,7 +76,8 @@ namespace Toci.DevelopersLeasing.Bll.CoursesSearch
             _coursesSearchParams.Topic = searchParams.Topic;
             _coursesSearchParams.Technologies = null;
 
-            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Instructor);
+            return _coursesSearchDal.GetCourses(_coursesSearchParams).Select(courseModel => courseModel.Instructor).Distinct();
         }
+
     }
 }

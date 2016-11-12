@@ -19,5 +19,13 @@ namespace Toci.DevelopersLeasing.Dal
                 {typeof(ICoursesSearchParams), typeof(ProgrammingCoursesSearchParams) }
             };
         }
+
+        public static Dictionary<Type, Type> GetGenericTypesToRegister()
+        {
+            return new Dictionary<Type, Type>
+            {
+
+            };
+        }
     }
 }

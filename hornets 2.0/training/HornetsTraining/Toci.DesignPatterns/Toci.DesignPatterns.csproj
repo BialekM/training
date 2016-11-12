@@ -57,6 +57,7 @@
     <Compile Include="ChainOfResponsibility\Chor.cs" />
     <Compile Include="ChainOfResponsibility\Handler.cs" />
     <Compile Include="ChainOfResponsibility\HandlerRefType.cs" />
+    <Compile Include="ChainOfResponsibility\Interfaces\IModelHandler.cs" />
     <Compile Include="ExceptionHandling\ErrorLog\ErrorLog.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -83,9 +84,7 @@
     <Compile Include="PluginDependencyInjection\IDiDllInjector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ChainOfResponsibility\Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EntityDeploy Include="ExceptionHandling\ErrorLog\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
