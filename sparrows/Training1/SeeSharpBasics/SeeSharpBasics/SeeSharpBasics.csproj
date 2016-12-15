@@ -79,6 +79,7 @@
     <Compile Include="MagdaSkalik\Homework3\MagdaPeselValidator.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikStringOperations.cs" />
     <Compile Include="MagdaSkalik\MagdaSkalikTableOperations.cs" />
+    <Compile Include="MagdaSkalik\MineSweeperHome\MagdaSkalikMineSweeper.cs" />
     <Compile Include="MagdaSkalik\Training5\MagdaHomework.cs" />
     <Compile Include="MarcinGala\MarcinGalaStringOperations.cs" />
     <Compile Include="MarcinGala\MarcinTableOperations.cs" />

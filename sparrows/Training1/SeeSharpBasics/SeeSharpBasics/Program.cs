@@ -11,6 +11,7 @@ using SeeSharpBasics.SlawekKowal;
 using SeeSharpBasics.TomaszKilian;
 using SeeSharpBasics.Training4.Db;
 using SeeSharpBasics.Training4.minesweeper;
+using SeeSharpBasics.MagdaSkalik.MineSweeperHome;
 
 namespace SeeSharpBasics
 {
@@ -19,26 +20,29 @@ namespace SeeSharpBasics
 
         static void Main(string[] args)
         {
+            MagdaSkalikMineSweeperHome mnswp = new MagdaSkalikMineSweeperHome();
 
-            PawelHanusStringOperations Strop = new PawelHanusStringOperations();
-            PawelHanusTableOperations Top = new PawelHanusTableOperations();
+            mnswp.Show(mnswp.BombsCount(10, 10, 10));
 
-            int[] tosort = new[] {32,1, 3, 24, 5,54,333,3,0,31,3};
-            int[] sorted;
-            Console.WriteLine("to sort");
-            foreach (var i in tosort)
-            {
-                Console.WriteLine("{0}",i);
-            }
+            //PawelHanusStringOperations Strop = new PawelHanusStringOperations();
+            //PawelHanusTableOperations Top = new PawelHanusTableOperations();
 
-            sorted = Top.BubbleSort(tosort);
-            Console.WriteLine("to sorted");
-            foreach (var i in sorted)
-            {
-                Console.WriteLine("{0}", i);
-            }         
+            //int[] tosort = new[] {32,1, 3, 24, 5,54,333,3,0,31,3};
+            //int[] sorted;
+            //Console.WriteLine("to sort");
+            //foreach (var i in tosort)
+            //{
+            //    Console.WriteLine("{0}",i);
+            //}
 
-           // mnswp.Show(mnswp.BombsCount(10, 20, 10));
+            //sorted = Top.BubbleSort(tosort);
+            //Console.WriteLine("to sorted");
+            //foreach (var i in sorted)
+            //{
+            //    Console.WriteLine("{0}", i);
+            //}         
+
+            // mnswp.Show(mnswp.BombsCount(10, 20, 10));
 
             //PostgresqlDbClient client = new PostgresqlDbClient();
 
